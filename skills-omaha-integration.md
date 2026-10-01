@@ -79,11 +79,13 @@ Para: art-val, one-pager, reporte-q, q-pulse, earnings-forensics (y forensic-acc
 - El comparable usa el catálogo de su propia posición si existe; si no, FiscalAI.
 
 ### reporte-q
+- Formato: HTML chart-first (guía `GUIA-reporte-q-chart-first.md`; bases aprobadas LEN, CTT, DGE, Auna). No el DOCX.
 - Compara los KPIs del release con `catalog_values`. Cada diferencia >1% va en la sección de verificación, con documento y página.
 - Lista al final las cifras del trimestre que el analista debería agregar a su Sheet.
 
 ### q-pulse
 - Usa la tesis (`own_thesis`: claims y breakers), el scorecard y la valuación primaria de la plataforma como vara.
+- El scorecard vive en `scorecard_ratings`: 12 criterios (`criterion`), nota 0–4 de `dante` y de `christian`, y `reason` (solo Christian). Pesos por pilar: Strength 15, Moat 25, Potential 15, Culture 25, Margin of safety 20, repartidos en partes iguales entre sus criterios; puntos = peso × nota / 4; score sobre 100. Los colores de `scorecard` (`*_color`) ya no se usan; esa tabla solo guarda las cifras de deuda y el mínimo de 52 semanas.
 - La cifra del trimestre que choque con un breaker se cita con su fuente.
 
 ### earnings-forensics / forensic-accounting

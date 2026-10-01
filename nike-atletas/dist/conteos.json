@@ -1,0 +1,132 @@
+{
+ "futbol.2015": {
+  "nike": 6,
+  "total": 10,
+  "nike_verificados": 3
+ },
+ "futbol.2018": {
+  "nike": 7,
+  "total": 10,
+  "nike_verificados": 5
+ },
+ "futbol.2021": {
+  "nike": 5,
+  "total": 10,
+  "nike_verificados": 2
+ },
+ "futbol.2024": {
+  "nike": 5,
+  "total": 10,
+  "nike_verificados": 5
+ },
+ "futbol.2026": {
+  "nike": 2,
+  "total": 10,
+  "nike_verificados": 2
+ },
+ "basquet.2015": {
+  "nike": 8,
+  "total": 10,
+  "nike_verificados": 2
+ },
+ "basquet.2018": {
+  "nike": 7,
+  "total": 10,
+  "nike_verificados": 3
+ },
+ "basquet.2021": {
+  "nike": 6,
+  "total": 10,
+  "nike_verificados": 1
+ },
+ "basquet.2024": {
+  "nike": 7,
+  "total": 10,
+  "nike_verificados": 3
+ },
+ "basquet.2026": {
+  "nike": 6,
+  "total": 10,
+  "nike_verificados": 6
+ },
+ "tenis.2015": {
+  "nike": 2,
+  "total": 10,
+  "nike_verificados": 1
+ },
+ "tenis.2018": {
+  "nike": 2,
+  "total": 10,
+  "nike_verificados": 1
+ },
+ "tenis.2021": {
+  "nike": 3,
+  "total": 10,
+  "nike_verificados": 1
+ },
+ "tenis.2024": {
+  "nike": 2,
+  "total": 10,
+  "nike_verificados": 2
+ },
+ "tenis.2026": {
+  "nike": 2,
+  "total": 10,
+  "nike_verificados": 2
+ },
+ "golf.2015": {
+  "nike": 1,
+  "total": 5,
+  "nike_verificados": 1
+ },
+ "golf.2024": {
+  "nike": 2,
+  "total": 5,
+  "nike_verificados": 2
+ },
+ "golf.2026": {
+  "nike": 3,
+  "total": 10,
+  "nike_verificados": 3
+ },
+ "nfl.2026": {
+  "nike": 2,
+  "total": 5,
+  "nike_verificados": 0
+ },
+ "beisbol.2026": {
+  "nike": 2,
+  "total": 5,
+  "nike_verificados": 2
+ },
+ "atletismo.2026": {
+  "nike": 2,
+  "total": 5,
+  "nike_verificados": 1
+ },
+ "Tenis (WTA).2026": {
+  "nike": 2,
+  "total": 5,
+  "nike_verificados": 2
+ },
+ "Fútbol.2026": {
+  "nike": 3,
+  "total": 5,
+  "nike_verificados": 2
+ },
+ "Básquet (WNBA).2026": {
+  "nike": 3,
+  "total": 5,
+  "nike_verificados": 3
+ },
+ "Atletismo.2026": {
+  "nike": 2,
+  "total": 5,
+  "nike_verificados": 2
+ },
+ "Gimnasia.2026": {
+  "nike": 1,
+  "total": 5,
+  "nike_verificados": 1
+ }
+}

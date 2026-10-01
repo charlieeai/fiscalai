@@ -1,0 +1,12 @@
+{
+  "name": "nike-atletas-top",
+  "private": true,
+  "scripts": {
+    "validate": "python3 scripts/validate.py",
+    "build": "python3 scripts/build.py",
+    "check": "node scripts/check.js"
+  },
+  "devDependencies": {
+    "jsdom": "^24.0.0"
+  }
+}

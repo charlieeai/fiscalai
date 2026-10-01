@@ -1,0 +1,25 @@
+{
+  "fuente": "FiscalAI, company_financials_as_reported (NYSE_NKE, income-statement, annual)",
+  "consultado": "2026-10-01",
+  "demand_creation": [
+    {"fy":2015,"ventas":30601,"demand_creation":3213,"auditUrl":"https://fiscal.ai/company/NYSE-NKE/audit-filings/?file=https%253A%252F%252Fapi.fiscal.ai%252Fv1%252Ffiling%252F0000320187-15-000113%252Fpdf%253FcompanyKey%253DNYSE_NKE&pageNumber=40"},
+    {"fy":2016,"ventas":32376,"demand_creation":3278,"auditUrl":"https://fiscal.ai/company/NYSE-NKE/audit-filings/?file=https%253A%252F%252Fapi.fiscal.ai%252Fv1%252Ffiling%252F0000320187-18-000142%252Fpdf%253FcompanyKey%253DNYSE_NKE&pageNumber=46"},
+    {"fy":2017,"ventas":34350,"demand_creation":3341,"auditUrl":"https://fiscal.ai/company/NYSE-NKE/audit-filings/?file=https%253A%252F%252Fapi.fiscal.ai%252Fv1%252Ffiling%252F0000320187-19-000051%252Fpdf%253FcompanyKey%253DNYSE_NKE&pageNumber=52"},
+    {"fy":2018,"ventas":36397,"demand_creation":3577,"auditUrl":"https://fiscal.ai/company/NYSE-NKE/audit-filings/?file=https%253A%252F%252Fapi.fiscal.ai%252Fv1%252Ffiling%252F0000320187-20-000047%252Fpdf%253FcompanyKey%253DNYSE_NKE&pageNumber=58"},
+    {"fy":2019,"ventas":39117,"demand_creation":3753,"auditUrl":"https://fiscal.ai/company/NYSE-NKE/audit-filings/?file=https%253A%252F%252Fapi.fiscal.ai%252Fv1%252Ffiling%252F0000320187-21-000028%252Fpdf%253FcompanyKey%253DNYSE_NKE&pageNumber=59"},
+    {"fy":2020,"ventas":37403,"demand_creation":3592,"auditUrl":"https://fiscal.ai/company/NYSE-NKE/audit-filings/?file=https%253A%252F%252Fapi.fiscal.ai%252Fv1%252Ffiling%252F0000320187-22-000038%252Fpdf%253FcompanyKey%253DNYSE_NKE&pageNumber=58"},
+    {"fy":2021,"ventas":44538,"demand_creation":3114,"auditUrl":"https://fiscal.ai/company/NYSE-NKE/audit-filings/?file=https%253A%252F%252Fapi.fiscal.ai%252Fv1%252Ffiling%252F0000320187-23-000039%252Fpdf%253FcompanyKey%253DNYSE_NKE&pageNumber=58"},
+    {"fy":2022,"ventas":46710,"demand_creation":3850,"auditUrl":"https://fiscal.ai/company/NYSE-NKE/audit-filings/?file=https%253A%252F%252Fapi.fiscal.ai%252Fv1%252Ffiling%252F0000320187-24-000044%252Fpdf%253FcompanyKey%253DNYSE_NKE&pageNumber=61"},
+    {"fy":2023,"ventas":51217,"demand_creation":4060,"auditUrl":"https://fiscal.ai/company/NYSE-NKE/audit-filings/?file=https%253A%252F%252Fapi.fiscal.ai%252Fv1%252Ffiling%252F0000320187-25-000047%252Fpdf%253FcompanyKey%253DNYSE_NKE&pageNumber=60"},
+    {"fy":2024,"ventas":51362,"demand_creation":4285,"auditUrl":"https://fiscal.ai/company/NYSE-NKE/audit-filings/?file=https%253A%252F%252Fapi.fiscal.ai%252Fv1%252Ffiling%252F0000320187-26-000088%252Fpdf%253FcompanyKey%253DNYSE_NKE&pageNumber=59"},
+    {"fy":2025,"ventas":46309,"demand_creation":4689,"auditUrl":"https://fiscal.ai/company/NYSE-NKE/audit-filings/?file=https%253A%252F%252Fapi.fiscal.ai%252Fv1%252Ffiling%252F0000320187-26-000088%252Fpdf%253FcompanyKey%253DNYSE_NKE&pageNumber=59"},
+    {"fy":2026,"ventas":46398,"demand_creation":4754,"auditUrl":"https://fiscal.ai/company/NYSE-NKE/audit-filings/?file=https%253A%252F%252Fapi.fiscal.ai%252Fv1%252Ffiling%252F0000320187-26-000088%252Fpdf%253FcompanyKey%253DNYSE_NKE&pageNumber=59"}
+  ],
+  "endorsement_fuente": "Texto del 10-K (MD&A, 'Endorsement Contracts' en material cash requirements), leído con filing_pdf de FiscalAI. No está en datos estructurados; FiscalAI no entrega auditUrl para este texto, por eso se enlaza el 10-K en SEC (sourceUrl de company_filings).",
+  "endorsement": [
+    {"fy":2023,"total_mm":7600,"12m_mm":1300,"incluye_marketing":false,"filingId":"0000320187-23-000039","pagina_pdf":49,"url":"https://www.sec.gov/Archives/edgar/data/320187/000032018723000039/nke-20230531.htm"},
+    {"fy":2024,"total_mm":10600,"12m_mm":1700,"incluye_marketing":false,"filingId":"0000320187-24-000044","pagina_pdf":52,"url":"https://www.sec.gov/Archives/edgar/data/320187/000032018724000044/nke-20240531.htm"},
+    {"fy":2025,"total_mm":16200,"12m_mm":1600,"incluye_marketing":true,"filingId":"0000320187-25-000047","pagina_pdf":51,"url":"https://www.sec.gov/Archives/edgar/data/320187/000032018725000047/nke-20250531.htm"},
+    {"fy":2026,"total_mm":15500,"12m_mm":1700,"incluye_marketing":true,"filingId":"0000320187-26-000088","pagina_pdf":50,"url":"https://www.sec.gov/Archives/edgar/data/320187/000032018726000088/nke-20260531.htm"}
+  ]
+}

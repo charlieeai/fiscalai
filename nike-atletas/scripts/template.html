@@ -200,8 +200,8 @@ ul.plain li{margin-bottom:6px}
   </section>
 
   <section aria-labelledby="p-title">
-    <h2 id="p-title">Promesas 2025–2026 y su marca</h2>
-    <p>Atletas de 23 años o menos en los cortes o movimientos de 2025 y 2026, sin importar su marca. La edad se calcula como año del corte menos año de nacimiento. El signo ? lleva a la fuente del año de nacimiento.</p>
+    <h2 id="p-title">Promesas 2026 y su marca</h2>
+    <p>Atletas nacidos en 2003 o después (23 años o menos en 2026) según premios y rankings juveniles de cada deporte, más los jóvenes que ya están en los tops 2025–2026. El criterio de cada uno aparece bajo su nombre. La edad se calcula como año del corte menos año de nacimiento. El signo ? lleva a la fuente del año de nacimiento.</p>
     <div id="promesas"></div>
   </section>
 
@@ -295,7 +295,7 @@ function renderProm(){
   const groups=[["Nike Inc.",p=>(DATA.brands[p.b]||{}).g==="nike"],["Adidas",p=>p.b==="Adidas"],["On",p=>p.b==="On"],["Otras o sin marca",()=>true]];
   const used=new Set();
   const cols=groups.map(([lab,f])=>{const ps=DATA.promesas.filter(p=>!used.has(p.n)&&f(p));ps.forEach(p=>used.add(p.n));return [lab,ps];}).filter(c=>c[1].length);
-  document.getElementById("promesas").innerHTML=`<div class="promgrid">${cols.map(([lab,ps])=>`<div class="promcol"><h3>${esc(lab)}<span class="cnt">${ps.length}</span></h3><ul>${ps.map(p=>`<li><span class="age" title="Edad en ${p.yr}">${p.age}</span><span class="who">${esc(p.n)}${srcQ(p.s)}<small>${lab==="Otras o sin marca"?esc(p.b==="n.d."?"Marca n.d.":p.b)+" · ":""}${esc(p.d||"")} · ${p.yr}${p.verified?"":" · nacimiento sin verificar"}</small></span></li>`).join("")}</ul></div>`).join("")}</div><p class="note" style="margin-top:10px">El número es la edad en el año indicado; la marca es la del corte o movimiento más reciente.</p>`;
+  document.getElementById("promesas").innerHTML=`<div class="promgrid">${cols.map(([lab,ps])=>`<div class="promcol"><h3>${esc(lab)}<span class="cnt">${ps.length}</span></h3><ul>${ps.map(p=>`<li><span class="age" title="Edad en 2026">${p.age}</span><span class="who">${esc(p.n)}${srcQ(p.s)}<small>${lab==="Otras o sin marca"?esc(p.b==="n.d."?"Marca n.d.":p.b)+" · ":""}${esc(p.d||"")} · ${esc(p.crit||"")}${p.c==="h"?" · marca sin confirmar":""}${p.verified?"":" · nacimiento sin verificar"}</small></span></li>`).join("")}</ul></div>`).join("")}</div><p class="note" style="margin-top:10px">El número es la edad en 2026; la marca es la del contrato vigente en 2025–2026. El signo ? lleva a la fuente de la marca.</p>`;
 }
 function renderFin(){
   const FIN=DATA.fin.demand_creation;

@@ -100,7 +100,7 @@ Usar solo una de estas causas, y únicamente si una fuente la reporta:
   - La sección "Promesas 2025–2026 y su marca" lista a cada promesa una sola vez, con su marca del corte más reciente.
   - Los años de nacimiento deben verificarse (hoy salen de conocimiento previo).
 - **Mención honorífica (MH):** atletas de influencia comercial que no están en el top del corte. No cuentan en el "x/N".
-  - Hoy: Cristiano Ronaldo (fútbol); Michael Jordan, LeBron James y Stephen Curry (básquet); Djokovic (tenis).
+  - Hoy: Cristiano Ronaldo (fútbol); LeBron James y Stephen Curry (básquet); Djokovic (tenis).
 - **Movimiento clave:** el mercado de pases muestra solo los movimientos clave. Los calcula `scripts/clave.py` (build.py lo corre). El atleta debe ser relevante (está en algún top o MH del estudio, o es campeón individual: hoy Tiger Woods, Kyrie Irving, Allyson Felix, Emma Raducanu e Iga Swiatek; o el usuario lo eligió: Rodrygo) y además:
   - Salida de Nike (out): cambia de grupo Nike Inc.
   - Llegada o renovación con Nike (in): siempre, incluidas extensiones y contratos vitalicios ("Nike (renovación)").

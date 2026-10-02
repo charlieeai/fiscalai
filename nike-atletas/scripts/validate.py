@@ -82,6 +82,19 @@ def main():
                     f"Cambio sin movimiento: {name} {prev['corte']} {prev['marca']} → {cur['corte']} {cur['marca']}"
                 )
 
+    prom_path = DATA / "promesas.csv"
+    if prom_path.exists():
+        for r in load("promesas.csv"):
+            tag = f"promesa {r['atleta']}"
+            if r["marca"] not in marcas:
+                errors.append(f"Marca sin mapear en marcas.csv: {r['marca']!r} ({tag})")
+            if r["confianza"] == "v" and not r["fuente_url"].startswith("http"):
+                errors.append(f"Promesa v sin URL: {r['atleta']}")
+            if int(r["anio_nacimiento"]) < 2003:
+                errors.append(f"Promesa nacida antes de 2003: {r['atleta']}")
+            if r["marca"] == "n.d." and int(r["busquedas"] or 0) < 2:
+                warnings.append(f"Promesa n.d. con menos de 2 búsquedas: {r['atleta']}")
+
     for r in nac:
         if r["verificado"] == "0":
             warnings.append(f"Año de nacimiento sin fuente: {r['atleta']} ({r['anio_nacimiento']})")

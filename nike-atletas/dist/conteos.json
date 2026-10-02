@@ -2,27 +2,27 @@
  "futbol.2015": {
   "nike": 6,
   "total": 10,
-  "nike_verificados": 3
+  "nike_verificados": 6
  },
  "futbol.2018": {
   "nike": 7,
   "total": 10,
-  "nike_verificados": 5
+  "nike_verificados": 7
  },
  "futbol.2021": {
-  "nike": 5,
+  "nike": 4,
   "total": 10,
-  "nike_verificados": 2
+  "nike_verificados": 3
  },
  "futbol.2022": {
-  "nike": 6,
+  "nike": 5,
   "total": 10,
   "nike_verificados": 2
  },
  "futbol.2023": {
   "nike": 7,
   "total": 10,
-  "nike_verificados": 3
+  "nike_verificados": 4
  },
  "futbol.2024": {
   "nike": 5,
@@ -287,7 +287,7 @@
  "Fútbol.2026": {
   "nike": 3,
   "total": 5,
-  "nike_verificados": 2
+  "nike_verificados": 3
  },
  "Básquet (WNBA).2026": {
   "nike": 3,

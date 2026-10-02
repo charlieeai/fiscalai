@@ -202,3 +202,23 @@ Se agotó el cupo de 200 búsquedas web de la sesión.
   - Judge 2022 y Raleigh 2025: ¿una fuente posterior al corte puede valer como v?
   - Atletismo 2026 sigue con criterio propio hasta que se publiquen los finalistas de WA 2026.
 - **Siguiente tarea:** reabrir con WebFetch las filas con `metodo = busqueda`, empezando por las filas Nike y los movimientos clave. Bajar las filas en h, que todavía son 185 de 462.
+
+## Estado al 2-oct-2026 (cuarta tanda: verificación de hipótesis)
+
+- Las hipótesis bajaron de 187 a 89 filas, de 462. Las 12 n.d. tienen 2 o más búsquedas cada una.
+- **Marcas corregidas:**
+  - Lewandowski: 4F (ropa) desde ene-2021; fútbol 2021 baja a 4/10 y 2022 a 5/10.
+  - Lamar Jackson 2024-25: sin contrato.
+  - Hurts 2023: sin contrato.
+  - DeChambeau 2024: sin contrato individual (Stitch era de equipo).
+  - Judge 2022: sin contrato.
+- **Regla explícita de movimientos clave** en 02-metodologia.md: 42 de 70 movimientos son clave.
+- **Diseño:**
+  - Promesas en columnas por marca.
+  - Notas de paneles a 2 líneas.
+  - Conclusión breve: presencia fuerte vs. débil.
+  - LeBron James como MH.
+- **Pendiente:**
+  - Las 89 hipótesis restantes, sobre todo filas con solo evidencia de uso.
+  - Burrow 2025: ¿la ropa es Alo y no Nike?
+  - Casemiro como clave, a decisión del usuario.

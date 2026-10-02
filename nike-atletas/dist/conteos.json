@@ -17,12 +17,12 @@
  "futbol.2022": {
   "nike": 5,
   "total": 10,
-  "nike_verificados": 3
+  "nike_verificados": 5
  },
  "futbol.2023": {
   "nike": 7,
   "total": 10,
-  "nike_verificados": 4
+  "nike_verificados": 6
  },
  "futbol.2024": {
   "nike": 5,
@@ -42,7 +42,7 @@
  "basquet.2015": {
   "nike": 8,
   "total": 10,
-  "nike_verificados": 5
+  "nike_verificados": 8
  },
  "basquet.2018": {
   "nike": 7,
@@ -52,7 +52,7 @@
  "basquet.2021": {
   "nike": 6,
   "total": 10,
-  "nike_verificados": 5
+  "nike_verificados": 6
  },
  "basquet.2022": {
   "nike": 8,
@@ -67,7 +67,7 @@
  "basquet.2024": {
   "nike": 7,
   "total": 10,
-  "nike_verificados": 6
+  "nike_verificados": 7
  },
  "basquet.2025": {
   "nike": 5,
@@ -182,7 +182,7 @@
  "nfl.2023": {
   "nike": 2,
   "total": 5,
-  "nike_verificados": 1
+  "nike_verificados": 2
  },
  "nfl.2024": {
   "nike": 3,
@@ -202,12 +202,12 @@
  "beisbol.2015": {
   "nike": 3,
   "total": 5,
-  "nike_verificados": 1
+  "nike_verificados": 2
  },
  "beisbol.2018": {
   "nike": 4,
   "total": 5,
-  "nike_verificados": 2
+  "nike_verificados": 4
  },
  "beisbol.2021": {
   "nike": 1,
@@ -217,7 +217,7 @@
  "beisbol.2022": {
   "nike": 3,
   "total": 6,
-  "nike_verificados": 1
+  "nike_verificados": 3
  },
  "beisbol.2023": {
   "nike": 2,
@@ -232,7 +232,7 @@
  "beisbol.2025": {
   "nike": 2,
   "total": 5,
-  "nike_verificados": 1
+  "nike_verificados": 2
  },
  "beisbol.2026": {
   "nike": 2,
@@ -252,17 +252,17 @@
  "atletismo.2021": {
   "nike": 3,
   "total": 5,
-  "nike_verificados": 2
+  "nike_verificados": 3
  },
  "atletismo.2022": {
   "nike": 3,
   "total": 5,
-  "nike_verificados": 2
+  "nike_verificados": 3
  },
  "atletismo.2023": {
   "nike": 2,
   "total": 5,
-  "nike_verificados": 1
+  "nike_verificados": 2
  },
  "atletismo.2024": {
   "nike": 2,

@@ -1,18 +1,14 @@
 # Hipótesis y n.d. pendientes
 
-58 filas en hipótesis (h) y 13 sin marca (n.d.), de 462. Las filas Nike van primero porque mueven el conteo. Para confirmar una, basta indicar atleta, corte y marca.
+39 filas en hipótesis (h) y 13 sin marca (n.d.), de 462. Las filas Nike van primero porque mueven el conteo. Para confirmar una, basta indicar atleta, corte y marca.
 
 ## Hipótesis (h)
 
-### futbol (13)
+### futbol (9)
 
 | Atleta | Corte | Marca | Motivo |
 |---|---|---|---|
-| Luka Modrić | 2022 | Nike | Búsquedas en croata y español sin fuente de 2021-22 que nombre su contrato Nike; solo uso y el bono del Balón de Oro 2018. |
-| Luka Modrić | 2023 | Nike | Sin fuente de 2022-23 del contrato Nike (búsqueda en croata y español). Index.hr (dic-2023) solo habla del contrato Adidas del Madrid. |
-| Rodri | 2023 | Nike | Footy Headlines (jun-2023) lo pone entre quienes usarán la edición UCL de Nike, sin decir que tenga contrato. Sin fuente explícita. |
-| Thibaut Courtois | 2022 | Nike | Footy Headlines (nov-2020) da contrato Nike vigente; Goalkeeper.com no carga y web.archive.org está bloqueado. Sin fuente de 2021-22. |
-| Victor Osimhen | 2023 | Nike | Fichajes (may-2022): Nike hasta 2023, sin poder renovar por el Napoli. Footy Headlines (feb-2025): recién dejó Nike. Se contradicen. |
+| Victor Osimhen | 2023 | Nike | Nike vencía en 2023; dejó Nike por Adidas (usuario), sin fecha del cambio: no se sabe si fue antes de oct-2023. |
 | Bernardo Silva | 2023 | Adidas | Búsquedas en portugués, en adidas y en lanzamientos de la Copa Pure 2023: solo uso (botas preparadas para él). Sin fuente del contrato. |
 | Gianluigi Donnarumma | 2021 | Adidas | Footy Headlines (abr-2019) da el paso de Puma a Adidas solo por uso, sin anuncio. Sin fuente de 2020-21 que nombre el contrato. |
 | Gianluigi Donnarumma | 2025 | Adidas | Footy Headlines (sep-2026, versión italiana): su contrato Adidas 'casi seguro' expiró, sin fechas. Sin fuente de 2024-25. |
@@ -22,16 +18,11 @@
 | Raphinha | 2025 | Adidas | Footy Headlines (ago-2023) lo nombra atleta Adidas; Footy Headlines (oct-2024) no lo cita entre los embajadores. Sin fuente 2024-25. |
 | Thomas Müller | 2015 | Adidas | Footy Headlines (jul-2015) especuló con su salida de Adidas. La prensa alemana de 2014 no nombra sus marcas. Sin fuente del contrato. |
 
-### basquet (6)
+### basquet (1)
 
 | Atleta | Corte | Marca | Motivo |
 |---|---|---|---|
-| Anthony Davis | 2024 | Nike | Nike desde 2012, extensión plurianual en 2017 sin duración. En 2024 solo hay uso (PE LeBron 21, SI sep-2024); sin fuente de contrato. |
-| DeMarcus Cousins | 2015 | Nike | NBC (oct-2018): entró a la NBA con contrato Nike y en 2018 vencía (ESPN). Ninguna fuente prueba que el contrato siguiera en 2015. |
-| Julius Randle | 2021 | Nike | Con Nike desde novato y pasó a Skechers en oct-2023 (FOS, ClutchPoints), pero ninguna fuente dice que el contrato Nike siguiera en 2021. |
-| LaMarcus Aldridge | 2018 | Jordan | Jordan desde nov-2014 (SGB) sin duración; News4SA (feb-2019) dice que tiene contrato con Jordan. Sin fuente de 2017-18 ni duración. |
-| Marc Gasol | 2015 | Nike | Solo uso (Hyperdunk PE) y campañas; el patrocinio Nike a la selección española y al equipo no cuenta. Sin contrato individual. |
-| Pau Gasol | 2015 | Nike | OKDiario (2019) cita a Nike sin fecha ni duración; sin fuente de 2014-15 del contrato individual (el acuerdo Nike-FEB no cuenta). |
+| LaMarcus Aldridge | 2018 | Jordan | Jordan desde nov-2014; el usuario indica marcas variadas al final de su carrera, sin fecha. Sin fuente de 2017-18. |
 
 ### tenis (3)
 
@@ -52,30 +43,23 @@
 | Louis Oosthuizen | 2021 | Ping | Ping lo renovó en oct-2015 con ropa incluida, sin duración. En may-2021 era 'Ping staffer' (NCG), pero sin mención de ropa. |
 | Will Zalatoris | 2022 | FootJoy | Sale en campañas de FootJoy y ganó el St. Jude 2022 con su calzado, pero no hay anuncio fechado de contrato de ropa. Sin más búsquedas. |
 
-### nfl (8)
+### nfl (7)
 
 | Atleta | Corte | Marca | Motivo |
 |---|---|---|---|
-| Carson Wentz | 2018 | Nike | Nike lo firmó en abr-2016 (Inforum) sin duración publicada; no hallé fuente de 2017-18 que nombre el contrato. |
-| Jared Goff | 2025 | Nike | Nike lo firmó antes del Draft 2016 (AthleteSpeakers). En 2024-25 solo hay sitios de patrimonio sin fecha ni fuente; uniforme NFL no cuenta. |
-| Joe Burrow | 2023 | Nike | Alo empezó en 2024 (MediaPost, ago-2025). Nike desde 2020 sin duración ni fuente fiable de 2022-23; SI (2023) no lo llama atleta Nike. |
-| Matthew Stafford | 2026 | Nike | Solo resúmenes (EssentiallySports sep-2025, Bolavip) nombran a Nike sin detalle; el perfil de Sportskeeda está bloqueado. |
+| Carson Wentz | 2018 | Nike | Atleta Nike en sus inicios; el usuario indica que su presencia con la marca bajó luego. Sin fuente de 2017-18. |
+| Jared Goff | 2025 | Nike | El usuario indica Asics; no se halló ningún contrato con Asics (solo Nike 2016 y Gap 2019). Contradicción abierta. |
+| Matthew Stafford | 2026 | Nike | Atleta Nike de larga data; el usuario indica que el acuerdo ya no es de primera línea. Vigencia en 2025-26 sin confirmar. |
 | Aaron Rodgers | 2021 | Adidas | Adidas desde 2015 (Fortune) sin duración publicada; SI (abr-2023) solo muestra uso de tacos Adidas. Sin fuente de 2020-21 del contrato. |
 | Aaron Rodgers | 2022 | Adidas | Adidas desde 2015 (Fortune) sin duración publicada; SI (abr-2023) solo muestra uso de tacos Adidas. Sin fuente de 2021-22 del contrato. |
 | Cooper Kupp | 2022 | Under Armour | Contradicción: sitios poco fiables dicen que firmó con UA en 2020; WhatProsWear (ago-2022) lo muestra con tacos Nike PE. Sin contrato. |
 | Lamar Jackson | 2025 | Sin contrato | AFI (jul-2023) dice que no tiene contrato de calzado. En 2024-25 solo hallé Oakley (gafas) y uso de Adidas; sin fuente de calzado. |
 
-### beisbol (13)
+### beisbol (7)
 
 | Atleta | Corte | Marca | Motivo |
 |---|---|---|---|
-| Javier Báez | 2018 | Nike | Tenía contrato de calzado con Nike en oct-2016; en 2018 usó PE Nike (uso). Falta fuente de 2017-2018 o duración del contrato. |
-| Josh Donaldson | 2015 | Nike | Solo uso: Nike en 2015 (All-Star) y 2016. Con 3 búsquedas no apareció contrato Nike; sí acuerdos con Roots y Pizza Nova. |
-| José Ramírez | 2018 | Nike | Solo uso: cleats Nike Vapor Ultrafly PE. Búsquedas en inglés y español no hallan contrato de calzado. |
-| Kyle Schwarber | 2025 | Nike | Solo uso: WPW dice que 'Nike lo trata bien' y usa cleats y guantes Nike, sin fecha ni contrato. No hay anuncio en 2024-2025. |
-| Nolan Arenado | 2022 | Nike | SI (ene-2019) nombra su contrato Nike; en 2021-2022 solo hay PE y cleats hechos por Nike (uso). Sin fuente 2021-22 del contrato. |
-| Paul Goldschmidt | 2015 | Nike | Solo uso: Nike Air Huarache. Ni en búsquedas de patrocinio aparece contrato Nike (solo acuerdos como Chef's Cut). |
-| Paul Goldschmidt | 2022 | Nike | Solo uso: Nike Alpha Huarache Elite 4. Ni en búsquedas de patrocinio aparece contrato Nike individual. |
+| Josh Donaldson | 2015 | Nike | Retirado; sin fuente del contrato en 2015. |
 | Cal Raleigh | 2025 | New Balance | New Balance lanzó una gorra con él en mar-2026 (socio). No se halló fuente de 2024-2025 ni fecha de inicio del contrato. |
 | Corey Seager | 2023 | Adidas | Sitios de patrimonio neto lo dan con Adidas desde oct-2021 (otro cita Nike 2018). Sin anuncio de un medio. |
 | Freddie Freeman | 2023 | Under Armour | UA lo llama 'Under Armour Athlete' en oct-2024 y nov-2025, sin fecha de inicio. No se halló fuente de 2022-2023. |
@@ -83,14 +67,11 @@
 | Lorenzo Cain | 2015 | Adidas | Adidas lo cuenta entre sus fichajes de 2015, pero el Salón de la Fama guarda sus zapatillas UA de la Serie Mundial 2015. |
 | Yordan Alvarez | 2022 | Adidas | SI (feb-2024) dice que usaba Adidas desde 2019 antes de firmar con Nike; solo uso, no se halló contrato Adidas. |
 
-### atletismo (7)
+### atletismo (4)
 
 | Atleta | Corte | Marca | Motivo |
 |---|---|---|---|
-| Christian Taylor | 2015 | Nike | En 2012 era embajador de Li-Ning; en 2018 'Nike lo patrocina'. No se halló cuándo cambió de marca ni fuente de 2014-2015. |
-| Jakob Ingebrigtsen | 2022 | Nike | Nike lo llama 'Nike athlete' en ago-2024; no se halló fuente de 2021-2022 (ni en noruego) que nombre el contrato. |
-| Ryan Crouser | 2021 | Nike | AP (mar-2020): patrocinado por Nike con contrato hasta 2020. En 2021 lanzó con Nike (KSAT, uso); no se halló renovación. |
-| Ryan Crouser | 2023 | Nike | Contrato Nike vencía en 2020 (AP). Fuentes de 2022-2023 solo muestran zapatillas Nike (uso); no se halló renovación. |
+| Christian Taylor | 2015 | Nike | El usuario indica Nike toda su carrera; una fuente de 2012 lo muestra con Li-Ning. Contradicción abierta. |
 | Alphonce Simbu | 2025 | Adidas | Corrió el Mundial y Boston 2025 con Adidas Adios Pro Evo 2: solo uso. No se buscó contrato por presupuesto. |
 | Sabastian Sawe | 2025 | Adidas | Wikipedia dice que corre para Adidas; en 2025 ganó Londres y Berlín con Adidas (uso). Ningún medio abierto nombra el contrato. |
 | Tamirat Tola | 2024 | Adidas | Ganó el maratón olímpico con Adidas Adios Pro Evo 1: solo uso. Ni en inglés ni en alemán aparece contrato con Adidas. |

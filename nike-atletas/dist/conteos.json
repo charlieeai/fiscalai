@@ -167,12 +167,12 @@
  "nfl.2018": {
   "nike": 2,
   "total": 3,
-  "nike_verificados": 0
+  "nike_verificados": 1
  },
  "nfl.2021": {
   "nike": 1,
   "total": 3,
-  "nike_verificados": 0
+  "nike_verificados": 1
  },
  "nfl.2022": {
   "nike": 0,
@@ -180,17 +180,17 @@
   "nike_verificados": 0
  },
  "nfl.2023": {
-  "nike": 3,
+  "nike": 2,
   "total": 5,
-  "nike_verificados": 0
+  "nike_verificados": 1
  },
  "nfl.2024": {
-  "nike": 4,
+  "nike": 3,
   "total": 5,
-  "nike_verificados": 0
+  "nike_verificados": 3
  },
  "nfl.2025": {
-  "nike": 5,
+  "nike": 4,
   "total": 5,
   "nike_verificados": 1
  },

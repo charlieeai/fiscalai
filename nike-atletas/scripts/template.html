@@ -166,7 +166,7 @@ ul.plain li{margin-bottom:6px}
 
   <section aria-labelledby="m-title">
     <h2 id="m-title">Atletas top con Nike, por deporte y año</h2>
-    <p>Los deportes están ordenados por audiencia global según mi criterio. Cada celda muestra cuántos atletas del top tienen contrato con Nike Inc.; la intensidad del azul sigue el porcentaje. Toca una celda para ver la lista: ahí aparecen la confianza de cada dato, los n.d. y el signo <span class="q" aria-hidden="true" style="display:inline-flex">?</span>, que lleva a la fuente. La etiqueta <span class="pb">Promesa</span> marca a atletas de 23 años o menos en los cortes 2023–2026, sea cual sea su marca.</p>
+    <p>Los deportes están ordenados por audiencia global según mi criterio. Cada celda muestra cuántos atletas del top tienen contrato con Nike Inc.; la intensidad del azul sigue el porcentaje. Toca una celda para ver la lista: ahí aparecen la confianza de cada dato, los n.d. y el signo <span class="q" aria-hidden="true" style="display:inline-flex">?</span>, que lleva a la fuente. La etiqueta <span class="pb">Promesa</span> marca a atletas de 23 años o menos en los cortes 2025–2026, sea cual sea su marca.</p>
     <div class="scroll"><table class="matrix" id="matrix"></table></div>
     <div class="legend">
       <span>Intensidad = % Nike sobre el total
@@ -200,8 +200,8 @@ ul.plain li{margin-bottom:6px}
   </section>
 
   <section aria-labelledby="p-title">
-    <h2 id="p-title">Promesas 2023–2026 y su marca</h2>
-    <p>Atletas de 23 años o menos que aparecen en algún corte o movimiento entre 2023 y 2026, sin importar su marca. La edad se calcula como año del corte menos año de nacimiento. El signo ? lleva a la fuente del año de nacimiento.</p>
+    <h2 id="p-title">Promesas 2025–2026 y su marca</h2>
+    <p>Atletas de 23 años o menos en los cortes o movimientos de 2025 y 2026, sin importar su marca. La edad se calcula como año del corte menos año de nacimiento. El signo ? lleva a la fuente del año de nacimiento.</p>
     <div id="promesas"></div>
   </section>
 
@@ -246,7 +246,7 @@ function chip(b){
 }
 function srcLink(s){ return s&&s[1] ? `<a href="${esc(s[1])}" target="_blank" rel="noopener">${esc(s[0])}</a>` : ""; }
 function srcQ(s){ return s&&s[1] ? `<a class="q" href="${esc(s[1])}" target="_blank" rel="noopener" title="Fuente: ${esc(s[0])}" aria-label="Fuente: ${esc(s[0])}">?</a>` : ""; }
-function isProm(name,yr){ const b=DATA.born[name]; return yr>=2023 && yr<=2026 && b && (yr-b.y)<=23; }
+function isProm(name,yr){ const b=DATA.born[name]; return yr>=2025 && yr<=2026 && b && (yr-b.y)<=23; }
 function stats(list){ const N=list.length; const nk=list.filter(r=>NIKE_INC.has(r.b)).length; return {N,nk,nkv:list.filter(r=>NIKE_INC.has(r.b)&&r.c==="v").length}; }
 const SP=Object.fromEntries(DATA.sports.map(s=>[s.key,s]));
 

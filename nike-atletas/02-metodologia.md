@@ -95,9 +95,9 @@ Usar solo una de estas causas, y únicamente si una fuente la reporta:
 ## 7. Reglas especiales
 
 - **Promesa:** atleta con edad ≤ 23, calculada como año del corte menos año de nacimiento.
-  - Se aplica solo a cortes y movimientos de 2023 a 2026.
+  - Se aplica solo a cortes y movimientos de 2025 y 2026 (promesas actuales; decisión del usuario, 2-oct-2026).
   - Se marca con independencia de la marca.
-  - La sección "Promesas 2023–2026 y su marca" lista a cada promesa una sola vez, con su marca del corte más reciente.
+  - La sección "Promesas 2025–2026 y su marca" lista a cada promesa una sola vez, con su marca del corte más reciente.
   - Los años de nacimiento deben verificarse (hoy salen de conocimiento previo).
 - **Mención honorífica (MH):** atletas de influencia comercial que no están en el top del corte. No cuentan en el "x/N".
   - Hoy: Cristiano Ronaldo (fútbol); Michael Jordan, LeBron James y Stephen Curry (básquet); Djokovic (tenis).
@@ -147,10 +147,10 @@ data/finanzas.json (FiscalAI) ─┘
    - Cada celda muestra solo "x/N", con intensidad de azul según el % Nike.
    - Al tocar una celda se despliega la lista. En esa lista sí se muestran n.d., la confianza, el "?" de fuente y la etiqueta Promesa.
 3. **Mercado de pases:** filtros Salidas / Llegadas y renovaciones / Entre rivales / Todos.
-   - Filas clave resaltadas y etiqueta Promesa.
+   - Solo movimientos clave (scripts/clave.py), con etiqueta Promesa.
    - Nota sobre por qué hay pocas llegadas.
 4. **Hombres, corte 2026:** paneles con el top 5 por deporte y las MH al final.
-5. **Promesas 2023–2026 y su marca.**
+5. **Promesas 2025–2026 y su marca.**
 6. **Mujeres, corte 2026.**
 7. **Lo que Nike gasta en marketing:** gráfico y tabla con enlaces al 10-K.
 8. **Qué dicen los datos:** conclusiones por deporte y tensiones abiertas.

@@ -104,12 +104,12 @@ def build_data():
                       "tipo": m["tipo"], "causa": m["causa"], "conf": m["confianza"],
                       "srcs": [[site_name(u), u] for u in urls], "clave": int(m["clave"] or 0)})
 
-    # Promesas: edad <= 23 en cortes y movimientos 2023-2026; marca del registro más reciente.
+    # Promesas: edad <= 23 en cortes y movimientos 2025-2026; marca del registro más reciente.
     prom = {}
 
     def reg(name, brand, yr, dep=""):
         b = born.get(name)
-        if not b or not (2023 <= yr <= 2026) or yr - b["y"] > 23:
+        if not b or not (2025 <= yr <= 2026) or yr - b["y"] > 23:
             return
         if name not in prom or yr > prom[name]["yr"]:
             prom[name] = {"n": name, "b": brand, "yr": yr, "age": yr - b["y"], "verified": b["v"], "d": dep,

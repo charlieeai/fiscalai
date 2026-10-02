@@ -38,7 +38,7 @@ allRows.filter((r) => r.c === "v" && !(r.s && /^https?:\/\//.test(r.s[1]))).forE
 // QA: cada celda se puede abrir sin errores.
 for (const c of cells) c.click();
 // QA: promesas cumplen edad <= 23 y años 2023-2026.
-D.promesas.filter((p) => p.age > 23).forEach((p) => fail.push(`Promesa fuera de regla: ${p.n}`));
+D.promesas.filter((p) => p.age > 23 || p.yr < 2023 || p.yr > 2026).forEach((p) => fail.push(`Promesa fuera de regla: ${p.n}`));
 // QA: MH no suman (el panel de hombres cuenta solo filas numeradas).
 doc.querySelectorAll("#men .panel").forEach((p) => {
   const [nk, n] = p.querySelector("h3 span").textContent.match(/\d+/g).map(Number);

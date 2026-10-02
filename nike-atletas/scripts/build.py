@@ -104,35 +104,26 @@ def build_data():
                       "tipo": m["tipo"], "causa": m["causa"], "conf": m["confianza"],
                       "srcs": [[site_name(u), u] for u in urls], "clave": int(m["clave"] or 0)})
 
-    # Promesas 2026: nacidos en 2003 o después. Fuente 1: data/promesas.csv (premios y rankings juveniles
-    # por deporte, ver 02-metodologia.md). Fuente 2: atletas de los tops 2025-2026 que cumplen la edad.
+    # Promesas: edad <= 23 en cortes y movimientos 2025-2026; marca del registro más reciente.
     prom = {}
-    for r in load("promesas.csv") if (DATA / "promesas.csv").exists() else []:
-        y = int(r["anio_nacimiento"])
-        if 2026 - y > 23:
-            continue
-        born.setdefault(r["atleta"], {"y": y, "v": bool(r["nacimiento_url"]), "u": r["nacimiento_url"]})
-        dep = r["deporte"] + (" femenino" if r["genero"] == "F" and "(" not in r["deporte"] else "")
-        prom[r["atleta"]] = {"n": r["atleta"], "b": r["marca"], "c": r["confianza"], "age": 2026 - y,
-                             "d": dep, "crit": r["criterio"], "verified": bool(r["nacimiento_url"]),
-                             "s": [r["fuente_nombre"] or site_name(r["fuente_url"]), r["fuente_url"]] if r["fuente_url"] else None}
 
-    def reg(row, dep, yr):
-        bb = born.get(row["n"])
-        if not bb or 2026 - bb["y"] > 23 or row["n"] in prom and prom[row["n"]].get("yr", 0) >= yr:
+    def reg(name, brand, yr, dep=""):
+        b = born.get(name)
+        if not b or not (2025 <= yr <= 2026) or yr - b["y"] > 23:
             return
-        if row["n"] in prom and "yr" not in prom[row["n"]]:
-            return  # ya está en promesas.csv
-        prom[row["n"]] = {"n": row["n"], "b": row["b"], "c": row["c"], "age": 2026 - bb["y"], "d": dep, "yr": yr,
-                          "crit": f"Top {dep} {yr}", "verified": bb["v"], "s": row.get("s")}
+        if name not in prom or yr > prom[name]["yr"]:
+            prom[name] = {"n": name, "b": brand, "yr": yr, "age": yr - b["y"], "verified": b["v"], "d": dep,
+                          "s": ["Año de nacimiento", b["u"]] if b["u"] else None}
 
     for sp in sports:
-        for y in (2025, 2026):
-            for r in sp["cuts"].get(y, {"rows": []})["rows"]:
-                reg(r, sp["label"], y)
+        for y, c in sp["cuts"].items():
+            for r in c["rows"]:
+                reg(r["n"], r["b"], y, sp["label"])
     for w in women:
         for r in w["rows"]:
-            reg(r, w["label"] if "(" in w["label"] else w["label"] + " femenino", 2026)
+            reg(r["n"], r["b"], 2026, w["label"] if "(" in w["label"] else w["label"] + " femenino")
+    for m in moves:
+        reg(m["atleta"], m["a"], int(m["anio"][:4]), m["deporte"])
     promesas = sorted(prom.values(), key=lambda p: (p["age"], p["n"]))
 
     fin = json.loads((DATA / "finanzas.json").read_text(encoding="utf-8"))
@@ -154,11 +145,6 @@ def counts(data):
         out[f"{w['label']}.2026"] = (sum(r["b"] in NIKE_INC for r in rs), len(rs),
                                      sum(r["b"] in NIKE_INC and r["c"] == "v" for r in rs))
     return out
-
-
-def _pgroup(data, p):
-    grp = data["brands"].get(p["b"], {"g": "otro"})["g"]
-    return "nike" if grp == "nike" else p["b"].lower() if grp == "principal" else grp
 
 
 def prom_groups(data):
@@ -185,11 +171,6 @@ def fill(text, data):
                    [r for w in data["women"] for r in w["rows"]]
             return str({"filas": len(rows), "h": sum(r["c"] == "h" for r in rows),
                         "v": sum(r["c"] == "v" for r in rows)}[tok[5:]])
-        if tok.startswith("promv:"):
-            return str(sum(1 for p in data["promesas"] if p.get("c") == "v" and _pgroup(data, p) == tok[6:]))
-        if tok.startswith("promdep:"):
-            _, dep, grp = tok.split(":")
-            return str(sum(1 for p in data["promesas"] if p["d"].startswith(dep) and _pgroup(data, p) == grp))
         if tok == "prom:total":
             return str(len(data["promesas"]))
         if tok.startswith("prom:"):

@@ -174,8 +174,8 @@ ul.plain li{margin-bottom:6px}
       </span>
       <span>Línea punteada = corte pendiente</span>
       <span><span class="conf v"></span> verificado con fuente</span>
-      <span><span class="conf h"></span> hipótesis o dato antiguo</span>
-      <span><span class="conf n"></span> no determinado</span>
+      <span><span class="conf h"></span> sin conclusión, hipótesis</span>
+      <span><span class="conf n"></span> sin conclusión, marca no determinada</span>
     </div>
     <div class="roster" id="roster" aria-live="polite"></div>
   </section>
@@ -234,7 +234,7 @@ ul.plain li{margin-bottom:6px}
 <script>
 const DATA = /*__DATA__*/;
 const NIKE_INC = new Set(["Nike","Jordan","Converse"]);
-const CONFTXT={v:"Verificado con fuente",h:"Hipótesis o dato antiguo",n:"No determinado"};
+const CONFTXT={v:"Verificado con fuente",h:"Sin conclusión, hipótesis",n:"Sin conclusión, marca no determinada"};
 const esc = s => String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
 function chip(b){

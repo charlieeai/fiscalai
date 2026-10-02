@@ -161,3 +161,27 @@ Aplicar el checklist de QA de `02-metodologia.md` antes de entregar.
 - Mbappé: The Athletic diría que fue Mbappé quien terminó la relación, pero no hay URL verificable. Sigue sin resolverse.
 - Béisbol y atletismo 2026 siguen con criterio propio hasta que se publiquen la votación MVP (nov-2026) y los finalistas de World Athletics.
 - Movimientos nuevos que podrían marcarse como clave (decisión del usuario): Harry Kane, Josh Allen.
+
+## Estado al 2-oct-2026 (segunda tanda)
+
+**Hecho:**
+- Verificación de 14 datos clave por corroboración en búsquedas.
+  - Kane: el contrato con Nike venció en el verano de 2023 sin renovarse; no en ago-2022.
+  - Fritz: ropa Boss en mar-2024 y calzado Asics en ago-2024.
+  - Bonmatí: ninguna fuente dice que Nike quisiera retenerla; se corrigió la causa.
+  - Kvaratskhelia ("Nike no renovó") baja a h: lo dice una sola fuente.
+  - Mbappé: The Irish Times cita a The Athletic. Según esa versión, Mbappé eligió On.
+- P1 completo en tenis (2022, 2023, 2025) y básquet (2022, 2023, 2025), y fútbol 2022.
+- P2: NFL 2018–2025, béisbol 2015, 2018 y 2021, y golf 2015 (top 10) y 2018.
+- Movimientos clave nuevos: Harry Kane y Josh Allen.
+- `scripts/ingest.py` incorpora los JSON de investigación a los CSV.
+
+**Pendiente (`data/pendiente/`).** Estos cortes no se publican porque tienen n.d. con menos de 2 búsquedas:
+- Fútbol 2023 y 2025.
+- NFL 2015.
+- Béisbol 2022 a 2025.
+- Golf 2021 a 2025.
+- Atletismo, todos los cortes históricos.
+Se agotó el cupo de 200 búsquedas web de la sesión.
+
+**Limitación de red:** WebFetch y curl están bloqueados para los sitios de fuentes; solo funciona WebSearch. Las filas nuevas llevan `metodo = busqueda`. Cuando se habilite la red, conviene reabrir esas fuentes.

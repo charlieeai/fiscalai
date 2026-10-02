@@ -156,6 +156,11 @@ def counts(data):
     return out
 
 
+def _pgroup(data, p):
+    grp = data["brands"].get(p["b"], {"g": "otro"})["g"]
+    return "nike" if grp == "nike" else p["b"].lower() if grp == "principal" else grp
+
+
 def prom_groups(data):
     g = {}
     for p in data["promesas"]:
@@ -180,6 +185,11 @@ def fill(text, data):
                    [r for w in data["women"] for r in w["rows"]]
             return str({"filas": len(rows), "h": sum(r["c"] == "h" for r in rows),
                         "v": sum(r["c"] == "v" for r in rows)}[tok[5:]])
+        if tok.startswith("promv:"):
+            return str(sum(1 for p in data["promesas"] if p.get("c") == "v" and _pgroup(data, p) == tok[6:]))
+        if tok.startswith("promdep:"):
+            _, dep, grp = tok.split(":")
+            return str(sum(1 for p in data["promesas"] if p["d"].startswith(dep) and _pgroup(data, p) == grp))
         if tok == "prom:total":
             return str(len(data["promesas"]))
         if tok.startswith("prom:"):

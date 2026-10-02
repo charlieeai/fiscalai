@@ -94,7 +94,8 @@ Usar solo una de estas causas, y únicamente si una fuente la reporta:
 
 ## 7. Reglas especiales
 
-- **Promesa:** atleta con edad ≤ 23, calculada como año del corte menos año de nacimiento.
+- **Promesas 2026** (`data/promesas.csv`, decisión del usuario 2-oct-2026): nacidos en 2003 o después que cumplen el criterio de su deporte: fútbol, finalistas Golden Boy 2025 y nominados al Trofeo Kopa 2025 (más Lennart Karl por mención del usuario); NBA, All-Rookie 1º equipo 2024-25 y top 5 del draft 2025; NFL, novatos ofensivo y defensivo AP (temporada 2025) y top 5 del draft 2025; tenis, top 30 ATP y WTA (sep-2026); golf, top 50 OWGR (nadie califica en 2026); MLB, novatos del año 2025 y top 5 de MLB Pipeline (ago-2026); atletismo, finalistas Rising Star de World Athletics 2025. Se suman los jóvenes de los tops 2025-2026. Se carga con `scripts/promesas_json_a_csv.py`.
+- **Etiqueta Promesa:** atleta con edad ≤ 23, calculada como año del corte menos año de nacimiento.
   - Se aplica solo a cortes y movimientos de 2025 y 2026 (promesas actuales; decisión del usuario, 2-oct-2026).
   - Se marca con independencia de la marca.
   - La sección "Promesas 2025–2026 y su marca" lista a cada promesa una sola vez, con su marca del corte más reciente.

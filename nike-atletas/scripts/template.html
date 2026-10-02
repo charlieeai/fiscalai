@@ -181,8 +181,8 @@ ul.plain li{margin-bottom:6px}
   </section>
 
   <section aria-labelledby="l-title">
-    <h2 id="l-title">Mercado de pases</h2>
-    <p>Cambios de marca desde 2015 entre atletas top. Las filas resaltadas son los movimientos de mayor impacto; la etiqueta Promesa marca a atletas de 23 años o menos al momento del cambio. La causa solo se afirma cuando una fuente la reporta. El signo ? lleva a cada fuente.</p>
+    <h2 id="l-title">Mercado de pases: traspasos clave</h2>
+    <p>Salidas y llegadas de Nike, renovaciones de atletas top y cambios relevantes entre otras marcas desde 2015. La etiqueta Promesa marca a atletas de 23 años o menos al momento del cambio. La causa solo se afirma cuando una fuente la reporta; el signo ? lleva a cada fuente.</p>
     <div class="filters" role="group" aria-label="Filtrar movimientos">
       <button data-f="out" aria-pressed="true">Salidas de Nike</button>
       <button data-f="in" aria-pressed="false">Llegadas y renovaciones de Nike</button>
@@ -190,7 +190,7 @@ ul.plain li{margin-bottom:6px}
       <button data-f="all" aria-pressed="false">Todos</button>
     </div>
     <div class="scroll"><table class="ledger" id="ledger"></table></div>
-    <p class="note" style="margin-top:10px">Por qué hay pocas llegadas: Nike suele firmar a sus estrellas antes de que lo sean (Mbappé a los 9 años, Ingebrigtsen a los 17, Scheffler antes de ser número 1). Por eso sus "fichajes" aparecen como renovaciones o ascensos a zapatilla propia y no como traspasos desde otra marca.</p>
+    <p class="note" style="margin-top:10px">Por qué casi todas las llegadas son renovaciones: Nike suele firmar a sus estrellas antes de que lo sean (Mbappé a los 9 años, Ingebrigtsen a los 17, Scheffler antes de ser número 1). Sus movimientos importantes son extensiones, contratos vitalicios o ascensos a zapatilla propia, no traspasos desde otra marca.</p>
   </section>
 
   <section aria-labelledby="h-title">
@@ -280,8 +280,8 @@ function renderRoster(){
 }
 let filt="out";
 function renderLedger(){
-  const rows=DATA.moves.filter(m=>filt==="all"||m.tipo===filt).sort((a,b)=>parseInt(b.anio)-parseInt(a.anio)||b.clave-a.clave);
-  document.getElementById("ledger").innerHTML=`<thead><tr><th>Año</th><th>Atleta</th><th>Movimiento</th><th>Causa reportada</th><th>Fuente</th></tr></thead><tbody>${rows.map(m=>`<tr class="${m.clave?"key":""}"><td class="yr">${esc(m.anio)}</td><td class="who">${esc(m.atleta)}${m.clave?'<span class="kb">Clave</span>':""}${isProm(m.atleta,parseInt(m.anio))?'<span class="pb">Promesa</span>':""}<small>${esc(m.deporte)}</small></td><td><span class="move">${chip(m.de)}<span class="arr" aria-hidden="true">›</span>${chip(m.a)}</span></td><td class="cause">${esc(m.causa)}</td><td><span class="right"><span class="conf ${m.conf}" title="${CONFTXT[m.conf]}" aria-label="${CONFTXT[m.conf]}"></span>${m.srcs.length?m.srcs.map(srcQ).join(""):'<span class="note">Sin fuente</span>'}</span></td></tr>`).join("")}</tbody>`;
+  const rows=DATA.moves.filter(m=>m.clave&&(filt==="all"||m.tipo===filt)).sort((a,b)=>parseInt(b.anio)-parseInt(a.anio)||b.clave-a.clave);
+  document.getElementById("ledger").innerHTML=`<thead><tr><th>Año</th><th>Atleta</th><th>Movimiento</th><th>Causa reportada</th><th>Fuente</th></tr></thead><tbody>${rows.map(m=>`<tr><td class="yr">${esc(m.anio)}</td><td class="who">${esc(m.atleta)}${isProm(m.atleta,parseInt(m.anio))?'<span class="pb">Promesa</span>':""}<small>${esc(m.deporte)}</small></td><td><span class="move">${chip(m.de)}<span class="arr" aria-hidden="true">›</span>${chip(m.a)}</span></td><td class="cause">${esc(m.causa)}</td><td><span class="right"><span class="conf ${m.conf}" title="${CONFTXT[m.conf]}" aria-label="${CONFTXT[m.conf]}"></span>${m.srcs.length?m.srcs.map(srcQ).join(""):'<span class="note">Sin fuente</span>'}</span></td></tr>`).join("")}</tbody>`;
 }
 document.querySelectorAll(".filters button").forEach(b=>b.addEventListener("click",()=>{filt=b.dataset.f;document.querySelectorAll(".filters button").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));renderLedger();}));
 

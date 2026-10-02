@@ -45,11 +45,11 @@ doc.querySelectorAll("#men .panel").forEach((p) => {
   const numbered = p.querySelectorAll("li:not(.mh)").length;
   if (n !== numbered) fail.push(`MH cuentan en el total: ${p.querySelector("h3").textContent}`);
 });
-// QA: movimientos clave resaltados.
+// QA: el mercado de pases muestra solo los movimientos clave.
 doc.querySelector('.filters button[data-f="all"]').click();
-const keyRows = doc.querySelectorAll("#ledger tr.key").length;
+const keyRows = doc.querySelectorAll("#ledger tbody tr").length;
 const keyData = D.moves.filter((m) => m.clave).length;
-if (keyRows !== keyData) fail.push(`Movimientos clave resaltados: ${keyRows} de ${keyData}`);
+if (keyRows !== keyData) fail.push(`Mercado de pases muestra ${keyRows} filas y hay ${keyData} movimientos clave`);
 // QA: cifras financieras con auditUrl de FiscalAI.
 D.fin.demand_creation.filter((f) => !/^https:\/\/fiscal\.ai\//.test(f.auditUrl)).forEach((f) => fail.push(`FY${f.fy} sin auditUrl`));
 // QA: contradicción Mbappé con ambas versiones.

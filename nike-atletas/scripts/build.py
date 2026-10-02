@@ -2,7 +2,7 @@
 
 Uso: python3 scripts/build.py [--fecha "1 de octubre de 2026"]
 
-Pasos: corre validate.py, arma el JSON de datos, calcula conteos y promesas,
+Pasos: corre clave.py y validate.py, arma el JSON de datos, calcula conteos y promesas,
 sustituye las cifras {{...}} en data/conclusiones.html y escribe el HTML.
 Las cifras de las conclusiones salen de los mismos conteos que muestra la matriz.
 """
@@ -191,6 +191,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--fecha", default="1 de octubre de 2026")
     args = ap.parse_args()
+    subprocess.run([sys.executable, str(ROOT / "scripts" / "clave.py")], check=True)
     subprocess.run([sys.executable, str(ROOT / "scripts" / "validate.py")], check=True)
     data = build_data()
     concl = fill((DATA / "conclusiones.html").read_text(encoding="utf-8"), data)

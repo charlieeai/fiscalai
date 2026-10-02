@@ -101,10 +101,11 @@ Usar solo una de estas causas, y únicamente si una fuente la reporta:
   - Los años de nacimiento deben verificarse (hoy salen de conocimiento previo).
 - **Mención honorífica (MH):** atletas de influencia comercial que no están en el top del corte. No cuentan en el "x/N".
   - Hoy: Cristiano Ronaldo (fútbol); Michael Jordan, LeBron James y Stephen Curry (básquet); Djokovic (tenis).
-- **Movimiento clave:** fila resaltada en el mercado de pases. Regla (2-oct-2026), deben cumplirse las dos condiciones:
-  1. El movimiento cambia de grupo Nike Inc.: sale de Nike/Jordan/Converse o llega desde otra marca. Las renovaciones dentro de Nike Inc. no cuentan.
-  2. El atleta es relevante: está en algún top o en las MH del estudio, o es campeón individual (Grand Slam, major, MVP, oro olímpico o mundial; hoy Tiger Woods, Kyrie Irving, Allyson Felix y Emma Raducanu), o el usuario lo eligió (Rodrygo).
-  - Excepción por decisión del usuario: Curry 2026 (Under Armour → Li-Ning).
+- **Movimiento clave:** el mercado de pases muestra solo los movimientos clave. Los calcula `scripts/clave.py` (build.py lo corre). El atleta debe ser relevante (está en algún top o MH del estudio, o es campeón individual: hoy Tiger Woods, Kyrie Irving, Allyson Felix, Emma Raducanu e Iga Swiatek; o el usuario lo eligió: Rodrygo) y además:
+  - Salida de Nike (out): cambia de grupo Nike Inc.
+  - Llegada o renovación con Nike (in): siempre, incluidas extensiones y contratos vitalicios ("Nike (renovación)").
+  - Entre rivales: el destino es una marca principal o una marca propia del atleta.
+  - Excepción por decisión del usuario: Curry 2026 (Under Armour → Li-Ning). Casemiro no es clave (decisión del usuario).
 
 ## 8. Ancla financiera (FiscalAI primero)
 

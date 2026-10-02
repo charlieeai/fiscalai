@@ -239,10 +239,45 @@
   "total": 5,
   "nike_verificados": 2
  },
+ "atletismo.2015": {
+  "nike": 2,
+  "total": 3,
+  "nike_verificados": 0
+ },
+ "atletismo.2018": {
+  "nike": 3,
+  "total": 5,
+  "nike_verificados": 2
+ },
+ "atletismo.2021": {
+  "nike": 3,
+  "total": 5,
+  "nike_verificados": 0
+ },
+ "atletismo.2022": {
+  "nike": 3,
+  "total": 5,
+  "nike_verificados": 0
+ },
+ "atletismo.2023": {
+  "nike": 2,
+  "total": 5,
+  "nike_verificados": 0
+ },
+ "atletismo.2024": {
+  "nike": 2,
+  "total": 6,
+  "nike_verificados": 1
+ },
+ "atletismo.2025": {
+  "nike": 0,
+  "total": 6,
+  "nike_verificados": 0
+ },
  "atletismo.2026": {
   "nike": 2,
   "total": 5,
-  "nike_verificados": 1
+  "nike_verificados": 2
  },
  "Tenis (WTA).2026": {
   "nike": 2,

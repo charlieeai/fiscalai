@@ -166,6 +166,11 @@ def fill(text, data):
             return str(cnt[tok[2:]][2])
         if tok.startswith("nk:"):
             return str(cnt[tok[3:]][0])
+        if tok.startswith("stat:"):
+            rows = [r for sp in data["sports"] for c in sp["cuts"].values() for r in c["rows"]] + \
+                   [r for w in data["women"] for r in w["rows"]]
+            return str({"filas": len(rows), "h": sum(r["c"] == "h" for r in rows),
+                        "v": sum(r["c"] == "v" for r in rows)}[tok[5:]])
         if tok == "prom:total":
             return str(len(data["promesas"]))
         if tok.startswith("prom:"):

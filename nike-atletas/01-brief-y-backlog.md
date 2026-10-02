@@ -185,3 +185,20 @@ Aplicar el checklist de QA de `02-metodologia.md` antes de entregar.
 Se agotó el cupo de 200 búsquedas web de la sesión.
 
 **Limitación de red:** WebFetch y curl están bloqueados para los sitios de fuentes; solo funciona WebSearch. Las filas nuevas llevan `metodo = busqueda`. Cuando se habilite la red, conviene reabrir esas fuentes.
+
+## Estado al 2-oct-2026 (tercera tanda, red abierta)
+
+- La red del entorno ya permite abrir páginas (WebFetch). Las filas nuevas llevan `metodo = pagina` cuando se abrió la fuente.
+- **Matriz completa:** 7 deportes × 8 cortes (2015, 2018, 2021, 2022, 2023, 2024, 2025 y 2026). `data/pendiente/` quedó vacío.
+- **Correcciones relevantes:**
+  - Hakimi: Under Armour desde abr-2025 (no Puma).
+  - Judge: sin contrato en 2022 y luego Jordan.
+  - Rahm: TravisMathew desde ene-2021.
+  - Justin Thomas: sin contrato en 2021 y Greyson en 2022.
+  - Cantlay: Boss y luego B.Draddy.
+  - Duplantis, Warholm y Kipchoge 2026 pasan a v.
+- **Decisiones abiertas para el usuario:**
+  - DeChambeau 2024: ¿Stitch es contrato individual o ropa del equipo LIV?
+  - Judge 2022 y Raleigh 2025: ¿una fuente posterior al corte puede valer como v?
+  - Atletismo 2026 sigue con criterio propio hasta que se publiquen los finalistas de WA 2026.
+- **Siguiente tarea:** reabrir con WebFetch las filas con `metodo = busqueda`, empezando por las filas Nike y los movimientos clave. Bajar las filas en h, que todavía son 185 de 462.

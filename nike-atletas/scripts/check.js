@@ -31,7 +31,7 @@ console.log("Mujeres 2026:");
 doc.querySelectorAll("#women .panel h3").forEach((h) => console.log("  " + h.textContent.replace("Nike", " Nike")));
 
 // QA: la matriz no muestra n.d.
-if (/n\.d\./.test(doc.getElementById("matrix").textContent)) fail.push("La matriz muestra n.d.");
+if (/n\.d\.|n\/a/.test(doc.getElementById("matrix").textContent)) fail.push("La matriz muestra n.d.");
 // QA: todo v tiene "?" con URL http.
 const allRows = [...D.sports.flatMap((s) => Object.values(s.cuts).flatMap((c) => c.rows)), ...D.women.flatMap((w) => w.rows)];
 allRows.filter((r) => r.c === "v" && !(r.s && /^https?:\/\//.test(r.s[1]))).forEach((r) => fail.push(`v sin URL: ${r.n}`));

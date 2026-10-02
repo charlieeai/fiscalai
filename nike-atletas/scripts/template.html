@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Nike y los atletas top, 2015–2026</title>
+<title>Nike and Top Athletes, 2015–2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
@@ -159,74 +159,74 @@ ul.plain li{margin-bottom:6px}
 <body>
 <main class="wrap">
   <header>
-    <h1>Nike retiene el básquet y pierde el fútbol</h1>
-    <p class="lede">Cuántos de los mejores atletas de cada deporte tienen contrato con Nike Inc. (Nike, Jordan y Converse), en cortes anuales entre 2015 y 2026, y qué movimientos de marca explican el cambio.</p>
-    <p class="meta">Corte de datos: __FECHA__. Detonante: Kylian Mbappé deja Nike y firma con On (18-sep-2026).</p>
+    <h1>Nike holds basketball and loses football</h1>
+    <p class="lede">How many of the top athletes in each sport have a contract with Nike Inc. (Nike, Jordan and Converse), in annual cuts from 2015 to 2026, and which brand moves explain the change.</p>
+    <p class="meta">Data as of __FECHA__. Trigger: Kylian Mbappé leaves Nike and signs with On (Sep 18, 2026).</p>
   </header>
 
   <section aria-labelledby="m-title">
-    <h2 id="m-title">Atletas top con Nike, por deporte y año</h2>
-    <p>Los deportes están ordenados por audiencia global según mi criterio. Cada celda muestra cuántos atletas del top tienen contrato con Nike Inc.; la intensidad del azul sigue el porcentaje. Toca una celda para ver la lista: ahí aparecen la confianza de cada dato, los n.d. y el signo <span class="q" aria-hidden="true" style="display:inline-flex">?</span>, que lleva a la fuente. La etiqueta <span class="pb">Promesa</span> marca a atletas de 23 años o menos en los cortes 2025–2026, sea cual sea su marca.</p>
+    <h2 id="m-title">Top athletes with Nike, by sport and year</h2>
+    <p>Sports are ordered by global audience, by my own judgment. Each cell shows how many of the top athletes have a contract with Nike Inc.; the blue intensity follows the percentage. Tap a cell to see the list: it shows the confidence of each data point, the n/a rows and the <span class="q" aria-hidden="true" style="display:inline-flex">?</span> sign, which links to the source. The <span class="pb">Prospect</span> tag marks athletes aged 23 or under in the 2025–2026 cuts, whatever their brand.</p>
     <div class="scroll"><table class="matrix" id="matrix"></table></div>
     <div class="legend">
-      <span>Intensidad = % Nike sobre el total
+      <span>Intensity = Nike % of total
         <span class="ramp"><i style="background:color-mix(in srgb,var(--nike) 8%,var(--paper))"></i><i style="background:color-mix(in srgb,var(--nike) 30%,var(--paper))"></i><i style="background:color-mix(in srgb,var(--nike) 55%,var(--paper))"></i><i style="background:color-mix(in srgb,var(--nike) 80%,var(--paper))"></i></span>
       </span>
-      <span>Línea punteada = corte pendiente</span>
-      <span><span class="conf v"></span> verificado con fuente</span>
-      <span><span class="conf h"></span> sin conclusión, hipótesis</span>
-      <span><span class="conf n"></span> sin conclusión, marca no determinada</span>
+      <span>Dashed line = cut pending</span>
+      <span><span class="conf v"></span> verified with source</span>
+      <span><span class="conf h"></span> no conclusion, hypothesis</span>
+      <span><span class="conf n"></span> no conclusion, brand not determined</span>
     </div>
     <div class="roster" id="roster" aria-live="polite"></div>
   </section>
 
   <section aria-labelledby="l-title">
-    <h2 id="l-title">Mercado de pases: traspasos clave</h2>
-    <p>Salidas y llegadas de Nike, renovaciones de atletas top y cambios relevantes entre otras marcas desde 2015. La etiqueta Promesa marca a atletas de 23 años o menos al momento del cambio. La causa solo se afirma cuando una fuente la reporta; el signo ? lleva a cada fuente.</p>
-    <div class="filters" role="group" aria-label="Filtrar movimientos">
-      <button data-f="out" aria-pressed="true">Salidas de Nike</button>
-      <button data-f="in" aria-pressed="false">Llegadas y renovaciones de Nike</button>
-      <button data-f="rival" aria-pressed="false">Entre rivales</button>
-      <button data-f="all" aria-pressed="false">Todos</button>
+    <h2 id="l-title">Transfer market: key moves</h2>
+    <p>Departures from and arrivals at Nike, renewals of top athletes and relevant moves between other brands since 2015. The Prospect tag marks athletes aged 23 or under at the time of the move. A cause is stated only when a source reports it; the ? sign links to each source.</p>
+    <div class="filters" role="group" aria-label="Filter moves">
+      <button data-f="out" aria-pressed="true">Departures from Nike</button>
+      <button data-f="in" aria-pressed="false">Arrivals and renewals at Nike</button>
+      <button data-f="rival" aria-pressed="false">Between rivals</button>
+      <button data-f="all" aria-pressed="false">All</button>
     </div>
     <div class="scroll"><table class="ledger" id="ledger"></table></div>
-    <p class="note" style="margin-top:10px">Por qué casi todas las llegadas son renovaciones: Nike suele firmar a sus estrellas antes de que lo sean (Mbappé a los 9 años, Ingebrigtsen a los 17, Scheffler antes de ser número 1). Sus movimientos importantes son extensiones, contratos vitalicios o ascensos a zapatilla propia, no traspasos desde otra marca.</p>
+    <p class="note" style="margin-top:10px">Why almost all arrivals are renewals: Nike tends to sign its stars before they become stars (Mbappé at 9, Ingebrigtsen at 17, Scheffler before reaching number 1). Its important moves are extensions, lifetime deals or promotions to a signature shoe, not transfers from another brand.</p>
   </section>
 
   <section aria-labelledby="h-title">
-    <h2 id="h-title">Hombres, corte 2026</h2>
-    <p>Top 5 por deporte. Marcas fuera del grupo principal (Nike, Jordan, Converse, Adidas, Puma, Under Armour, On, New Balance, ASICS, Anta, Li-Ning) aparecen como "Otro", con el nombre al lado. MH = mención honorífica, no cuenta en el total. El signo ? lleva a la fuente.</p>
+    <h2 id="h-title">Men, 2026 cut</h2>
+    <p>Top 5 per sport. Brands outside the main group (Nike, Jordan, Converse, Adidas, Puma, Under Armour, On, New Balance, ASICS, Anta, Li-Ning) appear as "Other", with the name next to it. HM = honorable mention, not counted in the total. The ? sign links to the source.</p>
     <div class="grid2" id="men"></div>
   </section>
 
   <section aria-labelledby="p-title">
-    <h2 id="p-title">Promesas 2025–2026 y su marca</h2>
-    <p>Atletas de 23 años o menos en los cortes o movimientos de 2025 y 2026, sin importar su marca. La edad se calcula como año del corte menos año de nacimiento. El signo ? lleva a la fuente del año de nacimiento.</p>
+    <h2 id="p-title">2025–2026 prospects and their brand</h2>
+    <p>Athletes aged 23 or under in the 2025 and 2026 cuts or moves, regardless of brand. Age is the cut year minus birth year. The ? sign links to the source for the birth year.</p>
     <div id="promesas"></div>
   </section>
 
   <section aria-labelledby="w-title">
-    <h2 id="w-title">Mujeres, corte 2026</h2>
-    <p>Top 5 por deporte según ranking o, donde no hay ranking único, según mi criterio de nivel y popularidad. El signo ? lleva a la fuente.</p>
+    <h2 id="w-title">Women, 2026 cut</h2>
+    <p>Top 5 per sport by ranking or, where there is no single ranking, by my own judgment of level and popularity. The ? sign links to the source.</p>
     <div class="grid2" id="women"></div>
   </section>
 
   <section aria-labelledby="f-title">
-    <h2 id="f-title">Lo que Nike gasta en marketing</h2>
-    <p>Gasto en <em>demand creation</em> de NKE, años fiscales terminados en mayo. Fuente: FiscalAI (estados financieros tal como se reportaron); el enlace "10-K" abre la página exacta del filing en FiscalAI.</p>
+    <h2 id="f-title">What Nike spends on marketing</h2>
+    <p>NKE <em>demand creation</em> expense, fiscal years ending in May. Source: FiscalAI (financial statements as reported); the "10-K" link opens the exact filing page in FiscalAI.</p>
     <div class="fin">
       <div id="chart"></div>
       <div class="scroll"><table id="fintable"></table></div>
-      <p class="note" style="margin-top:12px">Demand creation incluye publicidad, promoción y sports marketing (contratos de endorsement, producto gratuito y eventos). No aísla el pago a atletas individuales.</p>
-      <h3>Compromisos por contratos de endorsement</h3>
-      <p class="note">Obligaciones de pago mínimas (compensación base y regalías mínimas garantizadas) con atletas, figuras públicas, equipos y ligas, según el 10-K. Leído en FiscalAI (filing_pdf); FiscalAI no tiene este dato estructurado ni un enlace de auditoría para él, así que el enlace lleva al 10-K en SEC.</p>
+      <p class="note" style="margin-top:12px">Demand creation includes advertising, promotion and sports marketing (endorsement contracts, free product and events). It does not isolate payments to individual athletes.</p>
+      <h3>Endorsement contract commitments</h3>
+      <p class="note">Minimum payment obligations (base compensation and guaranteed minimum royalties) to athletes, public figures, teams and leagues, per the 10-K. Read in FiscalAI (filing_pdf); FiscalAI has no structured field or audit link for this figure, so the link goes to the 10-K on SEC.</p>
       <div class="scroll"><table id="endtable"></table></div>
-      <p class="note" style="margin-top:12px">Desde el 10-K FY2025 la cifra incluye "compromisos de marketing asociados", por lo que FY2025–FY2026 no se pueden comparar directamente con FY2023–FY2024. Los pagos reales pueden ser mayores (bonos por logros, regalías) o menores (cláusulas de reducción por rendimiento).</p>
+      <p class="note" style="margin-top:12px">Since the FY2025 10-K the figure includes "related marketing commitments", so FY2025–FY2026 are not directly comparable with FY2023–FY2024. Actual payments can be higher (performance bonuses, royalties) or lower (performance-based reduction clauses).</p>
     </div>
   </section>
 
   <section aria-labelledby="r-title">
-    <h2 id="r-title">Qué dicen los datos</h2>
+    <h2 id="r-title">What the data says</h2>
 <!--__CONCLUSIONES__-->
   </section>
 </main>
@@ -234,7 +234,7 @@ ul.plain li{margin-bottom:6px}
 <script>
 const DATA = /*__DATA__*/;
 const NIKE_INC = new Set(["Nike","Jordan","Converse"]);
-const CONFTXT={v:"Verificado con fuente",h:"Sin conclusión, hipótesis",n:"Sin conclusión, marca no determinada"};
+const CONFTXT={v:"Verified with source",h:"No conclusion, hypothesis",n:"No conclusion, brand not determined"};
 const esc = s => String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
 function chip(b){
@@ -242,10 +242,10 @@ function chip(b){
   if(m.g==="nike") return `<span class="chip nike">${esc(b)}</span>`;
   if(m.g==="principal") return `<span class="chip" style="color:var(${m.c})">${esc(b)}</span>`;
   if(m.g==="sin"||m.g==="nd") return `<span class="chip" style="color:var(--b-none)">${esc(b)}</span>`;
-  return `<span class="chip" style="color:var(--b-other)">Otro</span><span class="ob">${esc(b)}</span>`;
+  return `<span class="chip" style="color:var(--b-other)">Other</span><span class="ob">${esc(b)}</span>`;
 }
 function srcLink(s){ return s&&s[1] ? `<a href="${esc(s[1])}" target="_blank" rel="noopener">${esc(s[0])}</a>` : ""; }
-function srcQ(s){ return s&&s[1] ? `<a class="q" href="${esc(s[1])}" target="_blank" rel="noopener" title="Fuente: ${esc(s[0])}" aria-label="Fuente: ${esc(s[0])}">?</a>` : ""; }
+function srcQ(s){ return s&&s[1] ? `<a class="q" href="${esc(s[1])}" target="_blank" rel="noopener" title="Source: ${esc(s[0])}" aria-label="Source: ${esc(s[0])}">?</a>` : ""; }
 function isProm(name,yr){ const b=DATA.born[name]; return yr>=2025 && yr<=2026 && b && (yr-b.y)<=23; }
 function stats(list){ const N=list.length; const nk=list.filter(r=>NIKE_INC.has(r.b)).length; return {N,nk,nkv:list.filter(r=>NIKE_INC.has(r.b)&&r.c==="v").length}; }
 const SP=Object.fromEntries(DATA.sports.map(s=>[s.key,s]));
@@ -253,16 +253,16 @@ const SP=Object.fromEntries(DATA.sports.map(s=>[s.key,s]));
 let sel={sport:DATA.sports[0].key,year:2026};
 function renderMatrix(){
   const t=document.getElementById("matrix");
-  let h=`<thead><tr><th scope="col">Deporte</th>${DATA.years.map(y=>`<th scope="col" class="yr">${y}</th>`).join("")}</tr></thead><tbody>`;
+  let h=`<thead><tr><th scope="col">Sport</th>${DATA.years.map(y=>`<th scope="col" class="yr">${y}</th>`).join("")}</tr></thead><tbody>`;
   for(const sp of DATA.sports){
     h+=`<tr><td class="sport">${esc(sp.label)}<small>${esc(sp.sub)}</small></td>`;
     for(const y of DATA.years){
       const c=sp.cuts[y];
-      if(!c){ h+=`<td><div class="cell empty" aria-label="${esc(sp.label)} ${y}: no reconstruido">—</div></td>`; continue; }
+      if(!c){ h+=`<td><div class="cell empty" aria-label="${esc(sp.label)} ${y}: not reconstructed">—</div></td>`; continue; }
       const st=stats(c.rows); const pct=st.nk/st.N;
       const bg=`color-mix(in srgb,var(--nike) ${Math.round(8+pct*72)}%,var(--paper))`;
       const pressed=(sel.sport===sp.key&&sel.year===y);
-      h+=`<td><button class="cell" data-k="${sp.key}" data-y="${y}" aria-pressed="${pressed}" style="background:${bg};${pct>0.45?"color:#fff":""}" aria-label="${esc(sp.label)} ${y}: ${st.nk} de ${st.N} con Nike"><span class="f">${st.nk}/${st.N}</span></button></td>`;
+      h+=`<td><button class="cell" data-k="${sp.key}" data-y="${y}" aria-pressed="${pressed}" style="background:${bg};${pct>0.45?"color:#fff":""}" aria-label="${esc(sp.label)} ${y}: ${st.nk} of ${st.N} with Nike"><span class="f">${st.nk}/${st.N}</span></button></td>`;
     }
     h+=`</tr>`;
   }
@@ -270,47 +270,47 @@ function renderMatrix(){
   t.querySelectorAll("button.cell").forEach(b=>b.addEventListener("click",()=>{sel={sport:b.dataset.k,year:+b.dataset.y};renderMatrix();renderRoster();}));
 }
 function rosterList(list,yr,mh){
-  const row=(r,lab,cls)=>`<li class="${cls}"><span class="n">${lab}</span><span class="nm">${esc(r.n)}${isProm(r.n,yr)?'<span class="pb">Promesa</span>':""}${r.note?`<span class="nt" title="${esc(r.note)}">${esc(r.note)}</span>`:""}</span><span class="right">${chip(r.b)}<span class="conf ${r.c}" title="${CONFTXT[r.c]}${r.m?" (por resultado de búsqueda)":""}" aria-label="${CONFTXT[r.c]}${r.m?" (por resultado de búsqueda)":""}"></span>${srcQ(r.s)}</span></li>`;
-  return `<ol class="rl">${list.map((r,i)=>row(r,r.rank||i+1,"")).join("")}${(mh||[]).map(r=>row(r,"MH","mh")).join("")}</ol>`;
+  const row=(r,lab,cls)=>`<li class="${cls}"><span class="n">${lab}</span><span class="nm">${esc(r.n)}${isProm(r.n,yr)?'<span class="pb">Prospect</span>':""}${r.note?`<span class="nt" title="${esc(r.note)}">${esc(r.note)}</span>`:""}</span><span class="right">${chip(r.b)}<span class="conf ${r.c}" title="${CONFTXT[r.c]}${r.m?" (from search result)":""}" aria-label="${CONFTXT[r.c]}${r.m?" (from search result)":""}"></span>${srcQ(r.s)}</span></li>`;
+  return `<ol class="rl">${list.map((r,i)=>row(r,r.rank||i+1,"")).join("")}${(mh||[]).map(r=>row(r,"HM","mh")).join("")}</ol>`;
 }
 function renderRoster(){
   const sp=SP[sel.sport]; const c=sp.cuts[sel.year]; const st=stats(c.rows);
-  const src=c.src?`Ranking: ${srcLink(c.src)}`:"Ranking sin fuente enlazada; orden aproximado";
-  document.getElementById("roster").innerHTML=`<div class="roster-head"><h3>${esc(sp.label)}, ${sel.year}: ${st.nk} de ${st.N} con Nike Inc.</h3><span class="src">${st.nkv} de esos ${st.nk} verificados con fuente · ${src}</span></div>${rosterList(c.rows,sel.year)}`;
+  const src=c.src?`Ranking: ${srcLink(c.src)}`:"Ranking without linked source; approximate order";
+  document.getElementById("roster").innerHTML=`<div class="roster-head"><h3>${esc(sp.label)}, ${sel.year}: ${st.nk} of ${st.N} with Nike Inc.</h3><span class="src">${st.nkv} of those ${st.nk} verified with source · ${src}</span></div>${rosterList(c.rows,sel.year)}`;
 }
 let filt="out";
 function renderLedger(){
   const rows=DATA.moves.filter(m=>m.clave&&(filt==="all"||m.tipo===filt)).sort((a,b)=>parseInt(b.anio)-parseInt(a.anio)||b.clave-a.clave);
-  document.getElementById("ledger").innerHTML=`<thead><tr><th>Año</th><th>Atleta</th><th>Movimiento</th><th>Causa reportada</th><th>Fuente</th></tr></thead><tbody>${rows.map(m=>`<tr><td class="yr">${esc(m.anio)}</td><td class="who">${esc(m.atleta)}${isProm(m.atleta,parseInt(m.anio))?'<span class="pb">Promesa</span>':""}<small>${esc(m.deporte)}</small></td><td><span class="move">${chip(m.de)}<span class="arr" aria-hidden="true">›</span>${chip(m.a)}</span></td><td class="cause">${esc(m.causa)}</td><td><span class="right"><span class="conf ${m.conf}" title="${CONFTXT[m.conf]}" aria-label="${CONFTXT[m.conf]}"></span>${m.srcs.length?m.srcs.map(srcQ).join(""):'<span class="note">Sin fuente</span>'}</span></td></tr>`).join("")}</tbody>`;
+  document.getElementById("ledger").innerHTML=`<thead><tr><th>Year</th><th>Athlete</th><th>Move</th><th>Reported cause</th><th>Source</th></tr></thead><tbody>${rows.map(m=>`<tr><td class="yr">${esc(m.anio)}</td><td class="who">${esc(m.atleta)}${isProm(m.atleta,parseInt(m.anio))?'<span class="pb">Prospect</span>':""}<small>${esc(m.deporte)}</small></td><td><span class="move">${chip(m.de)}<span class="arr" aria-hidden="true">›</span>${chip(m.a)}</span></td><td class="cause">${esc(m.causa)}</td><td><span class="right"><span class="conf ${m.conf}" title="${CONFTXT[m.conf]}" aria-label="${CONFTXT[m.conf]}"></span>${m.srcs.length?m.srcs.map(srcQ).join(""):'<span class="note">No source</span>'}</span></td></tr>`).join("")}</tbody>`;
 }
 document.querySelectorAll(".filters button").forEach(b=>b.addEventListener("click",()=>{filt=b.dataset.f;document.querySelectorAll(".filters button").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));renderLedger();}));
 
 function panels(id,items){
-  document.getElementById(id).innerHTML=items.map(w=>{const st=stats(w.rows);return `<div class="panel"><h3>${esc(w.label)}<span>${st.nk}/${st.N} Nike</span></h3><p class="note">${w.src?`Ranking: ${srcLink(w.src)}`:esc(w.srcText||"Selección por criterio propio")}</p>${rosterList(w.rows,2026,w.mh)}${w.note?`<p class="note">${esc(w.note)}</p>`:""}</div>`}).join("");
+  document.getElementById(id).innerHTML=items.map(w=>{const st=stats(w.rows);return `<div class="panel"><h3>${esc(w.label)}<span>${st.nk}/${st.N} Nike</span></h3><p class="note">${w.src?`Ranking: ${srcLink(w.src)}`:esc(w.srcText||"Selection by own criterion")}</p>${rosterList(w.rows,2026,w.mh)}${w.note?`<p class="note">${esc(w.note)}</p>`:""}</div>`}).join("");
 }
 function renderMen(){
   panels("men",DATA.sports.map(sp=>{const c=sp.cuts[2026];return {label:sp.label,src:c.src,srcText:sp.sub,rows:c.rows.slice(0,5),mh:DATA.mh[sp.key]||[]};}));
 }
 function renderProm(){
-  const groups=[["Nike Inc.",p=>(DATA.brands[p.b]||{}).g==="nike"],["Adidas",p=>p.b==="Adidas"],["On",p=>p.b==="On"],["Otras o sin marca",()=>true]];
+  const groups=[["Nike Inc.",p=>(DATA.brands[p.b]||{}).g==="nike"],["Adidas",p=>p.b==="Adidas"],["On",p=>p.b==="On"],["Other or no brand",()=>true]];
   const used=new Set();
   const cols=groups.map(([lab,f])=>{const ps=DATA.promesas.filter(p=>!used.has(p.n)&&f(p));ps.forEach(p=>used.add(p.n));return [lab,ps];}).filter(c=>c[1].length);
-  document.getElementById("promesas").innerHTML=`<div class="promgrid">${cols.map(([lab,ps])=>`<div class="promcol"><h3>${esc(lab)}<span class="cnt">${ps.length}</span></h3><ul>${ps.map(p=>`<li><span class="age" title="Edad en ${p.yr}">${p.age}</span><span class="who">${esc(p.n)}${srcQ(p.s)}<small>${lab==="Otras o sin marca"?esc(p.b==="n.d."?"Marca n.d.":p.b)+" · ":""}${esc(p.d||"")} · ${p.yr}${p.verified?"":" · nacimiento sin verificar"}</small></span></li>`).join("")}</ul></div>`).join("")}</div><p class="note" style="margin-top:10px">El número es la edad en el año indicado; la marca es la del corte o movimiento más reciente.</p>`;
+  document.getElementById("promesas").innerHTML=`<div class="promgrid">${cols.map(([lab,ps])=>`<div class="promcol"><h3>${esc(lab)}<span class="cnt">${ps.length}</span></h3><ul>${ps.map(p=>`<li><span class="age" title="Age in ${p.yr}">${p.age}</span><span class="who">${esc(p.n)}${srcQ(p.s)}<small>${lab==="Other or no brand"?esc(p.b==="n/a"?"Brand n/a":p.b)+" · ":""}${esc(p.d||"")} · ${p.yr}${p.verified?"":" · birth year not verified"}</small></span></li>`).join("")}</ul></div>`).join("")}</div><p class="note" style="margin-top:10px">The number is the age in the year shown; the brand is the one from the most recent cut or move.</p>`;
 }
 function renderFin(){
   const FIN=DATA.fin.demand_creation;
   const W=720,H=260,pl=44,pr=44,pt=16,pb=30, max=5000, n=FIN.length, bw=(W-pl-pr)/n;
-  let svg=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Gasto en demand creation de Nike en US$ millones y su porcentaje sobre ventas, FY2015 a FY2026: ${FIN.map(f=>`FY${f.fy} ${f.demand_creation} (${(f.demand_creation/f.ventas*100).toFixed(1)}%)`).join("; ")}">`;
+  let svg=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Nike demand creation expense in US$ millions and as a percentage of revenue, FY2015 to FY2026: ${FIN.map(f=>`FY${f.fy} ${f.demand_creation} (${(f.demand_creation/f.ventas*100).toFixed(1)}%)`).join("; ")}">`;
   for(const v of [0,1000,2000,3000,4000,5000]){const y=pt+(H-pt-pb)*(1-v/max);svg+=`<line x1="${pl}" x2="${W-pr}" y1="${y}" y2="${y}" stroke="var(--line)"/><text x="${pl-6}" y="${y+4}" font-size="11" text-anchor="end" fill="var(--muted)">${v/1000}k</text>`;}
   const pts=[];
-  FIN.forEach((f,i)=>{const x=pl+i*bw+bw*0.18,w=bw*0.64,h=(H-pt-pb)*(f.demand_creation/max),y=H-pb-h;svg+=`<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="var(--nike)" rx="2"><title>FY${f.fy}: US$${f.demand_creation.toLocaleString("es-PE")} mm</title></rect><text x="${x+w/2}" y="${H-pb+16}" font-size="11" text-anchor="middle" fill="var(--muted)">${String(f.fy).slice(2)}</text>`;const r=f.demand_creation/f.ventas;pts.push([x+w/2,pt+(H-pt-pb)*(1-(r-0.06)/0.06)]);});
+  FIN.forEach((f,i)=>{const x=pl+i*bw+bw*0.18,w=bw*0.64,h=(H-pt-pb)*(f.demand_creation/max),y=H-pb-h;svg+=`<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="var(--nike)" rx="2"><title>FY${f.fy}: US$${f.demand_creation.toLocaleString("en-US")}M</title></rect><text x="${x+w/2}" y="${H-pb+16}" font-size="11" text-anchor="middle" fill="var(--muted)">${String(f.fy).slice(2)}</text>`;const r=f.demand_creation/f.ventas;pts.push([x+w/2,pt+(H-pt-pb)*(1-(r-0.06)/0.06)]);});
   svg+=`<polyline fill="none" stroke="var(--ink)" stroke-width="2" points="${pts.map(p=>p[0]+","+p[1]).join(" ")}"/>`;
   pts.forEach(p=>svg+=`<circle cx="${p[0]}" cy="${p[1]}" r="3.5" fill="var(--paper)" stroke="var(--ink)" stroke-width="2"/>`);
   for(const v of [0.06,0.08,0.10,0.12]){const y=pt+(H-pt-pb)*(1-(v-0.06)/0.06);svg+=`<text x="${W-pr+6}" y="${y+4}" font-size="11" fill="var(--ink)">${Math.round(v*100)}%</text>`;}
-  svg+=`</svg><p class="note">Barras: US$ mm (eje izquierdo). Línea: % de ventas (eje derecho). Eje X: año fiscal.</p>`;
+  svg+=`</svg><p class="note">Bars: US$ M (left axis). Line: % of revenue (right axis). X axis: fiscal year.</p>`;
   document.getElementById("chart").innerHTML=svg;
-  document.getElementById("fintable").innerHTML=`<thead><tr><th>Año fiscal</th><th>Ventas (US$ mm)</th><th>Demand creation (US$ mm)</th><th>% ventas</th><th>Fuente</th></tr></thead><tbody>${FIN.map(f=>`<tr><td>FY${f.fy}</td><td>${f.ventas.toLocaleString("es-PE")}</td><td>${f.demand_creation.toLocaleString("es-PE")}</td><td>${(f.demand_creation/f.ventas*100).toFixed(1)}%</td><td><a href="${esc(f.auditUrl)}" target="_blank" rel="noopener">10-K</a></td></tr>`).join("")}</tbody>`;
-  document.getElementById("endtable").innerHTML=`<thead><tr><th>Al 31 de mayo</th><th>Total (US$ mm)</th><th>Pagadero en 12 meses (US$ mm)</th><th>Incluye marketing asociado</th><th>Fuente</th></tr></thead><tbody>${DATA.fin.endorsement.map(e=>`<tr><td>FY${e.fy}</td><td>${e.total_mm.toLocaleString("es-PE")}</td><td>${e["12m_mm"].toLocaleString("es-PE")}</td><td>${e.incluye_marketing?"Sí":"No"}</td><td><a href="${esc(e.url)}" target="_blank" rel="noopener">10-K (p. ${e.pagina_pdf} del PDF)</a></td></tr>`).join("")}</tbody>`;
+  document.getElementById("fintable").innerHTML=`<thead><tr><th>Fiscal year</th><th>Revenue (US$ M)</th><th>Demand creation (US$ M)</th><th>% of revenue</th><th>Source</th></tr></thead><tbody>${FIN.map(f=>`<tr><td>FY${f.fy}</td><td>${f.ventas.toLocaleString("en-US")}</td><td>${f.demand_creation.toLocaleString("en-US")}</td><td>${(f.demand_creation/f.ventas*100).toFixed(1)}%</td><td><a href="${esc(f.auditUrl)}" target="_blank" rel="noopener">10-K</a></td></tr>`).join("")}</tbody>`;
+  document.getElementById("endtable").innerHTML=`<thead><tr><th>As of May 31</th><th>Total (US$ M)</th><th>Payable within 12 months (US$ M)</th><th>Includes related marketing</th><th>Source</th></tr></thead><tbody>${DATA.fin.endorsement.map(e=>`<tr><td>FY${e.fy}</td><td>${e.total_mm.toLocaleString("en-US")}</td><td>${e["12m_mm"].toLocaleString("en-US")}</td><td>${e.incluye_marketing?"Yes":"No"}</td><td><a href="${esc(e.url)}" target="_blank" rel="noopener">10-K (PDF p. ${e.pagina_pdf})</a></td></tr>`).join("")}</tbody>`;
 }
 renderMatrix();renderRoster();renderLedger();renderMen();panels("women",DATA.women);renderProm();renderFin();
 </script>

@@ -33,3 +33,10 @@ node scripts/check.js
 - `{{deporte.corte}}` → "x/N" (por ejemplo `{{basquet.2026}}`; en mujeres, la etiqueta del panel: `{{Fútbol.2026}}`).
 - `{{nk:deporte.corte}}` → atletas Nike; `{{v:deporte.corte}}` → atletas Nike verificados.
 - `{{prom:total}}`, `{{prom:nike}}`, `{{prom:adidas}}`, `{{prom:on}}`, `{{promlist:nike}}`.
+
+## Idioma del HTML
+
+El HTML publicado está en inglés. Los CSV siguen en español; `build.py` traduce al vuelo con `data/en.json`:
+`brands` (nombres de marca mostrados), `sports` (etiquetas de deporte) y `texts` (notas, causas, rankings y fuentes, por texto exacto).
+Si se agrega o cambia una nota o causa en los CSV, hay que agregar su traducción en `texts`; si falta, el build falla y lista los textos.
+Las fechas tipo `abr-2023` en nombres de fuente se pasan a inglés automáticamente.

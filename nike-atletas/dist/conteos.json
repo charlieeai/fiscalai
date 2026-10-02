@@ -207,17 +207,17 @@
  "beisbol.2018": {
   "nike": 4,
   "total": 5,
-  "nike_verificados": 1
+  "nike_verificados": 2
  },
  "beisbol.2021": {
   "nike": 1,
   "total": 5,
-  "nike_verificados": 0
+  "nike_verificados": 1
  },
  "beisbol.2022": {
   "nike": 3,
   "total": 6,
-  "nike_verificados": 0
+  "nike_verificados": 1
  },
  "beisbol.2023": {
   "nike": 2,
@@ -247,27 +247,27 @@
  "atletismo.2018": {
   "nike": 3,
   "total": 5,
-  "nike_verificados": 2
+  "nike_verificados": 3
  },
  "atletismo.2021": {
   "nike": 3,
   "total": 5,
-  "nike_verificados": 0
+  "nike_verificados": 1
  },
  "atletismo.2022": {
   "nike": 3,
   "total": 5,
-  "nike_verificados": 0
+  "nike_verificados": 2
  },
  "atletismo.2023": {
   "nike": 2,
   "total": 5,
-  "nike_verificados": 0
+  "nike_verificados": 1
  },
  "atletismo.2024": {
   "nike": 2,
   "total": 6,
-  "nike_verificados": 1
+  "nike_verificados": 2
  },
  "atletismo.2025": {
   "nike": 0,

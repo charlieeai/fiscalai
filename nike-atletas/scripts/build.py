@@ -107,23 +107,23 @@ def build_data():
     # Promesas: edad <= 23 en cortes y movimientos 2023-2026; marca del registro más reciente.
     prom = {}
 
-    def reg(name, brand, yr):
+    def reg(name, brand, yr, dep=""):
         b = born.get(name)
         if not b or not (2023 <= yr <= 2026) or yr - b["y"] > 23:
             return
         if name not in prom or yr > prom[name]["yr"]:
-            prom[name] = {"n": name, "b": brand, "yr": yr, "age": yr - b["y"], "verified": b["v"],
+            prom[name] = {"n": name, "b": brand, "yr": yr, "age": yr - b["y"], "verified": b["v"], "d": dep,
                           "s": ["Año de nacimiento", b["u"]] if b["u"] else None}
 
     for sp in sports:
         for y, c in sp["cuts"].items():
             for r in c["rows"]:
-                reg(r["n"], r["b"], y)
+                reg(r["n"], r["b"], y, sp["label"])
     for w in women:
         for r in w["rows"]:
-            reg(r["n"], r["b"], 2026)
+            reg(r["n"], r["b"], 2026, w["label"] if "(" in w["label"] else w["label"] + " femenino")
     for m in moves:
-        reg(m["atleta"], m["a"], int(m["anio"][:4]))
+        reg(m["atleta"], m["a"], int(m["anio"][:4]), m["deporte"])
     promesas = sorted(prom.values(), key=lambda p: (p["age"], p["n"]))
 
     fin = json.loads((DATA / "finanzas.json").read_text(encoding="utf-8"))

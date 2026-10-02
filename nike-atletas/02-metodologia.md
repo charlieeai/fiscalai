@@ -100,9 +100,11 @@ Usar solo una de estas causas, y únicamente si una fuente la reporta:
   - La sección "Promesas 2023–2026 y su marca" lista a cada promesa una sola vez, con su marca del corte más reciente.
   - Los años de nacimiento deben verificarse (hoy salen de conocimiento previo).
 - **Mención honorífica (MH):** atletas de influencia comercial que no están en el top del corte. No cuentan en el "x/N".
-  - Hoy: Cristiano Ronaldo (fútbol); Michael Jordan y Stephen Curry (básquet); Djokovic (tenis).
-- **Movimiento clave:** fila resaltada en el mercado de pases.
-  - Hoy: Mbappé, Fritz, Yamal, Bonmatí, Kvaratskhelia, Neymar, Federer, Tiger Woods, Jokić, Curry, Harry Kane y Josh Allen.
+  - Hoy: Cristiano Ronaldo (fútbol); Michael Jordan, LeBron James y Stephen Curry (básquet); Djokovic (tenis).
+- **Movimiento clave:** fila resaltada en el mercado de pases. Regla (2-oct-2026), deben cumplirse las dos condiciones:
+  1. El movimiento cambia de grupo Nike Inc.: sale de Nike/Jordan/Converse o llega desde otra marca. Las renovaciones dentro de Nike Inc. no cuentan.
+  2. El atleta es relevante: está en algún top o en las MH del estudio, o es campeón individual (Grand Slam, major, MVP, oro olímpico o mundial; hoy Tiger Woods, Kyrie Irving, Allyson Felix y Emma Raducanu), o el usuario lo eligió (Rodrygo).
+  - Excepción por decisión del usuario: Curry 2026 (Under Armour → Li-Ning).
 
 ## 8. Ancla financiera (FiscalAI primero)
 

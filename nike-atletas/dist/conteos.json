@@ -42,17 +42,17 @@
  "basquet.2015": {
   "nike": 8,
   "total": 10,
-  "nike_verificados": 2
+  "nike_verificados": 4
  },
  "basquet.2018": {
   "nike": 7,
   "total": 10,
-  "nike_verificados": 3
+  "nike_verificados": 5
  },
  "basquet.2021": {
   "nike": 6,
   "total": 10,
-  "nike_verificados": 1
+  "nike_verificados": 5
  },
  "basquet.2022": {
   "nike": 8,
@@ -67,12 +67,12 @@
  "basquet.2024": {
   "nike": 7,
   "total": 10,
-  "nike_verificados": 3
+  "nike_verificados": 6
  },
  "basquet.2025": {
   "nike": 5,
   "total": 10,
-  "nike_verificados": 2
+  "nike_verificados": 5
  },
  "basquet.2026": {
   "nike": 6,
@@ -127,32 +127,32 @@
  "golf.2018": {
   "nike": 4,
   "total": 10,
-  "nike_verificados": 1
+  "nike_verificados": 3
  },
  "golf.2021": {
   "nike": 1,
   "total": 10,
-  "nike_verificados": 0
+  "nike_verificados": 1
  },
  "golf.2022": {
   "nike": 2,
   "total": 10,
-  "nike_verificados": 0
+  "nike_verificados": 2
  },
  "golf.2023": {
   "nike": 2,
   "total": 10,
-  "nike_verificados": 0
+  "nike_verificados": 2
  },
  "golf.2024": {
   "nike": 3,
   "total": 10,
-  "nike_verificados": 2
+  "nike_verificados": 3
  },
  "golf.2025": {
   "nike": 4,
   "total": 10,
-  "nike_verificados": 1
+  "nike_verificados": 4
  },
  "golf.2026": {
   "nike": 3,

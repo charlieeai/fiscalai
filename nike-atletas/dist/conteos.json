@@ -42,12 +42,12 @@
  "basquet.2015": {
   "nike": 8,
   "total": 10,
-  "nike_verificados": 4
+  "nike_verificados": 5
  },
  "basquet.2018": {
   "nike": 7,
   "total": 10,
-  "nike_verificados": 5
+  "nike_verificados": 6
  },
  "basquet.2021": {
   "nike": 6,
@@ -127,7 +127,7 @@
  "golf.2018": {
   "nike": 4,
   "total": 10,
-  "nike_verificados": 3
+  "nike_verificados": 4
  },
  "golf.2021": {
   "nike": 1,
@@ -190,9 +190,9 @@
   "nike_verificados": 3
  },
  "nfl.2025": {
-  "nike": 4,
+  "nike": 3,
   "total": 5,
-  "nike_verificados": 1
+  "nike_verificados": 2
  },
  "nfl.2026": {
   "nike": 2,

@@ -17,7 +17,7 @@
  "futbol.2022": {
   "nike": 5,
   "total": 10,
-  "nike_verificados": 2
+  "nike_verificados": 3
  },
  "futbol.2023": {
   "nike": 7,
@@ -242,7 +242,7 @@
  "atletismo.2015": {
   "nike": 2,
   "total": 3,
-  "nike_verificados": 0
+  "nike_verificados": 1
  },
  "atletismo.2018": {
   "nike": 3,

@@ -222,3 +222,15 @@ Se agotó el cupo de 200 búsquedas web de la sesión.
   - Las 89 hipótesis restantes, sobre todo filas con solo evidencia de uso.
   - Burrow 2025: ¿la ropa es Alo y no Nike?
   - Casemiro como clave, a decisión del usuario.
+
+## Estado al 2-oct-2026 (quinta tanda)
+
+- Las hipótesis bajaron de 89 a 61 filas, de 462.
+- **Marcas corregidas:**
+  - Burrow 2025: Alo (ropa, desde 2024); NFL 2025 queda en 3/5.
+  - Fitzpatrick 2023: n.d. (Castore terminó antes de ene-2023).
+- **Lo que queda en h:** sobre todo filas con solo evidencia de uso, o con contrato sin fuente del año del corte. Casos para decidir:
+  - De Bruyne 2021: artículo con URL de nov-2021 y fecha visible de feb-2022.
+  - Cheptegei 2021: Nike patrocina a su equipo (NN Running), no hay contrato individual hallado; hoy cuenta como Nike en h.
+  - Cubarsí 2026: solo fuente de Adidas, sin anuncio de contrato.
+- Casemiro: no se marca como clave (decisión del usuario).

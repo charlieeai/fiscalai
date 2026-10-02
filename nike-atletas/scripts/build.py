@@ -19,7 +19,6 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 DIST = ROOT / "dist"
 NIKE_INC = {"Nike", "Jordan", "Converse"}
-YEARS = [2015, 2018, 2021, 2024, 2026]
 
 # Nombre legible para URLs de movimientos (que solo guardan la URL).
 SITE_NAMES = {
@@ -52,6 +51,8 @@ def load(name):
 
 def row(r):
     out = {"n": r["atleta"], "b": r["marca"], "c": r["confianza"]}
+    if r.get("metodo") == "busqueda":
+        out["m"] = 1
     if r.get("fuente_url"):
         out["s"] = [r.get("fuente_nombre") or site_name(r["fuente_url"]), r["fuente_url"]]
     if r.get("nota"):
@@ -73,10 +74,11 @@ def build_data():
         k = rankings.get((dep, gen, str(corte)))
         return [k["fuente_nombre"], k["fuente_url"]] if k else None
 
+    years = sorted({int(r["corte"]) for r in atletas if r["genero"] == "M"})
     sports = []
     for d in deportes:
         cuts = {}
-        for y in YEARS:
+        for y in years:
             rows = [r for r in atletas if r["deporte"] == d["clave"] and r["genero"] == "M" and r["corte"] == str(y)]
             if rows:
                 rows.sort(key=lambda r: int(r["rank"]))
@@ -125,7 +127,7 @@ def build_data():
     promesas = sorted(prom.values(), key=lambda p: (p["age"], p["n"]))
 
     fin = json.loads((DATA / "finanzas.json").read_text(encoding="utf-8"))
-    return {"years": YEARS, "sports": sports, "women": women, "mh": mh, "moves": moves,
+    return {"years": years, "sports": sports, "women": women, "mh": mh, "moves": moves,
             "born": {k: {"y": v["y"]} for k, v in born.items()}, "promesas": promesas,
             "brands": brands, "fin": {"demand_creation": fin["demand_creation"], "endorsement": fin["endorsement"]}}
 

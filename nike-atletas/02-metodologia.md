@@ -102,7 +102,7 @@ Usar solo una de estas causas, y únicamente si una fuente la reporta:
 - **Mención honorífica (MH):** atletas de influencia comercial que no están en el top del corte. No cuentan en el "x/N".
   - Hoy: Cristiano Ronaldo (fútbol); Michael Jordan y Stephen Curry (básquet); Djokovic (tenis).
 - **Movimiento clave:** fila resaltada en el mercado de pases.
-  - Hoy: Mbappé, Fritz, Yamal, Bonmatí, Kvaratskhelia, Neymar, Federer, Tiger Woods, Jokić y Curry.
+  - Hoy: Mbappé, Fritz, Yamal, Bonmatí, Kvaratskhelia, Neymar, Federer, Tiger Woods, Jokić, Curry, Harry Kane y Josh Allen.
 
 ## 8. Ancla financiera (FiscalAI primero)
 

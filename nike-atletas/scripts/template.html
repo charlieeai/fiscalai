@@ -48,13 +48,13 @@ a:focus-visible,button:focus-visible,select:focus-visible{outline:3px solid var(
 .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
 
 /* Matrix */
-.matrix{border-collapse:separate;border-spacing:4px;width:100%;min-width:640px;margin-top:20px}
+.matrix{border-collapse:separate;border-spacing:4px;width:100%;min-width:760px;margin-top:20px}
 .matrix th{font-family:"Barlow Condensed",sans-serif;font-weight:600;font-size:18px;color:var(--muted);text-align:left;padding:4px 8px}
 .matrix th.yr{text-align:center}
 .matrix td.sport{font-family:"Barlow Condensed",sans-serif;font-size:22px;font-weight:600;padding-right:12px;white-space:nowrap}
 .matrix td.sport small{display:block;font-family:"Source Sans 3",sans-serif;font-size:12px;font-weight:400;color:var(--muted)}
 .cell{width:100%;min-height:64px;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--ink);cursor:pointer;font:inherit;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:6px}
-.cell .f{font-family:"Barlow Condensed",sans-serif;font-size:30px;font-weight:700;line-height:1}
+.cell .f{font-family:"Barlow Condensed",sans-serif;font-size:26px;font-weight:700;line-height:1}
 .cell .s{font-size:12px;color:var(--muted)}
 .cell[aria-pressed="true"]{outline:3px solid var(--ink);outline-offset:1px}
 .cell.empty{cursor:default;color:var(--muted);background:transparent;border-style:dashed}
@@ -142,7 +142,7 @@ ul.plain li{margin-bottom:6px}
 <main class="wrap">
   <header>
     <h1>Nike retiene el básquet y pierde el fútbol</h1>
-    <p class="lede">Cuántos de los mejores atletas de cada deporte tienen contrato con Nike Inc. (Nike, Jordan y Converse), en cinco cortes entre 2015 y 2026, y qué movimientos de marca explican el cambio.</p>
+    <p class="lede">Cuántos de los mejores atletas de cada deporte tienen contrato con Nike Inc. (Nike, Jordan y Converse), en cortes anuales entre 2015 y 2026, y qué movimientos de marca explican el cambio.</p>
     <p class="meta">Corte de datos: __FECHA__. Detonante: Kylian Mbappé deja Nike y firma con On (18-sep-2026).</p>
   </header>
 
@@ -252,7 +252,7 @@ function renderMatrix(){
   t.querySelectorAll("button.cell").forEach(b=>b.addEventListener("click",()=>{sel={sport:b.dataset.k,year:+b.dataset.y};renderMatrix();renderRoster();}));
 }
 function rosterList(list,yr,mh){
-  const row=(r,lab,cls)=>`<li class="${cls}"><span class="n">${lab}</span><span class="nm">${esc(r.n)}${isProm(r.n,yr)?'<span class="pb">Promesa</span>':""}${r.note?`<span class="nt">${esc(r.note)}</span>`:""}</span><span class="right">${chip(r.b)}<span class="conf ${r.c}" title="${CONFTXT[r.c]}" aria-label="${CONFTXT[r.c]}"></span>${srcQ(r.s)}</span></li>`;
+  const row=(r,lab,cls)=>`<li class="${cls}"><span class="n">${lab}</span><span class="nm">${esc(r.n)}${isProm(r.n,yr)?'<span class="pb">Promesa</span>':""}${r.note?`<span class="nt">${esc(r.note)}</span>`:""}</span><span class="right">${chip(r.b)}<span class="conf ${r.c}" title="${CONFTXT[r.c]}${r.m?" (por resultado de búsqueda)":""}" aria-label="${CONFTXT[r.c]}${r.m?" (por resultado de búsqueda)":""}"></span>${srcQ(r.s)}</span></li>`;
   return `<ol class="rl">${list.map((r,i)=>row(r,r.rank||i+1,"")).join("")}${(mh||[]).map(r=>row(r,"MH","mh")).join("")}</ol>`;
 }
 function renderRoster(){

@@ -13,8 +13,8 @@ description: >
 
 # mentor-notes — principles applied, one line each
 
-The platform keeps a library of investing principles (`principles`, status `approved`), each
-with a verbatim quote and its exact source. This skill reads a company's data, picks the
+The platform keeps a library of investing principles (`principles`, status `approved`): each is
+a one-line reflection with its source. This skill reads a company's data, picks the
 principles the data actually speaks to, and writes at most three one-line reminders to
 `mentor_notes`. They show up in a collapsed "Mentors" section of the position page. They are
 reminders to keep in mind, not verdicts: nothing reads them, and they never change a score.
@@ -29,8 +29,8 @@ user's language.
    that is `proposed` or `archived`.
 2. **Never put words in a mentor's mouth.** A note is Omaha's application of the principle,
    written in the mentor's spirit. Do not write it as a quotation, do not add quotation marks,
-   and do not claim the mentor said or thinks anything about this company. The verbatim quote
-   lives only in the library and shows on hover.
+   and do not claim the mentor said or thinks anything about this company. The principle and
+   its source show on hover.
 3. **One concrete fact per note**, taken from the platform (scorecard reasons, valuation
    lines, thesis, latest Q-pulse, financial fields) or FiscalAI. If you cannot point to the
    number, do not write the note.

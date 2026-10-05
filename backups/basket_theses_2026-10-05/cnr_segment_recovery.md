@@ -1,4 +1,4 @@
-# CNR Recovery 2030 by segment — DRAFT, not applied
+# CNR Recovery 2030 by segment — applied 2026-10-05 (IVO $180.59; previous consolidated version $162.02 in cnr_recovery.sql)
 
 Source: FiscalAI (company key NYSE_CNR, CIK 1710366 = CONSOL's history for FY2023/24). Arch Resources and CEIX are not in FiscalAI.
 

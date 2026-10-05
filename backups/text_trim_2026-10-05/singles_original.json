@@ -1,0 +1,1307 @@
+[
+ {
+  "col": "description",
+  "id": "fea8496e-6442-4e04-9ae0-2fc9860ecdd4",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "Consulting firms estimate that the decline in volume will continue until 2031, at which point it will begin to increase again due to the growth of the alcohol-consuming population, and demand will shift from the US, Europe and China to India, Africa and South America. The problem is that DGE has half of its earnings in US so it need to start to increase share in those new geographies.",
+  "table": "risks",
+  "ticker": "DGE"
+ },
+ {
+  "col": "description",
+  "id": "cdfadbca-8440-459a-bc1b-5b8a0da53652",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "Hyperscalers are using neoclouds for a better balance report, not out of necessity. The spend with a neocloud is OpEx instead of CapEx. If they turn to competitors (like Meta exploring neocloud), GPUs deppreciates and high debt kills you.",
+  "table": "risks",
+  "ticker": "NBIS"
+ },
+ {
+  "col": "description",
+  "id": "85e1189c-38cb-4075-87fb-20e193255675",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "Influential young drinkers consuming less alcohol and early adopters of GLP-1. If you sum here the disposable income and AI impact on job, this worsens the situation. Especially the per capita alcohol consumption decline is in the US. Also regulation is a headwind here.",
+  "table": "risks",
+  "ticker": "DGE"
+ },
+ {
+  "col": "description",
+  "id": "bccd27c0-4787-4b10-9095-a280090ee9ca",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "Regulatory risk: While the Bank of Portugal is not obligated to sign off on the sale process, its approval will be necessary to approve the winning bid. The precedent is that CTT experienced this firsthand when it took almost 24 months to approve Generali's acquisition of 9% of Banco CTT. A sale of control could take years, not months.",
+  "table": "risks",
+  "ticker": "CTT"
+ },
+ {
+  "col": "description",
+  "id": "0c7dfbbb-659e-400b-9a9d-7de6347baac7",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "A non-CEP (customs clearing) revenue fell again, due to Spain's G4 regulation, introduced in March 2026, which requires multiple transit documents per shipment, and the EU ending the €150 de minimis exemption on July 1, replacing it with a €3 fee per product category, with a further €2 handling fee per parcel expected in November.",
+  "table": "risks",
+  "ticker": "CTT"
+ },
+ {
+  "col": "description",
+  "id": "52366486-643a-4aa8-9f09-8f9f07549c4f",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "Greenfield execution on borrowed time. The Virginia plant (reported at ~$500M, up to 700 tons of propellant a year, start of production 2028) costs €450–550M, about a third of today's €1.46bn market cap, and is being built before any customer has signed a binding production contract. New solid-motor capacity in the US has a history of delays: qualification of each motor takes years, and a plant that starts late carries its fixed costs (€7–9M of Avio USA opex already in 2026) with no revenue behind them. A 12-month slip plus a 20% overrun moves the value toward the €13.3 bear case and probably means a third capital raise in two years.",
+  "table": "risks",
+  "ticker": "AVIO"
+ },
+ {
+  "col": "description",
+  "id": "4fd40048-4c81-4b03-9a09-20898b17dc93",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "Launch failure. Avio is now Vega C's launch service operator, not only its builder. The VV22 failure in December 2022 grounded Vega C for two years; FY2023 net revenues fell 5% (€357M to €339M) while the rest of the sector grew. With ~15 Vega flights in backlog and three launches planned for 2026, one failure would freeze the launch-systems line, 51% of the €2,048M backlog, and the reputational cost now falls on Avio directly.",
+  "table": "risks",
+  "ticker": "AVIO"
+ },
+ {
+  "col": "description",
+  "id": "7cb9517e-cefd-420e-a5d2-962ffda3fd17",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "Thin margins under institutional pricing. EBITDA margin on IFRS revenues has been 5.4–6.0% for FY2022–FY2025 (FiscalAI), down from 10.9% in FY2019, and gross margin is 6.6%. ESA and national agencies contract close to cost, energy is a named risk in the FY2026 guidance, and the stock trades at ~24x LTM EBITDA. Every 100bps of margin on €580M of revenue is ~€6M of EBITDA, about 17% of the LTM figure.",
+  "table": "risks",
+  "ticker": "AVIO"
+ },
+ {
+  "col": "description",
+  "id": "baa66005-5bf4-4788-9305-73e1052f1e84",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "Leverage on a thin equity layer. Debt is $2,403M against $685M of tangible book (3.5x) and a 7.9% weighted cost, about $190M a year of finance costs, while the business consumed roughly $160M of cash in 1H26. A 25-30% haircut on the $2.2B non-YPF book would wipe out tangible equity. The new $300M 2029 notes are secured, so ~$2.0B of unsecured holders now sit behind them and future refinancing may need more collateral. If receipts stay near $500M a year, net debt rises by $100M+ a year and the equity keeps shrinking even with no bad case news.",
+  "table": "risks",
+  "ticker": "BUR"
+ },
+ {
+  "col": "description",
+  "id": "17fc0ebe-6107-4c79-b06f-f1ba87dc4084",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "Fair-value marks can move far and fast. YPF went from $1,689M (FY2025) to ~$101M (2Q26) on one appellate opinion. The non-YPF book carries $418M of unrealized gains over cost (22%), durations are stretching (WAL of active cost 3.5 years against 2.7 years for concluded assets; pre-pandemic vintages from 3.4 to 5.3 years in 3.5 years) and 1Q26 already brought -$69M of ex-YPF write-downs. Book value per share ($3.73) is an estimate built on Burford's own model, and the valuation leans on it.",
+  "table": "risks",
+  "ticker": "BUR"
+ },
+ {
+  "col": "description",
+  "id": "201175c5-0b78-44e0-9457-a9762196a3ed",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "Industry and legal-regime risk. Litigation funding is under political pressure in the US (state bills such as Colorado HB 1421 in 2026; recurring federal proposals to tax or disclose funding) and in the UK after PACCAR. Burford's largest recent upside events (Taction, Cameroon, the UK Google claim, German assignment-model cases) each depend on courts or sovereigns paying. A rule change that caps funder returns or forces disclosure would lower the ~82% ROIC the thesis leans on; a sovereign that refuses to pay (Argentina, Cameroon) turns a paper award into years of enforcement costs.",
+  "table": "risks",
+  "ticker": "BUR"
+ },
+ {
+  "col": "description",
+  "id": "c9f5fd96-4f82-48a7-8806-2ab3d35fd01a",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "Control without accountability. The Hayek pool and related parties hold 44.5% of all votes at FY2025 (63.842M registered and 1.029M bearer shares), while their economic stake is about 26% of capital (hypothesis: registered shares carry one vote on one-fifth of the nominal of a bearer share). At the 12 May 2026 AGM, bearer holders chose Steven Wood (GreenWood Investors) as their board representative with 80.4% of the bearer vote, and the full meeting then rejected him with 79.6% against; the board kept Jean-Pierre Roth. Three of seven directors are Hayeks and the CEO, Nick Hayek, received CHF 4.7M in 2025 with an unchanged CHF 2.26M bonus while operating profit fell 56%. Outside holders cannot change capital allocation, which matters because the dividend (CHF 234M) exceeded FY2025 net income (CHF 25M) tenfold.",
+  "table": "risks",
+  "ticker": "UHR"
+ },
+ {
+  "col": "description",
+  "id": "d19c98f7-fad3-41b6-b2eb-532b085e524a",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "The capacity bet does not pay. Keeping all Production jobs cost about CHF 303M in FY2025 (implied from W&J CHF 246M vs W&J ex-Production CHF 549M) and turned a 9.5% brand margin into a 2.1% group margin. If volumes stall again, the loss repeats, operating cash flow keeps falling short of capex plus dividends (FY2025: CHF 507M vs CHF 685M) and net liquidity continues its slide from CHF 2,540M at FY2022 to CHF 1,125M at June 2026. The asset floor in the thesis erodes by roughly CHF 3–5 per bearer share for each year this lasts.",
+  "table": "risks",
+  "ticker": "UHR"
+ },
+ {
+  "col": "description",
+  "id": "96a93bd3-7d8d-462e-99c1-bc0b9a627fcc",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "Brand share loss and China. Third-party estimates (Morgan Stanley / LuxeConsult) put Swatch Group's share of Swiss watch sales at 16.1% in 2025, down 220bps in a year and more than 1,000bps since 2019, with Longines at CHF 920M (-18%) and Omega at CHF 2.2B (-8%); Omega is estimated to earn about 80% of W&J operating profit. Greater China was about 24% of H1 2025 sales (press reports) against roughly a third 18 months earlier, and in H1 2026 third-party replenishment there \"remained modest\". If share keeps falling, an 11% margin is out of reach even with volume.",
+  "table": "risks",
+  "ticker": "UHR"
+ },
+ {
+  "col": "description",
+  "id": "fd8b5443-cc0d-4187-acb3-240d640a495b",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "Geopolitics hits the traffic that pays best. The 2026 conflict involving Iran forced a guidance cut in July: passengers 116–123M → 112–118M, EBITDA €590–650M → €580–630M. International passengers fell 1.3% in 1H 2026 (29.9M vs 30.3M), and Madinah, Almaty, Tbilisi and the Turkish resort traffic all sit near conflict zones or depend on Gulf and Russian travellers. Each 1M international passengers is worth roughly €10–15M of EBITDA on the current revenue per passenger (hypothesis, from €16.45 revenue per passenger and a ~30% margin, plus commercial spend).",
+  "table": "risks",
+  "ticker": "TAVHY"
+ },
+ {
+  "col": "description",
+  "id": "5533125d-f32a-490e-a47b-4bcd7d5b240b",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "Minority shareholders are passengers on ADP's decisions. Groupe ADP owns 46.12%, supplies the CEO and the board chair, and decides bids, leverage and payout. The FY2025 dividend was TL 1.31bn (about €26M, ~1.3% of market cap). A squeeze-out or delisting offer timed at a low price, or the use of TAV's balance sheet for group priorities, would crystallise the discount rather than close it. The ADR trades ~4,000 units a day (~$90k), so exiting in size means selling TAVHL in Istanbul.",
+  "table": "risks",
+  "ticker": "TAVHY"
+ },
+ {
+  "col": "description",
+  "id": "7c35a45d-fc1b-4dde-813f-2e3a1ec9e1f3",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "Concession renewals are auctions, and the next ones come soon. Izmir ends in 2032 (2034 per TAV's website) and Tbilisi at end-2031; Antalya cost €7.25bn (€1.81bn upfront) and Ankara €475M to renew. A renewal priced like Antalya would add hundreds of millions of euros of debt before any new EBITDA, keeping net debt near €1.8–1.9bn (the bear case) instead of the €1.6bn in the base case. Meanwhile lira cost inflation against euro-denominated tariffs is a steady margin headwind.",
+  "table": "risks",
+  "ticker": "TAVHY"
+ },
+ {
+  "col": "detail",
+  "id": "e97b1100-7b8a-41ee-95c6-22058f949dfd",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "The MoUs with Raytheon and Lockheed Martin and the term sheet with an international defense customer are non-binding. What is under contract today is development and qualification work: ~$65M for an air-defense motor (March 2026) and up to $26M of Mk 104 engineering. A binding production commitment is what turns ~€500M of capex from a bet into a business, and it is the single event the base and bull cases need.",
+  "table": "catalysts",
+  "ticker": "AVIO"
+ },
+ {
+  "col": "detail",
+  "id": "7066f3af-eb1d-421d-a5d6-8c0c56e49a88",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "North America is about 37% of net sales ($7,249M of $19,643M in FY2026) and fell 8.4% organic in FY2026, with US tequila down about 21% (Casamigos and Don Julio). The quarterly run-rate got worse, not better: -2.7% in Q1, -10.4% in Q2, -9.4% in Q3 and -10.7% in Q4 FY2026 (FiscalAI KPIs). Management guides North America down mid-single-digit for FY2027, which needs a sharp improvement from the Q4 exit rate. The comparison is hardest in Q1, since Q1 FY2026 was only -2.7%. A print better than -5% would be the first evidence that the US reset works; worse than -8% points to the bear case ($77.95). Probability is a judgement, not a model output. The Q1 FY2027 trading statement is expected on 4 November 2026.",
+  "table": "catalysts",
+  "ticker": "DGE"
+ },
+ {
+  "col": "detail",
+  "id": "8aead01d-352d-40f2-a517-9021c0e7caba",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "Pillar 1 of the thesis says premiumisation carries the mix even when volumes fall. FY2026 said the opposite: organic volume -0.4% and price/mix -1.6 points, about -0.5 points excluding Chinese white spirits, with downtrading inside US tequila (FY2026 results call, FiscalAI transcript). If price/mix is still negative in H1 FY2027, when Chinese white spirits start to lap an easier base, the downtrading is inside Diageo's own portfolio and claim 1 is breaking. Probability is a judgement. Interim results are usually published in late January or February.",
+  "table": "catalysts",
+  "ticker": "DGE"
+ },
+ {
+  "col": "detail",
+  "id": "9555501d-b869-4bc6-a825-10c3d661a652",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "A jury awarded $5.7B on 25 September 2026; Burford's entitlement would be $1.4B if paid as is, split roughly equally between balance sheet and funds (8-K, 28 September 2026). Apple will move for judgment as a matter of law and the Federal Circuit reviews large patent verdicts closely; Burford itself warned that few survive intact. The ~$700M balance-sheet half is 85% of 2Q26 book equity ($819M), so even a cut award changes the leverage picture. The base case carries it at ~$90M probability-weighted.",
+  "table": "catalysts",
+  "ticker": "BUR"
+ },
+ {
+  "col": "detail",
+  "id": "0a5e72b8-8d8d-4b4d-9797-99f8fdd8206f",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "Management told the market in July 2026 that the acceleration in May and June (sales +13.1% at constant rates, 8.6% operating margin) \"will lead to a significant improvement in profitability in the second half\". H2 2025 earned CHF 67M on CHF 3,221M (2.1%).\n\nIf H2 2026 prints at 8% or better the base case's path to 11% by FY2029 is on schedule; if it prints near H2 2025, the \"fixed cost absorbs volume\" argument in bullet 3 is wrong. The FY2026 key figures come out around end-January 2027.",
+  "table": "catalysts",
+  "ticker": "UHR"
+ },
+ {
+  "col": "detail",
+  "id": "a5e7963b-2ad2-41ba-a4e9-712b40440328",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "The US is the growth engine (+27% at constant rates in H1 2026; almost +20% in FY2025). Tariffs on Swiss goods moved from 39% (August 2025) to 15% (November 2025 agreement) and, after the Supreme Court IEEPA ruling and the Section 122 period, to a combined 12.5% under Section 301 from 24 July 2026 (per trade-law and industry sources, not company data).\n\nA new increase would hit the entry and mid-range brands (Tissot, Hamilton, Longines, Swatch) that carry the recovery, because their prices have less room to absorb duty.",
+  "table": "catalysts",
+  "ticker": "UHR"
+ },
+ {
+  "col": "detail",
+  "id": "a6e95873-10cc-4d6e-8f0f-1ca26a7d50f8",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "With the FY2026 results (February 2027, date not yet published) TAV gives FY2027 guidance. The base case needs EBITDA to grow ~5% a year from the 2026 midpoint of €605M; FY2027 guidance at or above €650M would confirm the path to €696M in FY2029. A guided figure below €620M would trip break #2 of the thesis.",
+  "table": "catalysts",
+  "ticker": "TAVHY"
+ },
+ {
+  "col": "detail",
+  "id": "fd9da039-141b-46db-a7df-f8f0de13cc5c",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "Net debt fell to €1.62bn at FY2025 (2.89x) and rose to €1,833M at 30 Jun 2026 with the Tbilisi extension upfront and works (1H 2026 FCF −€48.4M). The seasonal cash inflow of Q3 plus capex held under €300M should bring it back down by year end. If it does not, the base case's €1.6bn by FY2029 is already in doubt.",
+  "table": "catalysts",
+  "ticker": "TAVHY"
+ },
+ {
+  "col": "detail",
+  "id": "c895e4f0-be5b-4edd-babf-e5abf15eb2a8",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "FY2026 guidance: net revenues €560–590M, reported EBITDA €27–35M, net income €8–13M, backlog €2,000–2,100M. 1H26 delivered €276M and €11.9M; H2 is seasonally stronger (FY2025 H2 EBITDA was €22.3M of €32.3M). Backlog was €2,048M at 1H26 after only €160M of orders in the half, plus ~€60M of Vega C production signed in July. A miss on backlog would say the European base is running off.",
+  "table": "catalysts",
+  "ticker": "AVIO"
+ },
+ {
+  "col": "detail",
+  "id": "63775391-72ce-47c3-9eca-bda15913aa10",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "VV29 (May) and VV30 (15 September, Sentinel-3C and FLEX) succeeded; the IRIDE constellation launch is planned for December 2026. Avio is now launch service operator, so a failure costs more than it did at VV22 in December 2022, which grounded Vega C for two years and cut FY2023 net revenues about 5%. About 15 Vega flights are in backlog.",
+  "table": "catalysts",
+  "ticker": "AVIO"
+ },
+ {
+  "col": "detail",
+  "id": "9b13fd98-50c2-4edc-91b2-f78b44f11121",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "Net financial position went from €591.7M at FY2025 to €535.7M at 1H26 (-€56M) as advances were passed to suppliers and capex rose to €33.5M in the half. With Advent's €109.4M it is ~€645M. The base case needs ~€350M left at end-FY2029. If cash drops below €400M by FY2027 with no binding US production contract, the plant is being paid for before anyone has committed to buy from it, and a new raise becomes likely.",
+  "table": "catalysts",
+  "ticker": "AVIO"
+ },
+ {
+  "col": "detail",
+  "id": "0e28e64d-eebc-487e-9d3c-dd5feff41003",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "At the 6 August 2026 Capital Markets Day management guided FY2027 organic operating profit up low- to mid-single-digit, including about 40% of the ~$850M operating-framework savings (~$340M) and about 25% of the ~$150M supply-chain savings (~$38M), on broadly flat organic net sales. It also announced about 300 job cuts at the North American headquarters. FY2026 already showed organic operating profit +2% on organic net sales -2%, helped by the Accelerate programme. The test is whether the new savings show in profit or are spent on price and marketing, which is the bear case. Threshold: H1 FY2027 organic operating profit growth of at least +2% with the savings run-rate confirmed. Probability is a judgement.",
+  "table": "catalysts",
+  "ticker": "DGE"
+ },
+ {
+  "col": "detail",
+  "id": "b4840f67-ff73-415d-a078-0f47052a6b80",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "Leverage (net debt / EBITDA, Diageo's definition) was 3.1x at 30 June 2026, down from 3.4x, with net debt of $20.5bn (FY2026 results call). Management expects to end FY2027 around the middle of the 2.5-3.0x range, which depends on completing the sale of the 65% stake in EABL to Asahi (~0.25x; Kenyan approval came with a condition on retail cooler space) and of Royal Challengers Bengaluru (~0.1x), on top of ~$2bn of FY2027 free cash flow after exceptional cash costs. FiscalAI's own measure is higher (3.55x: $19,991M net debt / $5,636M reported EBITDA), so the thresholds use the company's definition. Reaching 2.75x would make the dividend safe and reopen buybacks. A failure would keep the scorecard debt pillar at yellow. Probability is a judgement.",
+  "table": "catalysts",
+  "ticker": "DGE"
+ },
+ {
+  "col": "detail",
+  "id": "45beb71e-d6e0-4c3a-9401-9254f4c2d55a",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "Receipts were $247M in 1H26 ($90M in 1Q26, $157M in 2Q26) against $195M of deployments and roughly $175M of cash opex and interest. July brought a $600M+ Cameroon award (~$200M to Burford if paid), a US jury verdict worth close to $100M if paid, and a German Supreme Court ruling on the assignment model. If those convert, 2H26 receipts can exceed 1H26 and net debt stops rising. FY2025 receipts were $531M; 2023-2025 averaged $573M.",
+  "table": "catalysts",
+  "ticker": "BUR"
+ },
+ {
+  "col": "detail",
+  "id": "6efe3675-3d09-4d94-ae1f-f7a6828fc78d",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "1Q26 ex-YPF capital provision income was -$69M (1H26 ex-YPF $16.4M less 2Q26 $85.5M), partly from reclassifying $18M of historical costs as ineligible for inclusion in asset cost. The book carries $418M of unrealized gains over $1,902M of deployed cost. A second negative quarter would say the marks lag reality on duration and the TBV of $3.12 is too high.",
+  "table": "catalysts",
+  "ticker": "BUR"
+ },
+ {
+  "col": "detail",
+  "id": "74a31dc9-6fd9-4eef-ab23-7c1afdbf85ed",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "On the 1Q26 call the CFO put leverage at 3.5x against a 2.0x debt-to-equity incurrence test; 3.5x matches debt over tangible book ($2,403M / $685M at 2Q26), while debt over total BCL equity is 2.9x ($2,403M / $819M). Above the test Burford can refinance but not add net debt. The September 2026 $300M 8.00% secured 2029 notes plus $100M of cash will retire the $400M 6.25% 2028 notes, reducing gross debt to ~$2.3B. Reaching 2.0x on the tangible measure needs roughly $1.0B less debt at today's TBV, or ~$450M more TBV plus ~$400M of paydown, i.e. a Taction-size gain. Until then new business is limited to what receipts fund.",
+  "table": "catalysts",
+  "ticker": "BUR"
+ },
+ {
+  "col": "detail",
+  "id": "80bb7abe-0460-415f-820d-fb31962c0fc9",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "International traffic is the high-yield part of the network (euro tariffs, duty free). It fell in 1H 2026 to 29.9M from 30.3M (−1.3%) while domestic rose to 18.3M from 17.4M, and 2026 international guidance was cut to 72–77M against 75M in FY2025. A decline for the full year would put the passenger claim of the thesis under pressure a year before its test date.",
+  "table": "catalysts",
+  "ticker": "TAVHY"
+ },
+ {
+  "col": "detail",
+  "id": "8c58faf3-15cd-4a52-9c4d-7cd343c5e54a",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "The FY2025 gap between Watches & Jewelry excluding Production (CHF 549M) and the segment including Production (CHF 246M) implies about CHF 303M of Production losses, the cost of keeping capacity and jobs without short-time work compensation. Management said in January 2026 that better utilization should \"massively reduce, or even help reverse\" that loss in 2026.\n\nThis is the management pillar: it tests whether the capacity decision was a bet on volume or a cost that never comes back.",
+  "table": "catalysts",
+  "ticker": "UHR"
+ },
+ {
+  "col": "detail",
+  "id": "d1ff6d14-d0ef-44bf-952f-550cfa853131",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "Inventory was CHF 7,295M at FY2025 (-4.5%) and CHF 7,303M at June 2026, 54% of total assets and about 1.15 years of sales. Operating cash flow was CHF 507M in FY2025 against CHF 451M of capex and CHF 234M of dividends, so the dividend came from the balance sheet.\n\nA year-end fall below CHF 7.0B with OCF of CHF 700M or more would show the cash in the thesis is real, not just book.",
+  "table": "catalysts",
+  "ticker": "UHR"
+ },
+ {
+  "col": "detail",
+  "id": "ba7679cc-4bb9-4bb1-bd0d-2abe0d08cc92",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "After the July cut, 2026 EBITDA guidance is €580–630M. 1H 2026 delivered €244.8M (Q1 €77.6M, −14%; Q2 €167.2M, +14%). In FY2025 the third quarter alone was about €230M (9M €467M less 1H €237M), and Q4 about €93M. To stay on track for the low end, 9M 2026 EBITDA needs roughly €480M, i.e. a Q3 of ~€235M, flat to slightly up on Q3 2025 with Antalya's commercial areas and Almaty's international traffic doing the work. The results date is not yet published; TAV reported 9M on 23 Oct in both 2024 and 2025.",
+  "table": "catalysts",
+  "ticker": "TAVHY"
+ },
+ {
+  "col": "bullet_1",
+  "id": "8cc385b5-26f0-4821-ba69-2e4b5dbb1b6d",
+  "lim": 45,
+  "member_ticker": null,
+  "old": "1. This business is not driven by volume (alcohol consumption), but by premiumization, a factor that DGE has thanks to luxury versions of ohnnie Walker, Don Julio, Tanqueray, Baileys, Buchanan's, and Zacapa. According to IWSR, if we remove national liquor from alc. beverages growth, this is 0%; even with the decline in volume, it means premiumization is still increasing. Even if the US still loses its category as the biggest region for this market, India could beat it by 2032 in volume and value. ",
+  "table": "own_thesis",
+  "ticker": "DGE"
+ },
+ {
+  "col": "bullet_2",
+  "id": "8cc385b5-26f0-4821-ba69-2e4b5dbb1b6d",
+  "lim": 45,
+  "member_ticker": null,
+  "old": "2. DGE is a global exposure to liquor. Beer is the dominant category here, with more than 36% of market share, and Guinness is the star here and a powerful brand. Also, they are starting in RTD  with Smirnoff, Gordon's and Johnnie Walker, and the no-alc segment with spirits like Ritual Zero Proof and iconic brands such as Tanqueray, Captain Morgan's and Guinness in 0% alc presentation. Both categories are the only ones growing constantly.",
+  "table": "own_thesis",
+  "ticker": "DGE"
+ },
+ {
+  "col": "bullet_3",
+  "id": "8cc385b5-26f0-4821-ba69-2e4b5dbb1b6d",
+  "lim": 45,
+  "member_ticker": null,
+  "old": "The valuation shows than in a normalized earnings situation with a multiple avg. of 2019-2025 excluding outliers Diageo could experience an upside of 80% from current levels. The only thing is that the net organic sales are not reaching the neede levels, but the MoS in this nomalization situation is high.",
+  "table": "own_thesis",
+  "ticker": "DGE"
+ },
+ {
+  "col": "bullet_1",
+  "id": "41de6562-931f-4826-b618-178fc196bcac",
+  "lim": 45,
+  "member_ticker": null,
+  "old": "This is a tech health service company that could become the platform with more information of customers to understand and offer what they needs for their own health. Imagine a centralized platform where you can access to your weight health, hair, sex and maybe serious illneses like diabetes, cancer, etc.",
+  "table": "own_thesis",
+  "ticker": "HIMS"
+ },
+ {
+  "col": "bullet_2",
+  "id": "c34b1c05-bb4b-48b0-acc4-895fdabdb802",
+  "lim": 45,
+  "member_ticker": null,
+  "old": "It looks more like a new type of real estate business. You buy the land, build the infrastructure (data centers and energy), then you rent the space (cloud) to companies. If demand still grows, you create a high dependence on these hyperscalers because the dilemma is that they either spend more CapEx or spend on rentals. Also, the energy that they already acquired is higher than what they are using now, so they are anticipating to this demand. The moat for Nebius is the cost advantage but maybe it is temporary against hyperscalers and could be lost if they don't focus on software efficiency that could commoditize AI and kill the thesis of real estate need. Switching cost is still not a moat, given that customers would need to migrate their MLOps and data pipelines there.",
+  "table": "own_thesis",
+  "ticker": "NBIS"
+ },
+ {
+  "col": "bullet_3",
+  "id": "c34b1c05-bb4b-48b0-acc4-895fdabdb802",
+  "lim": 45,
+  "member_ticker": null,
+  "old": "Better margin than competitors, better cash position, and it is paired with the debt, so net debt is almost 0.5B. They are not as levered as CRWV and they are growing more. Even most of the contracts for NBIS are paid upfornt so around 50 and 60% of CapEx is already paid and the payback rate is in 1-2Y when they deppreciate software around 5Y.",
+  "table": "own_thesis",
+  "ticker": "NBIS"
+ },
+ {
+  "col": "bullet_1",
+  "id": "52f2c4f6-f057-4f94-9936-cff8a2355c6e",
+  "lim": 45,
+  "member_ticker": null,
+  "old": "Berkshire top 3 position and Chris Hohn and Druckenmiller main positions. Conviction of Berkshire during 3 continous quarters and it is its election of Hyperscalers (not invested in Amazon, neither Microsoft). The moat is the network effect and that Google is fully vertical integrated which give it efficient scale, also the brand is a huge factor, everybody know what is Google (and even the brands that live inside Google like Youtube, Android, Waze, Fizbit, etc)",
+  "table": "own_thesis",
+  "ticker": "GOOG"
+ },
+ {
+  "col": "bullet_2",
+  "id": "52f2c4f6-f057-4f94-9936-cff8a2355c6e",
+  "lim": 45,
+  "member_ticker": null,
+  "old": "Google as the next quantum services (started research in 2012) par excellence in 2029. TPU Frozen V2 is another interesting technology with Gemini parameters recorded in the chips. Gemini is also the catalyst for AI by Google, of among all the mag7, Google has the best AI model that is always competing with the most advanced models like the ones from Anthropic or OpenAI. The workspace is also integrating with it and imagine integrating AI with ads and all the search platform, they knew how to react with this AI game change. AI Robotics, autonomous vehicles, now Google is like a Tech ETF that is betting for future and in case of a bubble or something like that, Google will be always Google.",
+  "table": "own_thesis",
+  "ticker": "GOOG"
+ },
+ {
+  "col": "bullet_1",
+  "id": "0e5a56e3-39be-4439-850c-eb5a327ae7f5",
+  "lim": 45,
+  "member_ticker": null,
+  "old": "Avio is Europe's solid-rocket-motor house with a launcher attached. It builds the P120C/P160C boosters for Ariane 6 through Europropulsion (its joint venture with ArianeGroup), is prime contractor for Vega C and, since the VV29 mission of May 2026, also its launch service operator, and makes the solid motors for MBDA's Aster 30. Backlog was €2,048M at 1H26, 3.5x LTM net revenues of €583M, split 51% launch systems, 33% defense propulsion and 16% space propulsion. The part that matters for the price is new: a greenfield solid-rocket-motor plant in Virginia (up to 700 tons of propellant a year, start of production planned for 2028) aimed at the US shortage of missile motors, which Avio puts at ~3,400 tons a year of unmet US+EU demand. The European business is the floor; the US plant is the option.",
+  "table": "own_thesis",
+  "ticker": "AVIO"
+ },
+ {
+  "col": "bullet_2",
+  "id": "0e5a56e3-39be-4439-850c-eb5a327ae7f5",
+  "lim": 45,
+  "member_ticker": null,
+  "old": "Valued on EV/EBITDA of FY2029, the first year the US plant should sell product. EBITDA is the line to use because D&A will jump once a ~€500M plant starts depreciating, and because European earnings are thin: EBITDA margin on net revenues is 5.9% LTM and 5.95% on the 3Y average, so a P/E of 67x LTM says nothing useful. The €645M of pro forma net cash (€535.7M at 1H26 plus €109.4M from Advent in September 2026) is not excess cash: roughly €450–550M of it is committed to the US plant, and €690M of customer advances sit on the balance sheet against it. The base case therefore nets only ~€350M of cash left at end-FY2029. At 16x on €58M of FY2029 EBITDA the equity is worth ~€25.9 per share, below the €29.56 spot. The market is already paying for the plant working.",
+  "table": "own_thesis",
+  "ticker": "AVIO"
+ },
+ {
+  "col": "bullet_3",
+  "id": "0e5a56e3-39be-4439-850c-eb5a327ae7f5",
+  "lim": 45,
+  "member_ticker": null,
+  "old": "The return has to come from the US plant turning into EBITDA after FY2029, not from Europe. Europe grows high single digits at a 6–7% EBITDA margin, driven by Vega C cadence (3 launches planned for 2026, capacity up to 6 a year after the BIL integration building was transferred), Ariane 6 booster output (14 in 2025 to 22 in 2026) and Aster 30 volumes. Management's plan targets revenues above €1.2bn and EBITDA of ~€120M by 2035 (hypothesis: taken from press coverage of the plan, not from a filing), with EBITDA flat for 2–3 years while US start-up costs run (€7–9M in 2026). If binding US contracts arrive and the plant ramps from 2028, EBITDA can compound above 15% a year from a low base and the bull case (€44.5 per share) is reachable. If they do not, ~€500M of capital sits in a plant without customers and the bear case (€13.3 per share) applies. At today's price the position is a bet on execution, not on a discount.",
+  "table": "own_thesis",
+  "ticker": "AVIO"
+ },
+ {
+  "col": "breaks_1",
+  "id": "0e5a56e3-39be-4439-850c-eb5a327ae7f5",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Backlog ends FY2026 or FY2027 below €1,900M (the FY2026 guidance floor is €2,000M), or combined book-to-bill for FY2026–FY2027 stays below 1.0x: the backlog would be running off rather than being replaced. A Vega C launch failure that grounds the vehicle, as VV22 did from December 2022 to December 2024, breaks it immediately.",
+  "table": "own_thesis",
+  "ticker": "AVIO"
+ },
+ {
+  "col": "breaks_2",
+  "id": "0e5a56e3-39be-4439-850c-eb5a327ae7f5",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "US plant capex runs above €550M, or the net financial position falls below €300M before start of production, or FY2027 reported EBITDA comes in below €35M. Any of these moves the base value toward the bear case, because the cash that supports the equity value would be gone or the European earnings base would be weaker than assumed.",
+  "table": "own_thesis",
+  "ticker": "AVIO"
+ },
+ {
+  "col": "breaks_3",
+  "id": "0e5a56e3-39be-4439-850c-eb5a327ae7f5",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "No binding long-term US production contract (beyond development and qualification work like the ~$65M air-defense motor contract of March 2026 and the up-to-$26M Mk 104 engineering order) is signed by end-2027, or start of production slips beyond 2028. The MoUs with Raytheon and Lockheed Martin are non-binding today.",
+  "table": "own_thesis",
+  "ticker": "AVIO"
+ },
+ {
+  "col": "bullet_1",
+  "id": "656a958c-1bc2-4646-a018-cc463d316d48",
+  "lim": 45,
+  "member_ticker": null,
+  "old": "After the Second Circuit reversed the $16.1B YPF judgment on 27 March 2026 (en banc rehearing denied 2 June 2026), BUR fell 47% in one session, from $7.83 to $4.14, and closed at $3.90 on 29 September. What is left is the core book: $2,218M of non-YPF capital provision assets (Burford-only fair value at 2Q26) on $1,776M of deployed cost, a 17-year record of 82% ROIC and 25% IRR on $3.9B of realizations with an 11.1% lifetime loss rate, and $1,155M of definitive undrawn commitments. Book value is $3.73 per share and tangible book $3.12, so the market pays ~1.05x book and ~1.25x TBV. On top sit three contingent assets carried at little or nothing: YPF (now an ICSID treaty claim, carried at ~$101M), the $5.7B Taction v. Apple patent verdict of 25 September 2026 (Burford entitlement $1.4B if paid as is, about half on balance sheet) and the $600M+ Cameroon mining award (~$200M to Burford if paid in full).",
+  "table": "own_thesis",
+  "ticker": "BUR"
+ },
+ {
+  "col": "bullet_2",
+  "id": "656a958c-1bc2-4646-a018-cc463d316d48",
+  "lim": 45,
+  "member_ticker": null,
+  "old": "Valuation is EV/EBIT on FY2029 operating income before finance costs (portfolio total return plus asset management and other income, less operating expenses), because leverage is the variable that decides what the equity is worth: debt is $2,403M against $819M of equity. The target multiple is read as a price for the book: 12x EBIT puts EV at ~1.0x the carrying value of the non-YPF portfolio in the base case. Base: $2,400M of non-YPF assets earning 14% (2Q26 annualized was 15.4%, YTD25 annualized 10.2%), $45M of fee and other income, $175M of opex, EBIT $206M, EV $2,472M, less $1,800M of net debt, equals $672M of core equity. Contingents are added only at probability-weighted value above their carrying value ($171M). Result: $3.80 per share, about today's price. The return does not come from the multiple.",
+  "table": "own_thesis",
+  "ticker": "BUR"
+ },
+ {
+  "col": "bullet_3",
+  "id": "656a958c-1bc2-4646-a018-cc463d316d48",
+  "lim": 45,
+  "member_ticker": null,
+  "old": "The return has to come from cash conversion. Cash receipts were $247M in 1H26 ($157M in 2Q26, the best quarter since 1Q25) against $195M of deployments, ~$98M of cash opex and ~$78M of interest: the business burned roughly $160M in the half and funded it with the January $500M 8.50% 2034 notes. Receipts must rise from ~$500M a year to $700M+ to self-fund at a 7.9% weighted cost of debt. If they do, net debt falls, leverage moves back toward the 2.0x incurrence test (3.5x debt/TBV at 2Q26, the measure management quoted) and the core earns a double-digit ROE. A cash collection on Taction or Cameroon would do the same in one step. No dividend in 2026 and no buybacks, so every dollar goes to deleveraging and new commitments.",
+  "table": "own_thesis",
+  "ticker": "BUR"
+ },
+ {
+  "col": "breaks_1",
+  "id": "656a958c-1bc2-4646-a018-cc463d316d48",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Another quarter with negative ex-YPF capital provision income, or quarterly implied ROIC on realizations below 30% for two consecutive quarters. Either would say the 22% unrealized markup ($418M over $1,902M cost) is too high and TBV of $3.12 is overstated.",
+  "table": "own_thesis",
+  "ticker": "BUR"
+ },
+ {
+  "col": "breaks_2",
+  "id": "656a958c-1bc2-4646-a018-cc463d316d48",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Return on non-YPF capital provision assets below 11% on a trailing four-quarter basis through FY2027. At that level EBIT after opex no longer covers ~$180M of finance costs and the core equity value at 12x goes toward zero.",
+  "table": "own_thesis",
+  "ticker": "BUR"
+ },
+ {
+  "col": "breaks_3",
+  "id": "656a958c-1bc2-4646-a018-cc463d316d48",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "FY2026 cash receipts below $500M, or net debt above $1,900M at any quarter end (1,670M at 2Q26). Also breaks if Burford issues more secured debt beyond the refinancing of the 2028 notes, which would subordinate the unsecured ladder and signal that the market is setting the terms.",
+  "table": "own_thesis",
+  "ticker": "BUR"
+ },
+ {
+  "col": "bullet_1",
+  "id": "213537ca-579e-4bd3-8d79-3f33b8c794a9",
+  "lim": 45,
+  "member_ticker": null,
+  "old": "1. Swiss Luxury Watches company with assets in its inventory with higher value than in the balance, such as gold, jewels, and some real estate assets (stores)\nWhat the price buys, per the H1 2026 report (30 June 2026): equity attributable to Swatch shareholders of CHF 11,395M, or CHF 219 per bearer share (51.996M bearer-equivalent shares outstanding; five registered shares = one bearer share) against a CHF 191 price, 0.87x book. Inventory is CHF 7,303M, 54% of total assets and about 1.15 years of LTM sales; at FY2025 it was CHF 618M raw materials, 374M work in progress, 2,261M semi-finished, 3,658M finished goods and 384M service parts. Land and buildings are carried at cost for a CHF 1,684M net book value (CHF 511M of it investment property). Net liquidity is CHF 1,125M against CHF 236M of financial debt. That gold, stones and prime-location stores are worth more than book is a hypothesis the filings do not quantify; what is verifiable is a price below a book value made mostly of watches, components and buildings at cost.",
+  "table": "own_thesis",
+  "ticker": "UHR"
+ },
+ {
+  "col": "bullet_2",
+  "id": "213537ca-579e-4bd3-8d79-3f33b8c794a9",
+  "lim": 45,
+  "member_ticker": null,
+  "old": "2. How it is valued: on normalized operating profit, not on the depressed current level. Group operating margin was 14.0%, 15.4% and 15.1% in FY2021–FY2023, then 4.5% in FY2024 and 2.1% in FY2025. The collapse sits mostly in Production: Watches & Jewelry excluding Production still earned CHF 549M (9.5% margin) in FY2025, while the segment including Production earned CHF 246M, an implied Production loss of about CHF 303M from the decision to keep capacity and jobs without short-time work compensation. The base case takes FY2029 sales of CHF 7.2B (still below FY2023's CHF 7.9B), an 11% operating margin (below the 14–15% of FY2021–FY2023) and 13x EV/EBIT, plus CHF 1.3B of net cash: CHF 221 per bearer share, roughly book value. No re-rating above history is needed; the lift has to come from the margin.",
+  "table": "own_thesis",
+  "ticker": "UHR"
+ },
+ {
+  "col": "bullet_3",
+  "id": "213537ca-579e-4bd3-8d79-3f33b8c794a9",
+  "lim": 45,
+  "member_ticker": null,
+  "old": "3. What generates the return: operating leverage on a cost base that was deliberately not cut. H1 2026 sales rose 8.5% at constant currency (2.0% in CHF after almost CHF 200M of FX drag); May–June grew 13.1% with an 8.6% operating margin, and management guides to \"significant improvement in profitability\" in H2 2026. Personnel expense was CHF 1,207M in H1 2026, 38.7% of sales and largely fixed, so volume absorbed in owned factories drops through at a high rate. Own retail is now almost half of Watches & Jewelry sales, the US grew 27% and Royal Pop (with Audemars Piguet) is pulling new buyers to Swatch, MoonSwatch and Scuba Fifty Fathoms. A second source of cash is inventory: CHF 7.3B, down 4.5% in FY2025. The CHF 4.50 bearer dividend (2.4% yield) is paid through the cycle, so per-share return depends on earnings recovering, not on buybacks.",
+  "table": "own_thesis",
+  "ticker": "UHR"
+ },
+ {
+  "col": "breaks_1",
+  "id": "213537ca-579e-4bd3-8d79-3f33b8c794a9",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Equity per bearer share falls below CHF 200 (CHF 219 at June 2026), net inventory write-downs exceed CHF 100M in a year (CHF 36M in FY2025), or net liquidity falls below CHF 800M (CHF 1,125M at June 2026). Any of these means the balance sheet is being consumed, not held.",
+  "table": "own_thesis",
+  "ticker": "UHR"
+ },
+ {
+  "col": "breaks_2",
+  "id": "213537ca-579e-4bd3-8d79-3f33b8c794a9",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "FY2026 operating result below CHF 350M (about 5% on ~CHF 6.7B of sales; FY2025 was CHF 135M), or H2 2026 operating margin below 6% despite the May–June run-rate of 8.6%. That would say the fixed cost base does not absorb, and Production stays a CHF 200–300M annual drain.",
+  "table": "own_thesis",
+  "ticker": "UHR"
+ },
+ {
+  "col": "breaks_3",
+  "id": "213537ca-579e-4bd3-8d79-3f33b8c794a9",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Constant-currency sales decline in two consecutive halves, or FY2026 operating cash flow falls short of capex plus dividends (about CHF 690M; FY2025 OCF was CHF 507M against CHF 451M of capex and CHF 234M of dividends).",
+  "table": "own_thesis",
+  "ticker": "UHR"
+ },
+ {
+  "col": "bullet_1",
+  "id": "7d1aa28e-1091-4f33-8cb9-7d7e165fc68e",
+  "lim": 45,
+  "member_ticker": null,
+  "old": "TAV is a portfolio of 15 airports that served 113M passengers in FY2025 (75M international, 38M domestic), plus the service companies that sell to those passengers: ATU duty free (50% with Gebr. Heinemann), BTA food & beverage, Havaş ground handling, TAV Technologies and TAV lounges. The concessions that matter were renewed or bought in 2021–2026: Ankara Esenboğa to 2050 (€475M total rent), Antalya to 2051 with Fraport (€7.25bn bid, €1.81bn upfront paid in 2022, TAV 51%/49% of the new SPV with 50% of dividends), Almaty owned outright at 85% (bought for US$365M plus up to US$50M earn-out), Tbilisi extended to end-2031. That renewal cycle left FY2025 net income at €50.7M on €560M of EBITDA. What is being bought is the EBITDA of a renewed, long-dated network after its heaviest investment years, with a 46.12% controlling shareholder in Groupe ADP.",
+  "table": "own_thesis",
+  "ticker": "TAVHY"
+ },
+ {
+  "col": "bullet_2",
+  "id": "7d1aa28e-1091-4f33-8cb9-7d7e165fc68e",
+  "lim": 45,
+  "member_ticker": null,
+  "old": "Valued on EV/EBITDA, because the net line is distorted by FX translation, deferred tax and the equity-accounted Antalya JV. At $21.82 per ADR (1 ADR = 4 TAVHL shares) the EV is $4.08bn on LTM company EBITDA of €567.8M ($644.5M): 6.3x, against a FY2023–FY2025 average of 7.7x and listed peers at 8.0x (ASR), 8.3x (ADP), 11.0x (Fraport) and 11.4x (Aena); only Corporación América (5.9x) is cheaper. The base case takes FY2029 EBITDA of €696M (128M passengers × €17.0 revenue per passenger × 32% margin) at 6.5x — roughly today's multiple — less €1.6bn of net debt, for $36.4 per ADR. Antalya's EBITDA is outside TAV's consolidated figure, so the JV's value is not in the target: it is upside, not a support.",
+  "table": "own_thesis",
+  "ticker": "TAVHY"
+ },
+ {
+  "col": "bullet_3",
+  "id": "7d1aa28e-1091-4f33-8cb9-7d7e165fc68e",
+  "lim": 45,
+  "member_ticker": null,
+  "old": "The return comes from EBITDA growth and from debt turning into equity once capex falls. The Almaty terminal opened in 2024, Antalya's new terminals in 2025, and 2026 capex is guided below €300M; TAV's own free cash flow was €223M in FY2025 (+44%) and net debt/EBITDA fell to 2.89x. 1H 2026 went the other way — FCF −€48.4M on the Tbilisi upfront and works, net debt up to €1,833M — so the base case only assumes net debt of €1.6bn by FY2029 (2.3x). Commercial revenue per passenger is the second lever: duty-free spend per passenger rose 20% to €9.7 in 1H 2026 as Antalya's new retail and F&B areas ramped. The dividend is small (TL 1.31bn for FY2025, 50% payout); the equity return has to come from EV moving from lenders to shareholders.",
+  "table": "own_thesis",
+  "ticker": "TAVHY"
+ },
+ {
+  "col": "breaks_2",
+  "id": "7d1aa28e-1091-4f33-8cb9-7d7e165fc68e",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "FY2027 company EBITDA below €620M, or an EBITDA margin below 30% in FY2027: Turkish lira cost inflation outrunning euro tariffs, or Almaty fuel margins not recovering.",
+  "table": "own_thesis",
+  "ticker": "TAVHY"
+ },
+ {
+  "col": "breaks_3",
+  "id": "7d1aa28e-1091-4f33-8cb9-7d7e165fc68e",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Net debt above €1.9bn at FY2027 year-end, or a new concession upfront of more than €300M (TAV share) with no matching EBITDA inside three years, for example on an Izmir renewal before its 2032–2034 expiry.",
+  "table": "own_thesis",
+  "ticker": "TAVHY"
+ },
+ {
+  "col": "bullet_1",
+  "id": "92b4d0bb-6803-4ccf-9907-d13a0f4bb91e",
+  "lim": 45,
+  "member_ticker": null,
+  "old": "CTT has transformed from a legacy postal operator into a profitable Iberian logistics platform, with Express & Parcels (E&P) now generating the majority of group profit. The recently closed DHL joint venture adds scale and integration synergies: which GreenWood expects to come in above target over the next two years, while Cacesa provides the higher-value cross-border infrastructure (customs clearance, fulfillment, sorting) that positions CTT between Asian merchants (Temu, SHEIN, TikTok) and European consumers. Mail continues to operate as funding the incubation of e-commerce initiatives. Growth in E&P is accelerating, underpinned by the structural Iberian e-commerce wave.",
+  "table": "own_thesis",
+  "ticker": "CTT"
+ },
+ {
+  "col": "bullet_2",
+  "id": "92b4d0bb-6803-4ccf-9907-d13a0f4bb91e",
+  "lim": 45,
+  "member_ticker": null,
+  "old": "Banco CTT is the unrealized asset, monetizing it, now advancing after an unsolicited non-binding offer from Grupo Cajamar —would simplify the equity narrative, reduce the group's regulatory burden, and unlock significant capital-allocation flexibility, which GreenWood expects to drive a re-rating of the multiple. The timing is favorable: Iberian bank valuations sit at post-GFC highs (~2x book), and GreenWood anchors its valuation to recent transaction multiples (Generali at 1.1x book / 1.4x tangible book; NovoBanco at ~1.4x P/B). At those levels, CTT's stake represents a substantial share of the current market cap.",
+  "table": "own_thesis",
+  "ticker": "CTT"
+ },
+ {
+  "col": "bullet_3",
+  "id": "92b4d0bb-6803-4ccf-9907-d13a0f4bb91e",
+  "lim": 45,
+  "member_ticker": null,
+  "old": "On a SOP basis, CTT trades at less than half of GreenWood's estimated intrinsic value. Applying GreenWood's own segment multiples — 12.5x on Parcels EBIT (the contractual DHL price), 7.5x on Mail, and 1.4x book on the bank, the group screens materially undervalued, with de-consolidation of the bank expected to catalyze a re-rating of the multiple. GreenWood views management's capital allocation as disciplined rather than merely opportunistic: the stated framework is to sell high-multiple assets to fund low-multiple acquisitions and high-ROIC organic capex. This is expressed through an aggressive, ongoing buyback, and a \"same E&P playbook in new markets\". M&A optionality  leveraging CTT's existing Chinese customer base to pursue bolt-ons at a discount to its own valuation. ",
+  "table": "own_thesis",
+  "ticker": "CTT"
+ },
+ {
+  "col": "rationale",
+  "id": "ab045974-8830-464f-a4f1-a63a3c679e96",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Implied from calculating e-commerce margin in 9% (lower than today and 2024 due to regulation issues due to the change and refocus to B2B clients), mail & services margin 15%, same levels of 2025 (segment not decreasing in margin only in revenue levels), Banco CTT margin stable in 20% stable levels of last 3Y (not assuming sale of bank)",
+  "table": "valuation_lines",
+  "ticker": "CTT"
+ },
+ {
+  "col": "rationale",
+  "id": "ae5c0ddd-cc17-4e51-ae37-f14ef34e8964",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Lower than estimated for 2028 in CMD 2025, given the new regulation pressures and deacceleration of chinese companies shipments through Iberian Peninsula. CAGR 3Y for e-commerce solutions 17% (current CAGR 3Y is 33%, so this number is conservative), mail&services -1% (current CAGR 3Y is -0.4%) and Banco CTT 3% (same as current)",
+  "table": "valuation_lines",
+  "ticker": "CTT"
+ },
+ {
+  "col": "rationale",
+  "id": "edb42498-692d-45e5-a060-cce4b547553c",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Implicit from EBITDA levels keeping D&A fixed, these are recurring EBIT levels (good for LT) even with margin compression due to regulations and Cacesa problem in e-commerce solutions.",
+  "table": "valuation_lines",
+  "ticker": "CTT"
+ },
+ {
+  "col": "rationale",
+  "id": "a1e12526-ba60-4bc0-aee7-3788f8c62092",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Backlog must grow to support €800M of revenue at ~3.3x coverage. €2,048M at 1H26 (1H26 deck, FiscalAI filing); FY2022 €1,014M to FY2025 €2,166M is a 3Y CAGR of 28.8%, inflated by the one-off >€200M Ariane 6 contract and the Vega launch-service transfer.",
+  "table": "valuation_lines",
+  "ticker": "AVIO"
+ },
+ {
+  "col": "rationale",
+  "id": "37f13351-6303-4b4e-9207-2791a9e1d035",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Order intake of ~€880M in FY2029 against €800M of revenue. 1H26 was 0.58x (€160M of orders on €276M of revenue); FY2023–FY2025 averaged 1.89x (implied from backlog change plus revenue).",
+  "table": "valuation_lines",
+  "ticker": "AVIO"
+ },
+ {
+  "col": "rationale",
+  "id": "cf96253a-c069-4645-8a92-57add9d4db62",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "8% a year from the FY2026 guidance midpoint (€575M). LTM net revenues €582.8M (FY2025 €541.7M − 1H25 €234.9M + 1H26 €276.0M). FY2022–FY2025 3Y CAGR 14.9%, which includes the Vega C return to flight; 8% assumes that catch-up is over.",
+  "table": "valuation_lines",
+  "ticker": "AVIO"
+ },
+ {
+  "col": "rationale",
+  "id": "e93410ea-7beb-4e6d-a888-dbb5a51af6b9",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Hypothesis. First full year after start of production in 2028. Avio has not disclosed revenue per ton of propellant or contracted volumes; current US revenue (development work under the ~$65M air-defense motor contract) is not reported separately.",
+  "table": "valuation_lines",
+  "ticker": "AVIO"
+ },
+ {
+  "col": "rationale",
+  "id": "099ce203-3bd1-412d-9b4c-8c940bbc17ef",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Europe ~8% with defense mix and Ariane 6 booster volumes, US at break-even. LTM 5.87% (€34.2M / €582.8M); FY2023–FY2025 average 5.95%. Management's 2035 plan implies ~10%.",
+  "table": "valuation_lines",
+  "ticker": "AVIO"
+ },
+ {
+  "col": "rationale",
+  "id": "910c31c2-3eb5-46bc-b60c-cd0de7faf026",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "€800M at 7.25%. FY2026 guidance is €27–35M, so this assumes EBITDA roughly doubles in three years once US start-up costs (€7–9M in 2026) are absorbed. FY2022 €21.4M to FY2025 €32.3M, 3Y CAGR 14.7%.",
+  "table": "valuation_lines",
+  "ticker": "AVIO"
+ },
+ {
+  "col": "rationale",
+  "id": "29c7a56f-17b6-4840-a9b6-41e770898138",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Premium to Northrop Grumman 14.0x, L3Harris 15.5x and Leonardo 13.5x for growth; well below Safran 22.3x because margins are a third of Safran's. The stock traded at 7.7x on the FY2023–FY2025 average before the US story; it trades at ~24.7x LTM today.",
+  "table": "valuation_lines",
+  "ticker": "AVIO"
+ },
+ {
+  "col": "rationale",
+  "id": "2cd1acac-ded1-4be0-9763-d7ad312a8295",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Hypothesis, built from the plan: €645M pro forma today, less ~€510M capex (US plant €450–550M plus European maintenance), plus ~€167M of EBITDA, ~€85M of Virginia incentives (up to $97.7M) and ~€30M interest, less dividends, tax and advance unwind. 3Y average FY2023–FY2025: -€252.6M (house rule: average, not CAGR).",
+  "table": "valuation_lines",
+  "ticker": "AVIO"
+ },
+ {
+  "col": "rationale",
+  "id": "b4fe58cf-aae4-49a4-a60b-fa6a029cba6a",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "46.16M ex-treasury at 1H26 plus 3,275,268 Advent shares (September 2026). No further issuance assumed; a second raise if the plant overruns is the main dilution risk. 3Y CAGR 22.2% reflects the November 2025 rights issue.",
+  "table": "valuation_lines",
+  "ticker": "AVIO"
+ },
+ {
+  "col": "rationale",
+  "id": "046619ba-a839-4ae8-8892-133ae5aea563",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "10% a year from €575M. Ariane 6 boosters went from 14 in 2025 to 22 planned in 2026; Vega C capacity rises to 6 flights a year with the BIL building.",
+  "table": "valuation_lines",
+  "ticker": "AVIO"
+ },
+ {
+  "col": "rationale",
+  "id": "be18d3d0-29b7-4fc3-8017-2d5a9f470971",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "FY2026 net sales of $19,643M falling about 1% a year to $19,060M in FY2029. History: $20,555M in FY2023 to $19,643M in FY2026, a 3Y CAGR of -1.5% (FiscalAI), so the bear only extends the recent trend.",
+  "table": "valuation_lines",
+  "ticker": "DGE"
+ },
+ {
+  "col": "rationale",
+  "id": "a4097d53-87dc-4482-b2bc-1acebc3a4809",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "-1% a year against the low-single-digit growth guided for FY2027-FY2029 and \"broadly flat\" for FY2027. FY2024 -1.0%, FY2025 +1.7%, FY2026 -2.0% (FiscalAI KPIs): 3Y average -0.4%.",
+  "table": "valuation_lines",
+  "ticker": "DGE"
+ },
+ {
+  "col": "rationale",
+  "id": "20c11920-3dab-4ef9-b341-55f97a70f4f5",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Price/mix was -1.6% in FY2026 (about -0.5 pts excluding Chinese white spirits), per the FY2026 results call. The bear holds it at -0.5%: premiumisation, pillar 1 of the thesis, does not come back. 3Y history not in FiscalAI.",
+  "table": "valuation_lines",
+  "ticker": "DGE"
+ },
+ {
+  "col": "rationale",
+  "id": "0b9f13e6-e9df-4303-941e-6f4c30e30b0c",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "27.0% against 28.9% in FY2026 (FiscalAI adjusted EBIT $5,683M / net sales $19,643M). 3Y average 28.8% (FY2024 29.3%, FY2025 28.2%, FY2026 28.9%). The ~$1bn of savings are reinvested in US price and marketing instead of reaching the margin.",
+  "table": "valuation_lines",
+  "ticker": "DGE"
+ },
+ {
+  "col": "rationale",
+  "id": "5a392af6-c28e-4069-a18a-54fcf2d5b846",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "$19,060M x 27.0%. FY2023 $6,313M to FY2026 $5,683M is a 3Y CAGR of -3.4% (FiscalAI adjusted EBIT). Pre-exceptional basis because FY2026 reported operating profit ($3,156M) carries large impairments and restructuring charges.",
+  "table": "valuation_lines",
+  "ticker": "DGE"
+ },
+ {
+  "col": "rationale",
+  "id": "378ea326-29ae-4e24-97ad-ca8e45d08a17",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "12.0x, about today's 11.9x ($67,440M EV / $5,683M). 3Y average at fiscal year-ends is 13.75x (FY2024 15.5x, FY2025 14.0x, FY2026 11.7x on FiscalAI EV). The Sandrea case uses 17.4x; the bear gives no re-rating.",
+  "table": "valuation_lines",
+  "ticker": "DGE"
+ },
+ {
+  "col": "rationale",
+  "id": "d740ec07-6a14-4e68-a1b1-36e5b485bb78",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "FY2029 bear FCF of $2.6bn; FY2027 guided at ~$2.0bn after ~$850M of exceptional cash costs, FY2028 $2.4bn. Cumulative $7.0bn against the ~$8bn guided for FY2027-FY2029. FY2026 $3,195M (OCF $4,392M less capex $1,197M, FiscalAI); 3Y CAGR +12.9% from $2,219M in FY2023.",
+  "table": "valuation_lines",
+  "ticker": "DGE"
+ },
+ {
+  "col": "rationale",
+  "id": "de0a264d-aecd-405f-8d01-850202e8cbd3",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "50 cents per ordinary share (the FY2026 full-year dividend, 30% payout under the 30-50% policy) x ~2,224M shares = $1,112M a year, held flat. FY2026 cash paid of $1,846M still includes the prior final dividend at the old rate. FY2023 $2,065M to FY2026 $1,846M: 3Y CAGR -3.7%.",
+  "table": "valuation_lines",
+  "ticker": "DGE"
+ },
+ {
+  "col": "rationale",
+  "id": "84a6b862-c7c1-4c7a-bae0-73b5b0f6078a",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "$19,991M - $7,000M cumulative FCF + $3,336M dividends = $16,327M, with no disposal proceeds. FiscalAI net debt (total debt $21,511M less cash $1,520M) differs from the $20.5bn Diageo reports. History is the 3Y average (house rule): FY2024 $20,371M, FY2025 $21,548M, FY2026 $19,991M = $20,637M.",
+  "table": "valuation_lines",
+  "ticker": "DGE"
+ },
+ {
+  "col": "rationale",
+  "id": "b1a7394c-8e2f-48ea-9ece-c874e213ee24",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Held at FY2026 book value of $2,083M (FiscalAI) and deducted from EV. The EABL sale should reduce it, which the bear ignores. FY2023 $1,853M: 3Y CAGR +4.0%.",
+  "table": "valuation_lines",
+  "ticker": "DGE"
+ },
+ {
+  "col": "rationale",
+  "id": "23de2f6b-e577-4f23-9925-446c535f0502",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "556M ADR equivalents (FiscalAI; about 2,224M ordinary shares at 4 per ADR), held flat: buybacks stopped after FY2024 and the bear does not restart them. FY2023 562M: 3Y CAGR -0.4%.",
+  "table": "valuation_lines",
+  "ticker": "DGE"
+ },
+ {
+  "col": "rationale",
+  "id": "6fa4e758-2df4-45fa-b739-dc8f6a7cbde7",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "$43,342M / 556M = $77.95 per ADR, 8.7% below the $85.34 close of 29 September 2026 (FiscalAI) and above the $70 bear inside the analyst's CMD valuation, which uses 11x EV/EBITDA on FY2028.",
+  "table": "valuation_lines",
+  "ticker": "DGE"
+ },
+ {
+  "col": "rationale",
+  "id": "d56bd8c8-c058-48b3-a8ea-a27f9b847dce",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Non-YPF book grows 2.7% a year from $2,218M at 2Q26 (fair value $2,319M less ~$101M YPF). Below the 7.0% FY22-FY25 CAGR (1,813M to 2,223M, Burford-only, 2Q26 deck p.46) because new business is funded from receipts while the company delevers.",
+  "table": "valuation_lines",
+  "ticker": "BUR"
+ },
+ {
+  "col": "rationale",
+  "id": "10efecaa-88bf-43c4-a96f-55e3a5a06855",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Total return = realized gains plus fair value changes on the non-YPF book. Only two clean data points exist: 10.2% annualized in 1H25 and 15.4% annualized in 2Q26 (average 12.8%, shown as history). 1H26 was 1.5% annualized after 1Q26 ex-YPF write-downs. 14% sits between them.",
+  "table": "valuation_lines",
+  "ticker": "BUR"
+ },
+ {
+  "col": "rationale",
+  "id": "1c4a15c3-3ca6-49bb-aee9-f7be9ff4254f",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Asset management income (BOF-C and private-fund profit share) plus marketable-securities interest. 1H26 was $29.5M ($59M annualized); lower cash balances and running-off older funds take it to $45M.",
+  "table": "valuation_lines",
+  "ticker": "BUR"
+ },
+ {
+  "col": "rationale",
+  "id": "ef21b91e-3307-44b0-903c-3b4d8a3ecd2a",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Capital provision income ex-YPF plus fee and other income. Current is 2Q26 Burford-only total revenues ($103.4M) annualized; LTM is negative (-$1.55B in 1H26) because of the YPF write-down. History is the FiscalAI consolidated FY22-FY25 CAGR ($319M to $413M).",
+  "table": "valuation_lines",
+  "ticker": "BUR"
+ },
+ {
+  "col": "rationale",
+  "id": "86e6b859-8cc6-40e8-be4a-31c3cf66d5ef",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Operating income before finance costs: $336M + $45M - $175M. Current is 2Q26 operating income of $55.9M annualized. No D&A to speak of, so EBIT = EBITDA.",
+  "table": "valuation_lines",
+  "ticker": "BUR"
+ },
+ {
+  "col": "rationale",
+  "id": "45a453a4-8203-4759-b1a7-7dc252769c78",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "12x puts EV at 1.03x the FY2029 non-YPF book: the market pays the marks, no premium for the platform and no discount for opacity. Current 11.3x is EV of $2,526M over 2Q26 annualized EBIT.",
+  "table": "valuation_lines",
+  "ticker": "BUR"
+ },
+ {
+  "col": "rationale",
+  "id": "ef723269-e598-4fac-bf6b-d1dccca4f5c8",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Debt $2,403M less $733M cash and marketable securities at 2Q26 (deck p.34). Rises to $1,800M because receipts of ~$650-700M a year do not cover ~$450M deployments, ~$165M cash opex and ~$180M interest. History is the 3Y average FY23-FY25 on FiscalAI consolidated debt less cash and securities ($1,207M / $1,215M / $1,472M), per house rule.",
+  "table": "valuation_lines",
+  "ticker": "BUR"
+ },
+ {
+  "col": "rationale",
+  "id": "f85161f7-553b-4fe1-8e53-d1171b9afca4",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Hypothesis, probability-weighted and net of what book already carries: Taction ~$90M (30% x half of the ~$700M balance-sheet entitlement, after tax and time), Cameroon ~$42M (35% x $200M, discounted), YPF ICSID +$39M (~$140M value vs $101M carried).",
+  "table": "valuation_lines",
+  "ticker": "BUR"
+ },
+ {
+  "col": "rationale",
+  "id": "a5175134-78c1-49b3-852b-51c50ee9a290",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Cross-check only. FY2029 TBV ~$760M ($3.42/share) after ~$60M of cumulative retained earnings: 1.11x. Current: $3.90 / $3.12. History: year-end P/TBV 1.58x (FY23), 1.22x (FY24), 0.84x (FY25), all with YPF still on book.",
+  "table": "valuation_lines",
+  "ticker": "BUR"
+ },
+ {
+  "col": "rationale",
+  "id": "832a9f19-e6b2-4d23-acd4-6e4ed50dd966",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Grows 8% a year to $2,800M, a little above the 7.0% FY22-FY25 CAGR, on the doubled high-return commitments management reported in 2Q26 and $850M+ of annual receipts.",
+  "table": "valuation_lines",
+  "ticker": "BUR"
+ },
+ {
+  "col": "rationale",
+  "id": "96213de1-0460-4685-b1a5-d77c83e0055e",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Hypothesis: Taction ~$215M (60% x 60% of the ~$700M balance-sheet entitlement, after tax and time), YPF ICSID +$246M (70% x ~$1.5B Burford-only entitlement x 60% collection x 0.55 discount = ~$347M, less $101M carried), Cameroon ~$96M.",
+  "table": "valuation_lines",
+  "ticker": "BUR"
+ },
+ {
+  "col": "rationale",
+  "id": "967984d8-17f7-4dca-a7d5-676589121235",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "14x on trough EBIT, chosen so that EV equals 0.83x the book's carrying value (what a secondary buyer might pay). At the base 12x the equity would be worth zero.",
+  "table": "valuation_lines",
+  "ticker": "BUR"
+ },
+ {
+  "col": "rationale",
+  "id": "25754a9a-6334-4189-9258-8e152b7b0ed7",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Watches & Jewelry, including Production, reaches CHF 6,860M from CHF 5,998M LTM (H2 2025 + H1 2026). History: CHF 7,145M in FY2022 to CHF 5,934M in FY2025, a 3Y CAGR of -6.0%, so the target reverses three years of decline but stays below FY2023 (CHF 7,546M).",
+  "table": "valuation_lines",
+  "ticker": "UHR"
+ },
+ {
+  "col": "rationale",
+  "id": "5a56e718-6f97-4cfb-b23c-3124739dfc4d",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Electronic Systems (EM Microelectronic, timing) held flat at the FY2025 level of CHF 359M; H1 2026 was CHF 174M, hurt by the weaker USD, with CHF invoicing from H2 2026.",
+  "table": "valuation_lines",
+  "ticker": "UHR"
+ },
+ {
+  "col": "rationale",
+  "id": "ffc6fa59-c5f9-4d6f-ac58-6291a4a32a5d",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Segments less eliminations. CHF 7,200M is a 3.5% CAGR from LTM CHF 6,342M; 3Y history is -5.75% a year (CHF 7,499M FY2022 to CHF 6,280M FY2025).",
+  "table": "valuation_lines",
+  "ticker": "UHR"
+ },
+ {
+  "col": "rationale",
+  "id": "2df41c32-138c-44db-b8ad-61b744d9908b",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Hypothesis: Production result implied as W&J operating result (CHF 246M) minus W&J ex-Production (CHF 549M) = about -CHF 303M in FY2025. The base assumes volume brings it to -CHF 50M, not to break-even.",
+  "table": "valuation_lines",
+  "ticker": "UHR"
+ },
+ {
+  "col": "rationale",
+  "id": "900891bd-2306-4889-b4a9-5aaf86604630",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "11% against 1.9% LTM and a 3Y average of 7.2% (15.1%, 4.5%, 2.1% for FY2023-FY2025). Below the 14.0-15.4% of FY2021-FY2023: the base does not assume a full return.",
+  "table": "valuation_lines",
+  "ticker": "UHR"
+ },
+ {
+  "col": "rationale",
+  "id": "6bcdcaf3-7f7f-49bc-9e34-ceba64b45c77",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "CHF 7,200M x 11.0%. LTM is CHF 119M (H2 2025 CHF 67M + H1 2026 CHF 52M); 3Y CAGR -51.2% (CHF 1,158M FY2022 to CHF 135M FY2025).",
+  "table": "valuation_lines",
+  "ticker": "UHR"
+ },
+ {
+  "col": "rationale",
+  "id": "1db1f889-dcae-4c0e-8a93-19442f81efc8",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "13x normalized EBIT. Current 74.9x is meaningless on a trough EBIT; the FY2023 year-end multiple was 8.3x on a 15% margin and the 3Y average of year-ends (8.3x, 23.9x, 56.6x) is distorted by the collapse. Richemont trades at 23.6x and LVMH at 13.2x (FiscalAI, latest).",
+  "table": "valuation_lines",
+  "ticker": "UHR"
+ },
+ {
+  "col": "rationale",
+  "id": "64c8f09a-ec92-43ce-84d0-ccef63f5745d",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Net liquidity of CHF 1,300M by FY2029 from CHF 1,125M at June 2026, assuming operating cash flow of roughly CHF 750-900M a year covers ~CHF 450M capex and ~CHF 235-300M of dividends. 3Y average (house rule) -CHF 1,520M: FY2023 -1,988, FY2024 -1,376, FY2025 -1,195.",
+  "table": "valuation_lines",
+  "ticker": "UHR"
+ },
+ {
+  "col": "rationale",
+  "id": "ab774c3b-ca1b-443c-bcf7-e636e1b0f066",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Cross-check, not part of the chain: book of CHF 219.15 per bearer share today plus about CHF 10 of retained earnings to FY2029 = ~CHF 229, so the target is ~0.97x book.",
+  "table": "valuation_lines",
+  "ticker": "UHR"
+ },
+ {
+  "col": "rationale",
+  "id": "38b60eb5-e979-4aab-861a-e28465d7a47f",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "128M in FY2029, +3.2% a year from 113M in FY2025. LTM to 1H 2026 is 113.5M (1H 2026 48.2M vs 1H 2025 47.7M, +1%). The 3Y CAGR of 12.8% (FY2022 ~78.7M, derived from the 22% growth TAV reported for FY2023) is post-Covid recovery and is not extrapolated.",
+  "table": "valuation_lines",
+  "ticker": "TAVHY"
+ },
+ {
+  "col": "rationale",
+  "id": "ad38c76d-c343-4a93-a948-c6e33f58a774",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "€17.0 ($19.30) in FY2029 vs €16.45 ($18.67) LTM and €16.13 in FY2025. The lift is commercial: duty-free spend per passenger was €9.7 in 1H 2026 (+20%) and BTA food & beverage revenue +20%. 3Y CAGR 6.5% (FY2022 €13.36 → FY2025 €16.13) included post-Covid tariff catch-up, so 1.2% a year is assumed.",
+  "table": "valuation_lines",
+  "ticker": "TAVHY"
+ },
+ {
+  "col": "rationale",
+  "id": "34082e55-c3c2-4a0e-8bfb-0ebd43142565",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "128M × €17.0 = €2,176M ($2,470M). LTM €1,867M ($2,119M). 2026 guidance €1,880–1,980M, so FY2029 implies ~4% a year from the 2026 midpoint. 3Y CAGR FY2022–FY2025 was 20.1% (€1,051M → €1,823M).",
+  "table": "valuation_lines",
+  "ticker": "TAVHY"
+ },
+ {
+  "col": "rationale",
+  "id": "46dc880b-24a8-4094-9886-4b5d12c12ef1",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "32% vs 30.4% LTM and a 29.9% FY2023–FY2025 average (29.4%, 29.5%, 30.7%). The 2026 guidance midpoint (€605M on €1,930M) is 31.3%; operating leverage on new terminals takes it to 32%. Risk: lira cost inflation against euro tariffs.",
+  "table": "valuation_lines",
+  "ticker": "TAVHY"
+ },
+ {
+  "col": "rationale",
+  "id": "bfa8bd75-6001-4795-a2e6-3a018dd7cb6b",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "6.5x vs 6.32x today (EV $4,076M on $644.5M LTM EBITDA) and 7.74x average at FY2023–FY2025 year ends (7.34x, 9.11x, 6.76x, computed from TAVHL year-end prices). Peers today: ADP 8.3x, ASR 8.0x, Fraport 11.0x, Aena 11.4x, Corporación América 5.9x. No rerating is assumed.",
+  "table": "valuation_lines",
+  "ticker": "TAVHY"
+ },
+ {
+  "col": "rationale",
+  "id": "14edcbf5-8c58-456b-9205-f3685dba9f25",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "€1,600M ($1,816M) at FY2029 vs €1,833M ($2,081M) at 30 Jun 2026. 3Y average (house rule) €1,650.7M ($1,873.7M): FY2023 €1,609M, FY2024 €1,728M, FY2025 €1,615M (total debt less cash and short-term investments, Yahoo Finance; FY2024–FY2025 match TAV's reported €1.72bn and €1.62bn). Only €233M of paydown in 3.5 years, leaving room for Izmir/Tbilisi upfronts.",
+  "table": "valuation_lines",
+  "ticker": "TAVHY"
+ },
+ {
+  "col": "rationale",
+  "id": "20af96b8-ea35-4487-8d66-fc6d790b11b6",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "EV €4,526M − net debt €1,600M − minorities €15M = €2,911M ($3,304M). Today $1,982M (90.82M ADR equivalents × $21.82). 3Y CAGR 7.9% (EUR market cap €1,704M FY2022 → €2,141M FY2025).",
+  "table": "valuation_lines",
+  "ticker": "TAVHY"
+ },
+ {
+  "col": "rationale",
+  "id": "8709cb52-532f-447a-99fe-371fb112ce43",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "$3,304M / 90.82M = $36.38 per ADR ($9.10 per TAVHL share), +67% vs $21.82 (TAVHY close 29 Sep 2026). TAVHL at TL 266.5 = $5.44 per share cross-checks to $21.76 per ADR.",
+  "table": "valuation_lines",
+  "ticker": "TAVHY"
+ },
+ {
+  "col": "rationale",
+  "id": "0c699e75-1caa-4163-a015-029ba33426ac",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "W&J back to its FY2023 level (CHF 7,546M) from CHF 5,998M LTM; requires China replenishment to return and the US to keep compounding (+27% in H1 2026 at constant rates).",
+  "table": "valuation_lines",
+  "ticker": "UHR"
+ },
+ {
+  "col": "rationale",
+  "id": "b08b6c98-354d-40f7-ba73-e6ca40f6d726",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Cross-check: book ~CHF 235 by FY2029 if earnings recover; target is ~1.47x book, above the 1.14x of end-FY2022 (CHF 263 on CHF 231), which the case needs a full margin recovery to justify.",
+  "table": "valuation_lines",
+  "ticker": "UHR"
+ },
+ {
+  "col": "rationale",
+  "id": "2ae3e874-58a1-466d-9c7c-6800e69e4b34",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Net liquidity falls to CHF 900M as dividends plus capex keep exceeding operating cash flow (FY2025: OCF CHF 507M vs capex CHF 451M plus dividends CHF 234M).",
+  "table": "valuation_lines",
+  "ticker": "UHR"
+ },
+ {
+  "col": "rationale",
+  "id": "8ebded1d-9454-42f9-8da9-80a5475a625f",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Implied net income: EBIT CHF 792.0M; interest 0 (net cash, no income assumed); pre-tax CHF 792.0M, tax CHF 234.4M (29.6%); minorities CHF 15.0M; FX revaluation 0 → net income CHF 542.6M. Assumptions: EBIT as modeled, tax 29.6% (FY2023-24 effective; FY2025 84% excluded), minorities held at LTM CHF 15M.",
+  "table": "valuation_lines",
+  "ticker": "UHR"
+ },
+ {
+  "col": "rationale",
+  "id": "42595eab-c8b9-4311-b475-3c178d8cffac",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Implied net income: EBIT $128.0M; interest $110.0M (7.1% on net debt $1.55B); pre-tax $18.0M, tax $1.6M (8.7%); FX revaluation 0 → net income $16.4M. Assumptions: EBIT as modeled (revenue less opex), finance cost 7.1% (FY2025 finance costs $151M / debt $2,128M, FiscalAI as-reported), tax 8.7% (FY2023-25 effective, Guernsey parent), Burford-only basis so no third-party interests.",
+  "table": "valuation_lines",
+  "ticker": "BUR"
+ },
+ {
+  "col": "rationale",
+  "id": "7d3c66bc-cb35-4170-b8eb-556e36076697",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Implied net income: EBITDA €81.0M − D&A €35.1M (3.9% of revenue) = EBIT €45.9M; interest 0 (net cash, no income assumed); pre-tax €45.9M, tax €11.0M (24.0%); minorities €1.8M; FX revaluation 0 → net income €33.1M. Assumptions: D&A 3.9% of revenue (FY2023-25 avg), tax 24% Italian IRES (FY2023-25 effective 5.8% is anomalous: tax credits), minorities 5.2% of net income (FY2023-25).",
+  "table": "valuation_lines",
+  "ticker": "AVIO"
+ },
+ {
+  "col": "rationale",
+  "id": "71b7261d-4dea-4e79-93aa-1cb98fbc830b",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Implied net income: EBIT $206.0M; interest $127.8M (7.1% on net debt $1.80B); pre-tax $78.2M, tax $6.8M (8.7%); FX revaluation 0 → net income $71.4M. Assumptions: EBIT as modeled (revenue less opex), finance cost 7.1% (FY2025 finance costs $151M / debt $2,128M, FiscalAI as-reported), tax 8.7% (FY2023-25 effective, Guernsey parent), Burford-only basis so no third-party interests.",
+  "table": "valuation_lines",
+  "ticker": "BUR"
+ },
+ {
+  "col": "rationale",
+  "id": "403eb793-4646-49a7-86c3-c30f46426f9f",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Implied net income: EBIT $295.0M; interest $92.3M (7.1% on net debt $1.30B); pre-tax $202.7M, tax $17.6M (8.7%); FX revaluation 0 → net income $185.1M. Assumptions: EBIT as modeled (revenue less opex), finance cost 7.1% (FY2025 finance costs $151M / debt $2,128M, FiscalAI as-reported), tax 8.7% (FY2023-25 effective, Guernsey parent), Burford-only basis so no third-party interests.",
+  "table": "valuation_lines",
+  "ticker": "BUR"
+ },
+ {
+  "col": "rationale",
+  "id": "9795a7f3-1329-44dd-b004-1788c5cc20e8",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Implied net income: EBITDA €58.0M − D&A €31.2M (3.9% of revenue) = EBIT €26.8M; interest 0 (net cash, no income assumed); pre-tax €26.8M, tax €6.4M (24.0%); minorities €1.1M; FX revaluation 0 → net income €19.3M. Assumptions: D&A 3.9% of revenue (FY2023-25 avg), tax 24% Italian IRES (FY2023-25 effective 5.8% is anomalous: tax credits), minorities 5.2% of net income (FY2023-25).",
+  "table": "valuation_lines",
+  "ticker": "AVIO"
+ },
+ {
+  "col": "rationale",
+  "id": "a22e594f-e397-4de8-b40b-bd92d6493716",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Implied net income: EBITDA €37.0M − D&A €26.0M (3.9% of revenue) = EBIT €11.0M; interest 0 (net cash, no income assumed); pre-tax €11.0M, tax €2.6M (24.0%); minorities €0.4M; FX revaluation 0 → net income €7.9M. Assumptions: D&A 3.9% of revenue (FY2023-25 avg), tax 24% Italian IRES (FY2023-25 effective 5.8% is anomalous: tax credits), minorities 5.2% of net income (FY2023-25).",
+  "table": "valuation_lines",
+  "ticker": "AVIO"
+ },
+ {
+  "col": "rationale",
+  "id": "c1950ec5-3203-45e3-92d8-eb316d86ec3d",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Implied net income: adjusted EBIT $5.15B as modeled; interest $914.3M (5.6% on net debt $16.33B); pre-tax $4.23B, tax $1.07B (25.2%); minorities $269.1M; FX revaluation 0 → net income $2.90B. Assumptions: interest 5.6% (FY2026 $1,200M / debt $21,511M), tax 25.2% (FY2024-26 effective), minorities 8.5% of net income (FY2024-26).",
+  "table": "valuation_lines",
+  "ticker": "DGE"
+ },
+ {
+  "col": "rationale",
+  "id": "5b84f731-93e4-4097-9186-a9a61653da69",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Implied net income: EBIT €116.0M; interest €6.9M (3.9% on net debt €175.8M); pre-tax €109.1M, tax €15.7M (14.4%); minorities €3.1M; FX revaluation 0 → net income €90.3M. Assumptions: EBIT as modeled, interest 3.9% (LTM €22.6M / debt €580M), tax 14.4% (FY2023-25 effective), minorities 3.3% of net income (FY2023-25).",
+  "table": "valuation_lines",
+  "ticker": "CTT"
+ },
+ {
+  "col": "rationale",
+  "id": "03cbc6a0-499b-4769-8f0b-9032a5dad6cd",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Implied net income: EBIT CHF 1.19B; interest 0 (net cash, no income assumed); pre-tax CHF 1.19B, tax CHF 350.8M (29.6%); minorities CHF 15.0M; FX revaluation 0 → net income CHF 819.2M. Assumptions: EBIT as modeled, tax 29.6% (FY2023-24 effective; FY2025 84% excluded), minorities held at LTM CHF 15M.",
+  "table": "valuation_lines",
+  "ticker": "UHR"
+ },
+ {
+  "col": "rationale",
+  "id": "33841c9b-2fef-4b7d-9c98-57c4a805279e",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Implied net income: EBIT CHF 252.0M; interest 0 (net cash, no income assumed); pre-tax CHF 252.0M, tax CHF 74.6M (29.6%); minorities CHF 15.0M; FX revaluation 0 → net income CHF 162.4M. Assumptions: EBIT as modeled, tax 29.6% (FY2023-24 effective; FY2025 84% excluded), minorities held at LTM CHF 15M.",
+  "table": "valuation_lines",
+  "ticker": "UHR"
+ },
+ {
+  "col": "rationale",
+  "id": "3276132a-c60f-4e0f-9b72-cfba290f70a2",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Implied net income: EBITDA $790.4M − D&A $260.7M (10.6% of revenue, 1H25–1H26 avg) − equity-accounted results $90.1M (Antalya JV etc., 1H26 €39.7M annualised) = EBIT $439.5M; net interest $114.3M (6.3% on net debt $1.82B: 1H26 €57.7M × 2 / €1,833M); pre-tax $325.2M, tax $81.3M (25% Turkish statutory); minorities $15.0M (1H26 €6.6M annualised); FX, concession discount unwinding and monetary gain 0 → net income $228.9M. Source: TAV 1H26 results presentation (ir.tav.aero, 28 Jul 2026); EUR at 1.1351 USD.",
+  "table": "valuation_lines",
+  "ticker": "TAVHY"
+ },
+ {
+  "col": "rationale",
+  "id": "bab49991-10a7-4119-aada-f706be97d65c",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Implied net income: EBITDA $621.5M − D&A $226.2M (10.6% of revenue, 1H25–1H26 avg) − equity-accounted results $90.1M (Antalya JV etc., 1H26 €39.7M annualised) = EBIT $305.1M; net interest $132.2M (6.3% on net debt $2.10B: 1H26 €57.7M × 2 / €1,833M); pre-tax $172.9M, tax $43.2M (25% Turkish statutory); minorities $15.0M (1H26 €6.6M annualised); FX, concession discount unwinding and monetary gain 0 → net income $114.7M. Source: TAV 1H26 results presentation (ir.tav.aero, 28 Jul 2026); EUR at 1.1351 USD.",
+  "table": "valuation_lines",
+  "ticker": "TAVHY"
+ },
+ {
+  "col": "rationale",
+  "id": "3ebe8cb3-fd14-4941-9d09-23a79ff83aa3",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Implied net income: EBITDA $878.4M − D&A $281.0M (10.6% of revenue, 1H25–1H26 avg) − equity-accounted results $90.1M (Antalya JV etc., 1H26 €39.7M annualised) = EBIT $507.3M; net interest $103.6M (6.3% on net debt $1.65B: 1H26 €57.7M × 2 / €1,833M); pre-tax $403.7M, tax $100.9M (25% Turkish statutory); minorities $15.0M (1H26 €6.6M annualised); FX, concession discount unwinding and monetary gain 0 → net income $287.8M. Source: TAV 1H26 results presentation (ir.tav.aero, 28 Jul 2026); EUR at 1.1351 USD.",
+  "table": "valuation_lines",
+  "ticker": "TAVHY"
+ },
+ {
+  "col": "rationale",
+  "id": "68be04b7-225d-46a7-9b3b-82286ab0068c",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "In $ billions, like the other lines of this valuation. Implied net income: EBIT $5.90B; interest $1.24B (5.6% on net debt $22.10B); pre-tax $4.66B, tax $1.17B (25.2%); minorities $296.4M; FX revaluation 0 → net income $3.19B. Shares 556M (ADR equivalents) from the Bear scenario; no target year set. Assumptions: interest 5.6% (FY2026 $1,200M / debt $21,511M), tax 25.2% (FY2024-26 effective), minorities 8.5% of net income (FY2024-26). Restated from $3.191B (stored in billions) to absolute units.",
+  "table": "valuation_lines",
+  "ticker": "DGE"
+ },
+ {
+  "col": "rationale",
+  "id": "44ea5d1d-5aa7-4472-bee3-5010ef4ddfba",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Target price $150.4 × 556M shares = $83.62B. The EV bridge of this valuation (EV/EBIT 17.4x × $5.9B − net debt $22.1B) gives $80.56B, 3.7% lower.",
+  "table": "valuation_lines",
+  "ticker": "DGE"
+ },
+ {
+  "col": "rationale",
+  "id": "156eb86f-824e-4416-b535-79be0f6324e3",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "In $ billions, like the other lines of this valuation. Implied net income: EBITDA $5.80B − D&A $480.0M (2.4% of revenue) = EBIT $5.32B; interest $952.0M (5.6% on net debt $17.00B); pre-tax $4.37B, tax $1.10B (25.2%); minorities $277.7M; FX revaluation 0 → net income $2.99B. Net debt $17.0B = EV $78.3B less equity value $61.3B; shares 556M (ADR equivalents) from the Bear scenario. Assumptions: D&A 2.4% of revenue (FY2024; FY2025-26 cash-flow D&A includes brand impairments), interest 5.6% (FY2026 $1,200M / debt $21,511M), tax 25.2% (FY2024-26 effective), minorities 8.5% of net income (FY2024-26). Restated from $2.9895B (stored in billions) to absolute units.",
+  "table": "valuation_lines",
+  "ticker": "DGE"
+ }
+]

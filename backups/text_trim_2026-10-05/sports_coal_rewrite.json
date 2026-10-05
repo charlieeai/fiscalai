@@ -1,0 +1,1050 @@
+[
+ {
+  "table": "risks",
+  "id": "247090ed-da42-4cea-847b-4967805f51e8",
+  "column": "description",
+  "old": "India experiences a decrease in the demand for steel. CNR is exposed twice: Leer high-vol A coal is gaining traction in Asia, and PAMC high-CV thermal sells into India at ~$60/t (Q2 FY2026 call; the India share of PAMC's ~26–27M t is not disclosed in our sources). A slowdown in Indian steel and construction would hit both met volumes and the thermal export book, the leg that makes up 61% of segment EBITDA in our bear case.",
+  "new": "India steel demand slows. CNR is hit twice: Leer high-vol A coal gaining traction in Asia, and PAMC high-CV thermal sold into India at ~$60/t (Q2 FY2026 call); thermal is 61% of bear-case segment EBITDA.",
+  "limit": 35
+ },
+ {
+  "table": "risks",
+  "id": "dc5905cc-08df-485c-bd82-c40118a9ca49",
+  "column": "description",
+  "old": "Leer South / longwall events and the Arch–CONSOL merger integration. The met segment rests on two longwalls (Leer and Leer South); Leer South was idled by a fire in 2025 and the $155M insurance settlement flattered results ($125M of it in Q2 FY2026 EBITDA; ex-insurance LTM met EBITDA is ~$129M). Integration is recent: the merger closed in January 2025, the CEO changed in October 2025 (Paul Lang left with ~$8M severance; Jimmy Brock became Chairman and CEO) and board tenure averages under one year. Another longwall event or integration slippage would push met cash cost back above the $86–91/t guidance.",
+  "new": "Leer South/longwall events and Arch–CONSOL integration. Met relies on two longwalls; Leer South fire insurance ($125M in Q2 FY2026 EBITDA) flattered results. New CEO October 2025. Another event pushes met cost above $86–91/t guidance.",
+  "limit": 35
+ },
+ {
+  "table": "risks",
+  "id": "f69d8944-c467-48ff-bacf-ba99b51a6dd5",
+  "column": "description",
+  "old": "India experiences a decrease in the demand for steel. India and Southeast Asia are where new blast-furnace capacity is being built, and Alpha's export tons priced on Australian indices realized $143.82/t in Q2 FY2026 against $109.08/t for Atlantic-priced tons. If Indian demand slows, the Pacific outlet for US high-vol coal closes, the ~500kt a month of new US high-vol supply (management estimate) competes for Atlantic cargoes, and Alpha's realization falls toward the Atlantic level.",
+  "new": "India steel demand slows. Alpha's Australian-indexed exports realized $143.82/t in Q2 FY2026 vs $109.08/t Atlantic. Without the Pacific outlet, new US high-vol supply competes for Atlantic cargoes and realization falls toward Atlantic levels.",
+  "limit": 35
+ },
+ {
+  "table": "risks",
+  "id": "78fc52c9-a36b-49ce-bb37-02ce17adb38d",
+  "column": "description",
+  "old": "Cost position and liquidity. Alpha is a room-and-pillar and surface miner with the highest cost in the basket: FY2026 Met cost guidance was raised to $103–107/t against a $118.71/t realization in Q2 FY2026. It posted a fifth straight quarterly loss, LTM FCF is about zero (CFO $138M vs capex $140M, FiscalAI), liquidity fell to $447.8M from $476.2M in one quarter, and exports depend on DTA, where a stacker-reclaimer was damaged on 14 June 2026 with no repair date. A further $10/t drop in price costs ~$145M of EBITDA a year, more than the $121M LTM EBITDA.",
+  "new": "Cost and liquidity. Highest cost in the basket: FY2026 Met cost guided $103–107/t vs $118.71/t realization. Fifth straight loss, LTM FCF ~zero, liquidity $447.8M. Each $10/t price drop costs ~$145M EBITDA, above $121M LTM.",
+  "limit": 35
+ },
+ {
+  "table": "risks",
+  "id": "8e97e6ea-30e3-476c-8008-fd419ca0ca95",
+  "column": "description",
+  "old": "China continues the acceleration of programs with electric furnaces. Met is the smaller part of CNR (met segment $366M of ~$1.14B segment revenue in Q2 FY2026, 32%) but carries most of the upside in our bull case. More Chinese electric-furnace steel and steel exports cut seaborne coking-coal demand and widen the PLV–high-vol A spread that prices Leer coal. The high-CV thermal leg partly hedges this, since PAMC sells into power and Indian cement rather than steel.",
+  "new": "China electric-furnace steel accelerates. Met is 32% of CNR segment revenue but carries most bull-case upside. Weaker seaborne coking demand and a wider PLV–high-vol A spread hurt Leer; PAMC thermal partly hedges.",
+  "limit": 35
+ },
+ {
+  "table": "risks",
+  "id": "1960872a-8571-4be5-a734-67ead6c45071",
+  "column": "description",
+  "old": "China continues the acceleration of programs with electric furnaces. 50% of Warrior's Q2 FY2026 sales went to Asia, and part of the Q2 price support came from Chinese import demand (the China CFR–Australia FOB arbitrage reopened after being closed for over a year). Global pig iron output fell 1.9% in H1 2026 with China the main source of weakness (World Steel, cited on the Q2 FY2026 call). A structural move of Chinese steel to electric furnaces lowers seaborne coking-coal demand and pushes more cheap Chinese steel into HCC's European and South American customers (35% and 14% of Q2 FY2026 sales).",
+  "new": "China electric-furnace steel accelerates. 50% of Warrior's Q2 FY2026 sales went to Asia. A structural shift cuts seaborne coking demand and pushes cheap Chinese steel into HCC's European and South American customers (35% and 14%).",
+  "limit": 35
+ },
+ {
+  "table": "risks",
+  "id": "08e3a4f0-f36d-4d70-805b-6f71f969b910",
+  "column": "description",
+  "old": "India experiences a decrease in the demand for steel. India is the growth outlet for Blue Creek: Indian pig iron output rose 2.7% y/y in H1 2026 while global output fell 1.9%, and Blue Creek high-vol A is being sold mostly into the Pacific Basin despite freight to India $13/t (37%) higher y/y. If Indian demand slows, the 5.0M st of Blue Creek tons would have to go to the Atlantic, where the US East Coast HVA index was only 66% of PLV in Q2 FY2026 (92% a year earlier).",
+  "new": "India steel demand slows. India is Blue Creek's growth outlet; otherwise its 5.0M st go to the Atlantic, where US East Coast HVA was 66% of PLV in Q2 FY2026 (92% a year earlier).",
+  "limit": 35
+ },
+ {
+  "table": "risks",
+  "id": "0f7ecd1e-cefd-4538-9e78-f0eebd14e08b",
+  "column": "description",
+  "old": "Blue Creek ramp and longwall concentration. Warrior mines only with longwalls (Mines 4 and 7 plus Blue Creek), so one adverse-geology event or longwall failure can take 25%+ of production at once. Blue Creek is 5.0M of the 13.0–14.0M st FY2026 guidance (~37%), is still ramping toward its 7.5M st design rate, and its high-vol A mix pulls gross price realization down (66% of PLV in Q2 FY2026 vs 80% a year earlier). A stalled ramp or a longwall outage in 2027 hits claim 3 (2028 cash flow above $1B) directly: at the $40/t bear-case margin, every 1M st lost costs ~$40M of EBITDA.",
+  "new": "Blue Creek ramp and longwall concentration. All-longwall Warrior can lose 25%+ of production in one event. Blue Creek (~37% of FY2026 guidance) is ramping; a stall hits claim 3, ~$40M EBITDA per 1M st lost.",
+  "limit": 35
+ },
+ {
+  "table": "risks",
+  "id": "7f3a1a91-ba2e-4151-ae51-9706f8077e6a",
+  "column": "description",
+  "old": "China continues the acceleration of programs with electric furnaces. Export met revenue was $325M of Alpha's $454M met coal revenue in Q2 FY2026 (72%, FiscalAI), and management blames Chinese steel exports for weak demand at its South American and other customers. More electric-furnace steel in China and more Chinese steel exports keep seaborne met demand weak; with a ~$16/t margin in Q2 FY2026, Alpha has far less room than Warrior to absorb it.",
+  "new": "China electric-furnace steel accelerates. Exports were 72% of Alpha's met revenue in Q2 FY2026, and management blames Chinese steel exports for weak demand. With a ~$16/t margin, Alpha has far less room than Warrior.",
+  "limit": 35
+ },
+ {
+  "table": "risks",
+  "id": "cd892585-8276-41dd-9678-c6e4dcab6680",
+  "column": "description",
+  "old": "Greater China may be a structural share loss, not a cycle. Revenue fell from $7,545M in FY2024 to $5,847M in FY2026 (-22%) and EBIT from $2,309M to $1,278M (-45%); Q4 FY2026 revenue was down 17% and management expects similar near-term trends. Local brands (Anta, Li Ning) compete on price and cultural relevance. China was 17% of FY2024 geographic segment EBIT ($2,309M of $13,404M); each further $500M of lost China revenue at the FY2026 22% segment margin costs ~$110M of EBIT.",
+  "new": "Greater China may be structural share loss, not a cycle: revenue fell from $7,545M (FY2024) to $5,847M (FY2026), EBIT -45%. Anta and Li Ning compete on price. Each further $500M lost costs ~$110M EBIT.",
+  "limit": 35
+ },
+ {
+  "table": "risks",
+  "id": "c828b28e-f575-438e-a543-01f7de4557fe",
+  "column": "description",
+  "old": "Sportswear and Jordan Streetwear are about half of revenue and management expects both to keep declining through FY2027, improving only in the second half. Sportswear fell double digits in Q4 FY2026. Performance categories are growing (running added ~$1B over five quarters), but they are the smaller half. If lifestyle declines another ~10% a year, performance has to grow ~10% a year just to keep revenue flat at $46.4B, and the base case needs $49.7B by FY2029. UBS has also flagged that wider Jordan distribution and more promotions could weaken the brand's exclusivity.",
+  "new": "Sportswear and Jordan Streetwear (about half of revenue) should keep declining through FY2027; performance grows but is smaller. If lifestyle falls ~10% a year, performance must grow ~10% just to hold $46.4B.",
+  "limit": 35
+ },
+ {
+  "table": "risks",
+  "id": "f7900a3e-c5ff-42d6-b9c6-9315d0ef20c3",
+  "column": "description",
+  "old": "Tariffs are a recurring cost that the FY2026 numbers hide. The $986M IEEPA refund recognised in Q4 FY2026 added 210bps to FY2026 gross margin (40.8% without it) and $0.52 to EPS ($1.58 without it); over $300M had been collected by 31 May 2026 and the rest (under ~$690M) sat in receivables. Management's FY2027 plan assumes a 15% incremental tariff from August 2026. Each 100bps of gross margin is ~$460M of EBIT, about 16% of FY2026 adjusted EBIT (~$2.8B). Nike's footwear is made mostly in Vietnam, Indonesia and China (hypothesis from prior 10-Ks, not re-checked), so a higher rate or a lost refund claim goes straight to margin.",
+  "new": "Tariffs are a recurring cost hidden in FY2026: the $986M IEEPA refund added 210bps to gross margin (40.8% without). FY2027 assumes a 15% incremental tariff. Each 100bps of gross margin is ~$460M EBIT.",
+  "limit": 35
+ },
+ {
+  "table": "risks",
+  "id": "888b2794-4b88-49ba-a8ca-52abc65cbac8",
+  "column": "description",
+  "old": "The Americas brand erosion is structural, not cyclical. The Americas are 69% of LTM revenue and 71% of FY2025 segment operating income, comps have been negative in all six quarters of FY2025 and FY2026 so far and reached -12% in Q2 FY2026, and the core leggings franchise fell ~20%. Competitors (Alo, Vuori, On) take the same premium customer.\n\nBecause stores, leases and marketing are fixed, every point of lost revenue falls through at a high rate: Q3 FY2026 operating margin is guided at ~6.5% vs 17% a year earlier. If Americas revenue falls to ~$6.2B, the bear case gives EPS of $7.69 and $76.86 a share, 21% below the price.",
+  "new": "Americas erosion is structural, not cyclical. Americas are 69% of LTM revenue; comps -12% in Q2 FY2026, leggings ~-20%. Fixed costs amplify it: Q3 margin guided ~6.5% vs 17%. Bear case: $76.86, 21% below price.",
+  "limit": 35
+ },
+ {
+  "table": "risks",
+  "id": "9d88b556-6309-4026-b48d-8b8eb2bec0da",
+  "column": "description",
+  "old": "China turns from growth engine to drag. China Mainland revenue compounded 45% a year FY2022–FY2025 to $1.75B, with a ~40% segment operating margin, and funded most of the company's growth while the Americas stalled. Comps fell from +26% in Q4 FY2025 to -8% in Q2 FY2026 on brand-sentiment incidents and weaker Tmall events.\n\nLululemon still plans ~25 international openings in FY2026, many in China. If comps stay negative while the fleet grows, China margins compress and the International growth the base case needs (~5% a year to $4.0B) does not arrive.",
+  "new": "China turns from growth engine to drag. Mainland revenue compounded 45% a year to $1.75B at ~40% margin; comps fell from +26% to -8% (Q2 FY2026). Negative comps amid ~25 openings compress margins.",
+  "limit": 35
+ },
+ {
+  "table": "risks",
+  "id": "4161eca3-f666-4bac-8089-3cdfa8d9807e",
+  "column": "description",
+  "old": "Leadership and governance in flux. Three leadership set-ups in one year: Calvin McDonald left in January 2026, interim co-CEOs ran the company for seven months and Heidi O'Neill started on 8 September 2026 with no plan yet published. The board has absorbed a founder proxy fight (Chip Wilson, ~9.1%, two nominees seated in the May 2026 settlement) and an activist holding more than $1B (Elliott) that backed another CEO candidate.\n\nA new CEO under pressure from both may take a large reset (store closures, inventory write-downs, higher marketing) that pushes margins below the base case for longer. Law-firm investigations into the Q2 FY2026 tariff-refund disclosure add litigation noise.",
+  "new": "Leadership in flux: McDonald left January 2026; Heidi O'Neill started 8 September 2026 with no plan yet. Pressure from Chip Wilson and Elliott may force a large reset keeping margins below base longer.",
+  "limit": 35
+ },
+ {
+  "table": "risks",
+  "id": "b8487bd1-89ee-40e8-b375-989ea837af44",
+  "column": "description",
+  "old": "Brand heat in running fades the way it has for other running brands. The Americas are 57.7% of FY2025 sales and wholesale is 58%. In Q2 FY2026, sell-out of On's everyday running franchises in US wholesale was already below plan \"in a highly promotional multi-brand marketplace\", and Americas growth slowed to 13.0% cc (4.5% reported) from 17.1% cc in Q1. The Base needs sales to grow about 13% a year in CHF to FY2029. If the core franchise loses shelf space, growth drops to high single digits and the multiple de-rates at the same time: the Bear case is $21.85, -26% from $29.55. Lifestyle franchises (CloudTilt +190% in the premium sneaker channel) partly offset this, but fashion demand is less durable than performance demand.",
+  "new": "Running brand heat fades. Americas are 57.7% of FY2025 sales; Q2 FY2026 US wholesale sell-out missed plan and Americas growth slowed to 13.0% cc. Base needs ~13% a year; otherwise Bear $21.85 (-26%).",
+  "limit": 35
+ },
+ {
+  "table": "risks",
+  "id": "177917e4-d96f-4bf4-8185-633006e5345c",
+  "column": "description",
+  "old": "Currency. On reports in CHF, keeps a CHF-heavy overhead base, sells mostly in USD and EUR, and trades in USD. In Q2 FY2026 reported growth was 13.5% against 21.6% at constant currency. In Q2 FY2025, FX drove a CHF -139.9M non-operating result that turned the quarter into a CHF -40.9M net loss. For a USD holder the translation cuts both ways: the Base target is $43.64 at 1.20 USD/CHF (29 September 2026 spot) and $44.96 at the 1.2364 FiscalAI/platform rate, and every 5% move in the franc moves the target by 5%. The margin of safety is only $1.00 below the 0.70 x IVO line, so a small FX move changes its color.",
+  "new": "Currency. On reports in CHF, trades in USD; Q2 FY2026 reported growth was 13.5% vs 21.6% cc. Base target $43.64 at 1.20 USD/CHF; each 5% franc move shifts it 5%; margin of safety only $1.00.",
+  "limit": 35
+ },
+ {
+  "table": "risks",
+  "id": "93650a26-b9e7-4643-b23b-5151f50bde9b",
+  "column": "description",
+  "old": "Leadership and control changed in the same year the guide was cut. CEO/CFO Martin Hoffmann left on 1 May 2026, the founders David Allemann and Caspar Coppetti became Co-CEOs while staying Executive Co-Chairmen, and Frank Sluis took his first call as CFO in the quarter FY2026 guidance was cut. Class B voting-rights shares (325.0M) carry about 52% of the votes for about 9.7% of the economics, so outside holders cannot force a change of course. Add tariff exposure: production is concentrated in Vietnam, and the FY2026 guide assumes 20% incremental US tariffs, with refunds not yet quantified. The first $1B buyback is the test of whether the new team allocates capital for per-share value.",
+  "new": "Leadership changed as the guide was cut: founders became Co-CEOs, new CFO. Class B holds ~52% of votes for ~9.7% of economics. Guide assumes 20% incremental US tariffs. The $1B buyback tests capital allocation.",
+  "limit": 35
+ },
+ {
+  "table": "catalysts",
+  "id": "2554c867-2839-409d-9321-835711b83fe6",
+  "column": "detail",
+  "old": "Met segment cash cost dropped to $85.65/t in Q2 FY2026 (about −$7/t q/q) after the Leer longwall moved into better seams and Leer South returned; guidance was lowered to $86–91/t. The CEO called the level sustainable. Two more quarters inside the range show the Leer/Leer South problems of 2025 are behind; a jump above $91/t would point to another geology or longwall event.",
+  "new": "Met cash cost fell to $85.65/t in Q2 FY2026 as Leer improved and Leer South returned; guidance cut to $86–91/t. Two more quarters in range confirm 2025 problems are behind; above $91/t signals another event.",
+  "limit": 35
+ },
+ {
+  "table": "catalysts",
+  "id": "e27f3d66-a07d-428c-ac3a-5fa0b109606a",
+  "column": "detail",
+  "old": "Cash cost of sales fell to $92.53/t in Q2 FY2026 (−9% y/y) on Blue Creek mix and the 45X credit. Management expects a few dollars per ton of inflation in H2 and has two longwall moves in Q3 and one in Q4. Holding below $100/t confirms that Blue Creek lowered the cost base, which is the cost-advantage pillar of the thesis; a print above $100/t would mean the Q2 figure was mix and credits, not structure.",
+  "new": "Cash cost fell to $92.53/t in Q2 FY2026 (−9% y/y) on Blue Creek mix and 45X credit. Staying below $100/t confirms the cost-advantage pillar; above $100/t means mix and credits, not structure.",
+  "limit": 35
+ },
+ {
+  "table": "catalysts",
+  "id": "490f1045-399f-476e-97c9-6c3d659be91d",
+  "column": "detail",
+  "old": "Met cost of coal sales was $103.07/t in Q2 FY2026 after $107.98 in Q1; FY2026 guidance was raised $7/t at the midpoint to $103–107/t on diesel and supplies. Kingston Wildcat, a new low-vol mine, is ramping in Q3–Q4 FY2026 and should lift the low-vol mix. A Q4 cost at or below $103/t says the new mine offsets inflation; above $107/t says Alpha's cost position keeps deteriorating.",
+  "new": "Met cost was $103.07/t in Q2 FY2026 ($107.98 in Q1); FY2026 guidance raised to $103–107/t. Kingston Wildcat (low-vol) ramps Q3–Q4. Q4 at or below $103/t offsets inflation; above $107/t means deterioration.",
+  "limit": 35
+ },
+ {
+  "table": "catalysts",
+  "id": "561abcba-f6cb-4662-973e-3cd73efb8715",
+  "column": "detail",
+  "old": "Total liquidity was $447.8M at Q2 FY2026, down from $476.2M at Q1 (cash $307.6M, short-term investments $30.9M, ABL availability $184.3M, less $75M minimum liquidity). LTM FCF is about zero to negative and buybacks continued ($36.7M in H1 FY2026). A drop below $400M while prices stay low would put the no-dilution leg of claim 2 under pressure and should stop buybacks.",
+  "new": "Liquidity was $447.8M at Q2 FY2026, down from $476.2M; LTM FCF about zero while buybacks continued ($36.7M in H1). Below $400M with low prices pressures claim 2's no-dilution leg and should stop buybacks.",
+  "limit": 35
+ },
+ {
+  "table": "catalysts",
+  "id": "49e5047e-18e9-4069-9eab-37ed02a0a72c",
+  "column": "detail",
+  "old": "CNR returned $68M in Q2 FY2026 ($63M buybacks) and $360M (over 80% of FCF) since February 2025. The $155M Leer South claim is settled, $38M more arrives in Q3, and management said to expect heavier buybacks in Q3–Q4 plus a $75–100M working-capital release. A Q3 return above $100M confirms the framework (~75% of FCF) holds with the cash in hand.",
+  "new": "CNR returned $68M in Q2 FY2026 and $360M (over 80% of FCF) since February 2025. With $38M more claim cash in Q3 and heavier buybacks guided, a Q3 return above $100M confirms the ~75% framework.",
+  "limit": 35
+ },
+ {
+  "table": "catalysts",
+  "id": "53d09799-3cef-45df-873f-7c527e587be7",
+  "column": "detail",
+  "old": "FY2026 guidance was raised to 13.0–14.0M st with Blue Creek at 5.0M st, 90% contracted. Claim 3 of the thesis needs Blue Creek fully commissioned in 2027 and 2028 cash flow above $1B. The FY2027 guidance (with the Q4 FY2026 report, Feb 2027) is the first dated test of the ramp; analysts on the Q2 call referenced 6M st as the target run-rate.",
+  "new": "FY2026 guidance raised to 13.0–14.0M st, Blue Creek 5.0M st. Claim 3 needs Blue Creek fully commissioned in 2027 and 2028 cash flow above $1B; FY2027 guidance (Feb 2027) is the first dated ramp test.",
+  "limit": 35
+ },
+ {
+  "table": "catalysts",
+  "id": "e6a81c3f-dacd-4802-9319-c8cd33a52ac7",
+  "column": "detail",
+  "old": "With Blue Creek capex complete, Q2 FY2026 FCF was $103.4M and cash reached $302M. The CFO said the target is $350–400M of cash (~$500M total liquidity) and that buybacks are one of the levers once there. HCC has only paid a $0.08 quarterly dividend since FY2023. A buyback authorization or special dividend tests whether management returns the Blue Creek cash rather than holding it.",
+  "new": "With Blue Creek capex done, Q2 FY2026 FCF was $103.4M and cash $302M. Target cash is $350–400M, then buybacks are a lever. A buyback authorization or special dividend tests whether management returns cash.",
+  "limit": 35
+ },
+ {
+  "table": "catalysts",
+  "id": "1aa64c95-159e-49db-a32e-834e1c652207",
+  "column": "detail",
+  "old": "Claim 2 of the thesis rests on the domestic band (~30% of production) priced the prior Q3/Q4, which is immune to the weak export index. For 2026 domestic committed tons slipped to 3.8M t from 4.1M t because customers did not declare options. Negotiations for 2027 are under way; management said US blast furnaces are running and low-vol demand should be good. The Q3 or Q4 FY2026 report will show the 2027 committed and priced position.",
+  "new": "Claim 2 rests on the domestic band (~30% of production) priced the prior year, immune to the weak export index. 2026 committed domestic tons slipped to 3.8M t from 4.1M t. Q3/Q4 FY2026 shows 2027.",
+  "limit": 35
+ },
+ {
+  "table": "catalysts",
+  "id": "79d64eaf-3175-4a02-8e8f-77f1d63f7087",
+  "column": "detail",
+  "old": "Management expects 8.5–9.0M t from the Leer complex; 8.7M coking tons are contracted for 2026. FY2027 guidance (Feb 2027) is the first full-year plan without the 2025 Leer South fire and with the merger a year old. Meeting both volume and cost shows the Arch assets integrated into CONSOL's operating practices; a lower volume or higher cost would weaken the met leg that carries most of the upside.",
+  "new": "Leer is expected at 8.5–9.0M t; 8.7M coking tons contracted for 2026. FY2027 guidance (Feb 2027) is the first clean post-fire, post-merger plan. Meeting volume and cost confirms integration; misses weaken the met leg.",
+  "limit": 35
+ },
+ {
+  "table": "catalysts",
+  "id": "a78d16d0-47cc-435e-9c09-f97b2c6d0f68",
+  "column": "detail",
+  "old": "Nike is employing same playbook Adidas used to stabilize its China business: local autonomy, design \"in and for\" China, and a territorial expansion drive. The precedent suggests a 2y lag between the trough and the 1st Q of positive growth, with full recovery taking over 3Y and no guarantee of returning to previous peaks. Metrics: (1) Q currency-neutral growth in Greater China, (2) signs of local traction, reported by Hill in \"must-win doors\" (high-single-digit sales growth in investment locations); and (3) stabilization of China EBIT (which fell from $1.60B to $1.28B between FY25 and FY26).",
+  "new": "Nike follows Adidas' China playbook: local autonomy, design for China, territorial expansion. Precedent: ~2y from trough to growth, 3Y+ to recovery. Watch currency-neutral China growth, must-win doors and China EBIT ($1.60B to $1.28B).",
+  "limit": 35
+ },
+ {
+  "table": "catalysts",
+  "id": "1d9af30c-ebd4-4c3d-9e4b-7723fbced3bc",
+  "column": "detail",
+  "old": "Management guided Q1 FY2027 (reported 1 October 2026) to revenue down low to mid single digits and gross margin \"slightly positive\" year over year, with an incremental tariff rate of 15% from August. Q1 FY2026 printed $11,720M of revenue at a 42.2% gross margin ($4,943M). This is the first quarter without the IEEPA refund distortion and the first test of claim 2: margin recovering while tariffs stay in the cost base. A miss here would say the discount clean-up is not yet offsetting tariffs.",
+  "new": "Q1 FY2027 (1 October 2026) guided revenue down low to mid single digits, gross margin slightly up despite 15% tariff. First quarter without the IEEPA refund and first test of claim 2.",
+  "limit": 35
+ },
+ {
+  "table": "catalysts",
+  "id": "6f967313-7f20-4f26-baf7-3486f4db4a31",
+  "column": "detail",
+  "old": "Americas comps went -1%, -3%, -5%, -2% through FY2025, then -6% in Q1 FY2026 and -12% in Q2 FY2026. Management guided Q3 North America revenue down mid-teens and said August started slowly, so the guide already assumes a worse quarter.\n\nA Q3 print at -12% or better, with revenue at or above the $2.29–2.32B guide, would be the first sign that the trough is Q2–Q3 FY2026 and that the base case's Americas floor near $7.0B is reachable. A worse print moves the case toward the bear.",
+  "new": "Americas comps hit -12% in Q2 FY2026; Q3 guided down mid-teens. Q3 at -12% or better, with revenue at or above the $2.29–2.32B guide, signals a trough and reachable ~$7.0B floor; worse moves toward bear.",
+  "limit": 35
+ },
+ {
+  "table": "catalysts",
+  "id": "a1353027-1d8f-46ac-9cf5-80fbd0eeacf8",
+  "column": "detail",
+  "old": "China comps went from +26% in Q4 FY2025 to +13% in Q1 FY2026 and -8% in Q2 FY2026, which management attributed to negative social-media commentary, the Great Wall event and a weaker Tmall 6.18. Guidance still has China revenue up high single digits for FY2026 on store growth.\n\nChina was 19% of FY2025 segment operating income at a 40% segment margin. Positive comps by Q4 FY2026 (which includes the 11.11 event) would show the damage was sentiment, not a lost market position.",
+  "new": "China comps fell from +26% to -8% (Q2 FY2026) on social-media backlash and a weak Tmall 6.18. China was 19% of FY2025 segment operating income. Positive comps by Q4 FY2026 would mean sentiment damage only.",
+  "limit": 35
+ },
+ {
+  "table": "catalysts",
+  "id": "6e048ed6-9bd2-4ad6-ba84-2a01c66041a9",
+  "column": "detail",
+  "old": "In Q2 FY2026 management cut FY2026 constant-currency growth guidance from \"at least 23%\" (reiterated on 12 May 2026) to \"low 20s\", raised gross margin to at least 65% and kept adjusted EBITDA at 19.5–20%. It said Q3 growth will be lower than Q4 because the rest of the wholesale sell-in cuts land in Q3. H1 FY2026 grew 21.6% cc in Q2 and 26.4% in Q1. Hitting the reset guide in the first year under the new Co-CEOs and CFO tells us whether the Q2 cut was a one-off correction or the first of several. Tariff refunds, which management expects to book from Q3, are excluded from the guide and should be stripped out when checking it.",
+  "new": "Q2 FY2026 cut FY2026 cc growth guidance from 'at least 23%' to 'low 20s' and raised gross margin to at least 65%. Hitting it shows if the cut was one-off (ex tariff refunds).",
+  "limit": 35
+ },
+ {
+  "table": "catalysts",
+  "id": "1703dd73-dc63-4c9f-8f11-881901dcc64c",
+  "column": "detail",
+  "old": "Wholesale grew 25.1% cc in Q1 FY2026 and 12.7% cc in Q2 as On held back sell-in to US partners where sell-out of everyday running franchises lagged. Cloudsurfer 3 (first shoe on the Surreal superfoam) goes to run-specialty stores in October 2026 with a three-month exclusive, rolls out broadly in January 2027, then Cloudsurfer Max 2 in April and a Cloudflow relaunch. Management says every everyday running franchise moves to the new foams within about 14 months. If wholesale re-accelerates, claim 1 holds and the moat is intact; if it does not, the bear case starts to apply.",
+  "new": "Wholesale slowed from 25.1% cc (Q1 FY2026) to 12.7% (Q2) as On held back US sell-in. Cloudsurfer 3 on new superfoam launches October 2026, broadly January 2027. Re-acceleration keeps claim 1; otherwise bear applies.",
+  "limit": 35
+ },
+ {
+  "table": "catalysts",
+  "id": "a91e531d-ef1f-48c3-8818-01c3d3dd9d46",
+  "column": "detail",
+  "old": "The FY2026 gross-margin guide was raised to at least 65% only because of DTC mix, per the CFO. Inventory was CHF 472.9M at Q2 FY2026, up 31% year over year against 13.5% reported sales growth; management put this down to volume and FX. If the US wholesale reset needs clearance or markdowns, or DTC growth slows from 34.3% cc, gross margin falls back toward the FY2025 level of 62.8%. That is the first number the bear case needs.",
+  "new": "The gross-margin guide (at least 65%) rests on DTC mix. Inventory was CHF 472.9M at Q2 FY2026, +31% y/y vs 13.5% sales growth. Clearance or slower DTC pushes margin toward 62.8%, the bear's first number.",
+  "limit": 35
+ },
+ {
+  "table": "catalysts",
+  "id": "29631ba2-69b5-45df-b03b-e32cb939cb97",
+  "column": "detail",
+  "old": "Nike holds an Investor Day on 16–17 November 2026, the first under Hill, with a new CFO (David Denton appears as EVP CFO in September 2026 filings, after Matt Friend's departure was announced on the Q4 FY2026 call). Management has so far only spoken of \"a trajectory to get back to double-digit margins\". A target with a date, a gross margin bridge and a capital return policy would make claims 2 and 3 checkable; a vague deck or a dividend reset would weaken them.",
+  "new": "Investor Day 16–17 November 2026, first under Hill and a new CFO. A dated margin target, margin bridge and capital return policy make claims 2 and 3 checkable; vagueness or a dividend reset weakens them.",
+  "limit": 35
+ },
+ {
+  "table": "catalysts",
+  "id": "073ef204-d871-4235-b8ce-f05ddf48ffd1",
+  "column": "detail",
+  "old": "In FY2026 dividends paid were $2,407M against free cash flow of $2,184M (OCF $2,868M less capex $684M), with $986M of non-cash tariff refund in earnings and part of it still in receivables. Bank of America cut its EPS estimate to $1.43 on 29 Sep 2026 (press reports label it fiscal 2026, which has already been reported at $2.10, so it is most likely FY2027 — unverified), implying a payout above 100%. A second year of dividends above FCF would mean the payout is funded from the $9.0B of cash and short-term investments and would put the dividend and the buyback restart in question.",
+  "new": "FY2026 dividends of $2,407M exceeded FCF of $2,184M. Bank of America cut EPS to $1.43 (likely FY2027, unverified), implying payout above 100%. A second year above FCF draws on $9.0B cash, questioning dividend and buyback.",
+  "limit": 35
+ },
+ {
+  "table": "catalysts",
+  "id": "1bfe6b93-447b-4bbd-b3a6-c590bb999ba0",
+  "column": "detail",
+  "old": "Heidi O'Neill started on 8 September 2026 and will present FY2027 guidance with Q4 FY2026 results (March 2027; management said square footage for FY2027 will be given then). This is the first read on whether she resets the cost base (stores, pop-ups, marketing) or chases revenue with spending.\n\nThe base case needs operating margin to bottom near 13% and recover to 15.5% by FY2029. A FY2027 guide at or above 13% ex one-offs, with a stated plan to cut fixed cost, supports it; a guide below 12% or a large restructuring charge without a margin path breaks claim 2.",
+  "new": "Heidi O'Neill gives FY2027 guidance in March 2027. Base needs margin bottoming near 13%, 15.5% by FY2029. A 13%+ guide ex one-offs with fixed-cost cuts supports it; below 12% breaks claim 2.",
+  "limit": 35
+ },
+ {
+  "table": "catalysts",
+  "id": "a1198343-c246-460f-9e3f-47d5696483d2",
+  "column": "detail",
+  "old": "Management guided FY2026 buybacks in line with FY2025 (~$1.2B) and had $713M left on the authorization at Q2 FY2026. H1 FY2026 buybacks were $707M against FCF of $312M, and FY2026 FCF will be squeezed by a Q3 operating margin guided at ~6.5%.\n\nIf the full-year buyback reaches ~$1.2B while FCF stays under $900M, cash falls toward $1.0B and the buyback becomes a balance-sheet decision rather than an allocation of surplus cash, which breaks claim 3 and turns the cashflow pillar red.",
+  "new": "FY2026 buybacks guided ~$1.2B; H1 was $707M vs $312M FCF. A ~$1.2B year with FCF under $900M pushes cash toward $1.0B, a balance-sheet decision that breaks claim 3 and turns the cashflow pillar red.",
+  "limit": 35
+ },
+ {
+  "table": "catalysts",
+  "id": "0371c1e9-0066-44a1-bcd7-a8c312907e7e",
+  "column": "detail",
+  "old": "In September 2026 the board authorized On's first buyback: up to $1B of Class A shares through December 2029, about 10% of the $9.9B market cap at $29.55. Until now the class-A-equivalent count has only risen, from 316.5M in FY2022 to 334.2M in Q2 FY2026 (+1.5% a year), from stock compensation (CHF 72M LTM). With CHF 1,284M of cash and short-term investments and LTM FCF of CHF 438M, a quarter of the program by end FY2027 is affordable without borrowing. Buying well below the Base IVO of $43.64 is accretive. Not buying would say management does not see the value, or wants the cash for stores.",
+  "new": "First buyback (September 2026): up to $1B through December 2029, ~10% of market cap, after shares rose from 316.5M to 334.2M. CHF 1,284M cash funds it; buying below the $43.64 Base IVO is accretive.",
+  "limit": 35
+ },
+ {
+  "table": "own_thesis",
+  "id": "628fe497-b0f1-4e4d-ae2c-db79be21701f",
+  "column": "bullet_1",
+  "old": "Met coal is a rare and limited material, is input for making steel and ore and exportable production exists only in a few geographies (Australia, Apalaches, Western Canada, etc). Also there exists a supply asymmetry. The dynamic is when a mine closes, the team retires and sells its assets, so there are high entry barriers. The current macro situation sets a low met coal price since 2024, the next boom could \"may last for a while\", and current companies could experience high earnings.",
+  "new": "Met coal is scarce, a steelmaking input, exportable from few geographies (Australia, Appalachia, Western Canada). Supply is asymmetric: closed mines lose teams and assets, so entry barriers are high. Prices are low since 2024; the next boom 'may last for a while', with high earnings.",
+  "limit": 45
+ },
+ {
+  "table": "own_thesis",
+  "id": "628fe497-b0f1-4e4d-ae2c-db79be21701f",
+  "column": "bullet_2",
+  "old": "According to Pabrai citing Ipsco (2005), \"low risk coupled with high uncertainty can lead to high rewards\": cyclical, uncertain in future earnings, but with cash and contracted flows that covered almost the entire share price. Met coal companies replicates this DNA.\n\nIn met coal, the domestic band approximately 30% of production sold at prices fixed in Q3 of the previous year is profitable and immune to the weak index (Q2-2025). The balance sheet acts as a survival cushion. AMR operates with a minimum cash target; net cash reached a peak and ceased buybacks as soon as it saw weakness in Q1-2024. This buys it time to weather the downturn without dilution or bankruptcy.\n\nFurthermore, some of the companies in the baskets have aggressive buybacks at unpopular prices. It's the cornerstone of value creation: in four years, Alpha's diluted share count fell by 32%, with a declared commitment to returning all capital through share buybacks.",
+  "new": "Pabrai/Ipsco (2005): 'low risk coupled with high uncertainty can lead to high rewards'. Met coal fits: the ~30% domestic band, priced the prior Q3, stays profitable despite weak index; balance sheets avoid dilution; Alpha's diluted shares fell 32% in four years via buybacks.",
+  "limit": 45
+ },
+ {
+  "table": "own_thesis",
+  "id": "628fe497-b0f1-4e4d-ae2c-db79be21701f",
+  "column": "bullet_3",
+  "old": "AMR and HCC as complementary bets.\n\nWarrior (HCC) = the lowest cost/highest leverage to profit. Longwall miner, bottom quartile of the global cost curve, Blue Creek delivered on budget and ahead of schedule, near the Port of Mobile with a dual rail/barge option. If its mines run normally, it is \"virtually guaranteed to be profitable.\" Its Achilles' heel: it is purely longwall, so a setback could hit 25%+ of production at once. Quantified catalyst: Blue Creek fully commissioned in 2027, with 2028 cash flows that could exceed $1 billion against a market cap of $2.7 billion.\n\nAlpha (AMR), the highest survival/longevity/optionality. Room and pillar (more expensive), farther from the port, dependent on a single rail line. But its disadvantage of having small mines is also an advantage: it can turn production on and off according to demand, has its own blending terminal, buys coal from small producers in Central Appalachia to refine blends, and can hire distressed miners during lean times. The thesis statement: \"Alpha could be producing met coal 75-100 years from now – decades after Warrior ceases to exist.\"",
+  "new": "AMR and HCC are complementary. Warrior (HCC): lowest cost, longwall, near Mobile port; one setback can hit 25%+ of production; Blue Creek could lift 2028 cash flow above $1B vs $2.7B market cap. Alpha (AMR): flexible small mines, own blending terminal, 75-100 year longevity.",
+  "limit": 45
+ },
+ {
+  "table": "own_thesis",
+  "id": "d6e203ec-c789-432a-9ab9-2a6c36b2f6e0",
+  "column": "bullet_1",
+  "old": "Met coal is a rare and limited material, is input for making steel and ore and exportable production exists only in a few geographies (Australia, Apalaches, Western Canada, etc). Also there exists a supply asymmetry. The dynamic is when a mine closes, the team retires and sells its assets, so there are high entry barriers. The current macro situation sets a low met coal price since 2024, the next boom could \"may last for a while\", and current companies could experience high earnings.",
+  "new": "Met coal is scarce, a steelmaking input, exportable from few geographies (Australia, Appalachia, Western Canada). Supply is asymmetric: closed mines lose teams and assets, so entry barriers are high. Prices are low since 2024; the next boom 'may last for a while', with high earnings.",
+  "limit": 45
+ },
+ {
+  "table": "own_thesis",
+  "id": "d6e203ec-c789-432a-9ab9-2a6c36b2f6e0",
+  "column": "bullet_2",
+  "old": "According to Pabrai citing Ipsco (2005), \"low risk coupled with high uncertainty can lead to high rewards\": cyclical, uncertain in future earnings, but with cash and contracted flows that covered almost the entire share price. Met coal companies replicates this DNA.\n\nIn met coal, the domestic band approximately 30% of production sold at prices fixed in Q3 of the previous year is profitable and immune to the weak index (Q2-2025). The balance sheet acts as a survival cushion. AMR operates with a minimum cash target; net cash reached a peak and ceased buybacks as soon as it saw weakness in Q1-2024. This buys it time to weather the downturn without dilution or bankruptcy.\n\nFurthermore, some of the companies in the baskets have aggressive buybacks at unpopular prices. It's the cornerstone of value creation: in four years, Alpha's diluted share count fell by 32%, with a declared commitment to returning all capital through share buybacks.",
+  "new": "Pabrai/Ipsco (2005): 'low risk coupled with high uncertainty can lead to high rewards'. Met coal fits: the ~30% domestic band, priced the prior Q3, stays profitable despite weak index; balance sheets avoid dilution; Alpha's diluted shares fell 32% in four years via buybacks.",
+  "limit": 45
+ },
+ {
+  "table": "own_thesis",
+  "id": "d6e203ec-c789-432a-9ab9-2a6c36b2f6e0",
+  "column": "bullet_3",
+  "old": "AMR and HCC as complementary bets.\n\nWarrior (HCC) = the lowest cost/highest leverage to profit. Longwall miner, bottom quartile of the global cost curve, Blue Creek delivered on budget and ahead of schedule, near the Port of Mobile with a dual rail/barge option. If its mines run normally, it is \"virtually guaranteed to be profitable.\" Its Achilles' heel: it is purely longwall, so a setback could hit 25%+ of production at once. Quantified catalyst: Blue Creek fully commissioned in 2027, with 2028 cash flows that could exceed $1 billion against a market cap of $2.7 billion.\n\nAlpha (AMR), the highest survival/longevity/optionality. Room and pillar (more expensive), farther from the port, dependent on a single rail line. But its disadvantage of having small mines is also an advantage: it can turn production on and off according to demand, has its own blending terminal, buys coal from small producers in Central Appalachia to refine blends, and can hire distressed miners during lean times. The thesis statement: \"Alpha could be producing met coal 75-100 years from now – decades after Warrior ceases to exist.\"",
+  "new": "AMR and HCC are complementary. Warrior (HCC): lowest cost, longwall, near Mobile port; one setback can hit 25%+ of production; Blue Creek could lift 2028 cash flow above $1B vs $2.7B market cap. Alpha (AMR): flexible small mines, own blending terminal, 75-100 year longevity.",
+  "limit": 45
+ },
+ {
+  "table": "own_thesis",
+  "id": "bca79e2f-a68a-45a1-a61d-d850b18fb5ef",
+  "column": "bullet_1",
+  "old": "Met coal is a rare and limited material, is input for making steel and ore and exportable production exists only in a few geographies (Australia, Apalaches, Western Canada, etc). Also there exists a supply asymmetry. The dynamic is when a mine closes, the team retires and sells its assets, so there are high entry barriers. The current macro situation sets a low met coal price since 2024, the next boom could \"may last for a while\", and current companies could experience high earnings.",
+  "new": "Met coal is scarce, a steelmaking input, exportable from few geographies (Australia, Appalachia, Western Canada). Supply is asymmetric: closed mines lose teams and assets, so entry barriers are high. Prices are low since 2024; the next boom 'may last for a while', with high earnings.",
+  "limit": 45
+ },
+ {
+  "table": "own_thesis",
+  "id": "bca79e2f-a68a-45a1-a61d-d850b18fb5ef",
+  "column": "bullet_2",
+  "old": "According to Pabrai citing Ipsco (2005), \"low risk coupled with high uncertainty can lead to high rewards\": cyclical, uncertain in future earnings, but with cash and contracted flows that covered almost the entire share price. Met coal companies replicates this DNA.\n\nIn met coal, the domestic band approximately 30% of production sold at prices fixed in Q3 of the previous year is profitable and immune to the weak index (Q2-2025). The balance sheet acts as a survival cushion. AMR operates with a minimum cash target; net cash reached a peak and ceased buybacks as soon as it saw weakness in Q1-2024. This buys it time to weather the downturn without dilution or bankruptcy.\n\nFurthermore, some of the companies in the baskets have aggressive buybacks at unpopular prices. It's the cornerstone of value creation: in four years, Alpha's diluted share count fell by 32%, with a declared commitment to returning all capital through share buybacks.",
+  "new": "Pabrai/Ipsco (2005): 'low risk coupled with high uncertainty can lead to high rewards'. Met coal fits: the ~30% domestic band, priced the prior Q3, stays profitable despite weak index; balance sheets avoid dilution; Alpha's diluted shares fell 32% in four years via buybacks.",
+  "limit": 45
+ },
+ {
+  "table": "own_thesis",
+  "id": "bca79e2f-a68a-45a1-a61d-d850b18fb5ef",
+  "column": "bullet_3",
+  "old": "AMR and HCC as complementary bets.\n\nWarrior (HCC) = the lowest cost/highest leverage to profit. Longwall miner, bottom quartile of the global cost curve, Blue Creek delivered on budget and ahead of schedule, near the Port of Mobile with a dual rail/barge option. If its mines run normally, it is \"virtually guaranteed to be profitable.\" Its Achilles' heel: it is purely longwall, so a setback could hit 25%+ of production at once. Quantified catalyst: Blue Creek fully commissioned in 2027, with 2028 cash flows that could exceed $1 billion against a market cap of $2.7 billion.\n\nAlpha (AMR), the highest survival/longevity/optionality. Room and pillar (more expensive), farther from the port, dependent on a single rail line. But its disadvantage of having small mines is also an advantage: it can turn production on and off according to demand, has its own blending terminal, buys coal from small producers in Central Appalachia to refine blends, and can hire distressed miners during lean times. The thesis statement: \"Alpha could be producing met coal 75-100 years from now – decades after Warrior ceases to exist.\"",
+  "new": "AMR and HCC are complementary. Warrior (HCC): lowest cost, longwall, near Mobile port; one setback can hit 25%+ of production; Blue Creek could lift 2028 cash flow above $1B vs $2.7B market cap. Alpha (AMR): flexible small mines, own blending terminal, 75-100 year longevity.",
+  "limit": 45
+ },
+ {
+  "table": "own_thesis",
+  "id": "628a7d32-59b8-487b-9902-5a8dabfb84e5",
+  "column": "bullet_1",
+  "old": "Met coal is a rare and limited material, is input for making steel and ore and exportable production exists only in a few geographies (Australia, Apalaches, Western Canada, etc). Also there exists a supply asymmetry. The dynamic is when a mine closes, the team retires and sells its assets, so there are high entry barriers. The current macro situation sets a low met coal price since 2024, the next boom could \"may last for a while\", and current companies could experience high earnings.",
+  "new": "Met coal is scarce, a steelmaking input, exportable from few geographies (Australia, Appalachia, Western Canada). Supply is asymmetric: closed mines lose teams and assets, so entry barriers are high. Prices are low since 2024; the next boom 'may last for a while', with high earnings.",
+  "limit": 45
+ },
+ {
+  "table": "own_thesis",
+  "id": "628a7d32-59b8-487b-9902-5a8dabfb84e5",
+  "column": "bullet_2",
+  "old": "According to Pabrai citing Ipsco (2005), \"low risk coupled with high uncertainty can lead to high rewards\": cyclical, uncertain in future earnings, but with cash and contracted flows that covered almost the entire share price. Met coal companies replicates this DNA.\n\nIn met coal, the domestic band approximately 30% of production sold at prices fixed in Q3 of the previous year is profitable and immune to the weak index (Q2-2025). The balance sheet acts as a survival cushion. AMR operates with a minimum cash target; net cash reached a peak and ceased buybacks as soon as it saw weakness in Q1-2024. This buys it time to weather the downturn without dilution or bankruptcy.\n\nFurthermore, some of the companies in the baskets have aggressive buybacks at unpopular prices. It's the cornerstone of value creation: in four years, Alpha's diluted share count fell by 32%, with a declared commitment to returning all capital through share buybacks.",
+  "new": "Pabrai/Ipsco (2005): 'low risk coupled with high uncertainty can lead to high rewards'. Met coal fits: the ~30% domestic band, priced the prior Q3, stays profitable despite weak index; balance sheets avoid dilution; Alpha's diluted shares fell 32% in four years via buybacks.",
+  "limit": 45
+ },
+ {
+  "table": "own_thesis",
+  "id": "628a7d32-59b8-487b-9902-5a8dabfb84e5",
+  "column": "bullet_3",
+  "old": "AMR and HCC as complementary bets.\n\nWarrior (HCC) = the lowest cost/highest leverage to profit. Longwall miner, bottom quartile of the global cost curve, Blue Creek delivered on budget and ahead of schedule, near the Port of Mobile with a dual rail/barge option. If its mines run normally, it is \"virtually guaranteed to be profitable.\" Its Achilles' heel: it is purely longwall, so a setback could hit 25%+ of production at once. Quantified catalyst: Blue Creek fully commissioned in 2027, with 2028 cash flows that could exceed $1 billion against a market cap of $2.7 billion.\n\nAlpha (AMR), the highest survival/longevity/optionality. Room and pillar (more expensive), farther from the port, dependent on a single rail line. But its disadvantage of having small mines is also an advantage: it can turn production on and off according to demand, has its own blending terminal, buys coal from small producers in Central Appalachia to refine blends, and can hire distressed miners during lean times. The thesis statement: \"Alpha could be producing met coal 75-100 years from now – decades after Warrior ceases to exist.\"",
+  "new": "AMR and HCC are complementary. Warrior (HCC): lowest cost, longwall, near Mobile port; one setback can hit 25%+ of production; Blue Creek could lift 2028 cash flow above $1B vs $2.7B market cap. Alpha (AMR): flexible small mines, own blending terminal, 75-100 year longevity.",
+  "limit": 45
+ },
+ {
+  "table": "own_thesis",
+  "id": "2e14a290-ce04-4ea7-b45c-5cefb889185c",
+  "column": "bullet_1",
+  "old": "A premium, vertically integrated athletic apparel brand bought at a trough. About 90% of FY2025 revenue went through its own stores (45%) and e-commerce (44%), there is no financial debt, and LTM ROIC is still 26% (FiscalAI). The damage is concentrated in the Americas, 69% of LTM revenue and 71% of FY2025 segment operating income, where comparable sales fell 12% in Q2 FY2026, leggings fell ~20% and newness is not selling. China Mainland, the growth engine (revenue CAGR +45% FY2022–FY2025), turned to -8% comps. The bet is that this is a product and execution failure that a new CEO (Heidi O'Neill, in the seat since 8 September 2026) and a board reshaped after the Chip Wilson settlement can fix, not a permanent loss of the brand to Alo, Vuori or On.",
+  "new": "A premium, vertically integrated athletic brand bought at a trough: ~90% sold directly, no debt, LTM ROIC 26%. Damage centers on the Americas (comps -12% in Q2 FY2026) and China (comps -8%). The bet: a fixable execution failure under new CEO Heidi O'Neill.",
+  "limit": 45
+ },
+ {
+  "table": "own_thesis",
+  "id": "2e14a290-ce04-4ea7-b45c-5cefb889185c",
+  "column": "bullet_2",
+  "old": "Valued on FY2029 EPS at 12x, not on a return to peak margins. Base case: revenue $10.8B (Americas $6.8B, International $4.0B), roughly flat against the FY2026 guide of $10.35–10.50B; operating margin 15.5%, against ~13.3% implied by FY2026 guidance ex the IEEPA refund and a 3Y average of 21.9%; 30% tax and 95M diluted shares give EPS of $12.56 and $150.67 per share. At $96.87 the stock trades at 7.9x LTM EPS of $12.21 (which includes a $0.86 one-off tariff refund) and ~10x the FY2026 guide midpoint of $9.61. The return does not need margins to recover to the old 20%+: it needs earnings to stop falling and the multiple to move from a distressed ~8–10x to 12x, which is still below any year-end P/E since FY2021 (13.2x at FY2025, 28.3x at FY2024).",
+  "new": "Valued at 12x FY2029 EPS, not peak margins. Base: revenue $10.8B, operating margin 15.5% (vs ~13.3% FY2026, 21.9% 3Y average), EPS $12.56, $150.67 per share. At $96.87 (7.9x LTM EPS) earnings must stabilize and the multiple reach 12x, below any year-end P/E since FY2021.",
+  "limit": 45
+ },
+ {
+  "table": "own_thesis",
+  "id": "2e14a290-ce04-4ea7-b45c-5cefb889185c",
+  "column": "bullet_3",
+  "old": "Cash generation and a net-cash balance sheet pay for the wait. FCF was positive in every year FY2021–FY2025 (range $328M–$1,644M) and is $1,354M LTM; cash is $1.39B with zero borrowings and ~$600M of undrawn revolver. Buybacks cut shares outstanding from 123.3M at FY2021 to 106.6M at Q2 FY2026 (-14%), with $713M left on the authorization and FY2026 repurchases guided in line with FY2025 ($1.2B). The base case only assumes ~3%/yr of net share reduction to 95M by FY2029, funded from FCF. The weak spot is discipline: buybacks exceeded FCF in FY2024 ($1.67B vs $1.58B), FY2025 ($1.21B vs $0.92B) and H1 FY2026 ($707M vs $312M), and $1.67B was spent in FY2024 at prices 2–4x today's.",
+  "new": "Cash and a net-cash balance sheet fund the wait: FCF positive every year FY2021–FY2025, $1,354M LTM; $1.39B cash, no borrowings. Base assumes ~3%/yr buybacks to 95M shares by FY2029 from FCF. Weak spot: buybacks exceeded FCF in FY2024, FY2025 and H1 FY2026.",
+  "limit": 45
+ },
+ {
+  "table": "own_thesis",
+  "id": "2e14a290-ce04-4ea7-b45c-5cefb889185c",
+  "column": "breaks_1",
+  "old": "Americas comparable sales stay at -8% or worse for four more consecutive quarters (through Q2 FY2027), or FY2027 Americas revenue comes in below $6.5B (vs $7.85B in FY2025).",
+  "new": "Americas comps at -8% or worse for four more quarters (through Q2 FY2027), or FY2027 Americas revenue below $6.5B (vs $7.85B FY2025).",
+  "limit": 25
+ },
+ {
+  "table": "own_thesis",
+  "id": "2e14a290-ce04-4ea7-b45c-5cefb889185c",
+  "column": "breaks_3",
+  "old": "FCF below $700M in FY2027, or cash below $1.0B together with new borrowings to keep the buyback going, or diluted shares still above 100M at FY2028 year end.",
+  "new": "FCF below $700M in FY2027, or cash below $1.0B with new borrowing for buybacks, or diluted shares above 100M at FY2028 year end.",
+  "limit": 25
+ },
+ {
+  "table": "own_thesis",
+  "id": "b1aba744-5de2-4144-97ee-15061be43d27",
+  "column": "bullet_1",
+  "old": "NKE is the largest athletic footwear and apparel brand, with $46.4B of FY2026 revenue ($29.5B footwear, $13.4B apparel, $2.2B equipment) and about 60% of it sold through wholesale. It is bought at a margin trough that is largely self-inflicted: the FY2020–FY2024 push to NIKE Direct cut wholesale doors, leaned on a few lifestyle franchises (Air Force 1, Dunk, Jordan 1) and left the performance pipeline thin; Greater China and tariffs came on top. EBIT margin fell from 14.3% in FY2022 to 6.1% in FY2026 excluding the $986M IEEPA tariff refund. Under Elliott Hill's \"Win Now\" plan wholesale grew 4% in FY2026, North America wholesale grew 10% in Q4 FY2026, running posted five straight quarters of double-digit growth and classic franchises were cut by more than $2B. The thesis buys the brand's normalized earnings power, not the FY2026 trough.",
+  "new": "NKE, the largest athletic brand ($46.4B FY2026 revenue, ~60% wholesale), is bought at a largely self-inflicted margin trough: EBIT margin fell from 14.3% (FY2022) to 6.1% (FY2026 ex refund). Under Hill's 'Win Now', wholesale grew 4% and running is growing double digits.",
+  "limit": 45
+ },
+ {
+  "table": "own_thesis",
+  "id": "b1aba744-5de2-4144-97ee-15061be43d27",
+  "column": "bullet_2",
+  "old": "Valuation anchors on FY2029 EPS rebuilt from margins, not on a return to the FY2021 peak. Base case: revenue $49.7B (2.3% a year from FY2026, after the decline guided for the first half of FY2027), gross margin 42.5% against 40.8% adjusted in FY2026 and 44.6% in FY2024, SG&A at 33% of revenue against 34.7%, so an EBIT margin of 9.5%. That is $3.77B of net income, $2.54 of EPS on 1,480M shares and $50.90 per share at 20x, below the ~30x NKE averaged over the last 12 quarters. The return comes from the E: at $35.84 the stock trades at 17x reported and ~23x adjusted FY2026 EPS ($1.58), so the multiple does little of the work. TSOH's case ($97 at 28x FY2031 EPS) is the upside reference, not the base.",
+  "new": "Valued on FY2029 EPS, not the FY2021 peak. Base: revenue $49.7B, gross margin 42.5%, SG&A 33%, EBIT margin 9.5%, EPS $2.54, $50.90 per share at 20x (vs ~30x 12-quarter average). At $35.84 (~23x adjusted FY2026 EPS) the return comes from earnings; TSOH's $97 is upside.",
+  "limit": 45
+ },
+ {
+  "table": "own_thesis",
+  "id": "b1aba744-5de2-4144-97ee-15061be43d27",
+  "column": "bullet_3",
+  "old": "The balance sheet buys time for the turnaround. At the end of FY2026 NKE held $9.0B of cash and short-term investments against $7.9B of notes, $1.1B of net cash before $3.1B of lease liabilities, with no convertibles. Buybacks fell from $4.0–5.5B a year in FY2022–FY2024 to $146M in FY2026, while the $1.64 annual dividend (4.6% yield at $35.84) cost $2.41B, more than the $2.18B of free cash flow. The return is the dividend plus the EPS recovery: at a 9.5% EBIT margin our estimate is free cash flow near $4B a year, covering the dividend about 1.6x and allowing buybacks to restart. Stock-based compensation of ~$715M a year means buybacks first have to absorb dilution before the share count falls.",
+  "new": "The balance sheet buys time: $9.0B cash vs $7.9B notes at FY2026. Buybacks fell to $146M while the $1.64 dividend (4.6% yield) cost $2.41B, above $2.18B FCF. At 9.5% EBIT margin we estimate ~$4B FCF, covering the dividend ~1.6x and allowing buybacks to restart.",
+  "limit": 45
+ },
+ {
+  "table": "own_thesis",
+  "id": "b1aba744-5de2-4144-97ee-15061be43d27",
+  "column": "breaks_1",
+  "old": "Revenue is still down year over year on a currency-neutral basis in Q3 and Q4 FY2027 (the half management says should improve), or Greater China keeps falling more than 10% a year through FY2027, or performance categories (running, training, football) stop growing.",
+  "new": "Currency-neutral revenue still down in Q3 and Q4 FY2027, Greater China falling over 10% a year through FY2027, or performance categories stop growing.",
+  "limit": 25
+ },
+ {
+  "table": "own_thesis",
+  "id": "b1aba744-5de2-4144-97ee-15061be43d27",
+  "column": "breaks_2",
+  "old": "Gross margin excluding one-off tariff items is below 41% for FY2027 as a whole, or EBIT margin excluding one-offs is below 7% in FY2027, meaning the tariff and promotion cost is not being recovered.",
+  "new": "FY2027 gross margin ex one-off tariff items below 41%, or EBIT margin ex one-offs below 7%: tariff and promotion costs not recovered.",
+  "limit": 25
+ },
+ {
+  "table": "own_thesis",
+  "id": "b1aba744-5de2-4144-97ee-15061be43d27",
+  "column": "breaks_3",
+  "old": "Free cash flow stays below dividends paid (~$2.4B) in both FY2027 and FY2028, net cash excluding leases turns into net debt above $2B, or the dividend is cut.",
+  "new": "FCF below dividends (~$2.4B) in both FY2027 and FY2028, net cash ex leases turning into net debt above $2B, or a dividend cut.",
+  "limit": 25
+ },
+ {
+  "table": "own_thesis",
+  "id": "b75545c9-4c39-4b31-8cbd-1ac5da2b40a1",
+  "column": "bullet_1",
+  "old": "On is a premium performance-running brand that grew net sales from CHF 725M in FY2021 to CHF 3,014M in FY2025 (3Y CAGR +35.1% from FY2022) while gross margin rose from 59.4% to 62.8%, and to 64.8% LTM at Q2 FY2026. It grew at full price, not through discounting. The mix moved toward the channels and regions that earn more: DTC went from 36.4% of sales in FY2022 to 41.8% in FY2025 and 45.7% in Q2 FY2026, and APAC from 6.6% to 17.0% (over 20% in Q1 and Q2 FY2026). The stock fell from $50.63 (8 January 2026) to $26.76 (15 September 2026) after Q2 FY2026, when management cut FY2026 constant-currency growth guidance from \"at least 23%\" to \"low 20s\" because US wholesale sell-out of everyday running shoes came in below plan and On held back sell-in. The thesis buys a brand whose own channel says demand is intact (DTC +34.3% cc in Q2 FY2026), at a price that treats the wholesale pause as the start of a structural slowdown.",
+  "new": "On grew sales from CHF 725M (FY2021) to CHF 3,014M (FY2025) at full price, gross margin reaching 64.8% LTM as mix shifted to DTC and APAC. The stock fell to $26.76 after the Q2 FY2026 guidance cut; DTC +34.3% cc says demand is intact.",
+  "limit": 45
+ },
+ {
+  "table": "own_thesis",
+  "id": "b75545c9-4c39-4b31-8cbd-1ac5da2b40a1",
+  "column": "bullet_2",
+  "old": "Valuation is anchored to FY2029 earnings at 20x P/E, about the current LTM multiple (20.8x on IFRS net income of CHF 396M) and far below the FY2023–FY2025 average (~73x on FiscalAI year-end figures). The return has to come from the E, not from a re-rating. The base case haircuts the 2029 targets set at the 22 September 2026 Investor Day (net sales of at least CHF 5.6B, gross margin of at least 65%, adjusted EBITDA margin of at least 22%): CHF 5.0B of sales, 64% gross margin, 49% SG&A, 15% EBIT margin, 20% normalized tax and 330M shares give CHF 1.82 of EPS, CHF 36.4 per share and $43.6 at 1.20 USD/CHF. Net cash of CHF 1,284M (cash plus short-term investments, no financial debt) is not added. On reports in CHF and trades in USD: in Q2 FY2026 the franc cut reported growth to 13.5% from 21.6% at constant currency, and the translation into dollars is part of the bet.",
+  "new": "Valued at 20x FY2029 earnings, near the current 20.8x LTM: the return comes from EPS, not re-rating. Base haircuts Investor Day 2029 targets: CHF 5.0B sales, 15% EBIT margin, CHF 1.82 EPS, $43.6 per share at 1.20 USD/CHF. Net cash excluded.",
+  "limit": 45
+ },
+ {
+  "table": "own_thesis",
+  "id": "b75545c9-4c39-4b31-8cbd-1ac5da2b40a1",
+  "column": "bullet_3",
+  "old": "The return comes from compounding EPS through mix and operating leverage, funded by the business itself. DTC is planned to reach 50% of sales by 2029, with owned stores going from 80 to 180. Apparel (+56.2% cc in Q2 FY2026) and APAC (+54.7% cc) grow faster than the core. SG&A at 51.0% of sales LTM should give back two points as distribution efficiencies continue (10.0% of sales in Q2 FY2026). The business is asset-light: capex is 2.7% of sales, LTM free cash flow is CHF 438M and ROIC is 36% (FiscalAI). In September 2026 On authorized its first buyback, up to $1B through December 2029, about 10% of the $9.9B market cap at $29.55. That is enough to stop the ~1.5% a year share creep from stock compensation (FY2022–FY2025) and is accretive at today's price.",
+  "new": "EPS compounds through mix and operating leverage, self-funded: DTC toward 50% by 2029, apparel and APAC outgrowing the core, SG&A down from 51.0%. Asset-light: capex 2.7% of sales, LTM FCF CHF 438M, ROIC 36%. The first $1B buyback offsets ~1.5% yearly share creep.",
+  "limit": 45
+ },
+ {
+  "table": "own_thesis",
+  "id": "b75545c9-4c39-4b31-8cbd-1ac5da2b40a1",
+  "column": "breaks_1",
+  "old": "DTC constant-currency growth below 15% for two consecutive quarters, or wholesale constant-currency growth still below 10% in Q2 FY2027 after the broad Cloudsurfer 3 rollout in January 2027, or quarterly gross margin below 63% as markdowns show up.",
+  "new": "DTC cc growth below 15% for two quarters, wholesale cc growth below 10% in Q2 FY2027 after Cloudsurfer 3, or quarterly gross margin below 63%.",
+  "limit": 25
+ },
+ {
+  "table": "own_thesis",
+  "id": "b75545c9-4c39-4b31-8cbd-1ac5da2b40a1",
+  "column": "breaks_2",
+  "old": "FY2027 reported net sales below CHF 3.9B (a growth path under 12% a year), or FY2027 EBIT margin below 13% because SG&A stays at 52% of sales or more while stores and marketing absorb the gross-margin gains.",
+  "new": "FY2027 net sales below CHF 3.9B (under 12% a year), or FY2027 EBIT margin below 13% with SG&A at 52% of sales or more.",
+  "limit": 25
+ },
+ {
+  "table": "own_thesis",
+  "id": "b75545c9-4c39-4b31-8cbd-1ac5da2b40a1",
+  "column": "breaks_3",
+  "old": "Class-A-equivalent share count above 334.2M at the end of FY2027, or cash plus short-term investments below CHF 1.0B at the end of FY2027 with less than 25% of the buyback executed.",
+  "new": "Class-A-equivalent shares above 334.2M at FY2027 end, or cash plus short-term investments below CHF 1.0B with under 25% of the buyback executed.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "c578cf50-1ebd-4278-a922-de9d2c01db87",
+  "column": "rationale",
+  "old": "Implied net income: EBITDA $990.0M − D&A $153.4M (5.9% of revenue) = EBIT $836.6M; interest 0 (net cash, no income assumed); pre-tax $836.6M, tax $107.1M (12.8%); FX revaluation 0 → net income $729.5M. Assumptions: D&A 5.9% of revenue (FY2023-25 avg), tax 12.8% (FY2023-24 effective; FY2025 pre-tax loss excluded).",
+  "new": "EBITDA $990.0M − D&A $153.4M (5.9% of revenue, FY2023-25 avg) = EBIT $836.6M; no interest; tax 12.8% (FY2023-24 effective) → net income $729.5M.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "50208bd3-cc6a-4649-bade-c21121e5c761",
+  "column": "rationale",
+  "old": "Implied net income: EBITDA $1.84B − D&A $385.2M (10.7% of revenue) = EBIT $1.46B; interest 0 (net cash, no income assumed); pre-tax $1.46B, tax $182.2M (12.5%); FX revaluation 0 → net income $1.28B. Assumptions: D&A 10.7% of revenue (FY2023-25 avg), tax 12.5% (FY2023-24 effective; FY2025 negative rate excluded).",
+  "new": "EBITDA $1.84B − D&A $385.2M (10.7% of revenue, FY2023-25 avg) = EBIT $1.46B; no interest; tax 12.5% (FY2023-24 effective) → net income $1.28B.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "24f16cbb-76b0-4d34-8c3d-4fd8e010be6d",
+  "column": "rationale",
+  "old": "Implied net income: EBITDA $1.76B − D&A $645.0M (15.0% of revenue) = EBIT $1.11B; interest 0 (net cash, no income assumed); pre-tax $1.11B, tax $161.5M (14.5%); FX revaluation 0 → net income $952.5M. Assumptions: D&A 15.0% of revenue (FY2025 and LTM, post Arch merger; FY2023-24 pre-merger 10% not comparable), tax 14.5% (FY2023-24 effective; FY2025 loss excluded).",
+  "new": "EBITDA $1.76B − D&A $645.0M (15.0% of revenue, post Arch merger) = EBIT $1.11B; no interest; tax 14.5% (FY2023-24 effective) → net income $952.5M.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "0a1d4ba8-3b15-4b06-a028-3f82121c2152",
+  "column": "rationale",
+  "old": "14.0M st in 2030, the top of the FY2026 guidance (13.0–14.0M st, raised by 0.5M st in Q2 FY2026). Blue Creek stays at its FY2026 5.0M st instead of reaching its 7.5M st design rate. Current = FY2026 guidance midpoint. 3Y history not available in FiscalAI (no KPI coverage for HCC).",
+  "new": "14.0M st in 2030, top of FY2026 guidance (13.0–14.0M st); Blue Creek stays 5.0M st, below 7.5M st design. No 3Y FiscalAI history.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "3e19782c-aa01-4795-b8a0-a8b2758f4098",
+  "column": "rationale",
+  "old": "$135/t, flat on Q2 FY2026 ($137.82). Gross realization was 66% of PLV in Q2 FY2026 vs 80% a year earlier as the high-vol A mix rose; the bear assumes that relativity does not recover.",
+  "new": "$135/t, flat on Q2 FY2026 ($137.82). Realization fell to 66% of PLV from 80% a year earlier on high-vol A mix; bear assumes no recovery.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "28add528-da86-497b-9fb0-f3bb4492f12e",
+  "column": "rationale",
+  "old": "$95/t vs $92.53 in Q2 FY2026 (down 9% y/y on Blue Creek mix and the 45X credit). Adds ~$2.50/t for the inflation management flagged for H2 2026.",
+  "new": "$95/t vs $92.53 in Q2 FY2026 (down 9% y/y on Blue Creek mix and 45X credit), plus ~$2.50/t for flagged H2 2026 inflation.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "e2682892-83cc-4fcb-b44a-2f497186959e",
+  "column": "rationale",
+  "old": "Same 4.5x mid-cycle multiple as the Recovery case, so the scenarios differ only in operating drivers. 3Y range 3.3x–19.3x; the stock trades at 10.6x depressed LTM EBITDA.",
+  "new": "Same 4.5x mid-cycle multiple as Recovery, so scenarios differ only in operating drivers. 3Y range 3.3x–19.3x; trades at 10.6x depressed LTM EBITDA.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "bba1b4b5-4924-4c6b-8123-a38f90193de5",
+  "column": "rationale",
+  "old": "Held at the current -$87M (cash $302M + short-term investments $20M − $155M notes − $81M finance leases), same convention as the Recovery case. 3Y average net debt is -$341M.",
+  "new": "Held at current -$87M (cash $302M + short-term investments $20M − $155M notes − $81M finance leases), as in Recovery. 3Y average -$341M.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "984b7f73-624b-4927-bdce-df75cf10ea68",
+  "column": "rationale",
+  "old": "Implied net income: EBITDA $515.0M − D&A $202.2M (10.7% of revenue) = EBIT $312.8M; interest 0 (net cash, no income assumed); pre-tax $312.8M, tax $39.1M (12.5%); FX revaluation 0 → net income $273.7M. Assumptions: D&A 10.7% of revenue (FY2023-25 avg), tax 12.5% (FY2023-24 effective; FY2025 negative rate excluded).",
+  "new": "EBITDA $515.0M − D&A $202.2M (10.7% of revenue, FY2023-25 avg) = EBIT $312.8M; no interest; tax 12.5% (FY2023-24 effective) → net income $273.7M.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "f7814cac-af96-4a22-8f3d-af5df169352c",
+  "column": "rationale",
+  "old": "16.5M st: legacy mines ~9.0M st plus Blue Creek at 7.5M st design capacity (hypothesis). Current = FY2026 guidance midpoint (13.5M st). The Recovery case uses 16.0M st.",
+  "new": "16.5M st: legacy ~9.0M st plus Blue Creek at 7.5M st design capacity (hypothesis). Current 13.5M st (FY2026 guidance midpoint); Recovery uses 16.0M st.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "32b65f6a-bb80-413a-a592-cc1ba122c5c0",
+  "column": "rationale",
+  "old": "$240/t (hypothesis), 74% above the $137.82 of Q2 FY2026 and above the $213 used in the Recovery case. Needs both a PLV spike and a recovery of second-tier relativities (US East Coast HVA was 66% of PLV in Q2 FY2026 vs 92% a year earlier).",
+  "new": "$240/t (hypothesis), 74% above Q2 FY2026's $137.82 and Recovery's $213. Needs a PLV spike and recovered HVA relativity (66% of PLV vs 92% before).",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "1557e5a3-7902-4d53-89d0-bfc732ba43a4",
+  "column": "rationale",
+  "old": "$100/t: Blue Creek keeps the base low, but wages, royalties and transport are indexed to price, so a $100/t higher price adds cost. Q2 FY2026 was $92.53.",
+  "new": "$100/t: Blue Creek keeps the base low, but wages, royalties and transport are indexed to price, so higher prices add cost. Q2 FY2026: $92.53.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "38ed268d-59f9-4a2d-b8bf-6544ac93eb58",
+  "column": "rationale",
+  "old": "Implied net income: EBITDA $2.26B − D&A $423.7M (10.7% of revenue) = EBIT $1.84B; interest 0 (net cash, no income assumed); pre-tax $1.84B, tax $229.5M (12.5%); FX revaluation 0 → net income $1.61B. Assumptions: D&A 10.7% of revenue (FY2023-25 avg), tax 12.5% (FY2023-24 effective; FY2025 negative rate excluded).",
+  "new": "EBITDA $2.26B − D&A $423.7M (10.7% of revenue, FY2023-25 avg) = EBIT $1.84B; no interest; tax 12.5% (FY2023-24 effective) → net income $1.61B.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "3b64ac43-9425-4856-9cdb-9e3c62e7a11b",
+  "column": "rationale",
+  "old": "14.0M t, below the cut FY2026 guidance (14.2–15.4M t) and the 14.8M t LTM (FiscalAI KPI, Q3 FY2025–Q2 FY2026). 3Y CAGR FY2022–FY2025: 15.48M t to 15.28M t, −0.4%.",
+  "new": "14.0M t, below cut FY2026 guidance (14.2–15.4M t) and 14.8M t LTM (FiscalAI). 3Y CAGR FY2022–FY2025: −0.4% (15.48M to 15.28M t).",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "f5e914f6-1be8-4125-b095-c7978b1f37c5",
+  "column": "rationale",
+  "old": "$120/t, flat on Q2 FY2026 ($118.71). 70% of 2026 met tons are already committed and priced at $128.17/t. 3Y CAGR FY2022–FY2025: $225.45 to $117.08, −19.6% (FiscalAI KPI).",
+  "new": "$120/t, flat on Q2 FY2026 ($118.71); 70% of 2026 met tons committed at $128.17/t. 3Y CAGR FY2022–FY2025: −19.6% (FiscalAI KPI).",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "b66628db-7149-43b4-8f02-0981efd08212",
+  "column": "rationale",
+  "old": "$104/t, near the low end of the FY2026 guidance ($103–107/t, raised $7/t at the midpoint on diesel and supplies). Q2 FY2026 was $103.07, Q1 $107.98. History not in FiscalAI.",
+  "new": "$104/t, near the low end of FY2026 guidance ($103–107/t, raised on diesel and supplies). Q2 FY2026 $103.07, Q1 $107.98.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "87943bd7-80f5-4522-9f55-cf9e9aebc441",
+  "column": "rationale",
+  "old": "Net cash falls from $327M to $200M (hypothesis: about −$30M FCF a year for four years). LTM FCF is already about zero to negative (CFO $138M vs capex $140M, FiscalAI). 3Y average net debt −$379M.",
+  "new": "Net cash falls from $327M to $200M (hypothesis: ~−$30M FCF a year for four years); LTM FCF already ~zero (FiscalAI). 3Y average net debt −$379M.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "f33952f0-c156-4a2f-9f4d-ecf89c13c31d",
+  "column": "rationale",
+  "old": "Implied net income: EBITDA $169.0M − D&A $105.0M (5.9% of revenue) = EBIT $64.0M; interest 0 (net cash, no income assumed); pre-tax $64.0M, tax $8.2M (12.8%); FX revaluation 0 → net income $55.8M. Assumptions: D&A 5.9% of revenue (FY2023-25 avg), tax 12.8% (FY2023-24 effective; FY2025 pre-tax loss excluded).",
+  "new": "EBITDA $169.0M − D&A $105.0M (5.9% of revenue, FY2023-25 avg) = EBIT $64.0M; no interest; tax 12.8% (FY2023-24 effective) → net income $55.8M.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "e0fb5737-ae34-477d-9ebe-1ffddf4b92e5",
+  "column": "rationale",
+  "old": "Implied net income: EBITDA $1.62B − D&A $218.3M (5.9% of revenue) = EBIT $1.40B; interest 0 (net cash, no income assumed); pre-tax $1.40B, tax $179.4M (12.8%); FX revaluation 0 → net income $1.22B. Assumptions: D&A 5.9% of revenue (FY2023-25 avg), tax 12.8% (FY2023-24 effective; FY2025 pre-tax loss excluded).",
+  "new": "EBITDA $1.62B − D&A $218.3M (5.9% of revenue, FY2023-25 avg) = EBIT $1.40B; no interest; tax 12.8% (FY2023-24 effective) → net income $1.22B.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "d0c2a5c8-366e-4f8e-94a2-b6727cde5f77",
+  "column": "rationale",
+  "old": "9.0M t of coking coal, top of the 8.5–9.0M t management expects from the Leer complex. Current = LTM met segment tons incl. thermal byproduct, 9.6M t (FiscalAI KPI). No 3Y history: pre-2025 figures are CONSOL's, which had almost no met.",
+  "new": "9.0M t coking coal, top of the 8.5–9.0M t expected from Leer. Current LTM 9.6M t incl. byproduct (FiscalAI). No 3Y history: pre-2025 is CONSOL.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "b7d54c2f-abb2-40e2-9d71-e3fba0263f79",
+  "column": "rationale",
+  "old": "$115/t, flat on Q2 FY2026 ($114.13 for the segment incl. byproduct; coking only $121.43). About 6M of the 8.7M contracted 2026 coking tons are priced at ~$121/t.",
+  "new": "$115/t, flat on Q2 FY2026 ($114.13 incl. byproduct; coking $121.43). ~6M of 8.7M contracted 2026 coking tons priced at ~$121/t.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "eda4f934-417d-4865-8a63-10425d3da158",
+  "column": "rationale",
+  "old": "High-CV Thermal 30M t x $15/t = $450M, PRB $30M, CMT $60M, corporate −$160M = $380M. LTM $494M (FiscalAI KPIs: $549M + $24M + $62M − $142M).",
+  "new": "High-CV Thermal 30M t x $15/t = $450M, PRB $30M, CMT $60M, corporate −$160M = $380M vs LTM $494M (FiscalAI).",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "9118aba8-af9f-4417-a0c2-772a02c7c704",
+  "column": "rationale",
+  "old": "Met 9.0M t x $115 = $1,035M, High-CV 30M t x $55 = $1,650M, PRB 45M t x $14 = $630M, other $80M = $3,395M (hypothesis prices), vs $4,270M LTM.",
+  "new": "Total $3,395M at hypothesis prices vs $4,270M LTM: met 9.0Mt x $115, High-CV 30Mt x $55, PRB 45Mt x $14, other $80M.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "563b29d6-c83b-4947-9763-bc542a286a64",
+  "column": "rationale",
+  "old": "Implied net income: EBITDA $623.0M − D&A $509.2M (15.0% of revenue) = EBIT $113.8M; interest 0 (net cash, no income assumed); pre-tax $113.8M, tax $16.5M (14.5%); FX revaluation 0 → net income $97.3M. Assumptions: D&A 15.0% of revenue (FY2025 and LTM, post Arch merger; FY2023-24 pre-merger 10% not comparable), tax 14.5% (FY2023-24 effective; FY2025 loss excluded).",
+  "new": "EBITDA $623.0M − D&A $509.2M (15.0% of revenue, post Arch merger) = EBIT $113.8M; no interest; tax 14.5% (FY2023-24 effective) → net income $97.3M.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "b5f2b814-a3d3-4030-be98-5a705b8573eb",
+  "column": "rationale",
+  "old": "10.0M t (hypothesis): Leer complex at 9.0M t without longwall events plus ~1M t from the smaller met mines. LTM 9.6M t incl. byproduct (FiscalAI KPI).",
+  "new": "10.0M t (hypothesis): Leer complex at 9.0M t without longwall events plus ~1M t from smaller met mines. LTM 9.6M t incl. byproduct.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "21d82720-1527-42ed-ab75-66f4b4f108c6",
+  "column": "rationale",
+  "old": "High-CV Thermal 33M t x $30/t = $990M, PRB $60M, CMT $80M, corporate −$170M = $960M, vs $494M LTM. In FY2023 CONSOL's PAMC alone made $1,019M of adjusted EBITDA (FiscalAI KPI).",
+  "new": "High-CV Thermal 33Mt x $30/t = $990M, PRB $60M, CMT $80M, corporate −$170M = $960M vs $494M LTM. FY2023 PAMC alone made $1,019M adjusted EBITDA.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "e0564b95-5895-4345-a96f-f6186c3a13a9",
+  "column": "rationale",
+  "old": "Met 10.0M t x $210 = $2,100M, High-CV 33M t x $72 = $2,376M, PRB 50M t x $15 = $750M, other $100M = $5,326M (hypothesis prices).",
+  "new": "Met 10.0Mt x $210 = $2,100M, High-CV 33Mt x $72 = $2,376M, PRB 50Mt x $15 = $750M, other $100M: $5,326M (hypothesis prices).",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "540caae4-0de0-484d-9dd3-93d6ca0825bd",
+  "column": "rationale",
+  "old": "Implied net income: EBITDA $2.06B − D&A $798.9M (15.0% of revenue) = EBIT $1.26B; interest 0 (net cash, no income assumed); pre-tax $1.26B, tax $182.9M (14.5%); FX revaluation 0 → net income $1.08B. Assumptions: D&A 15.0% of revenue (FY2025 and LTM, post Arch merger; FY2023-24 pre-merger 10% not comparable), tax 14.5% (FY2023-24 effective; FY2025 loss excluded).",
+  "new": "EBITDA $2.06B − D&A $798.9M (15.0% of revenue, post Arch merger) = EBIT $1.26B; no interest; tax 14.5% (FY2023-24 effective) → net income $1.08B.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "c17aee85-c015-42e2-9d5d-45f4687700b1",
+  "column": "rationale",
+  "old": "Repurchase of stocks continues Set to 1,385.6M = P/E 28 × net income $4,800M / target price $97, so the model's own figures agree; the 1,400M typed before is this number rounded.",
+  "new": "Share buybacks continue. Set to 1,385.6M = P/E 28 × net income $4,800M / target price $97; the prior 1,400M was this rounded.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "78281c64-b320-426c-960a-9cf562fe2b6f",
+  "column": "rationale",
+  "old": "Stays near $6.0B, roughly flat from $5,847M in FY2026 after $7,248M in FY2023 and $7,545M in FY2024 (-6.9% a year over three years). Management expects near-term trends in line with recent quarters (-17% in Q4 FY2026) and says profit bottoms before sales; the base assumes the decline stops, not a recovery.",
+  "new": "~$6.0B, flat from $5,847M (FY2026) after $7,545M (FY2024). Management expects near-term trends like Q4 FY2026 (-17%); base assumes the decline stops, not a recovery.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "0f81f47c-b74d-4a17-8d91-90dc23c04435",
+  "column": "rationale",
+  "old": "$46,398M x 0.98 x 1.04 x 1.05 = $49,653M in FY2029, a 2.3% CAGR. FY2027 is guided down; the recovery rests on wholesale (+4% in FY2026) and performance categories offsetting Sportswear and Jordan Streetwear, about half of revenue.",
+  "new": "$46,398M x 0.98 x 1.04 x 1.05 = $49,653M FY2029, 2.3% CAGR. FY2027 guided down; recovery relies on wholesale and performance offsetting Sportswear and Jordan.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "8bdb50e0-e12f-414b-860f-b6129b2c0d0e",
+  "column": "rationale",
+  "old": "42.5% against 40.8% in FY2026 excluding the 210bps IEEPA refund, and 44.6% in FY2024 before tariffs. Management guided Q1 FY2027 gross margin slightly up with a 15% incremental tariff rate from August; the remaining gap to FY2024 is the tariff cost we assume is not fully recovered.",
+  "new": "42.5% vs 40.8% in FY2026 ex 210bps IEEPA refund and 44.6% FY2024 pre-tariffs. The gap to FY2024 is tariff cost assumed not fully recovered.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "932ed060-d1af-4e51-a98e-1e27c905c3f8",
+  "column": "rationale",
+  "old": "42.5% gross margin less 33.0% SG&A = 9.5%, against 6.1% in FY2026 excluding the refund (8.2% reported) and 12.3% in FY2024. Management speaks of a path back to double-digit margins without a date.",
+  "new": "42.5% gross margin less 33.0% SG&A = 9.5%, vs 6.1% FY2026 ex refund (8.2% reported) and 12.3% FY2024. Management cites undated path to double-digit margins.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "a06a3475-921a-4dff-9882-ee6988a1e38b",
+  "column": "rationale",
+  "old": "20x, below the ~30x average of the last 12 quarters and the 25–33x of the FY2023–FY2025 year ends. A brand with 9.5% EBIT margin and low growth does not earn the old premium; ADS and ONON trade at 18–19x.",
+  "new": "20x, below ~30x 12-quarter average and 25–33x FY2023–FY2025 year ends. A low-growth 9.5% EBIT-margin brand doesn't earn the old premium; ADS and ONON trade 18–19x.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "f002be9c-408b-46d5-b1e6-08a16dd6c4f4",
+  "column": "rationale",
+  "old": "Held near $1.0B including $3.1B of leases (FiscalAI: $2,006M at FY2026). Free cash flow after the ~$2.4B dividend is assumed to go to buybacks that offset dilution, not to cut debt. 3Y average is $1,413M.",
+  "new": "Held near $1.0B including $3.1B leases (FiscalAI: $2,006M at FY2026). FCF after the ~$2.4B dividend funds dilution-offsetting buybacks, not debt cuts. 3Y average $1,413M.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "f9fe2dc0-b67f-423d-9dc0-6e57a6c5430e",
+  "column": "rationale",
+  "old": "Falls out of the P/E chain: $76.3B EV on $5.5B EBITDA ($4,717M EBIT + ~$800M D&A) = 13.8x, against 12.1x today on reported FY2026 EBITDA that includes the refund.",
+  "new": "Falls out of the P/E chain: $76.3B EV / $5.5B EBITDA ($4,717M EBIT + ~$800M D&A) = 13.8x, vs 12.1x today on refund-inclusive FY2026 EBITDA.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "8f864a4b-1cb7-4d3d-969a-30c276ea8c67",
+  "column": "rationale",
+  "old": "$6.8B, recovering about half of the $1.7B lost since FY2024 ($7,545M). Assumes the local-product and territory plan works on roughly the two-year lag Adidas needed in China.",
+  "new": "$6.8B, recovering about half of the $1.7B lost since FY2024 ($7,545M), assuming the local plan works on Adidas' ~two-year China lag.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "9c4fbb3d-3c5e-4eaa-83e2-0d9f8e9522c1",
+  "column": "rationale",
+  "old": "$4.0B: ~5% a year from ~$3.45B in FY2026 (China guided up high single digits, RoW mid single digits). The 3Y CAGR to FY2025 was +36%, but China comps turned -8% in Q2 FY2026, so the base takes a fraction of the old rate.",
+  "new": "$4.0B: ~5%/yr from ~$3.45B (FY2026). 3Y CAGR to FY2025 was +36%, but China comps turned -8% in Q2 FY2026; base takes a fraction.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "27b3fe73-61d6-48ec-9159-662334d98173",
+  "column": "rationale",
+  "old": "$6.8B Americas + $4.0B International = $10.8B, 2.7% below FY2025's $11.10B and ~4% above the FY2026 guide midpoint of $10.43B. 3Y CAGR to FY2025 was +11.0%.",
+  "new": "$6.8B Americas + $4.0B International = $10.8B, 2.7% below FY2025's $11.10B, ~4% above FY2026 guide midpoint $10.43B. 3Y CAGR to FY2025 +11.0%.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "123b7e4e-d95a-40e7-8463-0c4b7ff27c9a",
+  "column": "rationale",
+  "old": "Back to +2% by FY2029 from -10% in Q2 FY2026. The 3Y average of annual comps (FY2023–FY2025: +14%, +4%, +2%) is 6.7%; the base assumes FY2025's +2% is the new normal, not FY2023's +14%.",
+  "new": "Back to +2% by FY2029 from -10% in Q2 FY2026. 3Y average comps 6.7% (FY2023–FY2025: +14%, +4%, +2%); base takes FY2025's +2% as normal.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "5d003b90-2a67-48fd-ba84-214fa1889068",
+  "column": "rationale",
+  "old": "40.5% of revenue vs 36.6% in FY2025 and ~41.1% implied for FY2026 (+450bps guided). 3Y average 35.8%. Stores and marketing are largely fixed, so there is little leverage on flat revenue.",
+  "new": "40.5% of revenue vs 36.6% FY2025 and ~41.1% implied for FY2026. 3Y average 35.8%. Largely fixed stores and marketing give little leverage on flat revenue.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "7bb6279a-27b8-4cc4-a110-03ece5af7701",
+  "column": "rationale",
+  "old": "56.0% - 40.5% = 15.5%. LTM 17.8% includes the refund (16.6% without). 3Y average 21.9%; the base recovers only a third of the gap from the ~13.3% FY2026 trough.",
+  "new": "56.0% - 40.5% = 15.5%. LTM 17.8% incl. refund (16.6% without); 3Y average 21.9%. Base recovers a third of the gap from ~13.3% FY2026 trough.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "97c5cade-3617-4691-b748-50197f2a528e",
+  "column": "rationale",
+  "old": "$10.8B x 15.5% = $1,674M. LTM $1,979M incl. refund; FY2025 $2,211M. GAAP 3Y CAGR to FY2025 +18.5% (flattered by the $398M Mirror impairment in FY2022; +7.3% on FiscalAI adjusted EBIT).",
+  "new": "$10.8B x 15.5% = $1,674M. LTM $1,979M incl. refund; FY2025 $2,211M. GAAP 3Y CAGR +18.5% (flattered by FY2022 Mirror impairment; +7.3% adjusted).",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "7feeef65-d0fa-44ef-873b-6e5556ade0ca",
+  "column": "rationale",
+  "old": "95.0M diluted, down from 105.6M today: ~$400–700M a year of buybacks at $100–150, i.e. ~3%/yr, funded by FCF only. Diluted shares fell at a -2.4% CAGR FY2022–FY2025.",
+  "new": "95.0M diluted from 105.6M: ~$400–700M a year of buybacks at $100–150 (~3%/yr), FCF-funded only. Diluted shares fell -2.4% CAGR FY2022–FY2025.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "4ae46adc-fb82-4c99-802a-4228d9ae1884",
+  "column": "rationale",
+  "old": "$1,192.8M / 95.0M = $12.56. LTM $12.21 includes $0.86 of refund; FY2026 guide $9.48–9.73 also includes it. The base is below FY2024's $14.64 and FY2025's $13.26.",
+  "new": "$1,192.8M / 95.0M = $12.56. LTM $12.21 includes $0.86 of refund; FY2026 guide $9.48–9.73 also includes refund. Base below FY2024's $14.64 and FY2025's $13.26.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "26c9d0ca-a081-4125-97bc-acba576d582c",
+  "column": "rationale",
+  "old": "12x: a no-growth branded apparel multiple. Current 7.9x on LTM, ~10x on the FY2026 guide. Year-end P/E was 39.2x FY2023, 28.3x FY2024, 13.2x FY2025 (3Y average 26.9x, FiscalAI).",
+  "new": "12x, a no-growth branded apparel multiple. Current 7.9x LTM, ~10x FY2026 guide. Year-end P/E 39.2x FY2023, 28.3x FY2024, 13.2x FY2025 (FiscalAI).",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "17b8b58f-5edc-40a6-ac4a-c5db3b630a83",
+  "column": "rationale",
+  "old": "$12.56 x 12 = $150.67 per share; x 95.0M shares = $14.3B market cap, against $10.2B today (+56%, ~16%/yr over 3 years). Market cap 3Y CAGR to FY2025 was -20%.",
+  "new": "$12.56 x 12 = $150.67 per share; x 95.0M = $14.3B market cap vs $10.2B today (+56%, ~16%/yr over 3 years).",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "e12d547c-df4d-4781-9d30-61155a2ce1ab",
+  "column": "rationale",
+  "old": "Net cash held at ~$1.0B (net debt -$1,000M), from $1.39B at Q2 FY2026: FCF above the buyback goes to cash only up to that level. Leases ($2.14B) excluded. 3Y average -$2,012M (FY2023–FY2025).",
+  "new": "Net cash held ~$1.0B (from $1.39B at Q2 FY2026); FCF above the buyback builds cash only to that level. Leases ($2.14B) excluded. 3Y average -$2,012M.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "c37e355d-28d7-41eb-ae90-4ff1ef2143fd",
+  "column": "rationale",
+  "old": "$6.8B: FY2026 lands near $7.0B on the 'low double digit' decline guided, FY2027 falls ~4% more, then flat. LTM is $7.65B and FY2025 $7.85B; the 3Y CAGR to FY2025 was +4.8%, so this is -3.5% a year over FY2025–FY2029.",
+  "new": "$6.8B: FY2026 near $7.0B on the guided 'low double digit' decline, FY2027 ~4% lower, then flat; -3.5% a year FY2025–FY2029 from $7.85B.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "aa530b7a-889b-4bae-a3d9-19bf782c8633",
+  "column": "rationale",
+  "old": "CHF 5,000M in FY2029 ($6.0B at 1.20 USD/CHF): about 13% a year in CHF from an FY2026 estimate of ~CHF 3.47B (hypothesis: low-20s cc growth less ~6 points of FX). 11% below the Investor Day target of at least CHF 5.6B. 3Y CAGR FY2022-FY2025 was +35.1%, so the case assumes a clear deceleration.",
+  "new": "CHF 5,000M FY2029 ($6.0B): ~13%/yr from ~CHF 3.47B FY2026E; 11% below Investor Day's CHF 5.6B minimum. Assumes clear deceleration from +35.1% 3Y CAGR.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "b016db95-49ce-4c01-bf50-f1c7f8385e33",
+  "column": "rationale",
+  "old": "64%, below the FY2026 guide and 2029 target of at least 65% and the 64.8% LTM, to leave room for promotion in wholesale. Still 300bps above the 3Y average of 61.0%, because the DTC mix gain is structural.",
+  "new": "64%, below the ≥65% guide/target and 64.8% LTM, leaving room for wholesale promotion; 300bps above the 61.0% 3Y average on structural DTC mix.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "12bdab47-7c0a-4dd7-86a4-c31449193d3d",
+  "column": "rationale",
+  "old": "49% versus 51.0% LTM and a 50.4% 3Y average. Distribution costs are already down to 10.0% of sales (Q2 FY2026); the case assumes scale absorbs the store build-out and marketing at ~14% of sales.",
+  "new": "49% vs 51.0% LTM and 50.4% 3Y average. Distribution already 10.0% of sales (Q2 FY2026); scale absorbs stores and marketing at ~14% of sales.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "bdd86620-c35c-4ff2-8022-6ba70935b26a",
+  "column": "rationale",
+  "old": "15.0% = 64% gross margin less 49% SG&A. LTM 13.8%, 3Y average 10.6%. Consistent with ~21% adjusted EBITDA (adds D&A ~4% and SBC ~2%), below the at least 22% target.",
+  "new": "15.0% = 64% gross margin less 49% SG&A. LTM 13.8%, 3Y average 10.6%. Implies ~21% adjusted EBITDA, below the at least 22% target.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "0e5f01fa-db6f-482b-8414-73891983f7ab",
+  "column": "rationale",
+  "old": "20% normalized (hypothesis: close to the Zurich statutory rate of ~19.6%). LTM effective rate 7.9%, 3Y average about 0% because of deferred tax items, so the case does not rely on a low tax charge.",
+  "new": "20% normalized (hypothesis: near Zurich's ~19.6% statutory rate). LTM effective 7.9%, 3Y average ~0% on deferred tax items; no reliance on low tax.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "3802e627-7c22-4a22-a879-8dff63371f20",
+  "column": "rationale",
+  "old": "CHF 600M ($720M): EBIT of CHF 750M, net finance and FX result assumed zero (interest income on cash roughly offsets lease interest), taxed at 20%. LTM CHF 396M.",
+  "new": "CHF 600M ($720M): EBIT CHF 750M, net finance and FX assumed zero (cash interest roughly offsets lease interest), taxed at 20%. LTM CHF 396M.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "de61ee35-f9fe-402a-8851-704d882df3dc",
+  "column": "rationale",
+  "old": "330M class-A equivalents (Class A + Class B/10). The $1B buyback (~CHF 833M through 2029) offsets stock-compensation dilution and trims the count ~1% from 334.2M. FY2022-FY2025 the count grew 1.5% a year.",
+  "new": "330M class-A equivalents (Class A + Class B/10). The $1B buyback (~CHF 833M) offsets stock-comp dilution, trimming ~1% from 334.2M; FY2022-FY2025 grew 1.5%/yr.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "4ddf3da4-cdc7-4a19-878d-c55c4fc15cfa",
+  "column": "rationale",
+  "old": "20x, about the current 20.8x LTM IFRS multiple and far below the ~73x 3Y average of FiscalAI year-end P/E (FY2023-FY2025). A premium brand still growing low-teens in 2029 with 36% ROIC and net cash; no re-rating assumed.",
+  "new": "20x, near 20.8x LTM IFRS and far below the ~73x 3Y average (FiscalAI). Premium brand growing low-teens in 2029, 36% ROIC, net cash; no re-rating.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "66622fd0-4389-4aaa-b57a-d348f5f618bd",
+  "column": "rationale",
+  "old": "Hypothesis: about CHF -1,000M including leases (-$1.2B). FY2027-FY2029 FCF of ~CHF 1.7B less lease principal (~CHF 0.3B) and the ~CHF 0.83B buyback, with lease liabilities rising as stores double. LTM CHF -721M; 3Y average (FY2023-FY2025) CHF -497M.",
+  "new": "Hypothesis: ~CHF -1,000M incl. leases (-$1.2B): FY2027-FY2029 FCF ~CHF 1.7B less lease principal (~CHF 0.3B) and ~CHF 0.83B buyback. LTM CHF -721M.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "04389941-c5d9-48b7-b89b-e8ae819d701f",
+  "column": "rationale",
+  "old": "$1,140M (CHF 950M): EBIT CHF 750M plus D&A at 4% of sales (4.3% LTM). IFRS 16 basis, so lease cost sits below EBITDA and leases sit in net debt.",
+  "new": "$1,140M (CHF 950M): EBIT CHF 750M plus D&A at 4% of sales (4.3% LTM). IFRS 16 basis: lease cost below EBITDA, leases in net debt.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "a98c1293-c85d-4b3f-b7b6-431a794467b2",
+  "column": "rationale",
+  "old": "Falls out of the chain: EV $13.2B ($14.4B market cap less ~$1.2B net cash) over $1,140M EBITDA = 11.6x. LTM 12.9x on the same lease-inclusive basis. The 3Y average of 33.4x is FiscalAI's year-end figure, which mixes USD price with CHF EBITDA.",
+  "new": "Derived: EV $13.2B ($14.4B market cap − ~$1.2B net cash) / $1,140M EBITDA = 11.6x; LTM 12.9x. FiscalAI's 33.4x 3Y average mixes currencies.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "eb629e2b-8179-4ce9-a0ab-9d638275693a",
+  "column": "rationale",
+  "old": "CHF 5,600M in FY2029 ($6.72B): management's Investor Day target, about 17.4% a year from ~CHF 3.47B FY2026E, assuming the franc stops strengthening so that cc growth reaches the reported line.",
+  "new": "CHF 5,600M in FY2029 ($6.72B), the Investor Day target: ~17.4%/yr from ~CHF 3.47B FY2026E, assuming the franc stops strengthening.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "61a1c6be-5326-4ac6-8791-c8a16a52898b",
+  "column": "rationale",
+  "old": "CHF 4,300M in FY2029 ($5.16B): about 7.4% a year from ~CHF 3.47B FY2026E. The Q2 FY2026 US wholesale slowdown turns out to be the start of a deceleration in everyday running, and CHF strength keeps cutting reported growth.",
+  "new": "CHF 4,300M in FY2029 ($5.16B): ~7.4%/yr from ~CHF 3.47B FY2026E. Q2 FY2026 US wholesale slowdown starts an everyday-running deceleration; strong CHF keeps cutting reported growth.",
+  "limit": 25
+ },
+ {
+  "table": "valuation_lines",
+  "id": "d914d5d4-116f-4ca7-824d-97372209b251",
+  "column": "rationale",
+  "old": "$7.4B: CHF 1.21 x 15 = CHF 18.21, $21.85 at 1.20 USD/CHF, over 340M shares. -26% vs $29.55. Net cash of ~CHF 0.9B (~$3.2 per share) is not added and is the floor under this case.",
+  "new": "$7.4B: CHF 1.21 x 15 = CHF 18.21, $21.85 at 1.20 USD/CHF, 340M shares; -26% vs $29.55. Net cash (~$3.2/share), not added, is the floor.",
+  "limit": 25
+ }
+]

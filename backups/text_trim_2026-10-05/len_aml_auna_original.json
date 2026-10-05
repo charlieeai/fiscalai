@@ -1,0 +1,938 @@
+[
+ {
+  "col": "reason",
+  "id": "c85038e4-ce0a-432c-9944-bbd6199c1cee",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Net debt/EBITDA 3.7x LTM after the Nov-2025 refinancing (8.75% notes 2032 + MXN term loan 2030); interest cover ~1.2x. Heredia's ~$177M sponsor loan (Jun-2027) is an off-balance-sheet change-of-control risk.",
+  "table": "scorecard_ratings",
+  "ticker": "AUNA"
+ },
+ {
+  "col": "description",
+  "id": "220f9616-1984-4594-be0a-120b5f1a12dc",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "US Homeowners are suing Lennar over mold in new homes. Lennar raised reserves for this claims by 21%, to $336.9M, hit to earnings.\n\nAmount is manageable, 2% of market cap. But it is not manageable that the same building faults keep turning up in different markets. That reads as how they build.",
+  "table": "risks",
+  "ticker": "LEN"
+ },
+ {
+  "col": "description",
+  "id": "7ac9b670-b914-4181-8d9e-52f072821144",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "CapEx started to been financed by leases for some acquisitions. So it shows that Auna is spending 2/3 of CapEx from what deppreciates, for a business with huge infrastructure spend below deppreciation is not sustainable indefinitely. It could be for young assets and the recent asset light model Trecca or this FCF levels are sustained on deferred CapEx, DPO increased with reverse factoring and investing below deppreciation.",
+  "table": "risks",
+  "ticker": "AUNA"
+ },
+ {
+  "col": "description",
+  "id": "1a431b81-3063-4542-b563-e0e480c395f0",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "Miller family controls the vote through a share class worth ten votes each, so outside shareholders cannot force a change of course. Two proposals to end that structure were voted down in April 2026.\n\nCapital allocation is not much optiomal. CF Ops was negative in 5 of the last 6 Qs while $3.3B went out in buybacks and dividends and the money comes from BS. Thesis is a five-year bet on this management's judgement, with no way to object if it turns out wrong.",
+  "table": "risks",
+  "ticker": "LEN"
+ },
+ {
+  "col": "description",
+  "id": "032de12a-ea31-42e7-920a-945c47e3a158",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "Leverage, currency mismatch and the 2029-2030 refinancing. Net debt is S/3,252M, 3.6x the S/897M Adjusted LTM EBITDA, and LTM EBIT covered interest expense only 0.95x (FiscalAI). Cash interest and hedge premiums were S/201M in 1H26 alone. Part of the debt is in USD and MXN while Peru and Colombia earn in PEN and COP: in 1H26 a 4% PEN depreciation against the MXN and 1% against the USD added S/117M of gross debt with no new borrowing. S/761M of loans falls due between July 2029 and June 2030 and S/1,284M after that, including the term loan maturing in 2030 that the Omaha case assumes is refinanced.\n\nEquity is only about a quarter of EV, so if Mexico and Colombia EBITDA does not grow, Auna refinances at 3.5x or more at whatever spread the market asks then, and each 0.5x of EV/EBITDA multiple is worth roughly $1.70-2.30 per share. A price near $4 would also test the unofficial loan-to-value level on Enfoca's pledged Class B shares.",
+  "table": "risks",
+  "ticker": "AUNA"
+ },
+ {
+  "col": "description",
+  "id": "81c580d1-3e07-4677-a23b-165ebbaa7b38",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "The equity has almost no cushion. Net debt of £1,545M is 8.9x LTM adjusted EBITDA (£174M), and capex of about £300-350M a year plus about £160-190M of cash interest exceeds any EBITDA the company has ever reported (record: £306M in FY2023). Cumulative burn over FY2027-FY2029 is about £700M in the base case, against pro forma liquidity of about £340M. The March 2029 notes ($1,050M + £565M) must be refinanced, and the USD notes were reported at about 57 cents (yield to maturity about 37%) after the HPS deal. If the refinancing comes with an exchange into shares, existing equity is worth close to zero (the bear case).",
+  "table": "risks",
+  "ticker": "AML.L"
+ },
+ {
+  "col": "description",
+  "id": "53b2bc44-01a2-4bd1-874b-1491a8a54882",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "Governance and creditor conflict. The four strategic blocs hold 68.5% (Yew Tree/Stroll 32.99%, Geely 14.08%, PIF 13.88%, Mercedes-Benz 7.54%), and several deals were done with the controlling shareholder: the F1 naming rights sold to AMR GP for £50M, the sale of the AMR GP stake, and the £50M Yew Tree facility. The July 2026 financing moved almost 200 trademarks into an unrestricted subsidiary and committed 50.1% of the non-automotive brand rights to Authentic Brands. Bondholders threaten to challenge it. If a court unwinds the deal, liquidity falls back toward £145M (H1 2026 before the financing). If it stands, the most durable asset is partly outside the group.",
+  "table": "risks",
+  "ticker": "AML.L"
+ },
+ {
+  "col": "description",
+  "id": "f3207c49-28c8-4bc5-85d9-4f4351bc8019",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "Demand and the Valhalla cliff. The FY2026 figures depend on about 500 Valhallas (225 delivered in H1 2026), a limited series whose orders currently run to the end of Q4 2026. No successor Specials programme has been announced. Core demand is weak. Core wholesales fell from 5,812 (FY2024) to 5,266 (FY2025), APAC fell 21% in FY2025 as China's luxury tax changed, and the US quota admits only 100,000 UK cars a year at 10% (27.5% above that; 25,000 per quarter from 2026). Core ASP fell 5% in H1 2026 on dealer support. Without Valhalla, LTM revenue would be about £200-250M lower (hypothesis based on the implied Specials ASP).",
+  "table": "risks",
+  "ticker": "AML.L"
+ },
+ {
+  "col": "detail",
+  "id": "212fcdd6-26c2-4467-ab04-6aca067c285b",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "Orders went +0.9%, then -3.8%, then -9.2% against the same quarter a year earlier. Two falls, and getting worse.\n\nA third is where the thesis says the story changes: not a low point that rebounds when rates come down, but buyers who can no longer afford the house. The base case needs 87,000 deliveries in FY29, and that number assumes they come back.",
+  "table": "catalysts",
+  "ticker": "LEN"
+ },
+ {
+  "col": "detail",
+  "id": "45a6b279-92dd-481d-a486-a8de8f91fb22",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "We need to check if the building starts maximum this year, so we need to check the activity in Lince. The last month when it was monitored, there were no movements according to some businesses near there. Also, it is vital that the operations start in 2028, so the revenues and cash flow from that operations could be bullish for the company.",
+  "table": "catalysts",
+  "ticker": "AUNA"
+ },
+ {
+  "col": "detail",
+  "id": "8953693b-21f6-4f37-93be-a0de1c8eb798",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "Oncosalud is the core of the moat: plan memberships reached 1,472 thousand in 2Q26 (+6% YoY, +2% QoQ), helped by about 7,000 SEDAPAL members from a new B2B policy, while oncological plans were 1,005 thousand (+1%). The Oncology MLR held at 50.1% (+0.3 p.p.) and the total Oncosalud MLR rose 1.0 p.p. to 55.9% because new B2B accounts start with a higher loss ratio. Segment Adj. EBITDA margin fell 2.4 p.p. YoY to 21.0%.\n\nIf memberships keep growing and the oncology MLR does not drift up, the switching-cost argument holds and the B2B growth is profitable. If members grow only through B2B at a worse MLR, growth is being bought.",
+  "table": "catalysts",
+  "ticker": "AUNA"
+ },
+ {
+  "col": "detail",
+  "id": "fca129f7-aa98-4ad5-a0b2-7489a0c5344f",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "Mexico (Doctors Hospital Monterrey plus Auna Seguros) was 24% of revenue and 34% of Adj. EBITDA in 2Q26. Revenue grew 4% in local currency, but Segment Adj. EBITDA fell 16% and the margin dropped 6.1 p.p. to 25.9% on service mix and payroll from the talent program. Sequentially EBITDA rose 3%, Doctors Hospital volumes were +20% YoY after better tier classifications with two payors, oncology revenue was 2.1x, and total capacity utilization reached 42% in June against 39.0% for the quarter.\n\nManagement says the second half should show sustained volume growth. The thesis (claim 3) needs Mexico EBITDA to stop falling this year.",
+  "table": "catalysts",
+  "ticker": "AUNA"
+ },
+ {
+  "col": "detail",
+  "id": "a305d7ab-1e70-4b6b-a6a0-e994ba07e943",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "Leverage Ratio (loans plus leases minus cash, over Adjusted LTM EBITDA) was 3.6x at June 2026: net debt S/3,252M over S/897M. The medium-term target is below 3.0x. Guidance for FY2026 is revenue growth of about 12% FXN and Adj. EBITDA growth toward the low end of 10-14% FXN, excluding the Peru penalties; on the S/917M of FY2025 that is roughly S/1,000M, which needs about S/556M in 2H26 against S/453M in 2H25 because 1H26 was S/444M (-4%). S/399M of loans falls due between July 2026 and June 2027.\n\nA year-end at 3.3x or lower, with the short-term maturities paid from cash and no new equity, would show that the FCF is real and reaching the balance sheet. Missing the EBITDA guidance again would weaken management credibility and push the 2029-2030 refinancing into a weaker position.",
+  "table": "catalysts",
+  "ticker": "AUNA"
+ },
+ {
+  "col": "detail",
+  "id": "9f475e26-83c7-4b28-932f-c56714b49385",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "Management said on the H1 2026 call that dealer support will normalize in H2 and core ASP will head toward +5% for FY2026, even though H1 printed -5% (£182k). Aged stock was about 70-80 cars behind plan at mid-year, mostly DBX in the US, and should clear by the end of Q3. If Q3 still carries dealer support, the FY2026 guidance (gross margin in the high 30s, EBIT margin toward breakeven) is at risk, and the base case's 38.5% gross margin without Valhalla looks too high.",
+  "table": "catalysts",
+  "ticker": "AML.L"
+ },
+ {
+  "col": "detail",
+  "id": "a9a4cff4-c8b8-4225-8597-184c5962adc8",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "The guidance (gross margin in the high 30s, opex ex D&A below £300M, D&A of £375-400M and adjusted EBIT margin toward breakeven) implies adjusted EBITDA of roughly £300-350M (my estimate, not a company number), against £62.7M in H1 2026. That needs an H2 of about £250M. The FY2023 record was £305.9M. Meeting it would confirm that the gap between EBITDA and capex plus interest can close; missing it would support the bear case.",
+  "table": "catalysts",
+  "ticker": "AML.L"
+ },
+ {
+  "col": "detail",
+  "id": "bc3752a0-1e17-4172-9075-e7d60a477ead",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "Holders of the 2029 notes (reported: Arini and Tresidor) sent a letter before action and applied in New York for discovery against HPS, Authentic Brands, Moelis and Lazard. They are assessing remedies under New York law and section 423 of the UK Insolvency Act (transactions at an undervalue). A claim would put at risk the £100M delayed-draw tranche, which depends on Authentic Brands taking 50.1% of the non-automotive brand rights. It would also make a refinancing of the 2029 notes before 2028 much harder.",
+  "table": "catalysts",
+  "ticker": "AML.L"
+ },
+ {
+  "col": "detail",
+  "id": "27a3e7cd-9458-4950-93f7-f66d204467a3",
+  "lim": 35,
+  "member_ticker": null,
+  "old": "$1,050M of 10.0% notes and £565M of 10.375% notes mature in March 2029, and HY issuers usually refinance 12-18 months ahead. A clean refinancing (new notes or loans at a similar or lower coupon, maturing 2031 or later, with no exchange into shares) removes the main path to zero. A distressed exchange transfers the equity to creditors. The HPS term loan matures July 2031 (whether it has a springing maturity linked to the 2029 notes is not verified).",
+  "table": "catalysts",
+  "ticker": "AML.L"
+ },
+ {
+  "col": "bullet_1",
+  "id": "6bd4f99b-894a-4afe-9234-9c9be3f6ddc6",
+  "lim": 45,
+  "member_ticker": null,
+  "old": "Auna is a Peruvian a vertical integrated healthcare (insurer and provider) company with significant potential to capture TAM in Mexico and Colombia, as the success of its business model has already been demonstrated in Peru. Auna is a network of clinical services that includes oncology services (Oncosalud), consultations, surgeries, and healthcare membership plans. It operates around 31 total facilities, 2.3k beds and 1.5M healthcare plans. Around Peru, it has 6 main clinics, in Colombia, it has around 8 centers (1.1k beds), and in Mexico, 3. The rest are medical centers around these countries. This network enables patients to receive medical care in different parts of Peru and LATAM.",
+  "table": "own_thesis",
+  "ticker": "AUNA"
+ },
+ {
+  "col": "bullet_2",
+  "id": "6bd4f99b-894a-4afe-9234-9c9be3f6ddc6",
+  "lim": 45,
+  "member_ticker": null,
+  "old": "Because its business model differs from traditional private hospitals (vertical integrated model, Oncosalud sells plans and Auna attends patients), Auna's network makes it unique. Its closest competitors are Brazilian and Mexican, and if we value the company using comparable multiples, there is significant upside potential for Auna. For any refutating this, the valuation for FCF is also solid (even excluding 2Q26 that was a one time supplier financing)",
+  "table": "own_thesis",
+  "ticker": "AUNA"
+ },
+ {
+  "col": "bullet_3",
+  "id": "6bd4f99b-894a-4afe-9234-9c9be3f6ddc6",
+  "lim": 45,
+  "member_ticker": null,
+  "old": "There are two main catalysts for Auna:\n\nTorre Treca: This is a Peruvian government facility that has been ceded to Auna following a contract that was disputed for several years. This represents potential revenue with zero or minimal CapEx required for remodeling.\n\nRecovery of operations in Mexico and Colombia: Disagreements with suppliers (doctors), lose of volume, mix of contracts, talent overhaul, payers, and government clients caused the company to lose money during the first years they were established there. Now, with more experience in these geographies, they are showing signs of recovery. Once these markets mature, EBITDA and profit could increase significantly.",
+  "table": "own_thesis",
+  "ticker": "AUNA"
+ },
+ {
+  "col": "bullet_1",
+  "id": "8bb57baf-e579-4640-b5d7-26c23b79b595",
+  "lim": 45,
+  "member_ticker": null,
+  "old": "LEN trades at a discount during the down-cycle, with margins compressed by buyer incentives and mortgage-rate buydowns and ASP declining — pressures that are cyclical and consistent with peak pessimism. A structural undersupply of housing in the US underpins long-term demand. As the #2 homebuilder by scale, LEN would capture a disproportionate share of the volume-×-margin rebound once mortgage rates ease. The thesis buys the normalized earnings power, not the depressed current level.",
+  "table": "own_thesis",
+  "ticker": "LEN"
+ },
+ {
+  "col": "bullet_2",
+  "id": "8bb57baf-e579-4640-b5d7-26c23b79b595",
+  "lim": 45,
+  "member_ticker": null,
+  "old": "Valuation is anchored to a normalized mid-cycle EPS (recovered volume × normalized margin), not to the depressed current level, applying a mid-cycle homebuilder multiple of ~10x. The return is generated by the E, not by multiple expansion — the current multiple would compress toward 10x, so the entire lift must come from the earnings recovery. The normalized margin is set below the pre-spin level (~10–11%, not the historical ~13%) to embed the permanent land-cost penalty: the asset-light model raised the cost of capital on land from roughly WACC (~7%) to the ~10% charged by land banks, some ~300bps of permanent margin drag. No ACOR add-back is applied, because at mid-cycle the deferral distortion has already self-cancelled — fees paid approximate fees recognized in COGS once the pipeline stops growing.",
+  "table": "own_thesis",
+  "ticker": "LEN"
+ },
+ {
+  "col": "bullet_3",
+  "id": "8bb57baf-e579-4640-b5d7-26c23b79b595",
+  "lim": 45,
+  "member_ticker": null,
+  "old": "LEN is a capital-return machine, with high payout ratios and a history of aggressive buybacks against a modest equity base. ACOR (accumulated option costs on real estate) is the stream of fees LEN pays to keep its land options alive: the fees accumulate on the balance sheet rather than hitting expense immediately, and only convert to cost when the home is delivered and sold. Once that fee drain reaches equilibrium (~FY27–28) and ACOR stops building, free cash flow would inflect positive and fund buybacks that are accretive at depressed prices.",
+  "table": "own_thesis",
+  "ticker": "LEN"
+ },
+ {
+  "col": "breaks_1",
+  "id": "8bb57baf-e579-4640-b5d7-26c23b79b595",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "The trough keeps deepening with no visible inflection. If unit orders begin falling yoy for several consecutive Qs, the volume support breaks and the setup shifts from a cyclical trough to structural demand erosion driven by affordability.",
+  "table": "own_thesis",
+  "ticker": "LEN"
+ },
+ {
+  "col": "breaks_2",
+  "id": "8bb57baf-e579-4640-b5d7-26c23b79b595",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "\"Normal\" proves worse than assumed, if incentives are structural rather than cyclical, if the land-cost penalty exceeds ~300bps, or if mid-cycle volume never returns to prior levels because affordability has permanently eroded. ",
+  "table": "own_thesis",
+  "ticker": "LEN"
+ },
+ {
+  "col": "breaks_3",
+  "id": "8bb57baf-e579-4640-b5d7-26c23b79b595",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "The engine currently runs in reverse, with cash falling, net debt rising, and payouts funded from the balance sheet rather than from FCF. The thesis fails if ACOR equilibrium takes longer than FY27–28, or the cycle forces abandonment of land options, an irreversible cash loss, unlike the reversible non-cash impairments of the land-ownership previous model.",
+  "table": "own_thesis",
+  "ticker": "LEN"
+ },
+ {
+  "col": "bullet_1",
+  "id": "0edafe80-6597-444e-934c-e4eb41eb48dd",
+  "lim": 45,
+  "member_ticker": null,
+  "old": "What is being bought is a 113-year-old ultra-luxury brand at trough volumes, with most of the value owed to creditors. At 34.56p (£0.3456; the LSE quote is in pence) and 1,009.6M shares, the market cap is £349M, sitting on £1,545M of net debt at H1 2026 (company definition, including £90M of leases and £39M of inventory financing). EV is about £1.89bn: 10.9x LTM adjusted EBITDA of £174M and 1.3x LTM revenue of £1,432M. The product range has been renewed (Vantage, DB12, Vanquish and DBX, now with S derivatives), and the Valhalla supercar is delivering: about 225 units in H1 2026 and around 500 guided for FY2026. Core volumes are still weak. Core wholesales were 5,266 in FY2025 against 5,812 in FY2024, and core ASP fell 5% in H1 2026 to £182k because of dealer support to clear aged stock.",
+  "table": "own_thesis",
+  "ticker": "AML.L"
+ },
+ {
+  "col": "bullet_2",
+  "id": "0edafe80-6597-444e-934c-e4eb41eb48dd",
+  "lim": 45,
+  "member_ticker": null,
+  "old": "The valuation uses EV/EBITDA on normalized FY2029E volumes rather than on Valhalla-inflated FY2026 figures, because Valhalla is a limited run that ends. Base: 5,700 core units at £205k, 220 Specials at about £1.0M wholesale ASP, and £150M of parts and other revenue give £1.54bn of revenue. At a 38.5% gross margin and £280M of cash opex, adjusted EBITDA is £312M (20%, against 18.7% in FY2023, the best year on record). At 8.0x, which is where AML traded on adjusted EBITDA in FY2022 to FY2024 and close to Porsche AG today, EV is £2.5bn. The equity is a thin residual. Capex of about £330M a year (a £1.7bn programme for FY2026 to FY2030) plus about £180M of cash interest exceeds EBITDA, so net debt keeps rising unless volumes and margin recover. Each turn of the multiple is worth about £310M, roughly the whole current market cap.",
+  "table": "own_thesis",
+  "ticker": "AML.L"
+ },
+ {
+  "col": "bullet_3",
+  "id": "0edafe80-6597-444e-934c-e4eb41eb48dd",
+  "lim": 45,
+  "member_ticker": null,
+  "old": "The return does not come from free cash flow, which was -£410M in FY2025 and -£198M in H1 2026. It depends on three things happening in order. First, EBITDA has to close the gap to capex plus interest, about £500M a year. Second, the $1,050M 10.0% and £565M 10.375% senior secured notes due March 2029 have to be refinanced without a debt-for-equity swap. Third, the strategic shareholders have to keep funding the gap: Lawrence Stroll's Yew Tree Consortium (32.99%), Geely (14.08%), PIF (13.88%) and Mercedes-Benz (7.54%), 68.5% combined at FY2025. Their record is to fund it, but at the cost of dilution (shares up about 23% since late 2023) and with related-party transactions attached. The July 2026 £450M HPS term loan was secured on trademarks moved into a new unrestricted subsidiary, and bondholders are threatening to challenge it. The position works as a call option. The base case is worth less than the current price, the bull case is worth about 6x, and the bear case leaves nothing for equity.",
+  "table": "own_thesis",
+  "ticker": "AML.L"
+ },
+ {
+  "col": "breaks_1",
+  "id": "0edafe80-6597-444e-934c-e4eb41eb48dd",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "FY2026 adjusted EBITDA below £230M (hypothesis: the guidance of an EBIT margin near breakeven and £375-400M of D&A implies roughly £300-350M), or FY2027 core wholesales below 5,000 units. Either means the H1 2026 gross margin gain was Valhalla mix, not recovery in the core business.",
+  "table": "own_thesis",
+  "ticker": "AML.L"
+ },
+ {
+  "col": "breaks_2",
+  "id": "0edafe80-6597-444e-934c-e4eb41eb48dd",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Net debt above £1.8bn at any half-year before FY2028, or LTM adjusted EBITDA below £200M at H1 2027. Either one leaves EV at 8x below net debt, so the equity would be worth zero on this frame.",
+  "table": "own_thesis",
+  "ticker": "AML.L"
+ },
+ {
+  "col": "breaks_3",
+  "id": "0edafe80-6597-444e-934c-e4eb41eb48dd",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Any one of these breaks the claim: the notes are not refinanced by 31 December 2027; they trade below 60 cents for two consecutive quarters (reported at about 57 cents after the HPS deal, a yield to maturity near 37%); a UK court unwinds or suspends the HPS/Authentic Brands financing; or management proposes an exchange that converts notes into equity.",
+  "table": "own_thesis",
+  "ticker": "AML.L"
+ },
+ {
+  "col": "rationale",
+  "id": "79a070b4-28b7-4d1f-8fe6-45e42338f0ab",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "S/1,982M LTM x 1.05^4 = S/2,409M / 3.41 = $706.5M. Growth slows to about nominal GDP plus price as B2B wins come with higher MLR and penalties keep billing under review.",
+  "table": "valuation_lines",
+  "ticker": "AUNA"
+ },
+ {
+  "col": "rationale",
+  "id": "29e98338-60d0-49f7-8f55-6073db6f67dc",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "S/1,101M LTM x 0.98^4 = S/1,016M / 3.41 = $297.8M. Volume gains stall, Auna Seguros shrinks and a weaker MXN against the PEN lowers the soles figure.",
+  "table": "valuation_lines",
+  "ticker": "AUNA"
+ },
+ {
+  "col": "rationale",
+  "id": "1d24ce89-d402-461c-bc8d-7ce50e7f201e",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "S/1,583M LTM x 1.04^4 = S/1,852M / 3.41 = $543.1M. Auna limits volume to payers that pay, and intervened payors (12% of revenue) keep stretching receivables.",
+  "table": "valuation_lines",
+  "ticker": "AUNA"
+ },
+ {
+  "col": "rationale",
+  "id": "7c32b803-4a66-4f94-9819-0c449fa8d5e2",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Current $953.7M (S/3,252M / 3.41). Target: Omaha path to $727M plus about $155M of after-tax EBITDA that does not arrive (hypothesis), so most of the paydown in the base case disappears. Historical 3-year average FY2023-FY2025 $1,008M.",
+  "table": "valuation_lines",
+  "ticker": "AUNA"
+ },
+ {
+  "col": "rationale",
+  "id": "7f661f38-18d2-422f-8644-2d1f1f6e9e33",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Implied net income: EBITDA $250.1M − D&A $83.6M (5.4% of revenue) = EBIT $166.5M; interest $105.6M (12.0% on net debt $880.0M); pre-tax $60.9M, tax $23.4M (38.4%); minorities $4.3M; FX revaluation 0 → net income $33.2M. Assumptions: D&A 5.4% of revenue (FY2023-25 avg), tax 38.4% (FY2024-25 effective; FY2023 loss excluded), cost of debt 12% (cap: LTM finance costs PEN 662M / debt PEN 3,606M = 18.4% includes non-debt finance items), minorities 11.5% of net income (FY2024-25).",
+  "table": "valuation_lines",
+  "ticker": "AUNA"
+ },
+ {
+  "col": "rationale",
+  "id": "d2fe6919-b18e-43f4-980e-0a8cc49b9d20",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Sum of countries S/5,277M / 3.41 = $1,547M, a 3.1% CAGR in soles, below guidance of about 12% FXN for FY2026. Historical 3Y CAGR 21.4% (FY2022-FY2025, soles, FiscalAI) includes acquisitions.",
+  "table": "valuation_lines",
+  "ticker": "AUNA"
+ },
+ {
+  "col": "rationale",
+  "id": "4d51043c-a271-40e5-ab69-95c8c7bfdaa7",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "4.5x: Hapvida 4.1x, below Auna's post-IPO low of about 4.9x, the multiple a still-leveraged LatAm hospital operator gets when growth disappoints. Historical 2-year average FY2024-FY2025 is 5.49x (FiscalAI).",
+  "table": "valuation_lines",
+  "ticker": "AUNA"
+ },
+ {
+  "col": "rationale",
+  "id": "de8f0f17-628c-413e-9bff-a5228b21cc4d",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "S/1,982M LTM x 1.09^4 = S/2,798M / 3.41 = $820.5M. Oncosalud memberships 1.472M (+6% YoY) plus annual price updates, Lima Sur (30 beds, late 2027/early 2028) and Trecca add capacity.",
+  "table": "valuation_lines",
+  "ticker": "AUNA"
+ },
+ {
+  "col": "rationale",
+  "id": "b17f31f1-90be-4035-b95a-1a23fcd097eb",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "S/1,101M LTM x 1.06^4 = S/1,390M / 3.41 = $407.6M. Total capacity utilization rises from 39.0% (42% exit rate in June 2026) as tier classifications and oncology keep growing.",
+  "table": "valuation_lines",
+  "ticker": "AUNA"
+ },
+ {
+  "col": "rationale",
+  "id": "e8444327-40be-4f9a-a139-463b0910ef7a",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "S/1,583M LTM x 1.10^4 = S/2,318M / 3.41 = $679.7M. PGP contracts (24% of segment revenue, 3.1M protected lives) keep scaling and the Emergency Stabilization Plan eases payer liquidity.",
+  "table": "valuation_lines",
+  "ticker": "AUNA"
+ },
+ {
+  "col": "rationale",
+  "id": "7b4e647d-cf73-4249-958e-ac9f1142bde7",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "6.0x: Medica Sur 6.0x and Rede D'Or 6.9x, and Auna traded up to about 6.5x since the 2024 IPO. Historical figure is the 2-year average FY2024-FY2025 (5.46x, 5.52x, FiscalAI); there is no FY2023 multiple before the IPO.",
+  "table": "valuation_lines",
+  "ticker": "AUNA"
+ },
+ {
+  "col": "rationale",
+  "id": "85f125f3-37d3-4ad7-8920-10d1d5d0def6",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Current: S/3,252M (loans S/3,606M + leases S/124M - cash S/478M, 2Q26 release) / 3.41 = $953.7M. Target: the Omaha path to $727M less about $104M of extra after-tax EBITDA in 2027-2030 (hypothesis). Historical: 3-year average FY2023-FY2025 of S/3,436M = $1,008M (FiscalAI).",
+  "table": "valuation_lines",
+  "ticker": "AUNA"
+ },
+ {
+  "col": "rationale",
+  "id": "7761f4dd-0e03-4706-87a0-696b1d97f6c0",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Sum of countries S/6,505M / 3.41 = $1,908M, an 8.7% CAGR in soles from the S/4,666M LTM. Historical 3Y CAGR 21.4% (FY2022-FY2025, soles, FiscalAI) is inflated by the IMAT and OCA acquisitions.",
+  "table": "valuation_lines",
+  "ticker": "AUNA"
+ },
+ {
+  "col": "rationale",
+  "id": "a2e99a1e-024c-4e83-958a-25ebd68762db",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Implied net income: EBITDA $398.2M − D&A $103.0M (5.4% of revenue) = EBIT $295.2M; interest $75.0M (12.0% on net debt $625.0M); pre-tax $220.2M, tax $84.6M (38.4%); minorities $15.6M; FX revaluation 0 → net income $120.0M. Assumptions: D&A 5.4% of revenue (FY2023-25 avg), tax 38.4% (FY2024-25 effective; FY2023 loss excluded), cost of debt 12% (cap: LTM finance costs PEN 662M / debt PEN 3,606M = 18.4% includes non-debt finance items), minorities 11.5% of net income (FY2024-25).",
+  "table": "valuation_lines",
+  "ticker": "AUNA"
+ },
+ {
+  "col": "rationale",
+  "id": "e5a03a26-491d-4836-828e-bc5ba0b432a3",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "EV − net debt = $1,700M − $727M = $973M ÷ 74.2M shares = $13.05.  Since equity is a thin slice of a highly leveraged EV (~57% of EV is debt), small changes in EBITDA or paydown have amplified effects on equity.",
+  "table": "valuation_lines",
+  "ticker": "AUNA"
+ },
+ {
+  "col": "rationale",
+  "id": "b38d55ae-3d21-474b-96ab-9ebe4d463a3d",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "From $956M (AR 2025 schedule, ≈ reported net debt ex-leases).  2026: No expansion in Mexico → the FCF (~$99M) is fully amortized → ~$857M. Priority: suppliers + paying off $69M of maturing debt that year.  2027–30: The $500M expansion at $125M/year consumes almost all of the FCF; the cumulative applied net FCF (~$229M) reduces debt to ~$727M. The $425M bullet in 2030 is refinanced (there is insufficient accumulated cash to withdraw it), consistent with management's refinancing intention. Includes current cash levels.",
+  "table": "valuation_lines",
+  "ticker": "AUNA"
+ },
+ {
+  "col": "rationale",
+  "id": "c92ba046-4278-4051-9ca8-b6cff2b520b0",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Median of the range of comparable Latin American hospitals (~5–7x) and of Auna's own trading history since the IPO (~5–6x).\n5.0x (base) = normalized through-cycle multiple ≈ the median. It has a haircut compared to peers due to leverage and EM/LatAm risk.",
+  "table": "valuation_lines",
+  "ticker": "AUNA"
+ },
+ {
+  "col": "rationale",
+  "id": "ba3c6285-fdc8-42ef-9f4f-1b0a5a704559",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Starting point ~18.3% consolidated (LTM 2Q26): Normalized targets by country: Peru 21.5% (vs. ~19.8% current — slight upside from operating leverage as Oncosalud scales), Mexico 25.5% (vs. ~25.5% — virtually unchanged, high but with little weight, ~19% of revenue), Colombia 14.5% (vs. ~12.2% — recovery as payer penalties decrease, but remains structurally the lowest).  These levels represent a return to pre-disruption FY21–22 margins by segment, not new highs.  The blend is weighted by the 2030 revenue mix (Peru ~45% · Colombia ~36% · Mexico ~19%) → ~19.5%; Colombia's weight is what caps the median of the blend.",
+  "table": "valuation_lines",
+  "ticker": "AUNA"
+ },
+ {
+  "col": "rationale",
+  "id": "3ef5925c-4628-4cf7-acf2-245f075f39a5",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Peru +7.5%: normalized below historical levels. Peru's organic growth excluding M&A ran at double-digit rates post-Oncosalud (FY22–24); +7.5% represents a moderation towards a stable state, above Peruvian nominal GDP but penalized compared to the recent ramp-up.\n\nMexico +0.5%: almost flat. Mexico has been flat/declining due to supplier/ERP disruption; +0.5% assumes stabilization but without the contribution of new beds (the OCA expansion is separate/JV and not yet ramping).\n\nColombia +8.0%: recovery from a depressed base. IMAT/The Americas are hit by reimbursement penalties from payers (EPS); +8% assumes a gradual normalization of billing and volume from the bottom. Slightly above Peru precisely because it is a recovery.\n\nThe consolidated figure (6%) is below the reported FY21–25 CAGR (inflated by M&A) because here it is only organic.",
+  "table": "valuation_lines",
+  "ticker": "AUNA"
+ },
+ {
+  "col": "rationale",
+  "id": "54ee16e1-8275-4ae2-9c84-ef08209f160b",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Implied net income: EBITDA $339.0M − D&A $91.8M (5.4% of revenue) = EBIT $247.2M; interest $87.2M (12.0% on net debt $727.0M); pre-tax $160.0M, tax $61.4M (38.4%); minorities $11.3M; FX revaluation 0 → net income $87.2M. Shares 74.2M taken from the Bear/Bull scenarios (this valuation has no share line). Assumptions: D&A 5.4% of revenue (FY2023-25 avg), tax 38.4% (FY2024-25 effective; FY2023 loss excluded), cost of debt 12% (cap: LTM finance costs PEN 662M / debt PEN 3,606M = 18.4% includes non-debt finance items), minorities 11.5% of net income (FY2024-25).",
+  "table": "valuation_lines",
+  "ticker": "AUNA"
+ },
+ {
+  "col": "rationale",
+  "id": "3355fc04-3e42-4155-8b3f-9212584ebf55",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "76K units, 8% below the 82.6K of FY2025. This is breaker 1 playing out: orders keep falling year over year (Q4 FY2026 below the 20,018 of Q4 FY2025 would be the third straight decline), so the backlog shrinks and volume settles below the base's 87K instead of recovering.",
+  "table": "valuation_lines",
+  "ticker": "LEN"
+ },
+ {
+  "col": "rationale",
+  "id": "6a51df55-b176-48ba-b5a8-9a453dab5020",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "$365K, about 3% below the $377K LTM. The base holds ASP flat at $385K; the bear lets the -6.6% 3Y trend continue for one more leg as the mix keeps shifting to entry-level and South Central and price cuts replace part of the incentives.",
+  "table": "valuation_lines",
+  "ticker": "LEN"
+ },
+ {
+  "col": "rationale",
+  "id": "a58a3ebe-1cef-4014-9c1a-f93f9b5079ec",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "76K units at $365K = $27,740M, 10% below the $30,936M LTM and 17% below the base's $33,495M. Home sales revenue on the management view, excluding financial services and multifamily.",
+  "table": "valuation_lines",
+  "ticker": "LEN"
+ },
+ {
+  "col": "rationale",
+  "id": "94f104f9-0257-4622-aac2-9146c48038eb",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "17%, essentially the 16.4% LTM. Against the 23.4% six-year cycle mean that implies ~640bps of permanent damage, well above the ~340bps land penalty the base assumes: either the land-bank cost of capital is worse than modelled or incentives are structural. Either reading breaks claim 2.",
+  "table": "valuation_lines",
+  "ticker": "LEN"
+ },
+ {
+  "col": "rationale",
+  "id": "8f041509-7c3c-481e-b245-710e45502b4e",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "9%, slightly worse than the 8.7% LTM: lower volume deleverages the fixed part of selling and overhead. The base assumes 8% and the 3Y average is 7.5%. $2,497M on $27,740M, leaving $2,219M of HB operating earnings.",
+  "table": "valuation_lines",
+  "ticker": "LEN"
+ },
+ {
+  "col": "rationale",
+  "id": "93265013-9aac-4a78-9204-935caf599bfa",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "2.2% of home sales revenue, $610M. Corporate cost is largely fixed, so on a smaller revenue base the ratio rises from the 2.0% the base charges (3Y average 1.83%).",
+  "table": "valuation_lines",
+  "ticker": "LEN"
+ },
+ {
+  "col": "rationale",
+  "id": "04cb2512-2996-4fd7-9c5f-bfaf561428f4",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "HB operating earnings of $2,219M less $610M of corporate G&A plus $390M of other income (the base's $450M scaled by 76/87 for lower mortgage volume) = $1,999M pretax, taxed at 25%.",
+  "table": "valuation_lines",
+  "ticker": "LEN"
+ },
+ {
+  "col": "rationale",
+  "id": "a16fe742-8df2-4c87-a5b5-2cea0a61aee3",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Held at 238M, the Q3 FY2026 diluted count (237.8M, FiscalAI). Buybacks stop because there is no free cash flow to fund them and net debt is already rising; no per-share help.",
+  "table": "valuation_lines",
+  "ticker": "LEN"
+ },
+ {
+  "col": "rationale",
+  "id": "2f59fd71-506d-4e2e-b6eb-2e7d13d1088d",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "8.5x, below the base's 10x mid-cycle multiple: the market stops paying for a recovery that is not showing up in orders. At the $83.01 close the stock trades at ~13x LTM EPS, so in this case the entire loss comes from the multiple.",
+  "table": "valuation_lines",
+  "ticker": "LEN"
+ },
+ {
+  "col": "rationale",
+  "id": "48e6c77f-c822-425d-b190-2352e630afb4",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Falls out of the P/E chain: $12,743M market cap plus ~$6,000M of consolidated net debt = $18,743M EV, over $2,139M of EBITDA. The higher net debt is why EV/EBITDA does not fall as far as the P/E.",
+  "table": "valuation_lines",
+  "ticker": "LEN"
+ },
+ {
+  "col": "rationale",
+  "id": "428c49b0-3893-45b6-aaba-aac853162dc9",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Hypothesis, not a filing figure. From the consolidated $4,818M at Q3 FY2026, the ~$500M a year dividend continues while ACOR and land deposits keep absorbing cash (operating cash flow negative in 5 of the last 6 quarters), so FY27-FY29 cash after payouts is about -$1,200M and net debt reaches ~$6,000M. Historical value is the 3Y average of the consolidated series (FY23 -$1,506M, FY24 -$484M, FY25 +$2,119M = +$43M), per the house rule.",
+  "table": "valuation_lines",
+  "ticker": "LEN"
+ },
+ {
+  "col": "rationale",
+  "id": "8f5866a1-df4f-4027-b71c-e43fd92a9b33",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "$1,499M of net income at 8.5x = $12,743M. Over 238.0M shares that is $53.54 per share against the $83.01 close of 2026-09-29: -35% and a 3-year price CAGR of about -14%.",
+  "table": "valuation_lines",
+  "ticker": "LEN"
+ },
+ {
+  "col": "rationale",
+  "id": "9d168894-7367-4e67-9068-0ecd0703fcf3",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "100K units, a full volume recovery past the FY24 peak. Our base caps volume at 87K on affordability; this line is where the bull first parts company with us.",
+  "table": "valuation_lines",
+  "ticker": "LEN"
+ },
+ {
+  "col": "rationale",
+  "id": "30c85cd3-0fa4-49e0-9e9a-aa78ef73c470",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "The whole disagreement, in one number. 22.5% is the pre-spin FY20/23/24 average, so adopting it ASSUMES the spin-off did no permanent damage to the margin. Our base takes 20% — the same cycle mean less ~340bps of land penalty. If that penalty is real, the bull overstates by exactly that much.",
+  "table": "valuation_lines",
+  "ticker": "LEN"
+ },
+ {
+  "col": "rationale",
+  "id": "72886d49-608d-4f59-9902-a65016b6100e",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "$4,653M over 236.0M shares. This lands on the $19.75 of the written thesis: the earlier gap was the missing corporate G&A charge, worth $2.40 per share after tax, not a share-count error.",
+  "table": "valuation_lines",
+  "ticker": "LEN"
+ },
+ {
+  "col": "rationale",
+  "id": "48862169-0ad8-45d8-a432-1f51eadf14c1",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "16x against the 10x mid-cycle multiple our base pays. The bull is therefore levered twice to the same optimism: a higher E and a higher multiple on it.",
+  "table": "valuation_lines",
+  "ticker": "LEN"
+ },
+ {
+  "col": "rationale",
+  "id": "7f3f411a-3614-44ea-8ae2-eb0d400aeb0d",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Charged at 1.8% of home sales revenue, $756M. This is the line that was missing from the earlier version of the model, and adding it is what closes the gap with the written thesis. Our base charges 2.0%.",
+  "table": "valuation_lines",
+  "ticker": "LEN"
+ },
+ {
+  "col": "rationale",
+  "id": "4fe2f4ee-d58e-4289-911f-f56780c3196b",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "236.0M, about 2% below today. The bull keeps buying back stock through the recovery; our base holds 240M flat because it pauses buybacks until free cash flow inflects.",
+  "table": "valuation_lines",
+  "ticker": "LEN"
+ },
+ {
+  "col": "rationale",
+  "id": "a3ac6fc7-0da1-4338-bed6-69bb6bec3ef7",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Held flat at the consolidated $4,818M locked from the 3Q26 10-Q, the same figure the base uses. Consolidated on both sides of the EV: financial services debt sits in the numerator because financial services profit ($450M of other income) sits in EBITDA. FiscalAI reports Homebuilding only ($3,147M), so it is not used here.",
+  "table": "valuation_lines",
+  "ticker": "LEN"
+ },
+ {
+  "col": "rationale",
+  "id": "c9e2c0a4-f17f-4807-ba96-df37bf455ff3",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "$4,653M of net income at 16x. Over 236.0M shares that is $315.46 per share against a $82.5 spot: +282% upside and a 3-year price CAGR of about 56%.",
+  "table": "valuation_lines",
+  "ticker": "LEN"
+ },
+ {
+  "col": "rationale",
+  "id": "0ebad9a7-77d1-4f67-bff4-e8756d6b6519",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Volume by affordability, not by land or capacity. 87K against the 82.5K LTM  is a recovery to roughly the FY25 level, not to the FY24 peak, because the buyer at this price point is rate-constrained. History: 66k in FY22 to 82.5k in FY25, a 3Y CAGR of +7.5%",
+  "table": "valuation_lines",
+  "ticker": "LEN"
+ },
+ {
+  "col": "rationale",
+  "id": "4af68b85-850a-4bd8-909d-242bd76888c6",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Held flat versus FY25 rather than reverting to the peak. The mix has shifted structurally toward entry-level and South Central, so the ASP that comes back is a lower ASP. History: $480K in FY22 to $391K in FY25, a 3Y CAGR of -6.6%. Holding $385K therefore assumes the decline stops, which is already an improvement on the trend.",
+  "table": "valuation_lines",
+  "ticker": "LEN"
+ },
+ {
+  "col": "rationale",
+  "id": "1d5db4e3-4c2a-46d4-b26d-e3ee736ea81a",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Flat at ~240M. Buybacks are paused until free cash flow inflects, so no per-share help is assumed in the base, the return has to come from earnings, not from shrinking the denominator.",
+  "table": "valuation_lines",
+  "ticker": "LEN"
+ },
+ {
+  "col": "rationale",
+  "id": "f7c90e64-2bea-4c68-8ad8-6575f2167962",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "A mid-cycle homebuilder multiple. The stock currently trades above this, so the multiple compresses toward 10x and contributes nothing to the return — every dollar of upside has to come from the earnings recovery.",
+  "table": "valuation_lines",
+  "ticker": "LEN"
+ },
+ {
+  "col": "rationale",
+  "id": "f67f7865-9ebf-4f20-a865-4d59b6ae5e9c",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Consolidated net debt, locked from the 10-Q rather than taken from FiscalAI, which reports Homebuilding only. The prior version of this row carried -$1,100M, inherited from a history line typed as round hundreds (3,800 / 2,900 / 500 / -2,000 / -1,200 / -1,100) that matches neither the Homebuilding nor the consolidated series in the filings, and had the sign inverted in FY22 and FY25.\n\nRebuilt from the real starting point of $4,818M at 3Q26: FY27E-FY29E net income of $7,313M less roughly $1,500M of dividends leaves $5,813M retained (the case pauses buybacks, so shares stay flat at 240M); less $789M of incremental inventory to carry 5,000 more deliveries at the current $157,841 per unit leaves $5,024M available to amortise. $4,818M - $5,024M = -$206M, an 86% conversion of retained cash into debt paydown.\n\nThe old -$1,100M is not reachable on this basis: it would require amortising $5,793M of the $5,813M retained, leaving $20M for inventory and ACOR when volume growth alone needs $789M.\n\nHistory, consolidated: FY20 +$4,559M, FY21 +$3,457M, FY22 +$1,622M, FY23 -$1,506M, FY24 -$484M, FY25 +$2,119M, 2Q26 +$3,811M, 3Q26 +$4,818M. 3Y average +$43M. FY25 is the break: the Millrose spin-off moved $1.0B of cash out and the $1.71B Delayed Draw Term Loan came in.",
+  "table": "valuation_lines",
+  "ticker": "LEN"
+ },
+ {
+  "col": "rationale",
+  "id": "d3a7bcda-2ac4-4940-a7d4-5f8f77de0e42",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Bear assumption of the whole model: 20% is the 6-year cycle mean of 23.4% minus roughly 340bps of permanent land penalty: the asset-light model moved the cost of capital on land from about 7% WACC to the ~10% charged by land banks post-Millrose. The 3Y average is 21.1%, so the target sits 110bps below the recent average and 340bps below the cycle mean, recovery from 16.4% without full reversion.",
+  "table": "valuation_lines",
+  "ticker": "LEN"
+ },
+ {
+  "col": "rationale",
+  "id": "2cbddb03-730a-453a-8cd6-64c651adc730",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Regains operating leverage from the 8.7% LTM level on higher volume, but not the 6.2% of FY22. The 3Y average is 7.5%, so the 8% target is above that average — leverage returns only partly.",
+  "table": "valuation_lines",
+  "ticker": "LEN"
+ },
+ {
+  "col": "rationale",
+  "id": "acf2d826-2a1e-41aa-b7a3-03ed4b7af011",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "$2.8B over 240M shares. This is the number the whole case rests on: the lift is in the E, not in the multiple. Against $6.4 LTM it is an 86% recovery over 4Y, and still below the $14.3 of FY24 and the $15.7 of FY22.",
+  "table": "valuation_lines",
+  "ticker": "LEN"
+ },
+ {
+  "col": "rationale",
+  "id": "fffca066-dae3-4df9-944d-eb3eb93cefe5",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Falls out of the P/E chain: a $33.3B EV ($28.5B market cap plus $4.8bM of net debt) on $3.9B of EBITDA. Both EV and EBITDA are consolidated. The LTM comparison of 12.8x is built the same way and the historical 3Y is the mean of the last 3Y.",
+  "table": "valuation_lines",
+  "ticker": "LEN"
+ },
+ {
+  "col": "rationale",
+  "id": "8d5330c4-febf-409c-bcea-3fab7cce2900",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "4,800 core units, 9% below FY2025 (5,266): the US tariff quota bites (27.5% above 100,000 UK cars a year), China stays depressed and aged stock returns.",
+  "table": "valuation_lines",
+  "ticker": "AML.L"
+ },
+ {
+  "col": "rationale",
+  "id": "4a4cd8da-8c4f-48ee-9d62-00ed9d0d2243",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "£1,544.7M + £20M + £1,091M of cumulative burn (about -£365M a year) = £2,655.7M. That is unfundable, so in practice this case ends in a restructuring of the March 2029 notes before net debt reaches that level.",
+  "table": "valuation_lines",
+  "ticker": "AML.L"
+ },
+ {
+  "col": "rationale",
+  "id": "79d9a301-f1e4-4249-930f-4063f12943bb",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "6.0x on £109.0M = £654.2M EV. That is below the roughly £770M market value of about £1.35bn of notes at about 57 cents (hypothesis: the reported USD price applied to both series), so value runs out before it reaches equity.",
+  "table": "valuation_lines",
+  "ticker": "AML.L"
+ },
+ {
+  "col": "rationale",
+  "id": "5b3238e1-46d6-4e35-b492-c43af0e34d06",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "£654.2M EV - £2,655.7M net debt = -£2,001.4M, floored at zero. Equity is worth £0.00: EV covers less than a quarter of the claims ahead of it.",
+  "table": "valuation_lines",
+  "ticker": "AML.L"
+ },
+ {
+  "col": "rationale",
+  "id": "781e6ab8-9b46-4ce3-8737-1c8293e6ccea",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Implied net income: EBITDA £109.0M − D&A £264.4M (24.3% of revenue) = EBIT −£155.3M; interest £200.0M (the valuation's net cash interest line); pre-tax −£355.3M, tax £0.0M (no credit on a loss); FX revaluation 0 → net income −£355.3M. Assumptions: D&A 24.3% of revenue (FY2023-25 avg, mostly capitalised R&D amortisation), interest = the valuation's own net cash interest line, no tax credit on a pre-tax loss, UK 25% otherwise.",
+  "table": "valuation_lines",
+  "ticker": "AML.L"
+ },
+ {
+  "col": "rationale",
+  "id": "993f2f8f-9616-401e-a92c-51d7caf698b9",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "6,200 core units, above FY2024 (5,812) and near FY2022-FY2023 levels (about 6,300-6,470 core). It needs China and the US to return and the next DBX generation to land.",
+  "table": "valuation_lines",
+  "ticker": "AML.L"
+ },
+ {
+  "col": "rationale",
+  "id": "2d345d9d-5a58-4e1b-850e-7deb79631a8f",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "£1,544.7M + £20M + £361.8M of cumulative burn (FCF of -£190M, -£120M and -£52M) = £1,926.5M, funded by the £340M of pro forma liquidity and the £100M delayed-draw tranche without new equity.",
+  "table": "valuation_lines",
+  "ticker": "AML.L"
+ },
+ {
+  "col": "rationale",
+  "id": "02f6e4b1-809a-401d-aba0-7bb5e742289f",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "9.0x, above AML's FY2022-FY2024 range of 7.3-8.1x on adjusted EBITDA and between Porsche AG (7.6x) and Mercedes-Benz (10x). The bull case earns a re-rating as free cash flow approaches breakeven. 9.0x on £443.2M = £3,988.8M EV.",
+  "table": "valuation_lines",
+  "ticker": "AML.L"
+ },
+ {
+  "col": "rationale",
+  "id": "a2f5ff3d-147a-4335-9add-a3b049b992ff",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Implied net income: EBITDA £443.2M − D&A £445.4M (24.3% of revenue) = EBIT −£2.2M; interest £175.0M (the valuation's net cash interest line); pre-tax −£177.2M, tax £0.0M (no credit on a loss); FX revaluation 0 → net income −£177.2M. Assumptions: D&A 24.3% of revenue (FY2023-25 avg, mostly capitalised R&D amortisation), interest = the valuation's own net cash interest line, no tax credit on a pre-tax loss, UK 25% otherwise.",
+  "table": "valuation_lines",
+  "ticker": "AML.L"
+ },
+ {
+  "col": "rationale",
+  "id": "deae5d8b-de49-4796-bc93-aa3bf6c993f0",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "5,700 core units in FY2029E, against 5,468 LTM, 5,266 in FY2025 and 5,812 in FY2024. This assumes a recovery to just below the FY2024 level on the renewed range (S derivatives) and stock back in balance. It does not assume a China recovery. History: 6,323 in FY2022 (total less 89 Specials) to 5,266 in FY2025, a 3-year CAGR of -5.9%.",
+  "table": "valuation_lines",
+  "ticker": "AML.L"
+ },
+ {
+  "col": "rationale",
+  "id": "09662c7f-723f-4279-91d7-080246c8eedd",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "£205k, about +2.6% a year from £185k in FY2025. Management guides about +5% for FY2026, but H1 2026 printed £182k (-5%) because of dealer support. History: £177k in FY2022 to £185k in FY2025, +1.5% a year.",
+  "table": "valuation_lines",
+  "ticker": "AML.L"
+ },
+ {
+  "col": "rationale",
+  "id": "29ed1547-c76b-4118-9a0d-4fe7debf18f2",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "220 Specials a year after Valhalla ends. That matches the FY2024 level (218) and sits above FY2023 (151) and FY2025 (182). LTM is 389 because of Valhalla. Hypothesis: a successor Specials programme exists; none has been announced beyond 'watch this space' on the Q1 2026 call.",
+  "table": "valuation_lines",
+  "ticker": "AML.L"
+ },
+ {
+  "col": "rationale",
+  "id": "7bfb345c-c64a-461a-a606-9336ee7d4105",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "£1.0M per unit at wholesale (hypothesis). The H1 2026 implied figure is about £0.8M (vehicle revenue less core units times core ASP, divided by Specials units), while management quotes about £1.15M for Valhalla, probably at retail.",
+  "table": "valuation_lines",
+  "ticker": "AML.L"
+ },
+ {
+  "col": "rationale",
+  "id": "e53ac036-3cd3-4fca-a3c8-b208f992a931",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "£1,168.5M core (5,700 x £205k) + £220M Specials + £150M parts, servicing and brand (FY2025: £115M) = £1,538.5M. That is below the FY2023 peak of £1,633M and 7% above LTM.",
+  "table": "valuation_lines",
+  "ticker": "AML.L"
+ },
+ {
+  "col": "rationale",
+  "id": "3834e434-858b-425f-a8a5-4a9a46c51d01",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "38.5%, within the high-30s management guides for FY2026, but reached without Valhalla. FY2023 was 39.1%, FY2024 36.9% and FY2025 29.4% (3-year average 35.1%). It requires dealer support to normalize and warranty costs to fall, as management said on the H1 2026 call.",
+  "table": "valuation_lines",
+  "ticker": "AML.L"
+ },
+ {
+  "col": "rationale",
+  "id": "bfaff6c1-f9fb-4b4d-9bd0-0d33c3e3a887",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "£592.3M gross profit less £280M opex = £312.3M, the same level as FY2023 (£305.9M), the best year on record. LTM is £173.8M. The path assumed is £240M in FY2027 and £280M in FY2028.",
+  "table": "valuation_lines",
+  "ticker": "AML.L"
+ },
+ {
+  "col": "rationale",
+  "id": "23df0717-edc5-4408-bef0-f13ce40b7110",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "About £320-330M a year from FY2027 to FY2029, consistent with the £1.7bn capex programme for FY2026 to FY2030 (about £300M in FY2026, which leaves about £350M a year after that). This line is why the equity stays thin.",
+  "table": "valuation_lines",
+  "ticker": "AML.L"
+ },
+ {
+  "col": "rationale",
+  "id": "30dbee5f-0ae2-406c-82cd-5490e5ea0298",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "£180M in FY2027 rising to £190M in FY2029 (hypothesis): a full year of the £450M SONIA+675bps term loan on top of about £1.35bn of 10.0-10.375% notes, refinanced in 2028 at a similar cost. FY2026 guidance is about £160M.",
+  "table": "valuation_lines",
+  "ticker": "AML.L"
+ },
+ {
+  "col": "rationale",
+  "id": "e5208573-c738-4ad3-b195-50e4c10a6651",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "£1,544.7M (H1 2026) + £20M of fees and the H2 2026 residual (hypothesis) + £702.7M of cumulative burn in FY2027-FY2029 (FCF of -£270M, -£235M and -£198M) - £300M of new equity = £1,967.4M. The 3-year average for FY2023-FY2025 is £1,119M.",
+  "table": "valuation_lines",
+  "ticker": "AML.L"
+ },
+ {
+  "col": "rationale",
+  "id": "9c1278a8-d1f1-4611-95fe-cca3f896ccb9",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "8.0x. AML traded at 7.3-8.1x adjusted EBITDA at the FY2022-FY2024 year-ends (FiscalAI EV over company adjusted EBITDA), and Porsche AG is at 7.6x today. Ferrari (24x) is not a comparable. 8.0x on £312.3M = £2,498.6M EV. LTM is 10.9x on a depressed EBITDA.",
+  "table": "valuation_lines",
+  "ticker": "AML.L"
+ },
+ {
+  "col": "rationale",
+  "id": "9b5d95b7-ea91-41ed-826c-5ecf36e08305",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "£2,498.6M EV - £1,967.4M net debt = £531.2M equity. Over 1,866.7M shares that is £0.285 per share, 18% below the 34.56p (£0.3456) spot. Without the raise, and with the gap funded by debt, the result is £0.23.",
+  "table": "valuation_lines",
+  "ticker": "AML.L"
+ },
+ {
+  "col": "rationale",
+  "id": "af7f5f72-a713-40df-9949-eaed4c9edf5e",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "Implied net income: EBITDA £312.3M − D&A £373.9M (24.3% of revenue) = EBIT −£61.5M; interest £190.0M (the valuation's net cash interest line); pre-tax −£251.5M, tax £0.0M (no credit on a loss); FX revaluation 0 → net income −£251.5M. Assumptions: D&A 24.3% of revenue (FY2023-25 avg, mostly capitalised R&D amortisation), interest = the valuation's own net cash interest line, no tax credit on a pre-tax loss, UK 25% otherwise.",
+  "table": "valuation_lines",
+  "ticker": "AML.L"
+ },
+ {
+  "col": "rationale",
+  "id": "46998ece-6a28-4179-93bc-ce3678ccd4b5",
+  "lim": 25,
+  "member_ticker": null,
+  "old": "1,009.6M today + 857M from a hypothetical £300M raise at 35p = 1,866.7M. The raise is needed because cumulative burn of about £700M exceeds pro forma liquidity of £340M plus the £100M delayed-draw tranche.",
+  "table": "valuation_lines",
+  "ticker": "AML.L"
+ }
+]

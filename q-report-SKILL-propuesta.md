@@ -1,16 +1,16 @@
 ---
-name: reporte-q
+name: q-report
 description: >
-  Genera el Reporte Q de una posición como ensayo narrativo en primera persona del analista
+  Genera el Q-report de una posición como ensayo narrativo en primera persona del analista
   (estilo Burry en Substack): una tesis en el título, historia de la empresa, analogías,
   investigación externa citada y solo las cifras que prueban el argumento. ~1,500 palabras,
   artifact HTML con botón "Download PDF", registrado en la plataforma Omaha.
-  El Reporte Q chart-first queda como anexo de datos (automatizable).
-  Usar cuando el usuario diga "reporte Q", "reporte-q", "/reporte-q TICKER", "reporte trimestral",
+  El formato chart-first queda como anexo de datos (automatizable).
+  Usar cuando el usuario diga "Q-report", "/q-report TICKER", "reporte Q", "reporte-q", "reporte trimestral",
   "análisis del trimestre de X". Contenido en inglés.
 ---
 
-# reporte-q — Reporte Q narrativo
+# q-report — Q-report narrativo
 
 Responde una pregunta: después de este trimestre, ¿la tesis sigue en pie y por qué?
 Es un argumento, no un resumen del trimestre. Los números del trimestre ya están en la
@@ -37,7 +37,12 @@ C. **Investigación externa**, en este orden de prioridad: prensa (Reuters, Bloo
    - un análogo (otra empresa que pasó por lo mismo) y qué hizo su acción;
    - competencia con datos propios;
    - regulación y macro que mueven el trimestre;
-   - consenso de analistas, insiders, activistas, cambios de accionistas.
+   - consenso de analistas, insiders, activistas, cambios de accionistas;
+   - competidores en los mercados a donde se mueve el negocio (sus últimos calls), para
+     distinguir pérdida de cuota de un mercado que se achica;
+   - múltiplos históricos de la empresa (IPO, pico, piso, hoy) en base comparable
+     (IFRS 16, pasivos laborales, banco), antes de comparar precios;
+   - plazos regulatorios relevantes (p. ej. aprobación de ventas de bancos en el país).
    Cada hecho externo: fuente, fecha, URL y cita corta. Sin fuente → hipótesis marcada o fuera.
 
 ## Fase 2 — Esquema antes de escribir
@@ -50,11 +55,12 @@ afirmaciones. Esqueleto por defecto (adaptar al caso):
 5. Competencia / regulación / management, según lo que mueva la tesis.
 6. Valuación en un párrafo: IVO de la plataforma, cómo se llega (puente de valor), descuento.
 7. Dónde puedo estar equivocado (lo débil de la tesis, dicho sin rodeos).
-8. Qué miro el próximo trimestre (fechas y umbrales de los catalizadores).
+8. Qué miro el próximo trimestre: TODOS los catalizadores del dashboard (con su probabilidad)
+   más las variables del trimestre (fechas y umbrales).
 Gráficos: 2–3 como máximo, solo si prueban un punto del texto.
 
 ## Fase 3 — Redacción
-Primera persona del analista ("I", "my position"). Inglés. ~1,500 palabras (±10%).
+Primera persona del analista para el análisis ("I"); "we/our" para la valuación y el IVO de Omaha. Para decisiones de posición, "I suggest holding/adding/trimming", nunca "I am holding". Sin firma de autor. Inglés. ~1,500 palabras (±10%).
 Frases cortas y directas. Las citas del call se usan como evidencia y se comentan, no se resumen.
 Cada cifra lleva su fuente en una nota numerada al final. Sin adornos ni frases hechas.
 
@@ -62,13 +68,16 @@ Cada cifra lleva su fuente en una nota numerada al final. Sin adornos ni frases 
 - Cada cifra rastreable a FiscalAI, la plataforma o una fuente externa con link.
 - Cada cita textual verificada palabra por palabra contra el transcript o el artículo.
 - IVO, precio y descuento iguales a los de la plataforma el día de publicación.
+- Toda premisa del analista contrastada con evidencia (si la evidencia la contradice, el texto
+  lo dice y se avisa al analista).
+- Siglas explicadas la primera vez (p. ej. GMV).
 - Conteo de palabras dentro del rango. Lista de hipótesis marcadas como tales.
 No se publica si algo falla.
 
 ## Fase 5 — Publicar y registrar
 Artifact HTML (mismo URL en cada actualización), con botón "Download PDF" (capacidad
 `downloads`; el PDF se genera en la página). Registrar en `skill_outputs` (skill_name
-`reporte_q`, quarter_tag, artifact_link, result_text = el resumen de 3 líneas). Entregar al
+`reporte_q`, document_name "TICKER Q-report <quarter>", quarter_tag, artifact_link, result_text = el resumen de 3 líneas). Entregar al
 analista: link, conteo de palabras, fuentes usadas, hipótesis y dudas.
 
 ## Anexo de datos (chart-first)

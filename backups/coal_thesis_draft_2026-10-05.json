@@ -1,0 +1,137 @@
+{
+  "generated_at": "2026-10-05",
+  "position": "COAL",
+  "position_id": "79727cf5-b5d0-49b2-b960-8ab389635478",
+  "status": "DRAFT - not written to database",
+  "drafts": [
+    {
+      "own_thesis_id": "628a7d32-59b8-487b-9902-5a8dabfb84e5",
+      "member_ticker": "HCC",
+      "bullet_1": "Primary valuation (Recovery 2030): $158.72 per share, 73% above the $91.94 price, at 4.5x EV/EBITDA on $1,843M EBITDA. The driver is 16M short tons with Blue Creek ramped at a ~$118/t margin ($213 2023 price less $95 cost), versus $45.29/t in Q2 FY2026.",
+      "bullet_2": "Warrior is the basket's lowest-cost producer: all-longwall Mines 4 and 7 plus Blue Creek, shipping through Mobile. Cash cost fell to $92.53/t in Q2 FY2026, down 9% y/y on Blue Creek mix and the 45X credit; LTM gross margin 30.5% vs AMR's 10.0%.",
+      "bullet_3": "Blue Creek was funded without equity and is 5.0M of the 13.0-14.0M short tons guided for FY2026. With that capex done, Q2 FY2026 FCF was $103.4M and net cash $87M; above the $350-400M cash target, buybacks (none since FY2021) become the lever.",
+      "claim_1": "Quarterly cash margin per short ton keeps rising from $45.29 (Q2 FY2026) toward the ~$118 Recovery level, taking EBITDA from $440M LTM toward $1,843M.",
+      "claim_2": "Cash cost of sales (FOB port) stays at or below $100/t in Q3 FY2026 and through the H2 FY2026 longwall moves (Q2 FY2026: $92.53).",
+      "claim_3": "FY2027 guidance sets Blue Creek at 6.0M short tons or more and total at 14.5M or more, and cash passes $400M or a buyback or special dividend comes by the Q4 FY2026 report.",
+      "breaks_1": "Net selling price stays near $135/t through 2030 (Bear case): EBITDA around $515M and value of $45.54 per share, below today's price.",
+      "breaks_2": "Cash cost above $100/t in Q3 or Q4 FY2026, or one longwall event removing 25% or more of production.",
+      "breaks_3": "FY2027 guidance leaves Blue Creek below 6.0M short tons, or cash exceeds $400M with no buyback or dividend by Q4 FY2026.",
+      "sources": [
+        "valuations (id 68db7bb5, is_primary=true, label 'Recovery 2030 · Warrior (HCC)'): target_price 158.72, target_multiple_type ev_ebitda, target_multiple_value 4.5, target_ebitda 1843000000, notes (16M t, $213 price [2023], $95 cost, ~$118/t)",
+        "valuation_lines (primary HCC): ebitda current_value 439.86M (LTM) / target 1,843M; ebitda_margin target 51.8",
+        "valuation_lines (HCC Bear 3ab9886b): cash_margin_per_ton current_value 45.29 (Q2 FY2026); cash_cost_per_ton current 92.53 and rationale (down 9% y/y, Blue Creek mix, 45X credit); net_debt rationale; shares rationale (no buyback since FY2021)",
+        "valuations (HCC Bear 3ab9886b): target_price 45.54, target_ebitda 515000000, notes ($135/t net selling price; FY2026 guidance 13.0-14.0M st, Blue Creek 5.0M st)",
+        "valuations (HCC Bull 7ce18235): notes (legacy Mines 4 and 7)",
+        "basket_members (HCC): price 91.94, gp_margin 0.305 LTM, net_debt -86.67M, data_through_quarter Q2 FY2026; basket_members (AMR) gp_margin 0.100",
+        "catalysts (HCC): 'Cash cost stays below $100/t...' (threshold <= $100.00/t in Q3 FY2026); 'Capital returns restart...' (Q2 FY2026 FCF $103.4M, cash target $350-400M, threshold cash > $400M or buyback/special dividend by Q4 FY2026); 'FY2027 guidance puts Blue Creek at a 6M+...' (>= 6.0M st and total >= 14.5M st)",
+        "risks (HCC): Blue Creek ramp and longwall concentration (25%+ of production in one event)",
+        "scorecard_ratings (HCC): moat_strength (lowest cost in the basket), capital_allocation (Blue Creek funded without equity), gross_margin",
+        "own_thesis basket row (628fe497): longwall, near Mobile port"
+      ]
+    },
+    {
+      "own_thesis_id": "d6e203ec-c789-432a-9ab9-2a6c36b2f6e0",
+      "member_ticker": "AMR",
+      "bullet_1": "Primary valuation (Recovery 2030): $377.13 per share, 117% above the $173.82 price, at 4.5x EV/EBITDA on $990M EBITDA. The driver is 14M t at a ~$74/t margin (FY2023 realization of $179.40 less $105 cost), versus a $15.64/t Met margin in Q2 FY2026.",
+      "bullet_2": "Alpha can wait out the trough without dilution: net cash of $327M (net debt/EBITDA -2.7x) and $447.8M liquidity in Q2 FY2026, despite a fifth straight loss. Buybacks cut diluted shares from 18.9M (FY2021) to 14.6M (FY2023); about 12.7M today.",
+      "bullet_3": "Alpha is the high-cost name in the basket (Met cost $103.07/t vs $118.71/t realization, Q2 FY2026), so its edge is flexibility: small mines, its own blending terminal, low-vol Kingston Wildcat tons, and 3.8M domestic tons committed for 2026.",
+      "claim_1": "Met margin per ton rises from $15.64 (Q2 FY2026) toward ~$74 on about 14M t, taking EBITDA from $121M LTM toward the $990M Recovery figure.",
+      "claim_2": "Total liquidity stays at or above $400M at the end of Q3 and Q4 FY2026 (Q2 FY2026: $447.8M), with no equity issuance and the share count at or below 12.7M.",
+      "claim_3": "Met cost of coal sales at or below $103.00/t in Q4 FY2026 as Kingston Wildcat ramps, and 3.8M or more 2027 domestic tons committed at an average of at least $128.17/t.",
+      "breaks_1": "Met realization stays near $120/t through 2030 (Bear case): EBITDA around $169M and value of $75.63 per share.",
+      "breaks_2": "Liquidity below $400M at the end of Q3 or Q4 FY2026, or any equity issuance.",
+      "breaks_3": "Met cost above $107.00/t in Q4 FY2026, or 2027 domestic commitments below 3.8M t or priced under $128.17/t.",
+      "sources": [
+        "valuations (id 2e8b1601, is_primary=true, label 'Recovery 2030 · Alpha (AMR)'): target_price 377.13, ev_ebitda 4.5, target_ebitda 990000000, notes (14M t x ($179 price [2023] - $105 cost) ~ $74/t)",
+        "valuation_lines (AMR Bull 50992f32): realized_price_per_ton rationale (FY2023 $179.40 = Recovery case); shares rationale (18.9M FY2021 to 14.6M FY2023)",
+        "valuation_lines (primary AMR): ebitda current_value 121.45M (LTM); shares current_value 12.69M",
+        "valuation_lines (AMR Bear 8fce8a09): cash_margin_per_ton current 15.64 (Q2 FY2026); cash_cost_per_ton current 103.07; realized_price_per_ton current 118.71",
+        "valuations (AMR Bear 8fce8a09): target_price 75.63, target_ebitda 169000000, notes ($120/t realization; liquidity $447.8M at Q2 FY2026; $75M minimum liquidity covenant)",
+        "basket_members (AMR): price 173.82, net_debt -327.08M, net_debt_ebitda -2.69, data_through_quarter Q2 FY2026",
+        "risks (AMR): cost and liquidity (highest cost in basket, fifth straight loss, liquidity $447.8M)",
+        "catalysts (AMR): 'Liquidity falls below $400M' (< $400M at Q3 or Q4 FY2026); 'Kingston Wildcat brings Met cost...' (<= $103.00/t Q4 FY2026, bearish > $107.00/t); '2027 domestic book...' (2026 committed domestic 3.8M t; >= 3.8M t at >= $128.17/t)",
+        "scorecard_ratings (AMR): financial_resilience (net debt/EBITDA -2.7x), capital_allocation (buybacks funded from net cash), moat_strength (not the low-cost producer)",
+        "own_thesis basket row (628fe497): flexible small mines, own blending terminal"
+      ]
+    },
+    {
+      "own_thesis_id": "bca79e2f-a68a-45a1-a61d-d850b18fb5ef",
+      "member_ticker": "CNR",
+      "bullet_1": "Primary valuation (Recovery 2030): $159.98 per share, 75% above the $91.36 price, at 4.5x EV/EBITDA on $1,759M EBITDA. The driver is today's ~$4.3B revenue at a ~41% EBITDA margin (Alpha's best margin as a proxy), versus 16.9% LTM.",
+      "bullet_2": "CNR is the only member that is roughly half thermal: PAMC high-CV thermal, PRB and the Core Marine Terminal give 61% of Bear-case segment EBITDA, cushioning the trough, while the Leer complex (8.7M coking tons contracted for 2026) carries the met upside.",
+      "bullet_3": "CNR pays out: $360M returned since February 2025 (over 80% of FCF), $68M in Q2 FY2026, under a ~75%-of-FCF framework, while keeping a roughly net-debt-neutral balance sheet (net cash $26M, LTM FCF yield 5.7%).",
+      "claim_1": "EBITDA margin rises from 16.9% LTM (Q2 FY2026) toward ~41% on revenue near $4.3B, taking EBITDA from $723M LTM, which includes $125M of insurance, toward $1,759M.",
+      "claim_2": "Met cash cost stays at or below $91/t in Q3 and Q4 FY2026 (Q2 FY2026: $85.65), and FY2027 guidance sets coking sales midpoint at 8.5M t or more and cash cost at $90/t or less.",
+      "claim_3": "Shareholder returns of at least $100M in Q3 FY2026 (Q2 FY2026: $68M), with net debt held at or below zero.",
+      "breaks_1": "Met and thermal margins stay at Q2 FY2026 levels (Bear case): EBITDA around $623M and value of $57.05 per share.",
+      "breaks_2": "Met cash cost above $91/t in Q3 or Q4 FY2026, or another Leer or Leer South longwall event.",
+      "breaks_3": "Q3 FY2026 returns below the $68M of Q2 FY2026, or net debt turning positive to fund returns.",
+      "sources": [
+        "valuations (id 98f39ff7, is_primary=true, label 'Recovery 2030 · Core Natural (CNR)'): target_price 159.98, ev_ebitda 4.5, target_ebitda 1759000000, notes ($4.27B revenue x 41.2%, AMR best margin as conservative proxy)",
+        "valuation_lines (primary CNR): revenues target 4.3B; ebitda current_value 722.88M (LTM) / target 1,759M; ebitda_margin target 40.9, current 0.169",
+        "valuations (CNR Bear dc85082d): target_price 57.05, target_ebitda 623000000, notes (thermal segments 61% of segment EBITDA; LTM EBITDA includes $125M Leer South insurance; 8.7M coking t contracted for 2026; ~75% of FCF returned)",
+        "valuation_lines (CNR Bear): cash_cost_per_ton current 85.65 (Q2 FY2026); net_debt rationale (net-debt-neutral target)",
+        "basket_members (CNR): price 91.36, net_debt -25.56M, fcf_yield 0.057, ebitda_margin 0.169, data_through_quarter Q2 FY2026",
+        "catalysts (CNR): 'Capital returns step up...' ($68M Q2 FY2026, $360M since Feb 2025, >= $100M in Q3 FY2026); 'Met cash cost holds inside $86-91/t' (<= $91.00/t Q3 and Q4 FY2026); 'FY2027 guidance: Leer complex...' (midpoint >= 8.5M t, cost <= $90/t)",
+        "risks (CNR): Leer South/longwall events and integration; India (thermal 61% of bear-case segment EBITDA)",
+        "scorecard_ratings (CNR): moat_strength (Core Marine Terminal), financial_resilience (net debt/EBITDA ~0.0x)"
+      ]
+    }
+  ],
+  "old": [
+    {
+      "own_thesis_id": "d6e203ec-c789-432a-9ab9-2a6c36b2f6e0",
+      "member_ticker": "AMR",
+      "version": 3,
+      "updated_at": "2026-10-05 14:23:59.090265+00",
+      "claims_drafted": false,
+      "bullet_1": "Met coal is scarce, a steelmaking input, exportable from few geographies (Australia, Appalachia, Western Canada). Supply is asymmetric: closed mines lose teams and assets, so entry barriers are high. Prices are low since 2024; the next boom 'may last for a while', with high earnings.",
+      "bullet_2": "Pabrai/Ipsco (2005): 'low risk coupled with high uncertainty can lead to high rewards'. Met coal fits: the ~30% domestic band, priced the prior Q3, stays profitable despite weak index; balance sheets avoid dilution; Alpha's diluted shares fell 32% in four years via buybacks.",
+      "bullet_3": "AMR and HCC are complementary. Warrior (HCC): lowest cost, longwall, near Mobile port; one setback can hit 25%+ of production; Blue Creek could lift 2028 cash flow above $1B vs $2.7B market cap. Alpha (AMR): flexible small mines, own blending terminal, 75-100 year longevity.",
+      "claim_1": "Met coal supply cannot answer a price recovery -- a mine that closes does not reopen -- so the next up-cycle runs longer and harder than the market is pricing.",
+      "claim_2": "The domestic band (~30% of production, priced the prior Q3) plus net cash carries these miners through the downturn with no dilution, while buybacks compound the per-share claim.",
+      "claim_3": "Blue Creek is fully commissioned in 2027 and Warrior's 2028 cash flow exceeds $1B against a $2.7B market cap, while Alpha's flexible room-and-pillar base outlasts it.",
+      "breaks_1": "New exportable supply comes online in response to higher prices, or steel demand structurally substitutes away from met coal, capping the cycle.",
+      "breaks_2": "A basket member raises equity or breaches a covenant during the downturn, or the domestic band reprices down to the weak index.",
+      "breaks_3": "A longwall setback takes out 25%+ of Warrior's production or Blue Creek slips past 2027, and Alpha's flexibility does not offset it at basket level."
+    },
+    {
+      "own_thesis_id": "bca79e2f-a68a-45a1-a61d-d850b18fb5ef",
+      "member_ticker": "CNR",
+      "version": 3,
+      "updated_at": "2026-10-05 14:23:59.090265+00",
+      "claims_drafted": false,
+      "bullet_1": "Met coal is scarce, a steelmaking input, exportable from few geographies (Australia, Appalachia, Western Canada). Supply is asymmetric: closed mines lose teams and assets, so entry barriers are high. Prices are low since 2024; the next boom 'may last for a while', with high earnings.",
+      "bullet_2": "Pabrai/Ipsco (2005): 'low risk coupled with high uncertainty can lead to high rewards'. Met coal fits: the ~30% domestic band, priced the prior Q3, stays profitable despite weak index; balance sheets avoid dilution; Alpha's diluted shares fell 32% in four years via buybacks.",
+      "bullet_3": "AMR and HCC are complementary. Warrior (HCC): lowest cost, longwall, near Mobile port; one setback can hit 25%+ of production; Blue Creek could lift 2028 cash flow above $1B vs $2.7B market cap. Alpha (AMR): flexible small mines, own blending terminal, 75-100 year longevity.",
+      "claim_1": "Met coal supply cannot answer a price recovery -- a mine that closes does not reopen -- so the next up-cycle runs longer and harder than the market is pricing.",
+      "claim_2": "The domestic band (~30% of production, priced the prior Q3) plus net cash carries these miners through the downturn with no dilution, while buybacks compound the per-share claim.",
+      "claim_3": "Blue Creek is fully commissioned in 2027 and Warrior's 2028 cash flow exceeds $1B against a $2.7B market cap, while Alpha's flexible room-and-pillar base outlasts it.",
+      "breaks_1": "New exportable supply comes online in response to higher prices, or steel demand structurally substitutes away from met coal, capping the cycle.",
+      "breaks_2": "A basket member raises equity or breaches a covenant during the downturn, or the domestic band reprices down to the weak index.",
+      "breaks_3": "A longwall setback takes out 25%+ of Warrior's production or Blue Creek slips past 2027, and Alpha's flexibility does not offset it at basket level."
+    },
+    {
+      "own_thesis_id": "628a7d32-59b8-487b-9902-5a8dabfb84e5",
+      "member_ticker": "HCC",
+      "version": 3,
+      "updated_at": "2026-10-05 14:23:59.090265+00",
+      "claims_drafted": false,
+      "bullet_1": "Met coal is scarce, a steelmaking input, exportable from few geographies (Australia, Appalachia, Western Canada). Supply is asymmetric: closed mines lose teams and assets, so entry barriers are high. Prices are low since 2024; the next boom 'may last for a while', with high earnings.",
+      "bullet_2": "Pabrai/Ipsco (2005): 'low risk coupled with high uncertainty can lead to high rewards'. Met coal fits: the ~30% domestic band, priced the prior Q3, stays profitable despite weak index; balance sheets avoid dilution; Alpha's diluted shares fell 32% in four years via buybacks.",
+      "bullet_3": "AMR and HCC are complementary. Warrior (HCC): lowest cost, longwall, near Mobile port; one setback can hit 25%+ of production; Blue Creek could lift 2028 cash flow above $1B vs $2.7B market cap. Alpha (AMR): flexible small mines, own blending terminal, 75-100 year longevity.",
+      "claim_1": "Met coal supply cannot answer a price recovery -- a mine that closes does not reopen -- so the next up-cycle runs longer and harder than the market is pricing.",
+      "claim_2": "The domestic band (~30% of production, priced the prior Q3) plus net cash carries these miners through the downturn with no dilution, while buybacks compound the per-share claim.",
+      "claim_3": "Blue Creek is fully commissioned in 2027 and Warrior's 2028 cash flow exceeds $1B against a $2.7B market cap, while Alpha's flexible room-and-pillar base outlasts it.",
+      "breaks_1": "New exportable supply comes online in response to higher prices, or steel demand structurally substitutes away from met coal, capping the cycle.",
+      "breaks_2": "A basket member raises equity or breaches a covenant during the downturn, or the domestic band reprices down to the weak index.",
+      "breaks_3": "A longwall setback takes out 25%+ of Warrior's production or Blue Creek slips past 2027, and Alpha's flexibility does not offset it at basket level."
+    }
+  ],
+  "basket_row_context": {
+    "own_thesis_id": "628fe497-b0f1-4e4d-ae2c-db79be21701f",
+    "member_ticker": null,
+    "version": 5,
+    "note": "Basket-level row (context only, not to be changed); identical text to the three member rows above."
+  }
+}

@@ -1,0 +1,11 @@
+{"note": "State before 2026-10-05 basket thesis changes. own_thesis prior versions are archived by trigger in own_thesis_versions.",
+ "cnr_recovery_valuation_98f39ff7": {"target_price": 159.98, "intrinsic_base": 159.98, "target_ebitda": 1759000000, "target_revenues": null,
+  "notes": "Recovery case: met prices back to the higher of 2023/24 realized, best historical margins, on 2030 volumes; valued at a conservative 4.5x mid-cycle multiple. $4.27B revenue x 41.2% (AMR best margin, conservative proxy for CNR). Illustrative upside - not a target.",
+  "lines": {"revenues": [4300000000, null], "ebitda": [1759000000, null], "ebitda_margin": [40.9, null], "ev": [7916000000, null],
+   "net_income": [952470000.0, "EBITDA $1.76B − D&A $645.0M (15.0% of revenue, post Arch merger) = EBIT $1.11B; no interest; tax 14.5% (FY2023-24 effective) → net income $952.5M."],
+   "eps": [19.203, "Implied net income $952.5M over 49.6M shares."], "pe": [8.331, "Market cap $7,935.0M / implied net income $952.5M. A cross-check on the target, not a valuation input."],
+   "market_cap": [7935008000, "Target price $159.98 × 49.6M shares = $7,935.0M. The EV bridge of this valuation ($7,916M EV + $26M net cash) gives $7,942M, 0.1% higher."]}},
+ "cnr_bull_margin_line_8488b8b9": "$2,060M / $5,326M = 38.7%, below the 40.9% of the Recovery case and the 41.7% 3Y high.",
+ "cnr_mos_rating_79b91dca": "Price $85.84 vs Recovery 2030 IVO $159.98: 46% discount (the IVO is a 2030 recovery value).",
+ "cnr_mos_summary_fd64575e": ["Price $85.84 vs IVO $159.98 (46%).", "Depends on the cycle."],
+ "coal_member_thesis_summaries": "slots 1-3 for AMR, CNR, HCC were Gemini copies of the basket row summaries (ids 9e9cc32b, b0cd66b6, 69e0ff59 hold the same text)"}

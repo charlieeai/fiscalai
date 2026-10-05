@@ -1,0 +1,67 @@
+import json
+T = {
+"628a7d32-59b8-487b-9902-5a8dabfb84e5": dict(member="HCC",
+ bullet_1="Warrior is the basket's lowest-cost producer: all-longwall Mines 4 and 7 plus Blue Creek, shipping through Mobile. Q2 FY2026 cash cost was $92.53/t, down 9% y/y on Blue Creek mix and the 45X credit; LTM gross margin 30.5% vs 10.0% at AMR.",
+ bullet_2="Blue Creek was funded without new equity and adds 5.0M of the 13.0-14.0M short tons guided for FY2026. With that capex done, Q2 FY2026 FCF was $103.4M and net cash $87M; above the $350-400M cash target, buybacks become the lever.",
+ bullet_3="Valuation builds on the two pillars above: 16M short tons with Blue Creek ramped, at a ~$118/t margin ($213 2023 price less a $95 cost the low-cost base can hold), gives $1,843M EBITDA; at 4.5x, $158.72 per share, +73% vs $91.94.",
+ claim_1="Cash cost of sales (FOB port) stays at or below $100/t in Q3 FY2026 and through the H2 FY2026 longwall moves (Q2 FY2026: $92.53).",
+ claim_2="FY2027 guidance sets Blue Creek at 6.0M short tons or more and total at 14.5M or more, and cash passes $400M or a buyback or special dividend comes by the Q4 FY2026 report.",
+ claim_3="Quarterly cash margin per short ton keeps rising from $45.29 (Q2 FY2026) toward the ~$118 Recovery level, taking EBITDA from $440M LTM toward $1,843M.",
+ breaks_1="Cash cost above $100/t in Q3 or Q4 FY2026, or one longwall event removing 25% or more of production.",
+ breaks_2="FY2027 guidance leaves Blue Creek below 6.0M short tons, or cash exceeds $400M with no buyback or dividend by Q4 FY2026.",
+ breaks_3="Net selling price stays near $135/t through 2030 (Bear case): EBITDA about $515M and value of $45.54, below today's price.",
+ summaries=[
+  ("Lowest-cost producer in the basket", ["All-longwall Mines 4 and 7 plus Blue Creek, shipping through Mobile.", "Cash cost $92.53/t in Q2 FY2026, down 9% y/y.", "LTM gross margin 30.5% vs 10.0% at AMR."], "high"),
+  ("Blue Creek is funded; cash now goes to holders", ["Funded without new equity; 5.0M of the 13.0-14.0M short tons guided for FY2026.", "Q2 FY2026 FCF $103.4M; net cash $87M.", "Above the $350-400M cash target, buybacks become the lever."], "high"),
+  ("4.5x Recovery EBITDA of $1,843M gives $158.72", ["16M short tons at ~$118/t: $213 (2023) price less $95 cost.", "+73% vs $91.94; Bear case $45.54.", "Illustrative upside, not a target."], "medium"),
+ ]),
+"d6e203ec-c789-432a-9ab9-2a6c36b2f6e0": dict(member="AMR",
+ bullet_1="Alpha is the basket's high-cost name (Met cost $103.07/t vs $118.71/t realization, Q2 FY2026), so its edge is flexibility: small mines, its own blending terminal, low-vol Kingston Wildcat tons and 3.8M domestic tons committed for 2026.",
+ bullet_2="It can wait out the trough without dilution: net cash $327M and $447.8M liquidity at Q2 FY2026, despite a fifth straight loss. Buybacks cut diluted shares from 18.9M (FY2021) to 14.6M (FY2023); about 12.7M today.",
+ bullet_3="Valuation builds on the two pillars above: 14M t from the flexible base at a ~$74/t margin ($179.40 FY2023 realization less $105 cost) gives $990M EBITDA; with net cash and 12.7M shares, 4.5x gives $377.13, +117% vs $173.82.",
+ claim_1="Met cost of coal sales at or below $103.00/t in Q4 FY2026 as Kingston Wildcat ramps, and 3.8M or more 2027 domestic tons committed at an average of at least $128.17/t.",
+ claim_2="Total liquidity stays at or above $400M at the end of Q3 and Q4 FY2026 (Q2 FY2026: $447.8M), with no equity issuance and the share count at or below 12.7M.",
+ claim_3="Met margin per ton rises from $15.64 (Q2 FY2026) toward ~$74 on about 14M t, taking EBITDA from $121M LTM toward the $990M Recovery figure.",
+ breaks_1="Met cost above $107.00/t in Q4 FY2026, or 2027 domestic commitments below 3.8M t or priced under $128.17/t.",
+ breaks_2="Liquidity below $400M at the end of Q3 or Q4 FY2026, or any equity issuance.",
+ breaks_3="Met realization stays near $120/t through 2030 (Bear case): EBITDA about $169M and value of $75.63 per share.",
+ summaries=[
+  ("High cost, offset by flexibility", ["Met cost $103.07/t vs $118.71/t realization in Q2 FY2026.", "Small mines, own blending terminal, low-vol Kingston Wildcat tons.", "3.8M domestic tons committed for 2026."], "high"),
+  ("Net cash lets it wait without dilution", ["Net cash $327M; liquidity $447.8M at Q2 FY2026.", "Fifth straight loss, carried by the balance sheet.", "Diluted shares 18.9M (FY2021) to 14.6M (FY2023); ~12.7M today."], "high"),
+  ("4.5x Recovery EBITDA of $990M gives $377.13", ["14M t at ~$74/t: $179.40 FY2023 realization less $105 cost.", "+117% vs $173.82; Bear case $75.63.", "Illustrative upside, not a target."], "medium"),
+ ]),
+"bca79e2f-a68a-45a1-a61d-d850b18fb5ef": dict(member="CNR",
+ bullet_1="CNR is the only member that is roughly half thermal: PAMC high-CV thermal, PRB and the Core Marine Terminal are 61% of Bear-case segment EBITDA, cushioning the trough, while the Leer complex (8.7M coking tons contracted for 2026) carries the met upside.",
+ bullet_2="CNR pays out: $360M returned since February 2025, $68M in Q2 FY2026, under a ~75%-of-FCF framework, while keeping the balance sheet about net-debt neutral (net cash $26M, LTM FCF yield 5.7%).",
+ bullet_3="Valuation builds on the two pillars above: $4.27B revenue at 41.7%, CNR's own best LTM margin of the last 3 years (set by pre-merger CONSOL), gives $1,780M EBITDA; with net cash held, 4.5x gives $162.02 per share, +77% vs $91.36.",
+ claim_1="Met cash cost stays at or below $91/t in Q3 and Q4 FY2026 (Q2 FY2026: $85.65), and FY2027 guidance sets coking sales midpoint at 8.5M t or more and cash cost at $90/t or less.",
+ claim_2="Shareholder returns of at least $100M in Q3 FY2026 (Q2 FY2026: $68M), with net debt held at or below zero.",
+ claim_3="EBITDA margin rises from 16.9% LTM (Q2 FY2026) toward ~41.7% on revenue near $4.27B, taking EBITDA from $723M LTM, which includes $125M of insurance, toward $1,780M.",
+ breaks_1="Met cash cost above $91/t in Q3 or Q4 FY2026, or another Leer or Leer South longwall event.",
+ breaks_2="Q3 FY2026 returns below the $68M of Q2 FY2026, or net debt turning positive to fund returns.",
+ breaks_3="Met and thermal margins stay at Q2 FY2026 levels (Bear case): EBITDA about $623M and value of $57.05 per share.",
+ summaries=[
+  ("Half thermal: a cushion in the trough", ["PAMC, PRB and Core Marine Terminal: 61% of Bear-case segment EBITDA.", "Leer complex: 8.7M coking tons contracted for 2026.", "Loses less than the pure met names in a bear case."], "high"),
+  ("Pays out ~75% of FCF with a near-neutral balance sheet", ["$360M returned since February 2025; $68M in Q2 FY2026.", "Net cash $26M.", "LTM FCF yield 5.7%."], "high"),
+  ("4.5x Recovery EBITDA of $1,780M gives $162.02", ["$4.27B revenue at 41.7%, CNR's own 3Y-high EBITDA margin.", "That margin was set by pre-merger CONSOL; the merged mix has not printed it.", "+77% vs $91.36; Bear case $57.05."], "medium"),
+ ]),
+}
+ok=True
+for i,t in T.items():
+    for k in ["bullet_1","bullet_2","bullet_3"]:
+        n=len(t[k].split()); 
+        if n>45: ok=False; print("OVER",t["member"],k,n)
+    for k in ["breaks_1","breaks_2","breaks_3"]:
+        n=len(t[k].split());
+        if n>25: ok=False; print("OVER",t["member"],k,n)
+print("limits ok" if ok else "FIX")
+def q(s): assert "$t$" not in s; return "$t$"+s+"$t$"
+def arr(b): return ", ".join(q(x) for x in b)
+sql=[]
+for i,t in T.items():
+    cols=", ".join(f"{k} = {q(t[k])}" for k in ["bullet_1","bullet_2","bullet_3","claim_1","claim_2","claim_3","breaks_1","breaks_2","breaks_3"])
+    sql.append(f"update public.own_thesis set {cols} where id = '{i}';")
+    for slot,(h,b,c) in enumerate(t["summaries"],1):
+        sql.append(f"update public.thesis_summaries set headline = {q(h)}, bullets = array[{arr(b)}], confidence = '{c}', model = 'Claude', is_stale = false, updated_at = now() where position_id = (select position_id from public.own_thesis where id = '{i}') and member_ticker = '{t['member']}' and slot = {slot};")
+open("/home/user/fiscalai/backups/basket_theses_2026-10-05/coal_theses.sql","w").write("\n".join(sql)+"\n")
+json.dump(T,open("/home/user/fiscalai/backups/basket_theses_2026-10-05/coal_theses_final.json","w"),indent=1,ensure_ascii=False)

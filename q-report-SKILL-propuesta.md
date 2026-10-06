@@ -24,6 +24,12 @@ plataforma (Financials, Valuation, Q-pulse) y en el anexo chart-first.
    (cartas, writeups, Substacks).
 Después: preguntar si quiere más preguntas o el resultado.
 
+## Requisito previo — anexo chart-first
+El Q-report se escribe encima del anexo chart-first del mismo trimestre (gráficos, tablas y
+análisis por gráfico), que Claude genera a pedido con la skill chart-first. Si no existe,
+generarlo primero. El anexo es el contexto de datos para narrar el Q-report junto con el
+analista, y se enlaza al final del ensayo; el ensayo no repite sus tablas.
+
 ## Fase 1 — Investigación (tres frentes, cada hecho con fuente)
 A. **Plataforma Omaha** (Lovable): `own_thesis`, `valuations` primaria y bear/bull, `catalysts`,
    `risks`, `scorecard_ratings`, último `skill_outputs` (qpulse, reporte_q chart-first).
@@ -43,13 +49,17 @@ C. **Investigación externa**, en este orden de prioridad: prensa (Reuters, Bloo
    - múltiplos históricos de la empresa (IPO, pico, piso, hoy) en base comparable
      (IFRS 16, pasivos laborales, banco), antes de comparar precios;
    - plazos regulatorios relevantes (p. ej. aprobación de ventas de bancos en el país).
+   Si un shock golpea a toda la industria, no basta con decirlo: comparar qué hace cada
+   competidor frente a él y por qué la respuesta de la empresa sería más efectiva, es decir,
+   cuál es su ventaja (moat), con evidencia.
    Cada hecho externo: fuente, fecha, URL y cita corta. Sin fuente → hipótesis marcada o fuera.
 
 ## Fase 2 — Esquema antes de escribir
 Título = la tesis del ensayo (una frase con opinión). Secciones cortas con títulos que son
 afirmaciones. Esqueleto por defecto (adaptar al caso):
 1. Gancho: el hecho o la escena que mejor resume el trimestre.
-2. Qué pasó (3–5 cifras, no más) y por qué.
+2. Qué pasó (3–5 cifras, no más) y por qué; incluir siempre una línea sobre el KPI núcleo
+   (p. ej. volúmenes) aunque esté bien, para que el lector vea qué se sostiene.
 3. ¿Ya pasó antes? Historia de la empresa o análogo.
 4. Lo que cree el mercado y lo que dice la evidencia.
 5. Competencia / regulación / management, según lo que mueva la tesis.
@@ -81,6 +91,5 @@ Artifact HTML (mismo URL en cada actualización), con botón "Download PDF" (cap
 analista: link, conteo de palabras, fuentes usadas, hipótesis y dudas.
 
 ## Anexo de datos (chart-first)
-El formato chart-first anterior (`reporte-q-SKILL-propuesta.md`) pasa a ser el anexo de datos.
-Se puede automatizar: los datos ya están en la plataforma y FiscalAI, y el análisis de cada
-gráfico lo puede escribir la IA. El ensayo enlaza al anexo en lugar de repetir sus tablas.
+El formato chart-first (`reporte-q-SKILL-propuesta.md`) es el anexo de datos: Claude lo construye
+a pedido, con su análisis, como paso previo. El ensayo lo enlaza en lugar de repetir sus tablas.

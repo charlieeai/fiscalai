@@ -25,7 +25,7 @@
   "flags": {
    "restructuring": "true si es reestructuración o recorte de personal",
    "macro_context": "true si es shock macro (contexto, no hito de la empresa)",
-   "source_verified_by_orchestrator": "Las noticias vienen de agentes de investigación con su fuente; los links no fueron revisados uno a uno."
+   "verification": "status: OK (fuente confirma), REPLACE (fuente reemplazada/agregada y confirmada), FIX_DETAIL (detalle corregido según fuente), price_data (solo precio FiscalAI). Algunas fuentes (Bloomberg, BusinessWire, IR de RL/NKE) bloquean bots; donde quedan, el contenido se confirmó por resultado de búsqueda o hay un 8-K de respaldo."
   }
  },
  "companies": {
@@ -44,7 +44,7 @@
      "restructuring": false,
      "macro_context": false,
      "title": "Recompra licencia Japón (Impact 21 + PRL Japan)",
-     "detail": "Tender offer ¥2,600/acción por ~80% de Impact 21; completada 22-may-07 (97.2%).",
+     "detail": "Tender offer ¥2,600/acción por el ~80% de Impact 21 que RL no poseía + 50% restante de PRL Japan; completada 22-may-07 (97.2%).",
      "close": 93.99,
      "day_pct": 0.1,
      "fwd_return_pct": {
@@ -62,9 +62,17 @@
       {
        "label": "8-K",
        "url": "https://www.sec.gov/Archives/edgar/data/1037038/000095014207000901/ex99-1form8k_041307.txt"
+      },
+      {
+       "label": "8-K cierre",
+       "url": "https://www.sec.gov/Archives/edgar/data/0001037038/000095014207001227/ex99-1form8k_052207.htm"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "FIX_DETAIL",
+      "checked": "2026-10-13",
+      "note": "confirmada; detalle corregido"
+     }
     },
     {
      "id": "RL-2009-12-31",
@@ -93,7 +101,11 @@
        "url": "https://www.sec.gov/Archives/edgar/data/0001037038/000095012311054456/y91269e10vk.htm"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "OK",
+      "checked": "2026-10-13",
+      "note": "confirmada"
+     }
     },
     {
      "id": "RL-2010-07-23",
@@ -120,9 +132,17 @@
       {
        "label": "IR",
        "url": "https://investor.ralphlauren.com/news-releases/news-release-details/polo-ralph-lauren-assume-direct-control-its-business-south-korea"
+      },
+      {
+       "label": "Korea Times",
+       "url": "https://www.koreatimes.co.kr/business/companies/20100726/polo-to-take-back-brand-from-doosan"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "REPLACE",
+      "checked": "2026-10-13",
+      "note": "confirmada; fuente reemplazada o agregada"
+     }
     },
     {
      "id": "RL-2013-05-21",
@@ -151,7 +171,10 @@
        "url": "https://fiscal.ai"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "price_data",
+      "note": "Dato de precio FiscalAI; sin fuente de noticia."
+     }
     },
     {
      "id": "RL-2014-10-29",
@@ -180,7 +203,11 @@
        "url": "https://www.sec.gov/Archives/edgar/data/1037038/000095014214002110/eh1401167_ex9901.htm"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "OK",
+      "checked": "2026-10-13",
+      "note": "confirmada"
+     }
     },
     {
      "id": "RL-2015-02-04",
@@ -209,7 +236,11 @@
        "url": "https://www.sec.gov/Archives/edgar/data/1037038/000095014215000245/eh1500204_ex9901.htm"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "OK",
+      "checked": "2026-10-13",
+      "note": "confirmada"
+     }
     },
     {
      "id": "RL-2015-05-13",
@@ -238,7 +269,11 @@
        "url": "https://www.sec.gov/Archives/edgar/data/1037038/000095014215001034/eh1500620_ex9901.htm"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "OK",
+      "checked": "2026-10-13",
+      "note": "confirmada"
+     }
     },
     {
      "id": "RL-2015-09-30",
@@ -267,7 +302,11 @@
        "url": "https://www.sec.gov/Archives/edgar/data/1037038/000095014215002185/eh1501215_ex9901.htm"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "OK",
+      "checked": "2026-10-13",
+      "note": "confirmada"
+     }
     },
     {
      "id": "RL-2016-02-04",
@@ -296,7 +335,11 @@
        "url": "https://www.sec.gov/Archives/edgar/data/1037038/000095014216002947/eh1600181_ex9901.htm"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "OK",
+      "checked": "2026-10-13",
+      "note": "confirmada"
+     }
     },
     {
      "id": "RL-2016-06-07",
@@ -323,9 +366,17 @@
       {
        "label": "8-K",
        "url": "https://www.sec.gov/Archives/edgar/data/1037038/000095014216003884/eh1600696_ex9901.htm"
+      },
+      {
+       "label": "FashionUnited",
+       "url": "https://fashionunited.com/news/business/ralph-lauren-confirms-1-000-job-cuts/2016060811605"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "REPLACE",
+      "checked": "2026-10-13",
+      "note": "confirmada; fuente reemplazada o agregada"
+     }
     },
     {
      "id": "RL-2017-02-02",
@@ -334,7 +385,7 @@
      "restructuring": false,
      "macro_context": false,
      "title": "CEO: salida de Larsson",
-     "detail": "'Diferencias' con Ralph Lauren; CFO Nielsen ejecuta el plan.",
+     "detail": "Salida 'de mutuo acuerdo' por diferencias con Ralph Lauren; CFO Nielsen ejecuta el plan.",
      "close": 76.61,
      "day_pct": -12.3,
      "fwd_return_pct": {
@@ -354,7 +405,11 @@
        "url": "https://www.sec.gov/Archives/edgar/data/1037038/000095014217000200/eh1700235_ex9901.htm"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "OK",
+      "checked": "2026-10-13",
+      "note": "confirmada"
+     }
     },
     {
      "id": "RL-2017-04-04",
@@ -383,7 +438,11 @@
        "url": "https://www.sec.gov/Archives/edgar/data/1037038/000095014217000715/eh1700480_ex9901.htm"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "OK",
+      "checked": "2026-10-13",
+      "note": "confirmada"
+     }
     },
     {
      "id": "RL-2017-05-17",
@@ -410,9 +469,17 @@
       {
        "label": "8-K",
        "url": "https://www.sec.gov/Archives/edgar/data/1037038/000095014217001057/eh1700645_ex9901.htm"
+      },
+      {
+       "label": "8-K FY17",
+       "url": "https://www.sec.gov/Archives/edgar/data/1037038/000095014217001059/eh1700646_ex9901.htm"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "REPLACE",
+      "checked": "2026-10-13",
+      "note": "confirmada; fuente reemplazada o agregada"
+     }
     },
     {
      "id": "RL-2017-05-26",
@@ -437,7 +504,10 @@
        "url": "https://fiscal.ai"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "price_data",
+      "note": "Dato de precio FiscalAI; sin fuente de noticia."
+     }
     },
     {
      "id": "RL-2017-08-08",
@@ -446,7 +516,7 @@
      "restructuring": false,
      "macro_context": false,
      "title": "Evidencia: limpieza de canales",
-     "detail": "Inventario -31%; cierre 20-25% concesiones department stores; menos off-price.",
+     "detail": "Inventario -31% a $860M; cierre de 20-25% de puntos de venta en department stores de EE.UU.; menos promociones.",
      "close": 88.53,
      "day_pct": 13.3,
      "fwd_return_pct": {
@@ -466,7 +536,11 @@
        "url": "https://www.sec.gov/Archives/edgar/data/1037038/000095014217001469/eh1700865_ex9901.htm"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "FIX_DETAIL",
+      "checked": "2026-10-13",
+      "note": "confirmada; detalle corregido"
+     }
     },
     {
      "id": "RL-2018-06-07",
@@ -495,7 +569,11 @@
        "url": "https://www.sec.gov/Archives/edgar/data/1037038/000095014218001353/eh1800783_ex9901.htm"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "OK",
+      "checked": "2026-10-13",
+      "note": "confirmada"
+     }
     },
     {
      "id": "RL-2019-02-05",
@@ -524,7 +602,11 @@
        "url": "https://www.sec.gov/Archives/edgar/data/1037038/000095014219000160/eh1900191_ex9901.htm"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "OK",
+      "checked": "2026-10-13",
+      "note": "confirmada"
+     }
     },
     {
      "id": "RL-2020-03-17",
@@ -533,7 +615,7 @@
      "restructuring": false,
      "macro_context": true,
      "title": "COVID: cierre de tiendas",
-     "detail": "Giro de $475M de crédito; suspende recompras y dividendo.",
+     "detail": "Cierra todas las tiendas de Norteamérica (18-mar a 1-abr). El 31-mar gira $475M de crédito y frena recompras; dividendo suspendido en may-20.",
      "close": 73.51,
      "day_pct": 2.7,
      "fwd_return_pct": {
@@ -549,11 +631,19 @@
      },
      "sources": [
       {
-       "label": "BusinessWire",
-       "url": "https://www.businesswire.com/news/home/20200317005223/en/"
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/1037038/000095014220000808/eh2000480_ex9901.htm"
+      },
+      {
+       "label": "8-K 31-mar",
+       "url": "https://sec.gov/Archives/edgar/data/1037038/000095014220000952/eh2000558_ex9901.htm"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "FIX_DETAIL",
+      "checked": "2026-10-13",
+      "note": "confirmada; detalle corregido"
+     }
     },
     {
      "id": "RL-2020-09-22",
@@ -562,7 +652,7 @@
      "restructuring": true,
      "macro_context": false,
      "title": "R3: ~15% del personal (~3,700)",
-     "detail": "$120-160M cargos; ~$200M ahorro anual; giro digital.",
+     "detail": "$120-160M cargos; ~$180-200M ahorro anual; giro digital. Tamaño del recorte (~15%, >3,700) según fuente anónima de Bloomberg.",
      "close": 75.04,
      "day_pct": 5.4,
      "fwd_return_pct": {
@@ -578,11 +668,19 @@
      },
      "sources": [
       {
-       "label": "BNN Bloomberg",
-       "url": "https://www.bnnbloomberg.ca/ralph-lauren-to-cut-jobs-as-retailer-speeds-shift-to-e-commerce-1.1497591"
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/1037038/000095014220002295/eh200101603_8k.htm"
+      },
+      {
+       "label": "RetailDetail",
+       "url": "https://www.retaildetail.eu/news/fashion/ralph-lauren-cut-more-3700-jobs/"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "FIX_DETAIL",
+      "checked": "2026-10-13",
+      "note": "confirmada; detalle corregido"
+     }
     },
     {
      "id": "RL-2021-05-13",
@@ -590,8 +688,8 @@
      "category": "portfolio",
      "restructuring": false,
      "macro_context": false,
-     "title": "Venta de Club Monaco; Chaps a licencia",
-     "detail": "Poda del portafolio.",
+     "title": "Venta de Club Monaco a Regent",
+     "detail": "Cierra la revisión del portafolio (Chaps pasó a licencia en 2020).",
      "close": 131.54,
      "day_pct": 2.7,
      "fwd_return_pct": {
@@ -607,11 +705,15 @@
      },
      "sources": [
       {
-       "label": "Benzinga",
-       "url": "https://benzinga.com/m-a/21/05/21109423/ralph-lauren-sells-club-monaco-brand-to-private-equity-firm"
+       "label": "FashionUnited",
+       "url": "https://fashionunited.uk/news/business/ralph-lauren-sells-club-monaco-to-pe-investor-regent/2021051355458"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "REPLACE",
+      "checked": "2026-10-13",
+      "note": "confirmada; fuente reemplazada o agregada"
+     }
     },
     {
      "id": "RL-2022-09-19",
@@ -636,11 +738,15 @@
      },
      "sources": [
       {
-       "label": "BusinessWire",
-       "url": "https://www.businesswire.com/news/home/20220919005226/en/"
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/1037038/000095014222002737/eh220287601_ex9901.htm"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "REPLACE",
+      "checked": "2026-10-13",
+      "note": "confirmada; fuente reemplazada o agregada"
+     }
     },
     {
      "id": "RL-2024-02-08",
@@ -669,7 +775,11 @@
        "url": "https://www.sec.gov/Archives/edgar/data/1037038/000103703824000006/rl-20231230ex991xpressrele.htm"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "OK",
+      "checked": "2026-10-13",
+      "note": "confirmada"
+     }
     },
     {
      "id": "RL-2025-04-03",
@@ -694,11 +804,15 @@
      },
      "sources": [
       {
-       "label": "Barchart",
-       "url": "https://www.barchart.com/story/news/31723017/why-ralph-lauren-rl-shares-are-sliding-today"
+       "label": "StockStory/Finviz",
+       "url": "https://finviz.com/news/16961/why-ralph-lauren-rl-shares-are-sliding-today"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "REPLACE",
+      "checked": "2026-10-13",
+      "note": "confirmada; fuente reemplazada o agregada"
+     }
     },
     {
      "id": "RL-2025-09-16",
@@ -707,7 +821,7 @@
      "restructuring": false,
      "macro_context": false,
      "title": "Investor Day 'Drive' a FY28",
-     "detail": "≥$2B a accionistas.",
+     "detail": "≥$2B a accionistas; ventas CAGR mid-single digit; margen +100-150 pb a FY28.",
      "close": 314.66,
      "day_pct": -0.4,
      "fwd_return_pct": {
@@ -723,11 +837,15 @@
      },
      "sources": [
       {
-       "label": "IR",
-       "url": "https://investor.ralphlauren.com/node/21931"
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/1037038/000095014225002436/eh250677838_ex9901.htm"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "REPLACE",
+      "checked": "2026-10-13",
+      "note": "confirmada; fuente reemplazada o agregada"
+     }
     }
    ]
   },
@@ -766,7 +884,11 @@
        "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018706000015/exhibit_99.txt"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "OK",
+      "checked": "2026-10-13",
+      "note": "confirmada"
+     }
     },
     {
      "id": "NKE-2008-06-05",
@@ -795,7 +917,10 @@
        "url": "https://fiscal.ai"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "price_data",
+      "note": "Dato de precio FiscalAI; sin fuente de noticia."
+     }
     },
     {
      "id": "NKE-2009-02-11",
@@ -826,9 +951,21 @@
       {
        "label": "8-K",
        "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018709000035/f8k090317.htm"
+      },
+      {
+       "label": "Bend Bulletin",
+       "url": "https://bendbulletin.com/?p=236065"
+      },
+      {
+       "label": "10-K FY09",
+       "url": "https://www.sec.gov/Archives/edgar/data/0000320187/000119312509155951/d10k.htm"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "REPLACE",
+      "checked": "2026-10-13",
+      "note": "$195M solo confirmado por snippet del 10-K"
+     }
     },
     {
      "id": "NKE-2009-03-09",
@@ -853,7 +990,10 @@
        "url": "https://fiscal.ai"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "price_data",
+      "note": "Dato de precio FiscalAI; sin fuente de noticia."
+     }
     },
     {
      "id": "NKE-2012-05-31",
@@ -882,7 +1022,11 @@
        "url": "https://www.sec.gov/Archives/edgar/data/0000320187/000119312512312306/d341264d10k.htm"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "OK",
+      "checked": "2026-10-13",
+      "note": "confirmada"
+     }
     },
     {
      "id": "NKE-2012-06-29",
@@ -891,7 +1035,7 @@
      "restructuring": false,
      "macro_context": false,
      "title": "4T FY12: miss + inventario +23% (mínimo local)",
-     "detail": "EPS $1.17 vs ~$1.37; margen bruto -150 pb.",
+     "detail": "EPS $1.17 (-6%), inventario +23%, margen bruto -150 pb (consenso ~$1.37 sin verificar en el 8-K).",
      "close": 21.95,
      "day_pct": -9.4,
      "fwd_return_pct": {
@@ -911,7 +1055,11 @@
        "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018712000063/exhibit99er.htm"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "OK",
+      "checked": "2026-10-13",
+      "note": "confirmada"
+     }
     },
     {
      "id": "NKE-2013-03-22",
@@ -940,7 +1088,11 @@
        "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018713000019/exhibit991er.htm"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "OK",
+      "checked": "2026-10-13",
+      "note": "confirmada"
+     }
     },
     {
      "id": "NKE-2015-10-14",
@@ -969,7 +1121,11 @@
        "url": "https://fortune.com/2015/10/14/nike-50-billion"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "OK",
+      "checked": "2026-10-13",
+      "note": "confirmada"
+     }
     },
     {
      "id": "NKE-2015-11-27",
@@ -998,7 +1154,10 @@
        "url": "https://fiscal.ai"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "price_data",
+      "note": "Dato de precio FiscalAI; sin fuente de noticia."
+     }
     },
     {
      "id": "NKE-2017-06-15",
@@ -1007,7 +1166,7 @@
      "restructuring": true,
      "macro_context": false,
      "title": "R: Consumer Direct Offense",
-     "detail": "~1,400 empleos; de ~30,000 a ~40 socios mayoristas estratégicos.",
+     "detail": "~1,400 empleos (~2%); 6 regiones a 4; foco en 12 ciudades clave.",
      "close": 52.9,
      "day_pct": -3.2,
      "fwd_return_pct": {
@@ -1027,7 +1186,11 @@
        "url": "https://www.retaildive.com/news/nike-to-cut-2-of-workforce-as-it-reshapes-consumer-approach/445160/"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "FIX_DETAIL",
+      "checked": "2026-10-13",
+      "note": "confirmada; detalle corregido"
+     }
     },
     {
      "id": "NKE-2017-10-25",
@@ -1036,7 +1199,7 @@
      "restructuring": false,
      "macro_context": false,
      "title": "Investor Day 'Triple Double'",
-     "detail": "Meta digital >30% de ventas.",
+     "detail": "Meta digital de ~15% (FY18) a >30% de ventas; foco en ~40 de ~30,000 socios mayoristas.",
      "close": 54.94,
      "day_pct": 2.8,
      "fwd_return_pct": {
@@ -1052,11 +1215,15 @@
      },
      "sources": [
       {
-       "label": "IR",
-       "url": "https://investors.nike.com/investors/news-events-and-reports/investor-news/investor-news-details/2017/NIKE-INC-IS-ACCELERATING-A-CONSUMER-LED-TRANSFORMATION-TO-IGNITE-ITS-NEXT-PHASE-OF-LONG-TERM-GROWTH/default.aspx"
+       "label": "FashionUnited",
+       "url": "https://fashionunited.com/executive/management/nike-announces-strategies-for-long-term-growth/2017102618003"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "REPLACE",
+      "checked": "2026-10-13",
+      "note": "confirmada; fuente reemplazada o agregada"
+     }
     },
     {
      "id": "NKE-2019-10-23",
@@ -1085,7 +1252,11 @@
        "url": "https://about.nike.com/en/newsroom/releases/board-member-john-donahoe-will-succeed-mark-parker-as-president-and-ceo-in-2020-parker-to-become-executive-chairman"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "OK",
+      "checked": "2026-10-13",
+      "note": "confirmada"
+     }
     },
     {
      "id": "NKE-2020-03-23",
@@ -1110,7 +1281,10 @@
        "url": "https://fiscal.ai"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "price_data",
+      "note": "Dato de precio FiscalAI; sin fuente de noticia."
+     }
     },
     {
      "id": "NKE-2020-06-26",
@@ -1139,7 +1313,11 @@
        "url": "https://www.retaildive.com/news/nike-anticipates-layoffs-as-it-accelerates-digital-strategy/580719/"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "OK",
+      "checked": "2026-10-13",
+      "note": "confirmada"
+     }
     },
     {
      "id": "NKE-2021-11-05",
@@ -1168,7 +1346,10 @@
        "url": "https://fiscal.ai"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "price_data",
+      "note": "Dato de precio FiscalAI; sin fuente de noticia."
+     }
     },
     {
      "id": "NKE-2022-09-30",
@@ -1193,11 +1374,19 @@
      },
      "sources": [
       {
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018722000054/q1fy23exhibit991er.htm"
+      },
+      {
        "label": "Irish Times",
        "url": "https://irishtimes.com/business/2022/09/30/nike-shares-slump-amid-margin-busting-discounts"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "REPLACE",
+      "checked": "2026-10-13",
+      "note": "confirmada; fuente reemplazada o agregada"
+     }
     },
     {
      "id": "NKE-2023-12-22",
@@ -1222,11 +1411,19 @@
      },
      "sources": [
       {
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018723000054/nke-20231221.htm"
+      },
+      {
        "label": "OPB",
        "url": "https://www.opb.org/article/2023/12/22/nike-layoffs-cost-cutting"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "REPLACE",
+      "checked": "2026-10-13",
+      "note": "confirmada; fuente reemplazada o agregada"
+     }
     },
     {
      "id": "NKE-2024-02-16",
@@ -1255,7 +1452,11 @@
        "url": "https://theglobeandmail.com/business/international-business/article-nike-to-cut-about-2-of-its-work-force-to-lower-costs-as-demand-weakens/"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "OK",
+      "checked": "2026-10-13",
+      "note": "confirmada"
+     }
     },
     {
      "id": "NKE-2024-06-28",
@@ -1284,7 +1485,11 @@
        "url": "https://www.aljazeera.com/economy/2024/6/28/nike-stock-plunges-on-surprise-forecast-of-drop-in-sales"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "OK",
+      "checked": "2026-10-13",
+      "note": "confirmada"
+     }
     },
     {
      "id": "NKE-2024-09-20",
@@ -1311,9 +1516,17 @@
       {
        "label": "ClickOnDetroit",
        "url": "https://clickondetroit.com/business/2024/09/19/nike-names-elliott-hill-as-ceo-replacing-john-donahoe"
+      },
+      {
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018724000053/exhibit991-pressreleasesep.htm"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "REPLACE",
+      "checked": "2026-10-13",
+      "note": "confirmada; fuente reemplazada o agregada"
+     }
     },
     {
      "id": "NKE-2024-10-02",
@@ -1342,7 +1555,11 @@
        "url": "https://fortune.com/2024/10/02/nike-shares-fall-ceo-transition"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "OK",
+      "checked": "2026-10-13",
+      "note": "confirmada"
+     }
     },
     {
      "id": "NKE-2025-04-08",
@@ -1371,7 +1588,10 @@
        "url": "https://fiscal.ai"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "price_data",
+      "note": "Dato de precio FiscalAI; sin fuente de noticia."
+     }
     },
     {
      "id": "NKE-2025-05-21",
@@ -1400,7 +1620,11 @@
        "url": "https://www.modernretail.co/operations/amazon-is-working-directly-with-nike-to-source-their-products-according-to-an-email-to-sellers/"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "OK",
+      "checked": "2026-10-13",
+      "note": "confirmada"
+     }
     },
     {
      "id": "NKE-2025-06-27",
@@ -1429,7 +1653,11 @@
        "url": "https://fortune.com/2025/06/27/nike-stock-ceo-tariff-trump-china-trade-deal-q4-earnings"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "OK",
+      "checked": "2026-10-13",
+      "note": "confirmada"
+     }
     },
     {
      "id": "NKE-2025-07-28",
@@ -1458,7 +1686,10 @@
        "url": "https://fiscal.ai"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "price_data",
+      "note": "Dato de precio FiscalAI; sin fuente de noticia."
+     }
     },
     {
      "id": "NKE-2025-12-19",
@@ -1485,9 +1716,17 @@
       {
        "label": "AA",
        "url": "https://aa.com.tr/en/economy/nike-shares-drop-105-after-china-sales-plummet-tariffs-hit-earnings/3775652"
+      },
+      {
+       "label": "Business Wire",
+       "url": "https://www.businesswire.com/news/home/20251218490426/en/NIKE-Inc.-Reports-Fiscal-2026-Second-Quarter-Results"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "REPLACE",
+      "checked": "2026-10-13",
+      "note": "confirmada; fuente reemplazada o agregada"
+     }
     },
     {
      "id": "NKE-2026-03-05",
@@ -1516,7 +1755,11 @@
        "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018726000017/nke-20260227.htm"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "OK",
+      "checked": "2026-10-13",
+      "note": "Hora de presentación del 8-K sin verificar; si fue post-cierre la reacción sería 6-mar (-1.7%)."
+     }
     },
     {
      "id": "NKE-2026-04-01",
@@ -1543,9 +1786,17 @@
       {
        "label": "MarketScreener",
        "url": "https://www.marketscreener.com/news/nike-shares-tumble-after-surprise-sales-drop-forecast-ce7e51dfdd88ff25"
+      },
+      {
+       "label": "Retail Insight Network",
+       "url": "https://www.retail-insight-network.com/news/nike-sales-decline-fiscal-2026/"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "REPLACE",
+      "checked": "2026-10-13",
+      "note": "confirmada; fuente reemplazada o agregada"
+     }
     },
     {
      "id": "NKE-2026-04-23",
@@ -1574,7 +1825,11 @@
        "url": "https://www.retaildive.com/news/nike-layoffs-cuts-thousands-tech-jobs/818391/"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "OK",
+      "checked": "2026-10-13",
+      "note": "confirmada"
+     }
     },
     {
      "id": "NKE-2026-06-23",
@@ -1583,7 +1838,7 @@
      "restructuring": false,
      "macro_context": false,
      "title": "CFO: David Denton reemplaza a Matthew Friend",
-     "detail": "Efectivo mediados de ago-26.",
+     "detail": "Efectivo 16-ago-26 (8-K); Friend sale el 4-sep-26.",
      "close": 42.38,
      "day_pct": -1.9,
      "fwd_return_pct": {
@@ -1603,7 +1858,11 @@
        "url": "https://www.sec.gov/Archives/edgar/data/0000320187/000032018726000070/nke-20260616.htm"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "OK",
+      "checked": "2026-10-13",
+      "note": "Hora del anuncio sin verificar."
+     }
     },
     {
      "id": "NKE-2026-10-02",
@@ -1628,7 +1887,11 @@
        "url": "https://about.nike.com/newsroom/releases/nike-inc-reports-fiscal-2027-first-quarter-results"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "OK",
+      "checked": "2026-10-13",
+      "note": "confirmada"
+     }
     }
    ]
   },
@@ -1663,7 +1926,10 @@
        "url": "https://fiscal.ai"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "price_data",
+      "note": "Dato de precio FiscalAI; sin fuente de noticia."
+     }
     },
     {
      "id": "LULU-2013-03-19",
@@ -1672,7 +1938,7 @@
      "restructuring": false,
      "macro_context": false,
      "title": "Retiro de calzas transparentes",
-     "detail": "~17% de los pantalones de mujer en tienda.",
+     "detail": "~17% de los bottoms de mujer en tienda.",
      "close": 64.08,
      "day_pct": -2.8,
      "fwd_return_pct": {
@@ -1688,11 +1954,15 @@
      },
      "sources": [
       {
-       "label": "CNBC",
-       "url": "https://www.cnbc.com/2013/03/18/lululemon-withdraws-sheer-yoga-pants-stock-drops.html"
+       "label": "Lululemon",
+       "url": "https://corporate.lululemon.com/media/press-releases/2013/03-18-2013-085141152"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "REPLACE",
+      "checked": "2026-10-13",
+      "note": "confirmada; fuente reemplazada o agregada"
+     }
     },
     {
      "id": "LULU-2013-06-10",
@@ -1721,7 +1991,10 @@
        "url": "https://fiscal.ai"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "price_data",
+      "note": "Dato de precio FiscalAI; sin fuente de noticia."
+     }
     },
     {
      "id": "LULU-2013-06-11",
@@ -1750,7 +2023,11 @@
        "url": "https://www.theglobeandmail.com/report-on-business/lululemon-ceo-christine-day-stepping-down/article12459231"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "OK",
+      "checked": "2026-10-13",
+      "note": "confirmada"
+     }
     },
     {
      "id": "LULU-2013-12-10",
@@ -1779,7 +2056,11 @@
        "url": "https://corporate.lululemon.com/media/press-releases/2013/12-10-2013-085211223"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "OK",
+      "checked": "2026-10-13",
+      "note": "confirmada"
+     }
     },
     {
      "id": "LULU-2014-01-13",
@@ -1804,11 +2085,15 @@
      },
      "sources": [
       {
-       "label": "Bloomberg",
-       "url": "https://www.bloomberg.com/news/articles/2014-01-13/lululemon-falls-after-cutting-revenue-earnings-forecast"
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/1397187/000139718714000005/lulu-20140113xex991.htm"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "REPLACE",
+      "checked": "2026-10-13",
+      "note": "confirmada; fuente reemplazada o agregada"
+     }
     },
     {
      "id": "LULU-2014-06-12",
@@ -1816,8 +2101,8 @@
      "category": "cycle_trough",
      "restructuring": false,
      "macro_context": false,
-     "title": "3er recorte de guía + recompra $450M (mínimo del ciclo)",
-     "detail": "EPS FY $1.71-1.76 (antes $1.80-1.90).",
+     "title": "Recorte de guía FY + recompra $450M (mínimo del ciclo)",
+     "detail": "EPS FY normalizado $1.71-1.76 (antes $1.80-1.90); GAAP $1.50-1.55.",
      "close": 37.25,
      "day_pct": -15.9,
      "fwd_return_pct": {
@@ -1829,40 +2114,56 @@
      "min_24m": null,
      "sources": [
       {
-       "label": "Bloomberg",
-       "url": "https://www.bloomberg.com/news/articles/2014-06-12/lululemon-reduces-forecast-even-as-earnings-exceed-estimates"
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/1397187/000139718714000037/lulu-20140504xex991.htm"
+      },
+      {
+       "label": "8-K (guía previa)",
+       "url": "https://www.sec.gov/Archives/edgar/data/1397187/000139718714000019/lulu-20140202xex991.htm"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "REPLACE",
+      "checked": "2026-10-13",
+      "note": "confirmada; fuente reemplazada o agregada"
+     }
     },
     {
-     "id": "LULU-2014-08-07",
-     "date": "2014-08-07",
+     "id": "LULU-2014-08-08",
+     "date": "2014-08-08",
      "category": "ceo",
      "restructuring": false,
      "macro_context": false,
      "title": "Wilson vende mitad a Advent; fin de la pelea",
-     "detail": "$845M por ~13.85%; standstill hasta 2016.",
-     "close": 39.03,
-     "day_pct": -2.4,
+     "detail": "Anunciado 7-ago post-cierre. $845M por ~13.85%; sin proxy fights hasta después de la junta 2016.",
+     "close": 40.11,
+     "day_pct": 2.8,
      "fwd_return_pct": {
-      "m3": 12,
-      "m6": 68,
+      "m3": 8,
+      "m6": 63,
       "m12": 60,
-      "m24": 101
+      "m24": 96
      },
      "min_24m": {
       "month": "2014-08",
       "close": 38.37,
-      "pct": -2
+      "pct": -4
      },
      "sources": [
       {
-       "label": "Bloomberg",
-       "url": "https://www.bloomberg.com/news/articles/2014-08-07/lululemon-founder-wilson-sells-half-his-stake-to-advent"
+       "label": "BuzzFeed News",
+       "url": "https://www.buzzfeednews.com/article/sapna/lululemon-founder-sells-half-of-stake-to-private-equity-firm"
+      },
+      {
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/1397187/000119312514300979/d770619d8k.htm"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "REPLACE",
+      "checked": "2026-10-13",
+      "note": "confirmada; fuente reemplazada o agregada"
+     }
     },
     {
      "id": "LULU-2015-12-09",
@@ -1883,11 +2184,15 @@
      "min_24m": null,
      "sources": [
       {
-       "label": "BIV",
-       "url": "https://www.biv.com/news/retail-manufacturing/lululemon-stock-falls-almost-10-release-q3-results-8244990"
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/1397187/000139718715000070/lulu-20151101xex991.htm"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "REPLACE",
+      "checked": "2026-10-13",
+      "note": "confirmada; fuente reemplazada o agregada"
+     }
     },
     {
      "id": "LULU-2016-03-30",
@@ -1896,7 +2201,7 @@
      "restructuring": false,
      "macro_context": false,
      "title": "Plan 2020: ventas >$4B",
-     "detail": "~$1B cada uno: hombres, e-commerce, internacional.",
+     "detail": "Hombres ~$1B a 2020; e-commerce ~25% del negocio; internacional ~$1B.",
      "close": 67.8,
      "day_pct": 10.7,
      "fwd_return_pct": {
@@ -1914,9 +2219,17 @@
       {
        "label": "Fortune",
        "url": "https://fortune.com/2016/03/30/lululemon-shares-are-climbing"
+      },
+      {
+       "label": "Motley Fool",
+       "url": "https://www.fool.com/investing/2017/12/10/lululemon-athletica-pushes-forward-with-ambitious.aspx"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "REPLACE",
+      "checked": "2026-10-13",
+      "note": "confirmada; fuente reemplazada o agregada"
+     }
     },
     {
      "id": "LULU-2017-03-30",
@@ -1941,11 +2254,23 @@
      },
      "sources": [
       {
+       "label": "Global News",
+       "url": "https://globalnews.ca/news/3347554/lululemon-shares-plunge/"
+      },
+      {
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/1397187/000139718717000007/lulu-20170129xex991.htm"
+      },
+      {
        "label": "Bloomberg",
        "url": "https://www.bloomberg.com/news/articles/2017-03-29/lululemon-tumbles-as-yogawear-maker-s-outlook-misses-estimates"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "REPLACE",
+      "checked": "2026-10-13",
+      "note": "confirmada; fuente reemplazada o agregada"
+     }
     },
     {
      "id": "LULU-2017-05-30",
@@ -1970,7 +2295,10 @@
        "url": "https://fiscal.ai"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "price_data",
+      "note": "Dato de precio FiscalAI; sin fuente de noticia."
+     }
     },
     {
      "id": "LULU-2017-06-02",
@@ -1999,7 +2327,11 @@
        "url": "https://www.theglobeandmail.com/report-on-business/lululemon-to-close-40-ivivva-stores/article35181166/"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "OK",
+      "checked": "2026-10-13",
+      "note": "confirmada"
+     }
     },
     {
      "id": "LULU-2017-12-07",
@@ -2020,11 +2352,19 @@
      "min_24m": null,
      "sources": [
       {
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/1397187/000139718717000047/lulu-20171029xex991.htm"
+      },
+      {
        "label": "FashionUnited",
        "url": "https://fashionunited.com/executive/report/lululemon-athletica-shares-hold-on-to-significant-gains/2017120818685"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "REPLACE",
+      "checked": "2026-10-13",
+      "note": "confirmada; fuente reemplazada o agregada"
+     }
     },
     {
      "id": "LULU-2018-02-06",
@@ -2033,7 +2373,7 @@
      "restructuring": false,
      "macro_context": false,
      "title": "CEO: Potdevin sale por conducta",
-     "detail": "Glenn Murphy interino.",
+     "detail": "Sin CEO interino; Glenn Murphy (presidente ejecutivo) lidera la búsqueda.",
      "close": 78.62,
      "day_pct": 1.6,
      "fwd_return_pct": {
@@ -2049,11 +2389,15 @@
      },
      "sources": [
       {
-       "label": "CNBC",
-       "url": "https://www.cnbc.com/2018/02/05/lululemon-ceo-laurent-potdevin-to-resign.html"
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/1397187/000139718718000005/lulu-20180202xex991.htm"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "FIX_DETAIL",
+      "checked": "2026-10-13",
+      "note": "confirmada; detalle corregido"
+     }
     },
     {
      "id": "LULU-2018-07-25",
@@ -2078,11 +2422,15 @@
      },
      "sources": [
       {
-       "label": "CNBC",
-       "url": "https://www.cnbc.com/2018/07/24/lululemon-appoints-calvin-mcdonald-as-ceo.html"
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/1397187/000139718718000042/lulu-20180718xex991.htm"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "REPLACE",
+      "checked": "2026-10-13",
+      "note": "confirmada; fuente reemplazada o agregada"
+     }
     },
     {
      "id": "LULU-2019-04-24",
@@ -2111,7 +2459,11 @@
        "url": "https://www.sec.gov/Archives/edgar/data/1397187/000139718719000034/lulu-20190424xex991.htm"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "OK",
+      "checked": "2026-10-13",
+      "note": "confirmada"
+     }
     },
     {
      "id": "LULU-2020-06-29",
@@ -2136,11 +2488,19 @@
      },
      "sources": [
       {
+       "label": "Fortune",
+       "url": "https://www.fortune.com/2020/06/29/lululemon-acquires-at-home-fitness-startup-mirror"
+      },
+      {
        "label": "Bloomberg",
        "url": "https://www.bloomberg.com/news/articles/2020-06-29/lululemon-to-buy-home-fitness-company-mirror-for-500-million"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "REPLACE",
+      "checked": "2026-10-13",
+      "note": "confirmada; fuente reemplazada o agregada"
+     }
     },
     {
      "id": "LULU-2022-04-20",
@@ -2165,11 +2525,19 @@
      },
      "sources": [
       {
+       "label": "FashionUnited",
+       "url": "https://fashionunited.in/news/business/lululemon-athletica-aims-to-double-revenues-to-12-5-billion-dollars-by-2026/2022042034395"
+      },
+      {
        "label": "BusinessWire",
-       "url": "https://www.businesswire.com/news/home/20220420005401/en/"
+       "url": "https://www.businesswire.com/news/home/20220420005401/en/lululemon-Announces-Five-Year-Growth-Plan-to-Double-Revenue-by-2026-to-%2412.5-Billion"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "REPLACE",
+      "checked": "2026-10-13",
+      "note": "confirmada; fuente reemplazada o agregada"
+     }
     },
     {
      "id": "LULU-2022-12-09",
@@ -2178,7 +2546,7 @@
      "restructuring": false,
      "macro_context": false,
      "title": "Inventario +85% a $1.7B",
-     "detail": "Margen bruto bajo lo esperado.",
+     "detail": "Margen bruto 55.9% (-130 pb).",
      "close": 326.39,
      "day_pct": -12.8,
      "fwd_return_pct": {
@@ -2194,11 +2562,15 @@
      },
      "sources": [
       {
-       "label": "BusinessWire",
-       "url": "https://www.businesswire.com/news/home/20221208005922/en/lululemon-athletica-inc.-Announces-Third-Quarter-Fiscal-2022-Results"
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/1397187/000139718722000048/lulu-20221030xex991.htm"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "REPLACE",
+      "checked": "2026-10-13",
+      "note": "confirmada; fuente reemplazada o agregada"
+     }
     },
     {
      "id": "LULU-2023-03-29",
@@ -2207,7 +2579,7 @@
      "restructuring": false,
      "macro_context": false,
      "title": "Castigo contable de Mirror ($443M)",
-     "detail": "Ventas +30%.",
+     "detail": "Ventas 4T +30% a $2.8B; Mirror: $442.7M después de impuestos ($470.8M antes).",
      "close": 361.04,
      "day_pct": 12.7,
      "fwd_return_pct": {
@@ -2223,11 +2595,15 @@
      },
      "sources": [
       {
-       "label": "BNN",
-       "url": "https://www.bnnbloomberg.ca/lululemon-shares-up-more-than-10-after-reporting-q4-revenue-up-30-from-year-ago-1.1902041"
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/1397187/000139718723000011/lulu-20230129xex991.htm"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "REPLACE",
+      "checked": "2026-10-13",
+      "note": "confirmada; fuente reemplazada o agregada"
+     }
     },
     {
      "id": "LULU-2023-12-29",
@@ -2256,7 +2632,10 @@
        "url": "https://fiscal.ai"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "price_data",
+      "note": "Dato de precio FiscalAI; sin fuente de noticia."
+     }
     },
     {
      "id": "LULU-2024-03-22",
@@ -2265,7 +2644,7 @@
      "restructuring": false,
      "macro_context": false,
      "title": "Se frena tráfico EE.UU.; guía 2024 débil",
-     "detail": "",
+     "detail": "Guía FY24 ventas $10.7-10.8B (+11-12%), bajo consenso (~$10.9B).",
      "close": 403.19,
      "day_pct": -15.8,
      "fwd_return_pct": {
@@ -2281,11 +2660,19 @@
      },
      "sources": [
       {
-       "label": "Bloomberg",
-       "url": "https://www.bloomberg.com/news/articles/2024-03-21/lululemon-slumps-following-slower-than-expected-sales-outlook"
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/1397187/000139718724000009/lulu-20240128xex991.htm"
+      },
+      {
+       "label": "The Logic",
+       "url": "https://thelogic.co/briefing/lululemon-shares-drop-19-as-sales-slow/"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "REPLACE",
+      "checked": "2026-10-13",
+      "note": "confirmada; fuente reemplazada o agregada"
+     }
     },
     {
      "id": "LULU-2024-05-22",
@@ -2314,7 +2701,11 @@
        "url": "https://thelogic.co/briefing/lululemon-stock-falls-on-chief-product-officer-departure-team-restructuring/"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "OK",
+      "checked": "2026-10-13",
+      "note": "confirmada"
+     }
     },
     {
      "id": "LULU-2024-07-25",
@@ -2343,7 +2734,11 @@
        "url": "https://sgbonline.com/exec-lululemon-pulling-breezethrough-leggings-line-stock-price-targets-cut/"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "OK",
+      "checked": "2026-10-13",
+      "note": "confirmada"
+     }
     },
     {
      "id": "LULU-2024-12-06",
@@ -2352,7 +2747,7 @@
      "restructuring": false,
      "macro_context": false,
      "title": "Beat, sube guía, +$1B recompra",
-     "detail": "",
+     "detail": "EPS FY $14.08-14.16; +$1.0B a la recompra.",
      "close": 399.6,
      "day_pct": 15.9,
      "fwd_return_pct": {
@@ -2368,20 +2763,24 @@
      },
      "sources": [
       {
-       "label": "BusinessWire",
-       "url": "https://www.businesswire.com/news/home/20241205433612/en/lululemon-athletica-inc.-Announces-Third-Quarter-Fiscal-2024-Results"
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/1397187/000139718724000040/lulu-20241027xex991.htm"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "REPLACE",
+      "checked": "2026-10-13",
+      "note": "confirmada; fuente reemplazada o agregada"
+     }
     },
     {
      "id": "LULU-2025-06-06",
      "date": "2025-06-06",
      "category": "restructuring",
-     "restructuring": true,
+     "restructuring": false,
      "macro_context": false,
-     "title": "R: recorte de EPS por aranceles; ~150 empleos corporativos",
-     "detail": "EPS FY $14.58-14.78 (antes $14.95-15.15).",
+     "title": "Recorte de EPS FY por aranceles",
+     "detail": "EPS FY $14.58-14.78 (antes $14.95-15.15). ~150 empleos corporativos recortados ~18-jun (después de esta fecha).",
      "close": 265.27,
      "day_pct": -19.8,
      "fwd_return_pct": {
@@ -2397,11 +2796,19 @@
      },
      "sources": [
       {
-       "label": "CP24",
-       "url": "https://www.cp24.com/news/money/2025/06/06/lululemon-shares-tumble-as-yogawear-firm-warns-tariffs-will-crimp-profit"
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/1397187/000139718725000026/lulu-20250504xex991.htm"
+      },
+      {
+       "label": "BCBusiness",
+       "url": "https://bcbusiness.ca/business/retail/lululemon-cuts-150-corporate-jobs-amid-u-s-tariffs-and-slowing-sales/"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "FIX_DETAIL",
+      "checked": "2026-10-13",
+      "note": "confirmada; detalle corregido"
+     }
     },
     {
      "id": "LULU-2025-09-05",
@@ -2410,7 +2817,7 @@
      "restructuring": false,
      "macro_context": false,
      "title": "Fuerte recorte de guía (aranceles + de minimis)",
-     "detail": "EPS FY $12.77-12.97; ~$240M/año de impacto.",
+     "detail": "EPS FY $12.77-12.97; ~$240M de impacto en utilidad bruta 2025.",
      "close": 167.8,
      "day_pct": -18.6,
      "fwd_return_pct": {
@@ -2426,11 +2833,15 @@
      },
      "sources": [
       {
-       "label": "HL",
-       "url": "https://www.hl.co.uk/shares/stock-market-news/company--news/shares-plunge-as-lululemon-warns-on-profits"
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/1397187/000139718725000038/lulu-20250803xex991.htm"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "FIX_DETAIL",
+      "checked": "2026-10-13",
+      "note": "confirmada; detalle corregido"
+     }
     },
     {
      "id": "LULU-2025-12-12",
@@ -2439,7 +2850,7 @@
      "restructuring": false,
      "macro_context": false,
      "title": "CEO: McDonald anuncia salida",
-     "detail": "Co-CEOs interinos Frank y Maestrini.",
+     "detail": "Efectivo 31-ene-26; co-CEOs interinos Meghan Frank (CFO) y André Maestrini (CCO).",
      "close": 204.97,
      "day_pct": 9.6,
      "fwd_return_pct": {
@@ -2459,7 +2870,11 @@
        "url": "https://fashionunited.uk/news/business/lululemon-ceo-calvin-mcdonald-to-step-down-amid-u-s-challenges/2025121285318"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "OK",
+      "checked": "2026-10-13",
+      "note": "confirmada"
+     }
     },
     {
      "id": "LULU-2025-12-18",
@@ -2488,7 +2903,11 @@
        "url": "https://www.bnnbloomberg.ca/business/2025/12/18/lululemon-surges-on-elliotts-us1-billion-bet-ahead-of-leadership-change/"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "OK",
+      "checked": "2026-10-13",
+      "note": "confirmada"
+     }
     },
     {
      "id": "LULU-2026-04-23",
@@ -2517,7 +2936,11 @@
        "url": "https://www.bnnbloomberg.ca/business/2026/04/23/lululemon-ceo-hire-from-nike-fails-to-impress-investors-shares-sink/"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "OK",
+      "checked": "2026-10-13",
+      "note": "confirmada"
+     }
     },
     {
      "id": "LULU-2026-05-28",
@@ -2546,7 +2969,11 @@
        "url": "https://www.just-style.com/newsletters/lululemon-settles-proxy-battle-with-founder-as-new-directors-join-board"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "OK",
+      "checked": "2026-10-13",
+      "note": "confirmada"
+     }
     },
     {
      "id": "LULU-2026-09-04",
@@ -2554,8 +2981,8 @@
      "category": "guidance",
      "restructuring": false,
      "macro_context": false,
-     "title": "3er recorte de guía FY26",
-     "detail": "Ventas -5 a -7%; comps América -12%.",
+     "title": "Recorte de guía FY26 (2do del año)",
+     "detail": "Ventas FY26 $10.35-10.50B (-5 a -7%; antes -1 a 0%); comps América -12%.",
      "close": 100.61,
      "day_pct": -17.4,
      "fwd_return_pct": {
@@ -2571,11 +2998,19 @@
      },
      "sources": [
       {
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/1397187/000139718726000126/lulu-20260802xex991.htm"
+      },
+      {
        "label": "TIKR",
        "url": "https://www.tikr.com/blog/lululemon-stock-crashed-17-on-friday-the-guidance-cut-was-the-real-story"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "REPLACE",
+      "checked": "2026-10-13",
+      "note": "confirmada; fuente reemplazada o agregada"
+     }
     },
     {
      "id": "LULU-2026-10-07",
@@ -2600,7 +3035,10 @@
        "url": "https://fiscal.ai"
       }
      ],
-     "source_verified_by_orchestrator": false
+     "verification": {
+      "status": "price_data",
+      "note": "Dato de precio FiscalAI; sin fuente de noticia."
+     }
     }
    ]
   }
@@ -2688,7 +3126,7 @@
    "drawdown_pct": -55,
    "years": 1.0,
    "confirmed": true,
-   "at_trough": "3er recorte de guía + recompra; CEO nuevo 6 meses antes",
+   "at_trough": "Recorte de guía FY + recompra $450M; CEO nuevo 6 meses antes",
    "rebound_12m_pct": 78
   },
   {
@@ -2739,13 +3177,15 @@
    "drawdown_pct": -82,
    "years": 2.8,
    "confirmed": false,
-   "at_trough": "3er recorte de guía; CEO nueva desde hace 1 mes",
+   "at_trough": "2do recorte de guía FY26; CEO nueva desde hace 1 mes",
    "rebound_12m_pct": null
   }
  ],
  "data_issues": [
   "FiscalAI RL: faltan precios 2025-11-18 a 2025-11-21 y algunos días de feb-2026; el -9.7% de 2021-11-02 parece error de datos.",
   "FiscalAI NKE: fila con fecha de sábado (2026-07-18).",
-  "Sin verificar: fecha de lanzamiento de 'Win Now' (NKE); hora del anuncio de algunos hitos (marcado en detail); causa de varios días LULU de ±10% (no incluidos)."
+  "Sin verificar: fecha de lanzamiento de 'Win Now' (NKE); hora del anuncio de algunos hitos (marcado en detail); causa de varios días LULU de ±10% (no incluidos).",
+  "NKE-2026-03-05 y NKE-2026-06-23: hora del anuncio sin verificar; si fue post-cierre, la reacción sería el día siguiente.",
+  "LULU 2014: reacción a la venta de Wilson a Advent movida a 2014-08-08 (anuncio post-cierre del 7-ago)."
  ]
 }

@@ -1,0 +1,2751 @@
+{
+ "meta": {
+  "title": "Hitos de reestructuración y turnaround: RL, NKE, LULU",
+  "as_of": "2026-10-13",
+  "price_source": "FiscalAI codemode.company_stock_prices (closePrice); split-adjusted, sin ajuste por dividendos",
+  "method": {
+   "base": "Cierre del día de reacción (día siguiente si el anuncio fue post-cierre).",
+   "day_pct": "Cierre vs cierre del día hábil previo, %.",
+   "fwd_return_pct": "Retorno de precio desde el cierre base al primer día hábil en o después de fecha+N meses calendario. null = aún no transcurrido.",
+   "min_24m": "Cierre más bajo en los 24 meses siguientes (incluye el día base); pct vs cierre base."
+  },
+  "categories": [
+   "ceo",
+   "restructuring",
+   "strategy",
+   "guidance",
+   "earnings",
+   "channel_inventory",
+   "portfolio",
+   "product_crisis",
+   "cycle_peak",
+   "cycle_trough",
+   "macro"
+  ],
+  "flags": {
+   "restructuring": "true si es reestructuración o recorte de personal",
+   "macro_context": "true si es shock macro (contexto, no hito de la empresa)",
+   "source_verified_by_orchestrator": "Las noticias vienen de agentes de investigación con su fuente; los links no fueron revisados uno a uno."
+  }
+ },
+ "companies": {
+  "RL": {
+   "name": "Ralph Lauren",
+   "fiscalai_key": "NYSE_RL",
+   "last_close": {
+    "date": "2026-10-13",
+    "close": 373.75
+   },
+   "events": [
+    {
+     "id": "RL-2007-04-13",
+     "date": "2007-04-13",
+     "category": "portfolio",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Recompra licencia Japón (Impact 21 + PRL Japan)",
+     "detail": "Tender offer ¥2,600/acción por ~80% de Impact 21; completada 22-may-07 (97.2%).",
+     "close": 93.99,
+     "day_pct": 0.1,
+     "fwd_return_pct": {
+      "m3": 7.7,
+      "m6": -25.6,
+      "m12": -37.1,
+      "m24": -45.2
+     },
+     "min_24m": {
+      "month": "2009-03",
+      "close": 31.94,
+      "pct": -66
+     },
+     "sources": [
+      {
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/1037038/000095014207000901/ex99-1form8k_041307.txt"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "RL-2009-12-31",
+     "date": "2009-12-31",
+     "category": "portfolio",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Control directo Asia-Pacífico (Dickson)",
+     "detail": "Consolidado desde 1-ene-10; base de la expansión en Asia. Fecha de cierre, no del acuerdo.",
+     "close": 80.98,
+     "day_pct": -1.9,
+     "fwd_return_pct": {
+      "m3": 5,
+      "m6": -8.7,
+      "m12": 37,
+      "m24": 69.3
+     },
+     "min_24m": {
+      "month": "2010-07",
+      "close": 71.93,
+      "pct": -11.2
+     },
+     "sources": [
+      {
+       "label": "10-K FY11",
+       "url": "https://www.sec.gov/Archives/edgar/data/0001037038/000095012311054456/y91269e10vk.htm"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "RL-2010-07-23",
+     "date": "2010-07-23",
+     "category": "portfolio",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Control directo Corea (Doosan)",
+     "detail": "~$47M; efectivo 1-ene-11; ~175 shop-in-shops y 5 tiendas.",
+     "close": 79.22,
+     "day_pct": 3.6,
+     "fwd_return_pct": {
+      "m3": 19.7,
+      "m6": 32.2,
+      "m12": 74.9,
+      "m24": 85.9
+     },
+     "min_24m": {
+      "month": "2010-08",
+      "close": 75.46,
+      "pct": -4.7
+     },
+     "sources": [
+      {
+       "label": "IR",
+       "url": "https://investor.ralphlauren.com/news-releases/news-release-details/polo-ralph-lauren-assume-direct-control-its-business-south-korea"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "RL-2013-05-21",
+     "date": "2013-05-21",
+     "category": "cycle_peak",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Pico del ciclo",
+     "detail": "No se recupera hasta 2024.",
+     "close": 189.56,
+     "day_pct": 1.5,
+     "fwd_return_pct": {
+      "m3": -9.3,
+      "m6": -9.3,
+      "m12": -20.4,
+      "m24": -30.6
+     },
+     "min_24m": {
+      "month": "2015-03",
+      "close": 127.66,
+      "pct": -32.7
+     },
+     "sources": [
+      {
+       "label": "FiscalAI",
+       "url": "https://fiscal.ai"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "RL-2014-10-29",
+     "date": "2014-10-29",
+     "category": "guidance",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "1er recorte de guía por FX",
+     "detail": "FY15 ventas +5-7% (antes +6-8%).",
+     "close": 161.79,
+     "day_pct": 0.5,
+     "fwd_return_pct": {
+      "m3": 5.1,
+      "m6": -17.1,
+      "m12": -31.8,
+      "m24": -39.4
+     },
+     "min_24m": {
+      "month": "2016-02",
+      "close": 83.18,
+      "pct": -48.6
+     },
+     "sources": [
+      {
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/1037038/000095014214002110/eh1401167_ex9901.htm"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "RL-2015-02-04",
+     "date": "2015-02-04",
+     "category": "guidance",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "2do recorte de guía (dólar fuerte)",
+     "detail": "Margen operativo -170 a -190 pb; dividendo +11%.",
+     "close": 139.71,
+     "day_pct": -18.2,
+     "fwd_return_pct": {
+      "m3": -2.7,
+      "m6": -11.7,
+      "m12": -35.6,
+      "m24": -45.2
+     },
+     "min_24m": {
+      "month": "2017-02",
+      "close": 76.17,
+      "pct": -45.5
+     },
+     "sources": [
+      {
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/1037038/000095014215000245/eh1500204_ex9901.htm"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "RL-2015-05-13",
+     "date": "2015-05-13",
+     "category": "restructuring",
+     "restructuring": true,
+     "macro_context": false,
+     "title": "R0: reorganización global de marcas",
+     "detail": "$70-100M de cargos; FX -450 pb en ventas FY16.",
+     "close": 129.18,
+     "day_pct": -3.0,
+     "fwd_return_pct": {
+      "m3": -9.2,
+      "m6": -7.3,
+      "m12": -33.8,
+      "m24": -40.7
+     },
+     "min_24m": {
+      "month": "2017-02",
+      "close": 75.98,
+      "pct": -41.2
+     },
+     "sources": [
+      {
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/1037038/000095014215001034/eh1500620_ex9901.htm"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "RL-2015-09-30",
+     "date": "2015-09-30",
+     "category": "ceo",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "CEO: Stefan Larsson (Old Navy)",
+     "detail": "Ralph Lauren pasa a Executive Chairman y CCO.",
+     "close": 118.16,
+     "day_pct": 13.6,
+     "fwd_return_pct": {
+      "m3": -4.7,
+      "m6": -18,
+      "m12": -14.4,
+      "m24": -24.7
+     },
+     "min_24m": {
+      "month": "2017-05",
+      "close": 66.11,
+      "pct": -44.1
+     },
+     "sources": [
+      {
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/1037038/000095014215002185/eh1501215_ex9901.htm"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "RL-2016-02-04",
+     "date": "2016-02-04",
+     "category": "guidance",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Recorte guía FY16 a ~-3% ventas",
+     "detail": "Invierno cálido, turismo, dólar. Peor día del período.",
+     "close": 89.95,
+     "day_pct": -22.2,
+     "fwd_return_pct": {
+      "m3": 3.4,
+      "m6": 4.8,
+      "m12": -14.9,
+      "m24": 17.2
+     },
+     "min_24m": {
+      "month": "2017-05",
+      "close": 66.11,
+      "pct": -26.5
+     },
+     "sources": [
+      {
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/1037038/000095014216002947/eh1600181_ex9901.htm"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "RL-2016-06-07",
+     "date": "2016-06-07",
+     "category": "restructuring",
+     "restructuring": true,
+     "macro_context": false,
+     "title": "R1: plan 'Way Forward'",
+     "detail": "Hasta $400M reestructuración + $150M inventario; ~50 tiendas; ~1,000 empleos; margen FY17 ~10%.",
+     "close": 94.06,
+     "day_pct": -2.4,
+     "fwd_return_pct": {
+      "m3": 11.5,
+      "m6": 15.8,
+      "m12": -26.5,
+      "m24": 46.6
+     },
+     "min_24m": {
+      "month": "2017-05",
+      "close": 66.11,
+      "pct": -29.7
+     },
+     "sources": [
+      {
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/1037038/000095014216003884/eh1600696_ex9901.htm"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "RL-2017-02-02",
+     "date": "2017-02-02",
+     "category": "ceo",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "CEO: salida de Larsson",
+     "detail": "'Diferencias' con Ralph Lauren; CFO Nielsen ejecuta el plan.",
+     "close": 76.61,
+     "day_pct": -12.3,
+     "fwd_return_pct": {
+      "m3": 5.5,
+      "m6": -1.4,
+      "m12": 43.3,
+      "m24": 49.5
+     },
+     "min_24m": {
+      "month": "2017-05",
+      "close": 66.11,
+      "pct": -13.7
+     },
+     "sources": [
+      {
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/1037038/000095014217000200/eh1700235_ex9901.htm"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "RL-2017-04-04",
+     "date": "2017-04-04",
+     "category": "restructuring",
+     "restructuring": true,
+     "macro_context": false,
+     "title": "R2: segunda ola Way Forward",
+     "detail": "Cierre flagship Polo 5ta Av.; ~$370M cargos; ~$140M ahorro anual extra.",
+     "close": 77.74,
+     "day_pct": -4.5,
+     "fwd_return_pct": {
+      "m3": -6,
+      "m6": 15.1,
+      "m12": 45,
+      "m24": 65.1
+     },
+     "min_24m": {
+      "month": "2017-05",
+      "close": 66.11,
+      "pct": -15
+     },
+     "sources": [
+      {
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/1037038/000095014217000715/eh1700480_ex9901.htm"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "RL-2017-05-17",
+     "date": "2017-05-17",
+     "category": "ceo",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "CEO: Patrice Louvet (P&G)",
+     "detail": "Día siguiente: guía FY18 ventas -8 a -9%.",
+     "close": 72.75,
+     "day_pct": -1.6,
+     "fwd_return_pct": {
+      "m3": 17.5,
+      "m6": 22.5,
+      "m12": 56.2,
+      "m24": 54.7
+     },
+     "min_24m": {
+      "month": "2017-05",
+      "close": 66.11,
+      "pct": -9.1
+     },
+     "sources": [
+      {
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/1037038/000095014217001057/eh1700645_ex9901.htm"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "RL-2017-05-26",
+     "date": "2017-05-26",
+     "category": "cycle_trough",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Mínimo del ciclo",
+     "detail": "-65% desde el pico de may-13.",
+     "close": 66.11,
+     "day_pct": -0.6,
+     "fwd_return_pct": {
+      "m3": 31.9,
+      "m6": 39.7,
+      "m12": 104.6,
+      "m24": 63.4
+     },
+     "min_24m": null,
+     "sources": [
+      {
+       "label": "FiscalAI",
+       "url": "https://fiscal.ai"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "RL-2017-08-08",
+     "date": "2017-08-08",
+     "category": "channel_inventory",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Evidencia: limpieza de canales",
+     "detail": "Inventario -31%; cierre 20-25% concesiones department stores; menos off-price.",
+     "close": 88.53,
+     "day_pct": 13.3,
+     "fwd_return_pct": {
+      "m3": -3.5,
+      "m6": 14.4,
+      "m12": 51.6,
+      "m24": 9.6
+     },
+     "min_24m": {
+      "month": "2017-08",
+      "close": 83.78,
+      "pct": -5.4
+     },
+     "sources": [
+      {
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/1037038/000095014217001469/eh1700865_ex9901.htm"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "RL-2018-06-07",
+     "date": "2018-06-07",
+     "category": "strategy",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Investor Day 'Next Great Chapter'",
+     "detail": "Recompra $1B; dividendo +25%; margen objetivo mid-teens FY23.",
+     "close": 137.86,
+     "day_pct": -1.2,
+     "fwd_return_pct": {
+      "m3": -5.7,
+      "m6": -23.9,
+      "m12": -19.6,
+      "m24": -34.5
+     },
+     "min_24m": {
+      "month": "2020-04",
+      "close": 61.0,
+      "pct": -55.8
+     },
+     "sources": [
+      {
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/1037038/000095014218001353/eh1800783_ex9901.htm"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "RL-2019-02-05",
+     "date": "2019-02-05",
+     "category": "channel_inventory",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Reducción planificada de off-price",
+     "detail": "3T FY19 supera estimados; guía de margen sube.",
+     "close": 124.16,
+     "day_pct": 8.4,
+     "fwd_return_pct": {
+      "m3": 3.3,
+      "m6": -22.9,
+      "m12": -1.3,
+      "m24": -12.6
+     },
+     "min_24m": {
+      "month": "2020-04",
+      "close": 61.0,
+      "pct": -50.9
+     },
+     "sources": [
+      {
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/1037038/000095014219000160/eh1900191_ex9901.htm"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "RL-2020-03-17",
+     "date": "2020-03-17",
+     "category": "macro",
+     "restructuring": false,
+     "macro_context": true,
+     "title": "COVID: cierre de tiendas",
+     "detail": "Giro de $475M de crédito; suspende recompras y dividendo.",
+     "close": 73.51,
+     "day_pct": 2.7,
+     "fwd_return_pct": {
+      "m3": 1.3,
+      "m6": 7.1,
+      "m12": 64.7,
+      "m24": 62.2
+     },
+     "min_24m": {
+      "month": "2020-04",
+      "close": 61.0,
+      "pct": -17
+     },
+     "sources": [
+      {
+       "label": "BusinessWire",
+       "url": "https://www.businesswire.com/news/home/20200317005223/en/"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "RL-2020-09-22",
+     "date": "2020-09-22",
+     "category": "restructuring",
+     "restructuring": true,
+     "macro_context": false,
+     "title": "R3: ~15% del personal (~3,700)",
+     "detail": "$120-160M cargos; ~$200M ahorro anual; giro digital.",
+     "close": 75.04,
+     "day_pct": 5.4,
+     "fwd_return_pct": {
+      "m3": 31.7,
+      "m6": 61.9,
+      "m12": 50.9,
+      "m24": 17.8
+     },
+     "min_24m": {
+      "month": "2020-10",
+      "close": 66.85,
+      "pct": -10.9
+     },
+     "sources": [
+      {
+       "label": "BNN Bloomberg",
+       "url": "https://www.bnnbloomberg.ca/ralph-lauren-to-cut-jobs-as-retailer-speeds-shift-to-e-commerce-1.1497591"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "RL-2021-05-13",
+     "date": "2021-05-13",
+     "category": "portfolio",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Venta de Club Monaco; Chaps a licencia",
+     "detail": "Poda del portafolio.",
+     "close": 131.54,
+     "day_pct": 2.7,
+     "fwd_return_pct": {
+      "m3": -5.4,
+      "m6": -4.9,
+      "m12": -24,
+      "m24": -13.9
+     },
+     "min_24m": {
+      "month": "2022-09",
+      "close": 83.96,
+      "pct": -36.2
+     },
+     "sources": [
+      {
+       "label": "Benzinga",
+       "url": "https://benzinga.com/m-a/21/05/21109423/ralph-lauren-sells-club-monaco-brand-to-private-equity-firm"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "RL-2022-09-19",
+     "date": "2022-09-19",
+     "category": "strategy",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Investor Day 'Accelerate'",
+     "detail": "Ventas mid-high single digit; ~$2B a accionistas a FY25. Mínimo 26-sep-22.",
+     "close": 96.27,
+     "day_pct": 3.0,
+     "fwd_return_pct": {
+      "m3": 7,
+      "m6": 16.4,
+      "m12": 18.7,
+      "m24": 91.9
+     },
+     "min_24m": {
+      "month": "2022-09",
+      "close": 83.96,
+      "pct": -12.8
+     },
+     "sources": [
+      {
+       "label": "BusinessWire",
+       "url": "https://www.businesswire.com/news/home/20220919005226/en/"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "RL-2024-02-08",
+     "date": "2024-02-08",
+     "category": "earnings",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Inicio del re-rating",
+     "detail": "EPS $4.17 vs $3.54; DTC +9%; Asia lidera.",
+     "close": 171.85,
+     "day_pct": 16.8,
+     "fwd_return_pct": {
+      "m3": -3.9,
+      "m6": -6,
+      "m12": 56.3,
+      "m24": 102.6
+     },
+     "min_24m": {
+      "month": "2024-04",
+      "close": 157.33,
+      "pct": -8.4
+     },
+     "sources": [
+      {
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/1037038/000103703824000006/rl-20231230ex991xpressrele.htm"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "RL-2025-04-03",
+     "date": "2025-04-03",
+     "category": "macro",
+     "restructuring": false,
+     "macro_context": true,
+     "title": "Aranceles 'Liberation Day'",
+     "detail": "Mínimo $182.34 el 8-abr-25.",
+     "close": 197.89,
+     "day_pct": -16.3,
+     "fwd_return_pct": {
+      "m3": 41.4,
+      "m6": 62.6,
+      "m12": 81.2,
+      "m24": null
+     },
+     "min_24m": {
+      "month": "2025-04",
+      "close": 182.34,
+      "pct": -7.9
+     },
+     "sources": [
+      {
+       "label": "Barchart",
+       "url": "https://www.barchart.com/story/news/31723017/why-ralph-lauren-rl-shares-are-sliding-today"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "RL-2025-09-16",
+     "date": "2025-09-16",
+     "category": "strategy",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Investor Day 'Drive' a FY28",
+     "detail": "≥$2B a accionistas.",
+     "close": 314.66,
+     "day_pct": -0.4,
+     "fwd_return_pct": {
+      "m3": 17.4,
+      "m6": 7.8,
+      "m12": 7.5,
+      "m24": null
+     },
+     "min_24m": {
+      "month": "2025-09",
+      "close": 302.89,
+      "pct": -3.7
+     },
+     "sources": [
+      {
+       "label": "IR",
+       "url": "https://investor.ralphlauren.com/node/21931"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    }
+   ]
+  },
+  "NKE": {
+   "name": "Nike",
+   "fiscalai_key": "NYSE_NKE",
+   "last_close": {
+    "date": "2026-10-13",
+    "close": 35.33
+   },
+   "events": [
+    {
+     "id": "NKE-2006-01-23",
+     "date": "2006-01-23",
+     "category": "ceo",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "CEO: salida de Perez; Mark Parker CEO",
+     "detail": "Salida tras ~13 meses por diferencias con Knight.",
+     "close": 10.43,
+     "day_pct": -0.9,
+     "fwd_return_pct": {
+      "m3": -1,
+      "m6": -3,
+      "m12": 16,
+      "m24": 38
+     },
+     "min_24m": {
+      "month": "2006-08",
+      "close": 9.53,
+      "pct": -9
+     },
+     "sources": [
+      {
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018706000015/exhibit_99.txt"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "NKE-2008-06-05",
+     "date": "2008-06-05",
+     "category": "cycle_peak",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Pico pre-crisis",
+     "detail": "",
+     "close": 17.52,
+     "day_pct": 3.1,
+     "fwd_return_pct": {
+      "m3": -16,
+      "m6": -24,
+      "m12": -17,
+      "m24": -1
+     },
+     "min_24m": {
+      "month": "2009-03",
+      "close": 9.64,
+      "pct": -45
+     },
+     "sources": [
+      {
+       "label": "FiscalAI",
+       "url": "https://fiscal.ai"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "NKE-2009-02-11",
+     "date": "2009-02-11",
+     "category": "restructuring",
+     "restructuring": true,
+     "macro_context": false,
+     "title": "R: recorte de hasta 4% del personal",
+     "detail": "~1,400 empleos; ampliado a ~1,750 en may-09; $195M de cargo en 4T FY09.",
+     "close": 11.08,
+     "day_pct": -1.6,
+     "fwd_return_pct": {
+      "m3": 20,
+      "m6": 28,
+      "m12": 42,
+      "m24": 94
+     },
+     "min_24m": {
+      "month": "2009-03",
+      "close": 9.64,
+      "pct": -13
+     },
+     "sources": [
+      {
+       "label": "ABC",
+       "url": "https://abcnews.com/Business/story?id=6850957"
+      },
+      {
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018709000035/f8k090317.htm"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "NKE-2009-03-09",
+     "date": "2009-03-09",
+     "category": "cycle_trough",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Mínimo de la crisis",
+     "detail": "",
+     "close": 9.64,
+     "day_pct": -3.5,
+     "fwd_return_pct": {
+      "m3": 52,
+      "m6": 44,
+      "m12": 79,
+      "m24": 131
+     },
+     "min_24m": null,
+     "sources": [
+      {
+       "label": "FiscalAI",
+       "url": "https://fiscal.ai"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "NKE-2012-05-31",
+     "date": "2012-05-31",
+     "category": "portfolio",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Decisión de vender Umbro y Cole Haan",
+     "detail": "Foco en Nike, Jordan, Converse, Hurley. Hora del anuncio sin verificar.",
+     "close": 27.04,
+     "day_pct": -0.4,
+     "fwd_return_pct": {
+      "m3": -10,
+      "m6": -10,
+      "m12": 14,
+      "m24": 42
+     },
+     "min_24m": {
+      "month": "2012-06",
+      "close": 21.95,
+      "pct": -19
+     },
+     "sources": [
+      {
+       "label": "10-K FY12",
+       "url": "https://www.sec.gov/Archives/edgar/data/0000320187/000119312512312306/d341264d10k.htm"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "NKE-2012-06-29",
+     "date": "2012-06-29",
+     "category": "channel_inventory",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "4T FY12: miss + inventario +23% (mínimo local)",
+     "detail": "EPS $1.17 vs ~$1.37; margen bruto -150 pb.",
+     "close": 21.95,
+     "day_pct": -9.4,
+     "fwd_return_pct": {
+      "m3": 9,
+      "m6": 18,
+      "m12": 42,
+      "m24": 77
+     },
+     "min_24m": {
+      "month": "2012-06",
+      "close": 21.95,
+      "pct": 0
+     },
+     "sources": [
+      {
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018712000063/exhibit99er.htm"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "NKE-2013-03-22",
+     "date": "2013-03-22",
+     "category": "channel_inventory",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Evidencia: inventario normalizado",
+     "detail": "Inventario +4% (vs +23%); EPS +20%.",
+     "close": 29.77,
+     "day_pct": 11.1,
+     "fwd_return_pct": {
+      "m3": 1,
+      "m6": 16,
+      "m12": 26,
+      "m24": 70
+     },
+     "min_24m": {
+      "month": "2013-04",
+      "close": 29.13,
+      "pct": -2
+     },
+     "sources": [
+      {
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018713000019/exhibit991er.htm"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "NKE-2015-10-14",
+     "date": "2015-10-14",
+     "category": "strategy",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Investor Day: $50B a FY20",
+     "detail": "~10% CAGR desde $30.6B.",
+     "close": 62.92,
+     "day_pct": 0.0,
+     "fwd_return_pct": {
+      "m3": -7,
+      "m6": -5,
+      "m12": -18,
+      "m24": -18
+     },
+     "min_24m": {
+      "month": "2016-11",
+      "close": 49.62,
+      "pct": -21
+     },
+     "sources": [
+      {
+       "label": "Fortune",
+       "url": "https://fortune.com/2015/10/14/nike-50-billion"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "NKE-2015-11-27",
+     "date": "2015-11-27",
+     "category": "cycle_peak",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Pico 2015",
+     "detail": "",
+     "close": 67.17,
+     "day_pct": 0.1,
+     "fwd_return_pct": {
+      "m3": -8,
+      "m6": -16,
+      "m12": -24,
+      "m24": -11
+     },
+     "min_24m": {
+      "month": "2016-11",
+      "close": 49.62,
+      "pct": -26
+     },
+     "sources": [
+      {
+       "label": "FiscalAI",
+       "url": "https://fiscal.ai"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "NKE-2017-06-15",
+     "date": "2017-06-15",
+     "category": "restructuring",
+     "restructuring": true,
+     "macro_context": false,
+     "title": "R: Consumer Direct Offense",
+     "detail": "~1,400 empleos; de ~30,000 a ~40 socios mayoristas estratégicos.",
+     "close": 52.9,
+     "day_pct": -3.2,
+     "fwd_return_pct": {
+      "m3": 2,
+      "m6": 22,
+      "m12": 43,
+      "m24": 55
+     },
+     "min_24m": {
+      "month": "2017-10",
+      "close": 50.83,
+      "pct": -4
+     },
+     "sources": [
+      {
+       "label": "Retail Dive",
+       "url": "https://www.retaildive.com/news/nike-to-cut-2-of-workforce-as-it-reshapes-consumer-approach/445160/"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "NKE-2017-10-25",
+     "date": "2017-10-25",
+     "category": "strategy",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Investor Day 'Triple Double'",
+     "detail": "Meta digital >30% de ventas.",
+     "close": 54.94,
+     "day_pct": 2.8,
+     "fwd_return_pct": {
+      "m3": 23,
+      "m6": 21,
+      "m12": 33,
+      "m24": 65
+     },
+     "min_24m": {
+      "month": "2017-10",
+      "close": 54.94,
+      "pct": 0
+     },
+     "sources": [
+      {
+       "label": "IR",
+       "url": "https://investors.nike.com/investors/news-events-and-reports/investor-news/investor-news-details/2017/NIKE-INC-IS-ACCELERATING-A-CONSUMER-LED-TRANSFORMATION-TO-IGNITE-ITS-NEXT-PHASE-OF-LONG-TERM-GROWTH/default.aspx"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "NKE-2019-10-23",
+     "date": "2019-10-23",
+     "category": "ceo",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "CEO: John Donahoe sucede a Parker",
+     "detail": "Efectivo 13-ene-20; Parker Executive Chairman.",
+     "close": 92.32,
+     "day_pct": -3.4,
+     "fwd_return_pct": {
+      "m3": 12,
+      "m6": -5,
+      "m12": 41,
+      "m24": 78
+     },
+     "min_24m": {
+      "month": "2020-03",
+      "close": 62.8,
+      "pct": -32
+     },
+     "sources": [
+      {
+       "label": "Nike",
+       "url": "https://about.nike.com/en/newsroom/releases/board-member-john-donahoe-will-succeed-mark-parker-as-president-and-ceo-in-2020-parker-to-become-executive-chairman"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "NKE-2020-03-23",
+     "date": "2020-03-23",
+     "category": "macro",
+     "restructuring": false,
+     "macro_context": true,
+     "title": "Mínimo COVID",
+     "detail": "",
+     "close": 62.8,
+     "day_pct": -6.9,
+     "fwd_return_pct": {
+      "m3": 62,
+      "m6": 102,
+      "m12": 118,
+      "m24": 112
+     },
+     "min_24m": null,
+     "sources": [
+      {
+       "label": "FiscalAI",
+       "url": "https://fiscal.ai"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "NKE-2020-06-26",
+     "date": "2020-06-26",
+     "category": "restructuring",
+     "restructuring": true,
+     "macro_context": false,
+     "title": "R: Consumer Direct Acceleration",
+     "detail": "Ventas 4T FY20 -38%; 'pérdida neta de empleos' (número sin verificar).",
+     "close": 93.67,
+     "day_pct": -7.6,
+     "fwd_return_pct": {
+      "m3": 33,
+      "m6": 52,
+      "m12": 63,
+      "m24": 18
+     },
+     "min_24m": {
+      "month": "2020-06",
+      "close": 93.67,
+      "pct": 0
+     },
+     "sources": [
+      {
+       "label": "Retail Dive",
+       "url": "https://www.retaildive.com/news/nike-anticipates-layoffs-as-it-accelerates-digital-strategy/580719/"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "NKE-2021-11-05",
+     "date": "2021-11-05",
+     "category": "cycle_peak",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Máximo histórico",
+     "detail": "",
+     "close": 177.51,
+     "day_pct": 1.2,
+     "fwd_return_pct": {
+      "m3": -18,
+      "m6": -33,
+      "m12": -47,
+      "m24": -40
+     },
+     "min_24m": {
+      "month": "2022-09",
+      "close": 83.12,
+      "pct": -53
+     },
+     "sources": [
+      {
+       "label": "FiscalAI",
+       "url": "https://fiscal.ai"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "NKE-2022-09-30",
+     "date": "2022-09-30",
+     "category": "channel_inventory",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Exceso de inventario",
+     "detail": "Inventario +44% a $9.7B; margen bruto -220 pb.",
+     "close": 83.12,
+     "day_pct": -12.8,
+     "fwd_return_pct": {
+      "m3": 41,
+      "m6": 44,
+      "m12": 14,
+      "m24": 6
+     },
+     "min_24m": {
+      "month": "2024-07",
+      "close": 71.09,
+      "pct": -14
+     },
+     "sources": [
+      {
+       "label": "Irish Times",
+       "url": "https://irishtimes.com/business/2022/09/30/nike-shares-slump-amid-margin-busting-discounts"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "NKE-2023-12-22",
+     "date": "2023-12-22",
+     "category": "restructuring",
+     "restructuring": true,
+     "macro_context": false,
+     "title": "R: plan de ahorro de hasta $2B",
+     "detail": "3 años; severance $400-450M; guía FY24 a ~+1%.",
+     "close": 108.04,
+     "day_pct": -11.8,
+     "fwd_return_pct": {
+      "m3": -13,
+      "m6": -10,
+      "m12": -29,
+      "m24": -47
+     },
+     "min_24m": {
+      "month": "2025-04",
+      "close": 53.27,
+      "pct": -51
+     },
+     "sources": [
+      {
+       "label": "OPB",
+       "url": "https://www.opb.org/article/2023/12/22/nike-layoffs-cost-cutting"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "NKE-2024-02-16",
+     "date": "2024-02-16",
+     "category": "restructuring",
+     "restructuring": true,
+     "macro_context": false,
+     "title": "R: ~2% del personal (>1,600)",
+     "detail": "Parte del plan de $2B.",
+     "close": 103.51,
+     "day_pct": -2.4,
+     "fwd_return_pct": {
+      "m3": -11,
+      "m6": -20,
+      "m12": -25,
+      "m24": -37
+     },
+     "min_24m": {
+      "month": "2025-04",
+      "close": 53.27,
+      "pct": -49
+     },
+     "sources": [
+      {
+       "label": "Globe and Mail",
+       "url": "https://theglobeandmail.com/business/international-business/article-nike-to-cut-about-2-of-its-work-force-to-lower-costs-as-demand-weakens/"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "NKE-2024-06-28",
+     "date": "2024-06-28",
+     "category": "guidance",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Guía FY25: ventas -mid single digit",
+     "detail": "Peor día de su historia.",
+     "close": 75.37,
+     "day_pct": -20.0,
+     "fwd_return_pct": {
+      "m3": 17,
+      "m6": -1,
+      "m12": -6,
+      "m24": -45
+     },
+     "min_24m": {
+      "month": "2026-06",
+      "close": 40.75,
+      "pct": -46
+     },
+     "sources": [
+      {
+       "label": "Al Jazeera",
+       "url": "https://www.aljazeera.com/economy/2024/6/28/nike-stock-plunges-on-surprise-forecast-of-drop-in-sales"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "NKE-2024-09-20",
+     "date": "2024-09-20",
+     "category": "ceo",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "CEO: Elliott Hill",
+     "detail": "Reemplaza a Donahoe; inicia 14-oct-24.",
+     "close": 86.52,
+     "day_pct": 6.8,
+     "fwd_return_pct": {
+      "m3": -11,
+      "m6": -17,
+      "m12": -18,
+      "m24": -58
+     },
+     "min_24m": {
+      "month": "2026-09",
+      "close": 35.51,
+      "pct": -59
+     },
+     "sources": [
+      {
+       "label": "ClickOnDetroit",
+       "url": "https://clickondetroit.com/business/2024/09/19/nike-names-elliott-hill-as-ceo-replacing-john-donahoe"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "NKE-2024-10-02",
+     "date": "2024-10-02",
+     "category": "guidance",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Retira guía FY25; pospone Investor Day",
+     "detail": "Guía 2T: ventas -8 a -10%.",
+     "close": 83.1,
+     "day_pct": -6.8,
+     "fwd_return_pct": {
+      "m3": -11,
+      "m6": -22,
+      "m12": -10,
+      "m24": -59
+     },
+     "min_24m": {
+      "month": "2026-10",
+      "close": 33.87,
+      "pct": -59
+     },
+     "sources": [
+      {
+       "label": "Fortune",
+       "url": "https://fortune.com/2024/10/02/nike-shares-fall-ceo-transition"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "NKE-2025-04-08",
+     "date": "2025-04-08",
+     "category": "macro",
+     "restructuring": false,
+     "macro_context": true,
+     "title": "Mínimo por aranceles",
+     "detail": "",
+     "close": 53.27,
+     "day_pct": -4.2,
+     "fwd_return_pct": {
+      "m3": 39,
+      "m6": 30,
+      "m12": -19,
+      "m24": null
+     },
+     "min_24m": {
+      "month": "2026-10",
+      "close": 33.87,
+      "pct": -36
+     },
+     "sources": [
+      {
+       "label": "FiscalAI",
+       "url": "https://fiscal.ai"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "NKE-2025-05-21",
+     "date": "2025-05-21",
+     "category": "channel_inventory",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Vuelve a vender directo a Amazon",
+     "detail": "Regreso a mayoristas. Día de reacción incierto (05-21 o 05-22).",
+     "close": 59.98,
+     "day_pct": -4.1,
+     "fwd_return_pct": {
+      "m3": 27,
+      "m6": 3,
+      "m12": -26,
+      "m24": null
+     },
+     "min_24m": {
+      "month": "2026-10",
+      "close": 33.87,
+      "pct": -44
+     },
+     "sources": [
+      {
+       "label": "Modern Retail",
+       "url": "https://www.modernretail.co/operations/amazon-is-working-directly-with-nike-to-source-their-products-according-to-an-email-to-sellers/"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "NKE-2025-06-27",
+     "date": "2025-06-27",
+     "category": "earnings",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "4T FY25 'mejor de lo temido'",
+     "detail": "Ventas -12%; impacto aranceles ~$1B.",
+     "close": 72.04,
+     "day_pct": 15.2,
+     "fwd_return_pct": {
+      "m3": -3,
+      "m6": -15,
+      "m12": -42,
+      "m24": null
+     },
+     "min_24m": {
+      "month": "2026-10",
+      "close": 33.87,
+      "pct": -53
+     },
+     "sources": [
+      {
+       "label": "Fortune",
+       "url": "https://fortune.com/2025/06/27/nike-stock-ceo-tariff-trump-china-trade-deal-q4-earnings"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "NKE-2025-07-28",
+     "date": "2025-07-28",
+     "category": "cycle_peak",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Máximo del rebote",
+     "detail": "",
+     "close": 79.24,
+     "day_pct": 3.9,
+     "fwd_return_pct": {
+      "m3": -15,
+      "m6": -21,
+      "m12": -46,
+      "m24": null
+     },
+     "min_24m": {
+      "month": "2026-10",
+      "close": 33.87,
+      "pct": -57
+     },
+     "sources": [
+      {
+       "label": "FiscalAI",
+       "url": "https://fiscal.ai"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "NKE-2025-12-19",
+     "date": "2025-12-19",
+     "category": "earnings",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "2T FY26: China -17%, Converse -30%",
+     "detail": "Margen bruto -300 pb por aranceles.",
+     "close": 58.71,
+     "day_pct": -10.5,
+     "fwd_return_pct": {
+      "m3": -9,
+      "m6": -26,
+      "m12": null,
+      "m24": null
+     },
+     "min_24m": {
+      "month": "2026-10",
+      "close": 33.87,
+      "pct": -42
+     },
+     "sources": [
+      {
+       "label": "AA",
+       "url": "https://aa.com.tr/en/economy/nike-shares-drop-105-after-china-sales-plummet-tariffs-hit-earnings/3775652"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "NKE-2026-03-05",
+     "date": "2026-03-05",
+     "category": "restructuring",
+     "restructuring": true,
+     "macro_context": false,
+     "title": "R: plan de costos (8-K Item 2.05)",
+     "detail": "~$300M de cargos, mayormente severance.",
+     "close": 58.02,
+     "day_pct": -1.1,
+     "fwd_return_pct": {
+      "m3": -26,
+      "m6": -34,
+      "m12": null,
+      "m24": null
+     },
+     "min_24m": {
+      "month": "2026-10",
+      "close": 33.87,
+      "pct": -42
+     },
+     "sources": [
+      {
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/320187/000032018726000017/nke-20260227.htm"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "NKE-2026-04-01",
+     "date": "2026-04-01",
+     "category": "guidance",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "3T FY26: guía 4T ventas -2 a -4%",
+     "detail": "Exceso de inventario; China ~-20%.",
+     "close": 44.63,
+     "day_pct": -15.5,
+     "fwd_return_pct": {
+      "m3": -4,
+      "m6": -21,
+      "m12": null,
+      "m24": null
+     },
+     "min_24m": {
+      "month": "2026-10",
+      "close": 33.87,
+      "pct": -24
+     },
+     "sources": [
+      {
+       "label": "MarketScreener",
+       "url": "https://www.marketscreener.com/news/nike-shares-tumble-after-surprise-sales-drop-forecast-ce7e51dfdd88ff25"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "NKE-2026-04-23",
+     "date": "2026-04-23",
+     "category": "restructuring",
+     "restructuring": true,
+     "macro_context": false,
+     "title": "R: ~1,400 empleos (Global Ops/tech)",
+     "detail": "Tech centralizado en Beaverton e India.",
+     "close": 44.78,
+     "day_pct": -2.0,
+     "fwd_return_pct": {
+      "m3": -8,
+      "m6": null,
+      "m12": null,
+      "m24": null
+     },
+     "min_24m": {
+      "month": "2026-10",
+      "close": 33.87,
+      "pct": -24
+     },
+     "sources": [
+      {
+       "label": "Retail Dive",
+       "url": "https://www.retaildive.com/news/nike-layoffs-cuts-thousands-tech-jobs/818391/"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "NKE-2026-06-23",
+     "date": "2026-06-23",
+     "category": "ceo",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "CFO: David Denton reemplaza a Matthew Friend",
+     "detail": "Efectivo mediados de ago-26.",
+     "close": 42.38,
+     "day_pct": -1.9,
+     "fwd_return_pct": {
+      "m3": -15,
+      "m6": null,
+      "m12": null,
+      "m24": null
+     },
+     "min_24m": {
+      "month": "2026-10",
+      "close": 33.87,
+      "pct": -20
+     },
+     "sources": [
+      {
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/0000320187/000032018726000070/nke-20260616.htm"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "NKE-2026-10-02",
+     "date": "2026-10-02",
+     "category": "restructuring",
+     "restructuring": true,
+     "macro_context": false,
+     "title": "R: programa 'Pace' + guía FY27 (mínimo hasta ahora)",
+     "detail": "~$1.0B cargos y ~$2.5B ahorro a FY31; guía FY27 ventas -high single digit; EPS aj. $1.15-1.35.",
+     "close": 33.87,
+     "day_pct": -3.6,
+     "fwd_return_pct": {
+      "m3": null,
+      "m6": null,
+      "m12": null,
+      "m24": null
+     },
+     "min_24m": null,
+     "sources": [
+      {
+       "label": "Nike",
+       "url": "https://about.nike.com/newsroom/releases/nike-inc-reports-fiscal-2027-first-quarter-results"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    }
+   ]
+  },
+  "LULU": {
+   "name": "Lululemon",
+   "fiscalai_key": "NASDAQ_LULU",
+   "last_close": {
+    "date": "2026-10-13",
+    "close": 94.34
+   },
+   "events": [
+    {
+     "id": "LULU-2009-03-09",
+     "date": "2009-03-09",
+     "category": "macro",
+     "restructuring": false,
+     "macro_context": true,
+     "title": "Mínimo de la crisis",
+     "detail": "-92% desde oct-07.",
+     "close": 2.245,
+     "day_pct": -0.2,
+     "fwd_return_pct": {
+      "m3": 222,
+      "m6": 381,
+      "m12": 651,
+      "m24": 1594
+     },
+     "min_24m": null,
+     "sources": [
+      {
+       "label": "FiscalAI",
+       "url": "https://fiscal.ai"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "LULU-2013-03-19",
+     "date": "2013-03-19",
+     "category": "product_crisis",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Retiro de calzas transparentes",
+     "detail": "~17% de los pantalones de mujer en tienda.",
+     "close": 64.08,
+     "day_pct": -2.8,
+     "fwd_return_pct": {
+      "m3": 1,
+      "m6": 15,
+      "m12": -22,
+      "m24": 0
+     },
+     "min_24m": {
+      "month": "2014-06",
+      "close": 37.25,
+      "pct": -42
+     },
+     "sources": [
+      {
+       "label": "CNBC",
+       "url": "https://www.cnbc.com/2013/03/18/lululemon-withdraws-sheer-yoga-pants-stock-drops.html"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "LULU-2013-06-10",
+     "date": "2013-06-10",
+     "category": "cycle_peak",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Pico del ciclo",
+     "detail": "",
+     "close": 82.28,
+     "day_pct": 1.0,
+     "fwd_return_pct": {
+      "m3": -15,
+      "m6": -16,
+      "m12": -45,
+      "m24": -19
+     },
+     "min_24m": {
+      "month": "2014-06",
+      "close": 37.25,
+      "pct": -55
+     },
+     "sources": [
+      {
+       "label": "FiscalAI",
+       "url": "https://fiscal.ai"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "LULU-2013-06-11",
+     "date": "2013-06-11",
+     "category": "ceo",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "CEO: salida de Christine Day",
+     "detail": "Sin sucesor anunciado.",
+     "close": 67.85,
+     "day_pct": -17.5,
+     "fwd_return_pct": {
+      "m3": 2,
+      "m6": 1,
+      "m12": -35,
+      "m24": -3
+     },
+     "min_24m": {
+      "month": "2014-06",
+      "close": 37.25,
+      "pct": -45
+     },
+     "sources": [
+      {
+       "label": "Globe and Mail",
+       "url": "https://www.theglobeandmail.com/report-on-business/lululemon-ceo-christine-day-stepping-down/article12459231"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "LULU-2013-12-10",
+     "date": "2013-12-10",
+     "category": "ceo",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "CEO: Laurent Potdevin; Wilson deja la presidencia",
+     "detail": "Potdevin desde ene-14.",
+     "close": 69.12,
+     "day_pct": -1.7,
+     "fwd_return_pct": {
+      "m3": -29,
+      "m6": -34,
+      "m12": -32,
+      "m24": -34
+     },
+     "min_24m": {
+      "month": "2014-06",
+      "close": 37.25,
+      "pct": -46
+     },
+     "sources": [
+      {
+       "label": "Lululemon",
+       "url": "https://corporate.lululemon.com/media/press-releases/2013/12-10-2013-085211223"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "LULU-2014-01-13",
+     "date": "2014-01-13",
+     "category": "guidance",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Recorte de guía 4T (tráfico débil)",
+     "detail": "Ventas $513-518M (antes $535-540M).",
+     "close": 49.7,
+     "day_pct": -16.6,
+     "fwd_return_pct": {
+      "m3": 5,
+      "m6": -22,
+      "m12": 27,
+      "m24": 13
+     },
+     "min_24m": {
+      "month": "2014-06",
+      "close": 37.25,
+      "pct": -25
+     },
+     "sources": [
+      {
+       "label": "Bloomberg",
+       "url": "https://www.bloomberg.com/news/articles/2014-01-13/lululemon-falls-after-cutting-revenue-earnings-forecast"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "LULU-2014-06-12",
+     "date": "2014-06-12",
+     "category": "cycle_trough",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "3er recorte de guía + recompra $450M (mínimo del ciclo)",
+     "detail": "EPS FY $1.71-1.76 (antes $1.80-1.90).",
+     "close": 37.25,
+     "day_pct": -15.9,
+     "fwd_return_pct": {
+      "m3": 21,
+      "m6": 42,
+      "m12": 78,
+      "m24": 88
+     },
+     "min_24m": null,
+     "sources": [
+      {
+       "label": "Bloomberg",
+       "url": "https://www.bloomberg.com/news/articles/2014-06-12/lululemon-reduces-forecast-even-as-earnings-exceed-estimates"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "LULU-2014-08-07",
+     "date": "2014-08-07",
+     "category": "ceo",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Wilson vende mitad a Advent; fin de la pelea",
+     "detail": "$845M por ~13.85%; standstill hasta 2016.",
+     "close": 39.03,
+     "day_pct": -2.4,
+     "fwd_return_pct": {
+      "m3": 12,
+      "m6": 68,
+      "m12": 60,
+      "m24": 101
+     },
+     "min_24m": {
+      "month": "2014-08",
+      "close": 38.37,
+      "pct": -2
+     },
+     "sources": [
+      {
+       "label": "Bloomberg",
+       "url": "https://www.bloomberg.com/news/articles/2014-08-07/lululemon-founder-wilson-sells-half-his-stake-to-advent"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "LULU-2015-12-09",
+     "date": "2015-12-09",
+     "category": "channel_inventory",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Exceso de inventario (mínimo local)",
+     "detail": "Inventario $358M vs $230M; margen bruto 46.9% vs 50.3%.",
+     "close": 45.315,
+     "day_pct": -13.1,
+     "fwd_return_pct": {
+      "m3": 37,
+      "m6": 60,
+      "m12": 53,
+      "m24": 63
+     },
+     "min_24m": null,
+     "sources": [
+      {
+       "label": "BIV",
+       "url": "https://www.biv.com/news/retail-manufacturing/lululemon-stock-falls-almost-10-release-q3-results-8244990"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "LULU-2016-03-30",
+     "date": "2016-03-30",
+     "category": "strategy",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Plan 2020: ventas >$4B",
+     "detail": "~$1B cada uno: hombres, e-commerce, internacional.",
+     "close": 67.8,
+     "day_pct": 10.7,
+     "fwd_return_pct": {
+      "m3": 9,
+      "m6": -10,
+      "m12": -25,
+      "m24": 29
+     },
+     "min_24m": {
+      "month": "2017-05",
+      "close": 47.91,
+      "pct": -29
+     },
+     "sources": [
+      {
+       "label": "Fortune",
+       "url": "https://fortune.com/2016/03/30/lululemon-shares-are-climbing"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "LULU-2017-03-30",
+     "date": "2017-03-30",
+     "category": "product_crisis",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Producto 'aburrido'; guía 1T comps negativos",
+     "detail": "Mayor caída en 8 años.",
+     "close": 50.76,
+     "day_pct": -23.4,
+     "fwd_return_pct": {
+      "m3": 18,
+      "m6": 24,
+      "m12": 72,
+      "m24": 226
+     },
+     "min_24m": {
+      "month": "2017-05",
+      "close": 47.91,
+      "pct": -6
+     },
+     "sources": [
+      {
+       "label": "Bloomberg",
+       "url": "https://www.bloomberg.com/news/articles/2017-03-29/lululemon-tumbles-as-yogawear-maker-s-outlook-misses-estimates"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "LULU-2017-05-30",
+     "date": "2017-05-30",
+     "category": "cycle_trough",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Mínimo del ciclo",
+     "detail": "",
+     "close": 47.91,
+     "day_pct": -0.7,
+     "fwd_return_pct": {
+      "m3": 20,
+      "m6": 40,
+      "m12": 120,
+      "m24": 242
+     },
+     "min_24m": null,
+     "sources": [
+      {
+       "label": "FiscalAI",
+       "url": "https://fiscal.ai"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "LULU-2017-06-02",
+     "date": "2017-06-02",
+     "category": "restructuring",
+     "restructuring": true,
+     "macro_context": false,
+     "title": "R: cierre de tiendas ivivva",
+     "detail": "40 de 55 (luego 47); $50-60M costo.",
+     "close": 54.29,
+     "day_pct": 11.5,
+     "fwd_return_pct": {
+      "m3": 13,
+      "m6": 24,
+      "m12": 130,
+      "m24": 202
+     },
+     "min_24m": {
+      "month": "2017-06",
+      "close": 51.7,
+      "pct": -5
+     },
+     "sources": [
+      {
+       "label": "Globe and Mail",
+       "url": "https://www.theglobeandmail.com/report-on-business/lululemon-to-close-40-ivivva-stores/article35181166/"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "LULU-2017-12-07",
+     "date": "2017-12-07",
+     "category": "earnings",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Evidencia: comps +8%, sube guía",
+     "detail": "Reafirma meta $4B 2020.",
+     "close": 72.01,
+     "day_pct": 6.4,
+     "fwd_return_pct": {
+      "m3": 13,
+      "m6": 70,
+      "m12": 58,
+      "m24": 221
+     },
+     "min_24m": null,
+     "sources": [
+      {
+       "label": "FashionUnited",
+       "url": "https://fashionunited.com/executive/report/lululemon-athletica-shares-hold-on-to-significant-gains/2017120818685"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "LULU-2018-02-06",
+     "date": "2018-02-06",
+     "category": "ceo",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "CEO: Potdevin sale por conducta",
+     "detail": "Glenn Murphy interino.",
+     "close": 78.62,
+     "day_pct": 1.6,
+     "fwd_return_pct": {
+      "m3": 24,
+      "m6": 61,
+      "m12": 85,
+      "m24": 210
+     },
+     "min_24m": {
+      "month": "2018-02",
+      "close": 76.67,
+      "pct": -2
+     },
+     "sources": [
+      {
+       "label": "CNBC",
+       "url": "https://www.cnbc.com/2018/02/05/lululemon-ceo-laurent-potdevin-to-resign.html"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "LULU-2018-07-25",
+     "date": "2018-07-25",
+     "category": "ceo",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "CEO: Calvin McDonald (Sephora)",
+     "detail": "Inicia 20-ago-18.",
+     "close": 125.03,
+     "day_pct": 1.7,
+     "fwd_return_pct": {
+      "m3": 10,
+      "m6": 21,
+      "m12": 53,
+      "m24": 165
+     },
+     "min_24m": {
+      "month": "2018-12",
+      "close": 113.26,
+      "pct": -9
+     },
+     "sources": [
+      {
+       "label": "CNBC",
+       "url": "https://www.cnbc.com/2018/07/24/lululemon-appoints-calvin-mcdonald-as-ceo.html"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "LULU-2019-04-24",
+     "date": "2019-04-24",
+     "category": "strategy",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Plan 'Power of Three'",
+     "detail": "Duplicar hombres y digital, cuadruplicar internacional a 2023.",
+     "close": 178.27,
+     "day_pct": 0.8,
+     "fwd_return_pct": {
+      "m3": 8,
+      "m6": 16,
+      "m12": 20,
+      "m24": 89
+     },
+     "min_24m": {
+      "month": "2020-03",
+      "close": 138.98,
+      "pct": -22
+     },
+     "sources": [
+      {
+       "label": "8-K",
+       "url": "https://www.sec.gov/Archives/edgar/data/1397187/000139718719000034/lulu-20190424xex991.htm"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "LULU-2020-06-29",
+     "date": "2020-06-29",
+     "category": "portfolio",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Compra de Mirror por $500M",
+     "detail": "",
+     "close": 294.35,
+     "day_pct": 1.7,
+     "fwd_return_pct": {
+      "m3": 10,
+      "m6": 20,
+      "m12": 25,
+      "m24": -4
+     },
+     "min_24m": {
+      "month": "2022-05",
+      "close": 257.51,
+      "pct": -13
+     },
+     "sources": [
+      {
+       "label": "Bloomberg",
+       "url": "https://www.bloomberg.com/news/articles/2020-06-29/lululemon-to-buy-home-fitness-company-mirror-for-500-million"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "LULU-2022-04-20",
+     "date": "2022-04-20",
+     "category": "strategy",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "'Power of Three x2': $12.5B a 2026",
+     "detail": "15% CAGR.",
+     "close": 385.4,
+     "day_pct": -4.8,
+     "fwd_return_pct": {
+      "m3": -21,
+      "m6": -24,
+      "m12": -2,
+      "m24": -6
+     },
+     "min_24m": {
+      "month": "2022-05",
+      "close": 257.51,
+      "pct": -33
+     },
+     "sources": [
+      {
+       "label": "BusinessWire",
+       "url": "https://www.businesswire.com/news/home/20220420005401/en/"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "LULU-2022-12-09",
+     "date": "2022-12-09",
+     "category": "channel_inventory",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Inventario +85% a $1.7B",
+     "detail": "Margen bruto bajo lo esperado.",
+     "close": 326.39,
+     "day_pct": -12.8,
+     "fwd_return_pct": {
+      "m3": -8,
+      "m6": 10,
+      "m12": 54,
+      "m24": 24
+     },
+     "min_24m": {
+      "month": "2024-08",
+      "close": 233.4,
+      "pct": -28
+     },
+     "sources": [
+      {
+       "label": "BusinessWire",
+       "url": "https://www.businesswire.com/news/home/20221208005922/en/lululemon-athletica-inc.-Announces-Third-Quarter-Fiscal-2022-Results"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "LULU-2023-03-29",
+     "date": "2023-03-29",
+     "category": "portfolio",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Castigo contable de Mirror ($443M)",
+     "detail": "Ventas +30%.",
+     "close": 361.04,
+     "day_pct": 12.7,
+     "fwd_return_pct": {
+      "m3": 3,
+      "m6": 7,
+      "m12": 7,
+      "m24": -22
+     },
+     "min_24m": {
+      "month": "2024-08",
+      "close": 233.4,
+      "pct": -35
+     },
+     "sources": [
+      {
+       "label": "BNN",
+       "url": "https://www.bnnbloomberg.ca/lululemon-shares-up-more-than-10-after-reporting-q4-revenue-up-30-from-year-ago-1.1902041"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "LULU-2023-12-29",
+     "date": "2023-12-29",
+     "category": "cycle_peak",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Máximo histórico",
+     "detail": "",
+     "close": 511.29,
+     "day_pct": 0.4,
+     "fwd_return_pct": {
+      "m3": -25,
+      "m6": -41,
+      "m12": -25,
+      "m24": -58
+     },
+     "min_24m": {
+      "month": "2025-09",
+      "close": 159.87,
+      "pct": -69
+     },
+     "sources": [
+      {
+       "label": "FiscalAI",
+       "url": "https://fiscal.ai"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "LULU-2024-03-22",
+     "date": "2024-03-22",
+     "category": "guidance",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Se frena tráfico EE.UU.; guía 2024 débil",
+     "detail": "",
+     "close": 403.19,
+     "day_pct": -15.8,
+     "fwd_return_pct": {
+      "m3": -23,
+      "m6": -36,
+      "m12": -17,
+      "m24": -59
+     },
+     "min_24m": {
+      "month": "2026-03",
+      "close": 157.78,
+      "pct": -61
+     },
+     "sources": [
+      {
+       "label": "Bloomberg",
+       "url": "https://www.bloomberg.com/news/articles/2024-03-21/lululemon-slumps-following-slower-than-expected-sales-outlook"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "LULU-2024-05-22",
+     "date": "2024-05-22",
+     "category": "ceo",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Sale la CPO Sun Choe; se elimina el cargo",
+     "detail": "",
+     "close": 299.63,
+     "day_pct": -7.2,
+     "fwd_return_pct": {
+      "m3": -12,
+      "m6": 6,
+      "m12": 7,
+      "m24": -58
+     },
+     "min_24m": {
+      "month": "2026-05",
+      "close": 119.14,
+      "pct": -60
+     },
+     "sources": [
+      {
+       "label": "The Logic",
+       "url": "https://thelogic.co/briefing/lululemon-stock-falls-on-chief-product-officer-departure-team-restructuring/"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "LULU-2024-07-25",
+     "date": "2024-07-25",
+     "category": "product_crisis",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Retiro de Breezethrough",
+     "detail": "",
+     "close": 247.32,
+     "day_pct": -9.1,
+     "fwd_return_pct": {
+      "m3": 23,
+      "m6": 63,
+      "m12": -11,
+      "m24": -52
+     },
+     "min_24m": {
+      "month": "2026-06",
+      "close": 105.43,
+      "pct": -57
+     },
+     "sources": [
+      {
+       "label": "SGB",
+       "url": "https://sgbonline.com/exec-lululemon-pulling-breezethrough-leggings-line-stock-price-targets-cut/"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "LULU-2024-12-06",
+     "date": "2024-12-06",
+     "category": "earnings",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Beat, sube guía, +$1B recompra",
+     "detail": "",
+     "close": 399.6,
+     "day_pct": 15.9,
+     "fwd_return_pct": {
+      "m3": -13,
+      "m6": -34,
+      "m12": -54,
+      "m24": null
+     },
+     "min_24m": {
+      "month": "2026-10",
+      "close": 91.88,
+      "pct": -77
+     },
+     "sources": [
+      {
+       "label": "BusinessWire",
+       "url": "https://www.businesswire.com/news/home/20241205433612/en/lululemon-athletica-inc.-Announces-Third-Quarter-Fiscal-2024-Results"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "LULU-2025-06-06",
+     "date": "2025-06-06",
+     "category": "restructuring",
+     "restructuring": true,
+     "macro_context": false,
+     "title": "R: recorte de EPS por aranceles; ~150 empleos corporativos",
+     "detail": "EPS FY $14.58-14.78 (antes $14.95-15.15).",
+     "close": 265.27,
+     "day_pct": -19.8,
+     "fwd_return_pct": {
+      "m3": -37,
+      "m6": -31,
+      "m12": -56,
+      "m24": null
+     },
+     "min_24m": {
+      "month": "2026-10",
+      "close": 91.88,
+      "pct": -65
+     },
+     "sources": [
+      {
+       "label": "CP24",
+       "url": "https://www.cp24.com/news/money/2025/06/06/lululemon-shares-tumble-as-yogawear-firm-warns-tariffs-will-crimp-profit"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "LULU-2025-09-05",
+     "date": "2025-09-05",
+     "category": "guidance",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Fuerte recorte de guía (aranceles + de minimis)",
+     "detail": "EPS FY $12.77-12.97; ~$240M/año de impacto.",
+     "close": 167.8,
+     "day_pct": -18.6,
+     "fwd_return_pct": {
+      "m3": 13,
+      "m6": 3,
+      "m12": -39,
+      "m24": null
+     },
+     "min_24m": {
+      "month": "2026-10",
+      "close": 91.88,
+      "pct": -45
+     },
+     "sources": [
+      {
+       "label": "HL",
+       "url": "https://www.hl.co.uk/shares/stock-market-news/company--news/shares-plunge-as-lululemon-warns-on-profits"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "LULU-2025-12-12",
+     "date": "2025-12-12",
+     "category": "ceo",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "CEO: McDonald anuncia salida",
+     "detail": "Co-CEOs interinos Frank y Maestrini.",
+     "close": 204.97,
+     "day_pct": 9.6,
+     "fwd_return_pct": {
+      "m3": -23,
+      "m6": -42,
+      "m12": null,
+      "m24": null
+     },
+     "min_24m": {
+      "month": "2026-10",
+      "close": 91.88,
+      "pct": -55
+     },
+     "sources": [
+      {
+       "label": "FashionUnited",
+       "url": "https://fashionunited.uk/news/business/lululemon-ceo-calvin-mcdonald-to-step-down-amid-u-s-challenges/2025121285318"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "LULU-2025-12-18",
+     "date": "2025-12-18",
+     "category": "ceo",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Elliott (>$1B) propone a Jane Nielsen (ex-RL)",
+     "detail": "",
+     "close": 215.11,
+     "day_pct": 3.5,
+     "fwd_return_pct": {
+      "m3": -23,
+      "m6": -48,
+      "m12": null,
+      "m24": null
+     },
+     "min_24m": {
+      "month": "2026-10",
+      "close": 91.88,
+      "pct": -57
+     },
+     "sources": [
+      {
+       "label": "BNN",
+       "url": "https://www.bnnbloomberg.ca/business/2025/12/18/lululemon-surges-on-elliotts-us1-billion-bet-ahead-of-leadership-change/"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "LULU-2026-04-23",
+     "date": "2026-04-23",
+     "category": "ceo",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "CEO: Heidi O'Neill (ex-Nike)",
+     "detail": "Inicia 8-sep-26.",
+     "close": 141.66,
+     "day_pct": -13.3,
+     "fwd_return_pct": {
+      "m3": -22,
+      "m6": null,
+      "m12": null,
+      "m24": null
+     },
+     "min_24m": {
+      "month": "2026-10",
+      "close": 91.88,
+      "pct": -35
+     },
+     "sources": [
+      {
+       "label": "BNN",
+       "url": "https://www.bnnbloomberg.ca/business/2026/04/23/lululemon-ceo-hire-from-nike-fails-to-impress-investors-shares-sink/"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "LULU-2026-05-28",
+     "date": "2026-05-28",
+     "category": "ceo",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Acuerdo con Chip Wilson en la pelea por el directorio",
+     "detail": "2 directores nuevos; standstill ~18 meses.",
+     "close": 131.33,
+     "day_pct": 0.2,
+     "fwd_return_pct": {
+      "m3": -8,
+      "m6": null,
+      "m12": null,
+      "m24": null
+     },
+     "min_24m": {
+      "month": "2026-10",
+      "close": 91.88,
+      "pct": -30
+     },
+     "sources": [
+      {
+       "label": "Just Style",
+       "url": "https://www.just-style.com/newsletters/lululemon-settles-proxy-battle-with-founder-as-new-directors-join-board"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "LULU-2026-09-04",
+     "date": "2026-09-04",
+     "category": "guidance",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "3er recorte de guía FY26",
+     "detail": "Ventas -5 a -7%; comps América -12%.",
+     "close": 100.61,
+     "day_pct": -17.4,
+     "fwd_return_pct": {
+      "m3": null,
+      "m6": null,
+      "m12": null,
+      "m24": null
+     },
+     "min_24m": {
+      "month": "2026-10",
+      "close": 91.88,
+      "pct": -9
+     },
+     "sources": [
+      {
+       "label": "TIKR",
+       "url": "https://www.tikr.com/blog/lululemon-stock-crashed-17-on-friday-the-guidance-cut-was-the-real-story"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    },
+    {
+     "id": "LULU-2026-10-07",
+     "date": "2026-10-07",
+     "category": "cycle_trough",
+     "restructuring": false,
+     "macro_context": false,
+     "title": "Mínimo hasta ahora (no confirmado)",
+     "detail": "",
+     "close": 91.88,
+     "day_pct": -1.8,
+     "fwd_return_pct": {
+      "m3": null,
+      "m6": null,
+      "m12": null,
+      "m24": null
+     },
+     "min_24m": null,
+     "sources": [
+      {
+       "label": "FiscalAI",
+       "url": "https://fiscal.ai"
+      }
+     ],
+     "source_verified_by_orchestrator": false
+    }
+   ]
+  }
+ },
+ "cycles": [
+  {
+   "company": "RL",
+   "label": "RL 2013-17",
+   "peak": {
+    "date": "2013-05-21",
+    "close": 189.56
+   },
+   "trough": {
+    "date": "2017-05-26",
+    "close": 66.11
+   },
+   "drawdown_pct": -65,
+   "years": 4.0,
+   "confirmed": true,
+   "at_trough": "CEO nuevo (9 días antes) + guía FY18 rebajada al máximo",
+   "rebound_12m_pct": 105
+  },
+  {
+   "company": "NKE",
+   "label": "NKE 2008-09",
+   "peak": {
+    "date": "2008-06-05",
+    "close": 17.52
+   },
+   "trough": {
+    "date": "2009-03-09",
+    "close": 9.64
+   },
+   "drawdown_pct": -45,
+   "years": 0.75,
+   "confirmed": true,
+   "at_trough": "Crisis + R (recorte 4%) un mes antes",
+   "rebound_12m_pct": 79
+  },
+  {
+   "company": "NKE",
+   "label": "NKE 2012",
+   "peak": {
+    "date": "2012-05-03",
+    "close": 28.6
+   },
+   "trough": {
+    "date": "2012-06-29",
+    "close": 21.95
+   },
+   "drawdown_pct": -23,
+   "years": 0.16,
+   "confirmed": true,
+   "at_trough": "Miss + exceso de inventario; venta de marcas el mes previo",
+   "rebound_12m_pct": 42
+  },
+  {
+   "company": "NKE",
+   "label": "NKE 2015-16",
+   "peak": {
+    "date": "2015-11-27",
+    "close": 67.17
+   },
+   "trough": {
+    "date": "2016-11-01",
+    "close": 49.62
+   },
+   "drawdown_pct": -26,
+   "years": 0.93,
+   "confirmed": false,
+   "at_trough": "Sin reestructuración; no llegó a -30%",
+   "rebound_12m_pct": null
+  },
+  {
+   "company": "LULU",
+   "label": "LULU 2013-14",
+   "peak": {
+    "date": "2013-06-10",
+    "close": 82.28
+   },
+   "trough": {
+    "date": "2014-06-12",
+    "close": 37.25
+   },
+   "drawdown_pct": -55,
+   "years": 1.0,
+   "confirmed": true,
+   "at_trough": "3er recorte de guía + recompra; CEO nuevo 6 meses antes",
+   "rebound_12m_pct": 78
+  },
+  {
+   "company": "LULU",
+   "label": "LULU 2016-17",
+   "peak": {
+    "date": "2016-08-19",
+    "close": 80.65
+   },
+   "trough": {
+    "date": "2017-05-30",
+    "close": 47.91
+   },
+   "drawdown_pct": -41,
+   "years": 0.78,
+   "confirmed": true,
+   "at_trough": "Guía rebajada + R (ivivva) 3 días después",
+   "rebound_12m_pct": 120
+  },
+  {
+   "company": "NKE",
+   "label": "NKE actual",
+   "peak": {
+    "date": "2021-11-05",
+    "close": 177.51
+   },
+   "trough": {
+    "date": "2026-10-02",
+    "close": 33.87
+   },
+   "drawdown_pct": -81,
+   "years": 4.9,
+   "confirmed": false,
+   "at_trough": "R 'Pace' + guía FY27 en caída; CEO desde hace 2 años",
+   "rebound_12m_pct": null
+  },
+  {
+   "company": "LULU",
+   "label": "LULU actual",
+   "peak": {
+    "date": "2023-12-29",
+    "close": 511.29
+   },
+   "trough": {
+    "date": "2026-10-07",
+    "close": 91.88
+   },
+   "drawdown_pct": -82,
+   "years": 2.8,
+   "confirmed": false,
+   "at_trough": "3er recorte de guía; CEO nueva desde hace 1 mes",
+   "rebound_12m_pct": null
+  }
+ ],
+ "data_issues": [
+  "FiscalAI RL: faltan precios 2025-11-18 a 2025-11-21 y algunos días de feb-2026; el -9.7% de 2021-11-02 parece error de datos.",
+  "FiscalAI NKE: fila con fecha de sábado (2026-07-18).",
+  "Sin verificar: fecha de lanzamiento de 'Win Now' (NKE); hora del anuncio de algunos hitos (marcado en detail); causa de varios días LULU de ±10% (no incluidos)."
+ ]
+}

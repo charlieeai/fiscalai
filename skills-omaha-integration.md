@@ -2,17 +2,9 @@
 
 Para: art-val, one-pager, reporte-q, q-pulse, earnings-forensics (y forensic-accounting).
 
-**Por qué:** cada skill guardaba su propia copia de los números y de las decisiones. El net debt de LEN a 3Q26 salió distinto en tres lugares: $4,818M en Valuation, $4,218M en el Reporte Q y $4,200M en el one-pager. Con este bloque, cada skill lee de la plataforma antes de FiscalAI. Una decisión se registra una sola vez, y las cifras propias viven en el catálogo de métricas de cada empresa.
+**Por qué:** cada skill guardaba su propia copia de los números y de las decisiones. El net debt de LEN a 3Q26 salió distinto en tres lugares: $4,818M en Valuation, $4,218M en el Reporte Q y $4,200M en el one-pager. Con este bloque, cada skill lee de la plataforma antes de FiscalAI. Una decisión se registra una sola vez.
 
-**Cómo están guardadas las cifras (desde el 30-sep-2026):**
-
-- `metric_catalog`: las métricas de cada empresa, con su definición.
-  - `kind = 'input'`: las llena el analista en su Google Sheet.
-  - `kind = 'derived'`: las calcula la plataforma con `formula`.
-- `catalog_values`: los valores de los inputs.
-  - Vienen de la última importación del Sheet (`source` = lo que escribió el analista) o de la precarga de FiscalAI (`source = 'FiscalAI'`).
-  - El Sheet es la fuente de verdad: una importación reemplaza todos los valores de la empresa.
-- `data_points` (el Data book viejo) queda solo como archivo histórico. **No se escribe más ahí.**
+**Cifras (desde el 21-oct-2026):** el catálogo de métricas (`metric_catalog`, `catalog_values`) se retiró de la plataforma; las tablas quedan archivadas (ver `backup/metric-catalog/README.md`). Las cifras salen de la valuación de la plataforma (`valuations`, `valuation_lines`) y, después, de FiscalAI. `data_points` (el Data book viejo) queda solo como archivo histórico.
 
 **Canal:** el conector de Lovable, herramienta `query_database`, con `project_id = 1cfc33e1-fa07-40f3-a8ee-609966fcebc5`.
 
@@ -35,35 +27,25 @@ Para: art-val, one-pager, reporte-q, q-pulse, earnings-forensics (y forensic-acc
    ORDER BY decided_at DESC;
    position_id NULL = regla de la casa (ej. historia de net debt = promedio 3 años, nunca CAGR).
 
-3. Catálogo de la empresa (definiciones y fórmulas):
-   SELECT key, label, kind, unit, segment, definition, formula, aggregation, section
-   FROM metric_catalog WHERE position_id = '<POSITION_ID>' AND member_ticker IS NOT DISTINCT FROM <MEMBER|NULL>
-   ORDER BY sort_order;
-   - Usa las definiciones del catálogo para nombrar y calcular (ej. EBITDA, net debt, homes delivered).
-   - unit: USD_M = millones de la moneda de reporte (la definición lo dice si no es USD); USD = unidades de
-     moneda; units = unidades; M_units = millones de unidades; pct = puntos (22.8 = 22.8%); x = múltiplo.
-
-4. Valores (usar ANTES que FiscalAI):
-   SELECT metric_key, period, period_type, fiscal_year, fiscal_quarter, value, source, source_ref, note
-   FROM catalog_values WHERE position_id = '<POSITION_ID>' AND member_ticker IS NOT DISTINCT FROM <MEMBER|NULL>
-   ORDER BY metric_key, fiscal_year, fiscal_quarter NULLS FIRST;
-   - Períodos: 'FY2025', '3Q FY2026', 'LTM 3Q FY2026'.
-   - LTM que falte: flujos = suma de 4 trimestres; saldos = último trimestre; aggregation 'avg' = promedio.
-   - Derivadas: calcúlalas con la fórmula del catálogo sobre estos valores; si falta un input, no la inventes.
-   - source distinto de 'FiscalAI' = cifra del analista: gana siempre. Si FiscalAI difiere >1%, muéstralo como nota.
-   - Si falta en el catálogo: usa FiscalAI y márcalo "FiscalAI" en el output.
+3. Valuación de la plataforma (antes que FiscalAI para las cifras que ya están ahí):
+   SELECT v.id, v.label, v.method, v.is_primary, v.target_price, v.currency, l.label, l.metric_key,
+          l.target_value, l.current_value, l.multiple, l.rationale
+   FROM valuations v LEFT JOIN valuation_lines l ON l.valuation_id = v.id
+   WHERE v.position_id = '<POSITION_ID>' AND v.member_ticker IS NOT DISTINCT FROM <MEMBER|NULL>
+   ORDER BY v.is_primary DESC, l.sort_order;
+   - Lo que no esté ahí: FiscalAI, marcado "FiscalAI" en el output.
 
 ## Paso final — registrar el output
 
-5. INSERT INTO skill_outputs (position_id, member_ticker, skill_name, quarter_tag, artifact_link, result_text)
-   VALUES ('<POSITION_ID>', <'<MEMBER>'|NULL>, '<qpulse|art_val|one_pager|reporte_q|earnings_forensics|forensic_accounting>',
+4. INSERT INTO skill_outputs (position_id, member_ticker, skill_name, quarter_tag, artifact_link, result_text)
+   VALUES ('<POSITION_ID>', <'<MEMBER>'|NULL>, '<qpulse|art_val|one_pager|reporte_q|q_report|earnings_forensics|forensic_accounting>',
            '<2026Q3>', '<https://claude.ai/...>', '<resumen de 1-3 líneas o el texto completo de q-pulse>');
    - quarter_tag = año fiscal + trimestre del último período reportado.
-   - En canastas, el output de un miembro va con su member_ticker; un one-pager o Reporte Q de toda la canasta
+   - reporte_q = Q-Report Charts (chart-first); q_report = Q-Report narrativo. Cada uno tiene su botón en el header.
+   - En canastas, el output de un miembro va con su member_ticker; un one-pager o Q-Report de toda la canasta
      va con member_ticker NULL.
 
-6. Cifras nuevas extraídas de filings: NO se escriben en la base. Van en el output con documento y página;
-   el analista las pasa a su Sheet si las acepta.
+5. Cifras nuevas extraídas de filings: NO se escriben en la base. Van en el output con documento y página.
 ```
 
 ---
@@ -71,17 +53,18 @@ Para: art-val, one-pager, reporte-q, q-pulse, earnings-forensics (y forensic-acc
 ## Notas por skill (agregar debajo del bloque común)
 
 ### art-val
-- La tabla histórica y el ancla LTM salen del catálogo cuando existen. Así el modelo parte de los mismos números que Valuation.
+- El ancla LTM parte de los mismos números que la valuación de la plataforma cuando existen.
 - Los presets bear/base/bull respetan las decisiones. Ejemplo: net debt consolidado en el EV si `net_debt` lo dice.
 
 ### one-pager
-- Net debt, EBITDA y EV/EBITDA siguen las definiciones del catálogo y las decisiones de la posición.
-- El comparable usa el catálogo de su propia posición si existe; si no, FiscalAI.
+- Net debt, EBITDA y EV/EBITDA siguen las decisiones de la posición.
 
 ### reporte-q
 - Formato: HTML chart-first (guía `GUIA-reporte-q-chart-first.md`; bases aprobadas LEN, CTT, DGE, Auna). No el DOCX.
-- Compara los KPIs del release con `catalog_values`. Cada diferencia >1% va en la sección de verificación, con documento y página.
-- Lista al final las cifras del trimestre que el analista debería agregar a su Sheet.
+- Se registra como `reporte_q` (botón "Q-Report Charts"). El análisis de cada gráfico se titula "AI Analysis".
+
+### q-report
+- Ensayo narrativo sobre el Q-Report Charts del mismo trimestre (skill `q-report`). Se registra como `q_report` (botón "Q-Report").
 
 ### q-pulse
 - Usa la tesis (`own_thesis`: claims y breakers), el scorecard y la valuación primaria de la plataforma como vara.
@@ -89,4 +72,4 @@ Para: art-val, one-pager, reporte-q, q-pulse, earnings-forensics (y forensic-acc
 - La cifra del trimestre que choque con un breaker se cita con su fuente.
 
 ### earnings-forensics / forensic-accounting
-- Usa las mismas definiciones del catálogo (deuda consolidada, EBITDA con D&A real).
+- Usa las decisiones de la posición (deuda consolidada, EBITDA con D&A real).

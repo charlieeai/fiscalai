@@ -70,7 +70,7 @@ afirmaciones. Esqueleto por defecto (adaptar al caso):
 Gráficos: 2–3 como máximo, solo si prueban un punto del texto.
 
 ## Fase 3 — Redacción
-Primera persona del analista para el análisis ("I"); "we/our" para la valuación y el IVO de Omaha. Para decisiones de posición, "I suggest holding/adding/trimming", nunca "I am holding". Sin firma de autor. Inglés. ~1,500 palabras (±10%).
+Primera persona del analista para el análisis ("I"); "we/our" para la valuación y el IVO de Omaha. El documento es informativo: nada de recomendaciones ("buy", "sell", "hold", "I suggest holding", "we recommend"). La conclusión dice si el valor fundamental del negocio es mayor o menor que lo que percibe el mercado (IVO vs precio), de dónde sale la brecha y qué la cerraría. Sin firma de autor. Inglés. ~1,500 palabras (±10%).
 Frases cortas y directas. Las citas del call se usan como evidencia y se comentan, no se resumen.
 Cada cifra lleva su fuente en una nota numerada al final. Sin adornos ni frases hechas.
 
@@ -81,6 +81,8 @@ Cada cifra lleva su fuente en una nota numerada al final. Sin adornos ni frases 
 - Toda premisa del analista contrastada con evidencia (si la evidencia la contradice, el texto
   lo dice y se avisa al analista).
 - Siglas explicadas la primera vez (p. ej. GMV).
+- Cero lenguaje de recomendación (buscar buy/sell/hold/suggest/recommend antes de publicar).
+- Si se cita a un activista o accionista con asiento en el directorio, se declara su interés.
 - Conteo de palabras dentro del rango. Lista de hipótesis marcadas como tales.
 No se publica si algo falla.
 

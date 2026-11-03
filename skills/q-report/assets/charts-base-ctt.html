@@ -1,0 +1,1343 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>CTT Q-Report Charts 2Q26</title>
+<style>
+:root{
+  --bg:#ffffff; --card:#f8f9fa; --border:#e5e7eb;
+  --fg:#2C2C2C; --muted:#666666;
+  --h1:#5F9EA0; --h2:#3D7A7C; --h3:#1F4D78;
+  --table-head:#1B3A5C; --table-head-fg:#ffffff;
+  --row-alt-teal:#E8F4F4; --row-alt-gray:#F5F5F5;
+  --good:#4F8A3C; --warn:#E2A535; --bad:#C0504D; --orange:#E07B00;
+  --teal:#0d7377; --gold:#d97706; --green:#16a34a; --blue:#1d4ed8; --red:#b91c1c; --comp:#c2410c;
+  --slate:#64748b;
+  --grid:#e5e7eb; --chart-surface:#f8f9fa;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#15161a; --card:#1e2025; --border:#303236;
+    --fg:#eaeaec; --muted:#9a9aa2;
+    --h1:#7fb8ba; --h2:#5fa3a5; --h3:#5b8fc7;
+    --table-head:#2b4a6e; --table-head-fg:#ffffff;
+    --row-alt-teal:#1a2e2e; --row-alt-gray:#232427;
+    --good:#6fb257; --warn:#eab84a; --bad:#e07a76; --orange:#f59e42;
+    --teal:#14a3a8; --gold:#f0a030; --green:#22c55e; --blue:#3b82f6; --red:#ef4444; --comp:#e0742e;
+    --slate:#94a3b8;
+    --grid:#2c2c2a; --chart-surface:#1a1a19;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15161a; --card:#1e2025; --border:#303236;
+  --fg:#eaeaec; --muted:#9a9aa2;
+  --h1:#7fb8ba; --h2:#5fa3a5; --h3:#5b8fc7;
+  --table-head:#2b4a6e; --table-head-fg:#ffffff;
+  --row-alt-teal:#1a2e2e; --row-alt-gray:#232427;
+  --good:#6fb257; --warn:#eab84a; --bad:#e07a76; --orange:#f59e42;
+  --teal:#14a3a8; --gold:#f0a030; --green:#22c55e; --blue:#3b82f6; --red:#ef4444; --comp:#e0742e;
+  --slate:#94a3b8;
+  --grid:#2c2c2a; --chart-surface:#1a1a19;
+}
+
+*{box-sizing:border-box}
+body{background:var(--bg); color:var(--fg); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif; margin:0; padding:32px 20px 80px; line-height:1.5;}
+.wrap{max-width:1080px; margin:0 auto;}
+h1{font-size:1.5rem; margin:0 0 2px; color:var(--fg);}
+.sub{color:var(--muted); font-size:0.92rem; margin-bottom:20px;}
+h2.section{font-size:1.05rem; color:var(--h1); margin:36px 0 12px; border-bottom:1px solid var(--border); padding-bottom:8px;}
+p{font-size:0.95rem;}
+
+.exec-strip{display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:12px; margin:16px 0 28px;}
+.exec-tile{background:var(--card); border:1px solid var(--border); border-radius:10px; padding:12px 14px;}
+.exec-tile .label{color:var(--muted); font-size:0.72rem; text-transform:uppercase; letter-spacing:0.02em;}
+.exec-tile .value{font-size:1.15rem; font-weight:700; margin-top:3px;}
+.exec-tile .value.good{color:var(--good);} .exec-tile .value.bad{color:var(--bad);}
+.exec-tile .value.warn{color:var(--warn);}
+.exec-tile .detail{font-size:0.72rem; color:var(--muted); margin-top:3px;}
+td.orange{color:var(--orange); font-weight:600;}
+
+.scenario-toggle{display:flex; flex-wrap:wrap; gap:8px; margin:4px 0 10px;}
+.scenario-toggle button{cursor:pointer; font-size:0.82rem; border:1px solid var(--border); background:var(--bg); color:var(--muted); border-radius:8px; padding:6px 14px; font-weight:600;}
+.scenario-toggle button.on{color:var(--table-head-fg); background:var(--h3); border-color:var(--h3);}
+.val-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:14px; margin:6px 0 6px;}
+.val-card{background:var(--card); border:1px solid var(--border); border-radius:12px; padding:14px 16px;}
+.val-card .vc-name{font-size:0.9rem; font-weight:700;}
+.val-card .vc-val{font-size:1.7rem; font-weight:800; margin:6px 0 0;}
+.val-card .vc-up{font-size:0.95rem; font-weight:700; margin-top:2px;}
+.val-card .vc-up.good{color:var(--good);} .val-card .vc-up.bad{color:var(--bad);}
+.val-card table{width:100%; font-size:0.74rem; margin-top:10px; border-collapse:collapse; min-width:0;}
+.val-card td{padding:2px 0; border:none; background:none; white-space:nowrap;}
+.val-card tr{background:none !important;}
+.val-card td:last-child{text-align:right; font-variant-numeric:tabular-nums; font-weight:600;}
+.val-card tr.vc-sep td{border-top:1px solid var(--border); padding-top:4px;}
+.val-card .vc-drv{font-size:0.72rem; color:var(--muted); margin-top:8px; line-height:1.35;}
+
+.chart-grid{display:grid; grid-template-columns:minmax(0,1fr); gap:20px; margin:14px 0;}
+.chart-grid .full{grid-column:1 / -1;}
+
+.chart-card{background:var(--chart-surface); border:1px solid var(--border); border-radius:10px; padding:14px 14px 14px;}
+.chart-card h3{margin:0 0 2px; font-size:0.92rem; font-weight:700; color:var(--h3);}
+.chart-card .chart-caption{margin:0 0 8px; font-size:0.78rem; color:var(--muted);}
+.chart-svg{width:100%; height:auto; display:block; overflow:visible;}
+.chart-svg .grid{stroke:var(--grid); stroke-width:1;}
+.chart-svg .baseline{stroke:var(--muted); stroke-width:1;}
+.chart-svg .axis-label{fill:var(--muted); font-size:11px;}
+.chart-svg .value-label{fill:var(--fg); font-size:9.5px; font-weight:700; paint-order:stroke; stroke:var(--chart-surface); stroke-width:2.5px; stroke-linejoin:round;}
+.chart-svg .value-label.vl-teal{fill:var(--teal);}
+.chart-svg .value-label.vl-gold{fill:var(--gold);}
+.chart-svg .value-label.vl-green{fill:var(--green);}
+.chart-svg .value-label.vl-blue{fill:var(--blue);}
+.chart-svg .value-label.vl-red{fill:var(--red);}
+.chart-svg .value-label.vl-comp{fill:var(--comp);}
+.chart-svg .value-label.vl-slate{fill:var(--slate);}
+.chart-svg .line-teal{stroke:var(--teal); fill:none;}
+.chart-svg .line-gold{stroke:var(--gold); fill:none;}
+.chart-svg .line-green{stroke:var(--green); fill:none;}
+.chart-svg .line-blue{stroke:var(--blue); fill:none;}
+.chart-svg .line-red{stroke:var(--red); fill:none;}
+.chart-svg .line-comp{stroke:var(--comp); fill:none;}
+.chart-svg .line-slate{stroke:var(--slate); fill:none;}
+.chart-svg .bar-teal, .chart-svg .dot-teal{fill:var(--teal);}
+.chart-svg .bar-gold, .chart-svg .dot-gold{fill:var(--gold);}
+.chart-svg .bar-green, .chart-svg .dot-green{fill:var(--green);}
+.chart-svg .bar-blue, .chart-svg .dot-blue{fill:var(--blue);}
+.chart-svg .bar-red, .chart-svg .dot-red{fill:var(--red);}
+.chart-svg .bar-comp, .chart-svg .dot-comp{fill:var(--comp);}
+.chart-svg .bar-slate, .chart-svg .dot-slate{fill:var(--slate);}
+.chart-svg polyline{stroke-width:2; stroke-linejoin:round; stroke-linecap:round;}
+.chart-svg circle{stroke:var(--chart-surface); stroke-width:2;}
+
+.chart-legend{display:flex; flex-wrap:wrap; gap:6px 16px; margin:8px 0 0; font-size:0.76rem; color:var(--muted);}
+.legend-item{display:inline-flex; align-items:center; gap:5px;}
+.legend-swatch{width:10px; height:10px; border-radius:2px; display:inline-block; flex:none;}
+.legend-dash{width:16px; height:0; border-top:2.5px dashed var(--fg); display:inline-block; flex:none;}
+
+.series-toggle{display:flex; flex-wrap:wrap; gap:6px; margin:0 0 8px;}
+.toggle-chip{display:inline-flex; align-items:center; gap:5px; cursor:pointer; font-size:0.74rem;
+  border:1px solid var(--border); background:var(--bg); color:var(--muted); border-radius:999px;
+  padding:3px 9px; line-height:1.2; transition:opacity .12s;}
+.toggle-chip .legend-swatch{opacity:0.35;}
+.toggle-chip.on{color:var(--fg); border-color:var(--h3);}
+.toggle-chip.on .legend-swatch{opacity:1;}
+.toggle-chip:not(.on){opacity:0.55; text-decoration:line-through;}
+.series-toggle .toggle-label{font-size:0.72rem; color:var(--muted); align-self:center; margin-right:2px;}
+.metric-toggle{margin-top:-2px;}
+.toggle-chip.metric{font-size:0.7rem; padding:2px 9px;}
+.toggle-rule{font-size:0.68rem; color:var(--muted); margin:-2px 0 6px; font-style:italic;}
+.chart-svg .value-label.vl-light{opacity:0.6;}
+
+.tablewrap{overflow-x:auto; border:1px solid var(--border); border-radius:8px; margin-top:10px;}
+table{border-collapse:collapse; width:100%; font-size:0.76rem; min-width:420px;}
+th,td{padding:5px 8px; text-align:right; white-space:nowrap; font-variant-numeric:tabular-nums;}
+th:first-child, td:first-child{text-align:left; font-variant-numeric:normal;}
+thead th{background:var(--table-head); color:var(--table-head-fg); font-weight:600;}
+tbody tr:nth-child(odd){background:var(--row-alt-gray);}
+tbody tr:nth-child(even){background:var(--row-alt-teal);}
+td.bad{color:var(--bad);} td.good{color:var(--good);}
+
+details.analysis{margin-top:10px; border-top:1px dashed var(--border); padding-top:8px;}
+details.analysis summary{cursor:pointer; font-size:0.82rem; font-weight:600; color:var(--h2);}
+details.analysis .analysis-body{font-size:0.88rem; margin-top:8px; color:var(--fg);}
+details.analysis .analysis-empty{font-size:0.82rem; color:var(--muted); font-style:italic; margin-top:8px;}
+details.analysis .analysis-body .questions{margin-top:8px; padding:8px 10px; background:var(--card); border-left:3px solid var(--h1); border-radius:6px; font-size:0.85rem;}
+
+.augment-block{background:var(--card); border:1px solid var(--border); border-left:4px solid var(--h1); border-radius:10px; padding:16px 18px; margin:18px 0;}
+.augment-block h4{margin:0 0 8px; font-size:0.95rem; color:var(--h2);}
+.augment-block .prompt-origin{font-size:0.75rem; color:var(--muted); margin-bottom:10px; font-style:italic;}
+
+.note{font-size:0.76rem; color:var(--muted); margin:-4px 0 10px;}
+.foot{margin-top:40px; color:var(--muted); font-size:0.78rem; border-top:1px solid var(--border); padding-top:12px;}
+
+</style>
+<div class="wrap">
+  <h1>CTT Q-Report Charts — 2Q26</h1>
+  <div class="sub">CTT Correios de Portugal (CTT) · data annex to the CTT Q-Report 2Q26 · updated 21 Oct 2026 · price €5.86, as in the Q-Report</div>
+
+  <h2 class="section">H1 2026 — earnings surprise (reported 29-Jul-2026)</h2>
+  <div class="exec-strip">
+    <div class="exec-tile"><div class="label">Q2 revenue</div><div class="value good">€345.0M</div><div class="detail">+11.7% YoY (+6.3% organic) · H1 €674.3M (+12.9%)</div></div>
+    <div class="exec-tile"><div class="label">H1 recurring EBIT</div><div class="value bad">€41.0M</div><div class="detail">−12.5% YoY · group margin 7.5%</div></div>
+    <div class="exec-tile"><div class="label">Cacesa (non-CEP) EBIT</div><div class="value bad">€0.6M</div><div class="detail">−88.8% · revenue €28.0M (−18.3%) — the miss</div></div>
+    <div class="exec-tile"><div class="label">CEP parcel volumes</div><div class="value good">44.1M</div><div class="detail">+20.7% YoY (+24.4% proforma DHL)</div></div>
+    <div class="exec-tile"><div class="label">FY26 EBIT guidance</div><div class="value warn">€115–125M</div><div class="detail">refined from €125M · core (SEP+Mail+Bank) €105–110M</div></div>
+    <div class="exec-tile"><div class="label">Net debt / leverage</div><div class="value good">€292.8M</div><div class="detail">1.8× net debt/EBITDA (from 2.4×)</div></div>
+    <div class="exec-tile"><div class="label">Buyback</div><div class="value ">€40M program</div><div class="detail">raised from €30M · 4.1M shares for €25.1M by 30 Sep (avg €6.12)</div></div>
+    <div class="exec-tile"><div class="label">Banco CTT</div><div class="value bad">Approach ended</div><div class="detail">Cajamar's non-binding approach (21 Jul) ended without agreement on 4 Sep</div></div>
+  </div>
+  <p class="note" style="margin-top:-12px;">Read of the quarter: <strong>beat on the top line and volumes, miss on profit and guidance</strong>. The core (Express &amp; Parcels + Mail) grew revenue and profit, but <strong>Cacesa (customs clearing) collapsed</strong> on regulatory change (Spain's G4 transit rules + the EU ending the €150 de-minimis exemption), cutting non-CEP EBIT from €5.7M to €0.6M and forcing the FY26 EBIT guide down to €115–125M. Offsetting: CEP volumes re-accelerated to +20.7%, leverage fell to 1.8×, the buyback was topped up (+€10M) and ramped below €6, and Banco CTT received an unsolicited, non-binding approach (Grupo Cajamar, 21 Jul). <strong>Update:</strong> those talks ended without agreement on 4 Sep (ECO) and no price was published; a sale now needs a new buyer and a new process. <strong>FiscalAI does not carry analyst estimates</strong>; beat/miss is vs. the reported prior-year period and guidance.</p>
+
+  <h2 class="section">Valuation — bear / base / bull</h2>
+  <div id="sotp-section">
+    <p class="note" style="margin:0 0 8px;"><strong>Base</strong> = the Omaha valuation as stored in the platform (IVO <strong>€9.53</strong>, 2028E): revenue €1,660M × 11.9% EBITDA margin = €199M EBITDA; × <strong>8.0×</strong> EV/EBITDA = €1,592M enterprise value; − net debt €292.8M (bank under the equity method) − healthcare liability €117M (net of DTA) = €1,182M equity ÷ 124.1M shares. <strong>Bear</strong> = e-commerce disappoints and no re-rating (<strong>6.5×</strong>, roughly where CTT trades today — LTM ~6.1×, FY25 6.6× — plus margin compression to 11%). <strong>Bull</strong> = GreenWood's sum of the parts (2-pager, Nov-25), the second valuation in the platform: <strong>€13.43</strong>. All in <strong>EUR</strong>, price €5.86.</p>
+    <div class="scenario-toggle" id="sotp-toggle"></div>
+    <p class="note" id="sotp-note" style="margin:0 0 10px;"></p>
+    <div class="val-grid" id="sotp-grid"></div>
+  </div>
+
+  <h2 class="section">Consolidated Fundamentals (adj., EUR)</h2>
+  <p class="note" style="margin:0 0 8px;">Consolidated, <strong>includes Banco CTT</strong>. FY2020–22 from CTT annual reports (recurring EBIT / reported EBITDA); FY2023–LTM adjusted from FiscalAI. Net income is noisy (bank + tax + minorities), which is exactly why the parts are valued separately above.</p>
+  <div class="chart-grid">
+    <div class="chart-card full">
+      <h3>Revenue (€M, bars) &amp; YoY growth (%, line)</h3>
+      <div id="chart-revenue"></div>
+      <div class="tablewrap"><table id="tbl-revenue"></table></div>
+      <p class="note" style="margin-top:8px;"><strong>Organic (ex-M&amp;A) revenue growth</strong>, where CTT discloses it: <strong>FY25 +8.4%</strong> · Q1-26 ~+4% · <strong>Q2-26 +6.3%</strong> · <strong>1H26 +5.3%</strong> — versus reported +16.3% / +14.1% / +11.7% / +12.9%. Not quantifiable before 2025 (no material inorganic growth then), which is why the chart shows reported figures.</p>
+      <details class="analysis" open><summary>AI Analysis</summary><div class="analysis-body"><p>The deceleration is real, but half of 2025's growth was inorganic: Cacesa (consolidated Apr25) and, from May26, DHL Parcel Portugal. 1H26 organic growth was just +5.3%. So the LTM-vs-2025 slowdown is mostly the M&amp;A, not the base business weakening as e-commerce organic revenue accelerated from +10.2% to +22.3%.</p>
+<p>Four drivers of the slowdown: (1) the Cacesa acquisition is annualising; (2) Cacesa turned from tailwind to headwind: its non-CEP revenue is contracting on Spain's G4 rules and the end of the EU €150 de-minimis; (3) Mail &amp; Services turned slightly negative (−1.4% LTM) on structural addressed-mail decline plus the roll-off of the 2023–24 Financial-Services public-debt windfall; and (4) Banco CTT is normalising (~+4% LTM) as ECB cuts compress net interest income.</p></div></details>
+    </div>
+    <div class="chart-card full">
+      <h3>CEP parcel volumes (M items, bars) &amp; YoY (%, line) — 2020–LTM</h3>
+      <div class="chart-caption">Parcels delivered (million items) and YoY growth — the core organic-growth KPI. Source: CTT results.</div>
+      <div id="chart-cep"></div>
+      <div class="tablewrap"><table id="tbl-cep"></table></div>
+      <details class="analysis" open><summary>AI Analysis</summary><div class="analysis-body"><p>The purest organic-growth read: units delivered. Volumes grew 3.2× since 2020 (53M→170M items), led by Spain. 2022 was flat (post-COVID normalisation); 2023–24 re-accelerated to ~+40%.</p>
+<p>Despite all about revenues, last-mile CEP volumes rose +14.3% (Q1-26) then +20.7% (Q2-26). The core is speeding up, the drag is concentrated in Cacesa, Mail and Banco. So, if CTT would be concentrated only in its core business, we could be talking about another great Q for CTT.</p>
+<p>What drives the volume growth is the Iberian cross-border e-commerce wave — Chinese marketplaces (Temu, SHEIN, TikTok Shop) shipping into Spain, where CTT built out last-mile capacity and won share (Spain led: +57% in 2023, +107% in 4Q23) — plus rising local Iberian e-seller and B2C penetration.</p></div></details>
+    </div>
+    <div class="chart-card full">
+      <h3>EBITDA / Recurring EBIT (€M, bars) &amp; margin (%, line) — toggle</h3>
+      <div class="chart-caption">Use the top toggle to switch between EBITDA and Recurring EBIT; each shows its own bar and its margin line.</div>
+      <div id="chart-profit"></div>
+      <div class="tablewrap"><table id="tbl-profit"></table></div>
+      <details class="analysis" open><summary>AI Analysis</summary><div class="analysis-body"><p>EBITDA margin compressed in 1H26, and recurring-EBIT margin with it — but the driver is mix, not opex. The high-margin Cacesa customs line collapsed (mechanism in the Cacesa chart below) while lower-margin activity — Cacesa's remaining logistics plus, from May-26, DHL Parcel Portugal — grew into the e-commerce Solutions segment. Reported operating costs rose +15.6%, but that is the external-supply cost (transport and subcontracting) of these lower-margin consolidated activities scaling with volume, not overhead inflation.</p>
+<p>The core EBIT (CEP + Mail + Banco CTT) grew, and guidance is intact: CTT guides core recurring EBIT to €105–110M and total (incl. non-CEP/Cacesa) to €115–125M for 2026. On the call an analyst flagged the de-minimis hit; the CEO answered it reflects seasonality (peak Q4) plus assumed normalization post de-minimis — so the pivot from B2C to B2B is confirmed as strategy.</p></div></details>
+    </div>
+    <div class="chart-card full">
+      <h3>Net income (€M, bars) &amp; EPS (€, line)</h3>
+      <div class="chart-caption">Consolidated net income and EPS.</div>
+      <div id="chart-nieps"></div>
+      <div class="tablewrap"><table id="tbl-nieps"></table></div>
+      <details class="analysis" open><summary>AI Analysis</summary><div class="analysis-body"><p>The recent decline despite rising revenue is bank reinvestment, higher interest and tax/minority noise — read the parts, not the consolidated bottom line. EBIT fell and net income fell more because tax normalised: 2023 had an unusual effective rate of ~1.8% (only €1.1M of tax), and 2024 went back to ~16.5% (€9.3M). That jump explains much of the drop (tax noise, not operations). Minorities started to grow, consistent with consolidating acquisitions CTT does not own 100%.</p></div></details>
+    </div>
+    <div class="chart-card full">
+      <h3>Net shares repurchased per year (M, bars) &amp; YoY growth (%, line)</h3>
+      <div class="chart-caption">Net shares retired each year through the buyback programmes (the annual reduction in shares outstanding), with YoY growth.</div>
+      <div id="chart-buyback"></div>
+      <div class="tablewrap"><table id="tbl-buyback"></table></div>
+      <details class="analysis" open><summary>AI Analysis</summary><div class="analysis-body"><p>Programmes: 6.1M (2022), 5.5M (2023–24), 4.6M (2024–25), plus the €30M 2025–27 programme. 1H26 is a half-year (YTD), so its YoY is not directly comparable. Table shows the resulting shares-outstanding evolution.</p></div></details>
+    </div>
+  </div>
+
+  <h2 class="section">Segmented Information</h2>
+  <p class="note" style="margin:0 0 8px;">By business line (<strong>e-commerce Solutions · Mail &amp; Services · Banco CTT</strong>). This is the operating detail behind the SOTP and the GreenWood thesis. CTT re-segmented in FY2025; <strong>2019–24 are a proxy mapping</strong> (e-commerce = Express &amp; Parcels; Mail &amp; Services = Mail &amp; Other + Financial Services &amp; Retail; Banco CTT isolated) so the series is comparable through the break.</p>
+  <div class="chart-grid">
+    <div class="chart-card full">
+      <h3>Revenue by segment (€M, stacked) — 2019–LTM</h3>
+      <div id="chart-segrev"></div>
+      <div class="tablewrap"><table id="tbl-segrev"></table></div>
+      <details class="analysis" open><summary>AI Analysis</summary><div class="analysis-body"><p>E-commerce keeps growing and is the largest share of revenue, which fits management's aspirational strategy of becoming an e-commerce/logistics "pure player" (a direction, not yet a fact). Mail &amp; Services is still ~37% of revenue and Banco CTT remains consolidated. Mail is structurally declining; it only looks flat in some quarters thanks to price increases and Financial Services, and the positive is that this segment still generates cash.</p>
+<p>This mix rotation is why the consolidated EBIT margin is compressing: revenue shifts toward the lower-margin e-commerce line while the higher-margin/flat Mail line loses weight. The compression is reinforced by several layers this year: Cacesa, mix shift within CEP plus fuel inflation, and the consolidation of the lower-margin DHL Parcel Portugal. Add this quarter's Cacesa hit on top and you get the current margin levels.</p></div></details>
+    </div>
+    <div class="chart-card full">
+      <h3>Recurring EBIT by segment (€M, bars) &amp; margin (%, line) — toggle by segment · 2021–LTM</h3>
+      <div class="chart-caption">Select one segment: bars = recurring EBIT (€M, left axis), line = its recurring-EBIT margin (%, right axis).</div>
+      <div id="chart-segebit2"></div>
+      <div class="tablewrap"><table id="tbl-segebit2"></table></div>
+      <details class="analysis" open><summary>AI Analysis</summary><div class="analysis-body"><p>E-commerce EBIT is scaling fast, Mail &amp; Services spiked in 2023 on a Financial-Services public-debt windfall and then normalized, and Banco CTT is steady. The long-term e-commerce trend stays positive even after this quarter's regulatory hit. For Mail, the post-2023 figures are the right normalized base; and for the bank, the stabilization (~€26M, ~10% ROE) supports a sale at ≥1× book. 2026 recurring-EBIT guidance is €115–125M total — with Mail at ~€32M and Banco at ~€26M, that implies e-commerce EBIT of roughly €57–67M for the full year, achievable given Q4 peak seasonality and a partial normalization of Cacesa off the 1H trough.</p>
+<p>On margins (toggle the line): e-commerce is on a rising path as scale dilutes the high fixed cost of the last-mile network — the LTM dip is cyclical, not structural (Cacesa customs interruption + within-CEP mix shift + fuel). Mail &amp; Services looks volatile only because of the FS windfall (2023 peak); ~6% is the normalized level, with no deterioration underneath. Banco CTT runs structurally highest and moves with European rates — peaking in 2024 on high ECB rates, easing as rates normalize.</p></div></details>
+    </div>
+    <div class="chart-card full">
+      <h3>Cacesa (non-CEP): revenue &amp; recurring EBIT (€M) — pro-forma quarterly</h3>
+      <div id="chart-cacesa"></div>
+      <div class="tablewrap"><table id="tbl-cacesa"></table></div>
+      <details class="analysis" open><summary>AI Analysis</summary><div class="analysis-body"><p>Non-CEP is the customs-clearance business. As it is a high-fixed-cost platform (staff, warehouses, systems), the margin held ~15–17% at normal volume and is seasonally stronger in H2 toward the Q4 peak — which is why management expects a post-peak improvement. In 2Q26 the recurring-EBIT margin collapsed to 2.1% through operating deleverage: the end of the EU €150 de-minimis rerouted the profitable Madrid flows toward Central/Eastern-European airports where Cacesa has little share, while Spain's G4 rule began requiring multiple transit documents per shipment, raising cost per unit. Management is responding with headcount cuts, warehouse/fleet optimization and a commercial shift toward B2B clearance and fulfillment, and frames the hit as temporary.</p></div></details>
+    </div>
+  </div>
+
+  <h2 class="section">Banco CTT</h2>
+  <div class="chart-grid">
+    <div class="chart-card full">
+      <h3>Revenue &amp; recurring EBIT (€M) — 2021–LTM</h3>
+      <div class="chart-caption">The asset being monetized. Revenue peaked in 2023 on high rates then normalized; recurring EBIT ~€26M, ROTE 13.8% (FY25) / 12.1% (Q2-26). Valued separately on book in the SOTP.</div>
+      <div id="chart-banco"></div>
+      <div class="tablewrap"><table id="tbl-banco"></table></div>
+      <details class="analysis" open><summary>AI Analysis</summary><div class="analysis-body"><p>The asset looks healthy. Revenue reached a new high despite lower rates, driven by client growth. Recurring EBIT scaled through 2024 (operating leverage, as fixed cost diluted while the bank matured), then flattened. That flattening is a change in the margin quality of revenue: it now comes increasingly from volume (lower margin) rather than rate. ROTE of 13.8% (FY25) / 12.1% (Q2-26) stays comfortably above 12%, which supports a sale at ≥1× book.</p></div></details>
+    </div>
+    <div class="chart-card full">
+      <h3>Bank balance sheet — deposits, loans &amp; book value (€M) — Q1-24 → Q2-26</h3>
+      <div id="chart-bankdep"></div>
+      <div class="tablewrap"><table id="tbl-bankdep"></table></div>
+      <details class="analysis" open><summary>AI Analysis</summary><div class="analysis-body"><p>Under every metric the bank has grown substantially — both deposits and loans — which makes it valuable within the sector despite its small size. It is profitable, and book value keeps rising quarter after quarter.</p></div></details>
+    </div>
+    <div class="chart-card full">
+      <h3>Iberian bank comps &amp; recent deals — the SOTP multiple reference</h3>
+      <div class="tablewrap"><table>
+        <thead><tr><th>Bank (2Q26)</th><th>P/B</th><th>P/TBV</th><th>ROE</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Banco CTT</strong></td><td><strong>1.1×</strong></td><td>—</td><td><strong>13.8%*</strong></td></tr>
+          <tr><td>Santander</td><td>1.7×</td><td>2.1×</td><td>13%</td></tr>
+          <tr><td>BBVA</td><td>2.5×</td><td>2.5×</td><td>19%</td></tr>
+          <tr><td>CaixaBank</td><td>2.4×</td><td>2.8×</td><td>16%</td></tr>
+          <tr><td>Bankinter</td><td>2.3×</td><td>2.4×</td><td>18%</td></tr>
+          <tr><td>Unicaja</td><td>1.4×</td><td>1.4×</td><td>10%</td></tr>
+          <tr><td>Sabadell</td><td>—</td><td>—</td><td>8%</td></tr>
+        </tbody>
+      </table></div>
+      <div class="tablewrap" style="margin-top:10px;"><table>
+        <thead><tr><th>Recent bank deals</th><th>Date</th><th>P/B</th><th>P/TBV</th><th>Country</th></tr></thead>
+        <tbody>
+          <tr><td>Mediobanca — MPS</td><td>Sep-25</td><td>1.2×</td><td>1.2×</td><td>Italy</td></tr>
+          <tr><td>TSB — Santander</td><td>Jul-25</td><td>1.5×</td><td>1.45×</td><td>UK</td></tr>
+          <tr><td>BPCE — Novo Banco</td><td>Jun-25</td><td>—</td><td>1.7×</td><td>Portugal</td></tr>
+          <tr style="background:#f3e9c9;"><td><strong>Banco CTT (8.7%) — Generali</strong></td><td>Nov-22</td><td>1.1×</td><td>1.1×</td><td>Portugal</td></tr>
+          <tr><td>Caixa — Abanca</td><td>Oct-19</td><td>0.7×</td><td>0.7×</td><td>Portugal</td></tr>
+        </tbody>
+      </table></div>
+      <details class="analysis" open><summary>AI Analysis</summary><div class="analysis-body"><p>The bank's current P/B is conservative and it keeps a healthy ROE for a possible sale. Listed peers trade at fairly high multiples — mostly above 2× book — while the recent M&amp;A deals all sit above 1.2×, with Banco CTT's own 2022 reference being the lowest. The sale of the 8.7% stake to Generali in 2022 (1.1× book) already sets a precedent, and the aim is to secure a sale multiple around 1.3–1.5× book to crystallize value. BPCE paid 1.7× tangible book for Novo Banco. GreenWood (Aug-26) puts the bank's tangible book at €275M and CTT's 91% stake at €350–475M (1.4–1.9×). Grupo Cajamar's approach ended on 4 Sep without a published price, so a sale now needs a new process and then Bank of Portugal/ECB approval.</p>
+<p style="font-size:0.78rem;color:var(--muted);">* Banco CTT: return on tangible equity FY25 (CTT results), replacing the 19% ROE shown earlier, which did not match the 13.8% / 12.1% ROTE in the chart above.</p></div></details>
+    </div>
+  </div>
+
+  <h2 class="section">GreenWood — fair-value evolution</h2>
+  <div class="chart-grid">
+    <div class="chart-card full">
+      <h3>GreenWood base-case fair value vs stock price (€/share) — Sep-17 → Aug-26</h3>
+      <div class="chart-caption">GreenWood's base-case fair value at each research update (their implied sum-of-parts — GW does not label it "SOP" explicitly) against CTT's price at the time. Note the target year drifts across reports (2020 → 2026, see table), so levels are not strictly comparable point-to-point. Source: CTT timeline / GreenWood Investors reports.</div>
+      <div id="chart-gwsop"></div>
+      <div class="tablewrap"><table id="tbl-gwsop"></table></div>
+      <details class="analysis" open><summary>AI Analysis</summary><div class="analysis-body"><p>Two things converge. GreenWood's fair value <em>de-rated</em> over eight years — from €20–28 (2018–19, when the "Playbook" priced in Amazon entry, a bank spin-out and a Spanish roll-up on 2020–22 targets) down to €13–17 (2023–25) as the extreme optionality faded and the target year kept rolling forward. Meanwhile the stock <em>re-rated up</em>, from ~€2.5–3.5 through 2017–23 to €7+ by 2025. The gap the thesis was built on has largely closed: at Nov-25 GW carries €13.3 vs a €7 price — still upside, but a fraction of the 5–8× they modelled at the lows.</p>
+<p>Caveat on comparability: each point targets a different year (2020 → 2026), so the raw line overstates volatility — the €28 of May-19 was a 2022 target, the €15 of Oct-23 a 2025 target. Read it as "where GW thought fair value sat at each check-in," not a single consistent estimate. The honest read for today's thesis is the recent, same-target-year cluster on a 2026 basis: €15–17.3 through May-25, €13.3 in the Nov-25 2-pager, then €18.0 in the April 2026 flash note and €14.7 in August 2026, the last one after the Cacesa hit, with the price at €6.15. GreenWood is a 6.4% holder with board seats, so these are an interested party's numbers.</p></div></details>
+    </div>
+  </div>
+
+  <div class="foot">Omaha Inversiones · Source: FiscalAI + CTT filings + GreenWood Investors (Nov-25 2-pager; Apr-26 and Aug-26 flash notes) + ECO · CTT Correios de Portugal (XLIS_CTT) · Narrative: <a href="https://claude.ai/artifact/EaAHV1fdv9bVLP7SEN2Yoq" target="_blank" rel="noopener">CTT Q-Report 2Q26</a></div>
+</div>
+
+<script>
+(function(){
+"use strict";
+function fmtPctSigned(v){ return (v>0?"+":"") + v.toFixed(1) + "%"; }
+function fmtPct(v){ return v.toFixed(1) + "%"; }
+function fmtX(v){ return v.toFixed(1) + "x"; }
+function fmtM(v){ return "$" + Math.round(v).toLocaleString() + "M"; }
+function fmtNum(v){ return Math.round(v).toLocaleString(); }
+function axisPct(v){ return Math.round(v) + "%"; }
+function axisX(v){ return Math.round(v) + "x"; }
+function axisX1(v){ return v.toFixed(1) + "x"; }
+function axisM(v){ return "$" + Math.round(v).toLocaleString(); }
+function axisNum(v){ return Math.round(v).toLocaleString(); }
+
+function niceStep(range, targetTicks){
+  targetTicks = targetTicks || 5;
+  var rough = range / targetTicks;
+  if(rough <= 0) rough = 1;
+  var mag = Math.pow(10, Math.floor(Math.log10(rough)));
+  var norm = rough / mag;
+  var step;
+  if(norm < 1.5) step = 1; else if(norm < 3) step = 2; else if(norm < 7) step = 5; else step = 10;
+  return step * mag;
+}
+
+function computeScale(values, ticks){
+  var vals = values.filter(function(v){ return v !== null && v !== undefined; });
+  var realMin = Math.min.apply(null, vals);
+  var realMax = Math.max.apply(null, vals);
+  var min = Math.min(realMin, 0);
+  var max = Math.max(realMax, 0);
+  if(min === max){ min -= 1; max += 1; }
+  var range = max - min;
+  var step = niceStep(range, ticks || 5);
+  var niceMin = Math.floor(min / step) * step;
+  var niceMax = Math.ceil(max / step) * step;
+  if(realMax > 0 && niceMax - realMax < step * 0.3) niceMax += step;
+  if(realMin < 0 && realMin - niceMin < step * 0.3) niceMin -= step;
+  var t = [];
+  for(var v = niceMin; v <= niceMax + 1e-9; v += step){ t.push(Math.round(v * 1000) / 1000); }
+  return { min: niceMin, max: niceMax, step: step, ticks: t };
+}
+
+function allIndices(data){
+  var out = [];
+  for(var i = 0; i < data.length; i++){ if(data[i] !== null && data[i] !== undefined) out.push(i); }
+  return out;
+}
+
+function placeLabels(svg, bounds){
+  if(!svg) return;
+  var OFFSET = 13, BAR_OFFSET = 6, GAP = 3, MAX_TRIES = 14, PAD = 2.5;
+  var top = bounds.plotTop + 9, bottom = bounds.plotBottom - 3;
+
+  function bboxAt(w, h, x, y, anchor){
+    var x0 = anchor === 'start' ? x : (anchor === 'end' ? x - w : x - w / 2);
+    return { x0: x0 - PAD, x1: x0 + w + PAD, y0: y - h - PAD, y1: y + 2 + PAD };
+  }
+  function overlaps(a, b){
+    return (Math.min(a.x1, b.x1) - Math.max(a.x0, b.x0)) > 0.5 && (Math.min(a.y1, b.y1) - Math.max(a.y0, b.y0)) > 0.5;
+  }
+  function clampY(y, h){
+    if(y - h < top) y = top + h;
+    if(y > bottom) y = bottom;
+    return y;
+  }
+
+  var placed = [];
+  Array.prototype.forEach.call(svg.querySelectorAll('text.axis-label'), function(elx){
+    var bb = elx.getBBox();
+    var x = parseFloat(elx.getAttribute('x')), y = parseFloat(elx.getAttribute('y'));
+    placed.push(bboxAt(bb.width, bb.height, x, y, elx.getAttribute('text-anchor')));
+  });
+
+  var labels = Array.prototype.slice.call(svg.querySelectorAll('text.value-label'));
+  var byCol = {};
+  labels.forEach(function(elx){
+    var c = elx.getAttribute('data-col');
+    (byCol[c] = byCol[c] || []).push(elx);
+  });
+
+  Object.keys(byCol).forEach(function(col){
+    var items = byCol[col];
+    items.sort(function(a, b){ return parseFloat(a.getAttribute('data-py')) - parseFloat(b.getAttribute('data-py')); });
+
+    var barIdx = -1;
+    items.forEach(function(elx, idx){ if(elx.getAttribute('data-shape') === 'bar') barIdx = idx; });
+
+    items.forEach(function(elx, idx){
+      var shape = elx.getAttribute('data-shape');
+      var pref;
+      if(shape === 'stack'){
+        pref = 'above';
+      } else if(shape === 'bar'){
+        pref = elx.getAttribute('data-sign') === 'neg' ? 'below' : 'above';
+      } else if(barIdx >= 0){
+        // combo chart: the bar label hugs its bar (small offset), the line's dot label sits above
+        // its own point — so each label reads as belonging to the mark directly under it
+        pref = 'above';
+      } else {
+        pref = (idx === items.length - 1 && items.length > 1) ? 'below' : 'above';
+      }
+      var forced = elx.getAttribute('data-force-pref');
+      if(forced) pref = forced;
+      elx.setAttribute('data-pref', pref);
+    });
+
+    items.forEach(function(elx){
+      var px = parseFloat(elx.getAttribute('x'));
+      var py = parseFloat(elx.getAttribute('data-py'));
+      var anchor = elx.getAttribute('text-anchor');
+      var bb = elx.getBBox();
+      var w = bb.width, h = bb.height;
+      var pref = elx.getAttribute('data-pref');
+      var shape = elx.getAttribute('data-shape');
+      var isStack = shape === 'stack';
+      var off = shape === 'bar' ? BAR_OFFSET : OFFSET;
+
+      var dir = pref === 'above' ? -1 : 1;
+      // stacked-segment labels start centred inside their own segment, then nudge if crowded
+      var y = isStack ? (py + 3.5) : (pref === 'above' ? py - off : py + off + h);
+      y = clampY(y, h);
+      var box = bboxAt(w, h, px, y, anchor);
+      var tries = 0;
+      while(placed.some(function(o){ return overlaps(box, o); }) && tries < MAX_TRIES){
+        y += dir * GAP;
+        y = clampY(y, h);
+        box = bboxAt(w, h, px, y, anchor);
+        tries++;
+      }
+      if(placed.some(function(o){ return overlaps(box, o); })){
+        dir = -dir;
+        y = isStack ? (py + 3.5) : (pref === 'above' ? py + off + h : py - off);
+        y = clampY(y, h);
+        box = bboxAt(w, h, px, y, anchor);
+        tries = 0;
+        while(placed.some(function(o){ return overlaps(box, o); }) && tries < MAX_TRIES){
+          y += dir * GAP;
+          y = clampY(y, h);
+          box = bboxAt(w, h, px, y, anchor);
+          tries++;
+        }
+      }
+      elx.setAttribute('y', y);
+      placed.push(box);
+    });
+  });
+}
+
+function polylineSegments(pts){
+  var segs = [], cur = [];
+  pts.forEach(function(p){ if(p){ cur.push(p); } else { if(cur.length) segs.push(cur); cur = []; } });
+  if(cur.length) segs.push(cur);
+  return segs;
+}
+
+function esc(s){ return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;"); }
+
+function legendHTML(items){
+  return '<div class="chart-legend">' + items.map(function(it){
+    if(it.dash){
+      return '<span class="legend-item"><span class="legend-dash" style="border-top-color:' + (it.color||'var(--fg)') + '"></span>' + esc(it.label) + '</span>';
+    }
+    return '<span class="legend-item"><span class="legend-swatch" style="background:var(--' + it.key + ')"></span>' + esc(it.label) + '</span>';
+  }).join('') + '</div>';
+}
+
+// Interactive multi-series line chart: renders toggle chips (one per series) above the plot; the user
+// turns series on/off and the chart auto-rescales and re-labels to whatever is active.
+function renderInteractiveLineChart(id, opts){
+  var el = document.getElementById(id); if(!el) return;
+  var defOn = opts.defaultOn ? {} : null;
+  if(defOn) opts.defaultOn.forEach(function(k){ defOn[k]=1; });
+  var active = {}; opts.series.forEach(function(s){ active[s.key] = defOn ? !!defOn[s.key] : true; });
+  el.innerHTML = '<div class="series-toggle"></div><div class="chart-mount" id="' + id + '-m"></div>';
+  var btnRow = el.querySelector('.series-toggle');
+  opts.series.forEach(function(s){
+    var b = document.createElement('button');
+    b.className = 'toggle-chip' + (active[s.key] ? ' on' : ''); b.type = 'button';
+    b.innerHTML = '<span class="legend-swatch" style="background:var(--' + s.key + ')"></span>' + esc(s.label);
+    b.addEventListener('click', function(){
+      active[s.key] = !active[s.key];
+      b.classList.toggle('on', active[s.key]);
+      draw();
+    });
+    btnRow.appendChild(b);
+  });
+  function draw(){
+    var subset = opts.series.filter(function(s){ return active[s.key]; });
+    if(!subset.length) subset = opts.series;
+    renderLineChart(id + '-m', {
+      periods: opts.periods, series: subset, fmt: opts.fmt, axisFmt: opts.axisFmt,
+      height: opts.height, ariaLabel: opts.ariaLabel, labelIndices: opts.labelIndices,
+      xLabelEvery: opts.xLabelEvery, noLegend: true
+    });
+  }
+  draw();
+}
+
+// Interactive company-toggle combo: grouped bars (left axis) + one line per company (right axis).
+// Metric chips let the user show/hide the bar metric and the line metric independently.
+function renderInteractiveComboChart(id, opts){
+  var el = document.getElementById(id); if(!el) return;
+  var defOn = opts.defaultOn ? {} : null; if(defOn) opts.defaultOn.forEach(function(k){ defOn[k]=1; });
+  var active = {}; opts.series.forEach(function(s){ active[s.key] = defOn ? !!defOn[s.key] : true; });
+  var mAct = { bars:true, line:true }; // default: one company (defaultOn) + both metrics
+  el.innerHTML = '<div class="series-toggle" data-role="company"></div><div class="series-toggle metric-toggle"><span class="toggle-label">Show:</span></div><div class="chart-mount" id="'+id+'-m"></div>';
+  var compRow = el.querySelector('[data-role="company"]'), metRow = el.querySelector('.metric-toggle');
+  var compBtns=[], metBtns=[];
+  function nComp(){ return opts.series.filter(function(s){return active[s.key];}).length; }
+  function nMet(){ return (mAct.bars?1:0)+(mAct.line?1:0); }
+  function refreshChips(){ compBtns.forEach(function(o){o.btn.classList.toggle('on',active[o.key]);}); metBtns.forEach(function(o){o.btn.classList.toggle('on',mAct[o.key]);}); }
+  opts.series.forEach(function(s){
+    var b=document.createElement('button'); b.className='toggle-chip'+(active[s.key]?' on':''); b.type='button';
+    b.innerHTML='<span class="legend-swatch" style="background:var(--'+s.key+')"></span>'+esc(s.label);
+    b.addEventListener('click',function(){
+      if(opts.singleSeries){ opts.series.forEach(function(ss){ active[ss.key]=(ss.key===s.key); }); refreshChips(); draw(); return; }
+      if(active[s.key] && nComp()===1) return;
+      active[s.key]=!active[s.key];
+      if(nComp()>=2 && nMet()>=2){ mAct.bars=true; mAct.line=false; } // multi-company => single metric
+      refreshChips(); draw();
+    });
+    compBtns.push({key:s.key,btn:b}); compRow.appendChild(b);
+  });
+  [['bars',opts.barName||'Bars'],['line',opts.lineName||'Line']].forEach(function(m){
+    var mk=m[0]; var b=document.createElement('button'); b.className='toggle-chip metric'+(mAct[mk]?' on':''); b.type='button'; b.textContent=m[1];
+    b.addEventListener('click',function(){
+      if(mAct[mk] && nMet()===1) return;
+      mAct[mk]=!mAct[mk];
+      if(nMet()>=2 && nComp()>=2){ var kept=false; opts.series.forEach(function(ss){ if(active[ss.key]){ if(kept){active[ss.key]=false;} else {kept=true;} } }); } // both metrics => single company
+      refreshChips(); draw();
+    });
+    metBtns.push({key:mk,btn:b}); metRow.appendChild(b);
+  });
+  function draw(){
+    var subset=opts.series.filter(function(s){return active[s.key];}); if(!subset.length) subset=[opts.series[0]];
+    var mount=document.getElementById(id+'-m'); var periods=opts.periods;
+    var barFmt=opts.barFmt||fmtM, barAxisFmt=opts.barAxisFmt||axisM, lineFmt=opts.lineFmt||fmtPctSigned, lineAxisFmt=opts.lineAxisFmt||axisPct;
+    var W=900,H=opts.height||320,ML=58,MR=58,MT=14,MB=30; var plotW=W-ML-MR,plotH=H-MT-MB;
+    var barsOn=mAct.bars, lineOn=mAct.line;
+    var allBars=[],allLines=[]; subset.forEach(function(s){ allBars=allBars.concat(s.bars); allLines=allLines.concat(s.line); });
+    var bScale=barsOn?computeScale(allBars,5):null, lScale=lineOn?computeScale(allLines,5):null;
+    function x(i){ return ML+(i+0.5)*(plotW/periods.length); }
+    function yB(v){ return MT+plotH-(v-bScale.min)/(bScale.max-bScale.min)*plotH; }
+    function yL(v){ return MT+plotH-(v-lScale.min)/(lScale.max-lScale.min)*plotH; }
+    var n=subset.length; var groupW=Math.min(plotW/periods.length*0.66, 54); var bw=Math.min(groupW/n, 20);
+    var svg='<svg class="chart-svg" viewBox="0 0 '+W+' '+H+'" role="img" aria-label="'+esc(opts.ariaLabel||"")+'">';
+    if(barsOn){ bScale.ticks.forEach(function(t){ var yy=yB(t); svg+='<line class="grid" x1="'+ML+'" y1="'+yy+'" x2="'+(W-MR)+'" y2="'+yy+'"/>'; svg+='<text class="axis-label" x="'+(ML-6)+'" y="'+(yy+4)+'" text-anchor="end">'+barAxisFmt(t)+'</text>'; });
+      svg+='<line class="baseline" x1="'+ML+'" y1="'+yB(0)+'" x2="'+(W-MR)+'" y2="'+yB(0)+'"/>'; }
+    else if(lineOn){ lScale.ticks.forEach(function(t){ var yy=yL(t); svg+='<line class="grid" x1="'+ML+'" y1="'+yy+'" x2="'+(W-MR)+'" y2="'+yy+'"/>'; }); }
+    if(lineOn){ lScale.ticks.forEach(function(t){ var yy=yL(t); svg+='<text class="axis-label" x="'+(W-MR+8)+'" y="'+(yy+4)+'" text-anchor="start">'+lineAxisFmt(t)+'</text>'; }); }
+    periods.forEach(function(p,i){ svg+='<text class="axis-label" x="'+x(i)+'" y="'+(H-8)+'" text-anchor="middle">'+p+'</text>'; });
+    if(barsOn) subset.forEach(function(s,j){ s.bars.forEach(function(v,i){ if(v==null) return; var bx=x(i)-groupW/2+j*bw; var y0=yB(0),y1=yB(v); var top=Math.min(y0,y1),h=Math.max(Math.abs(y1-y0),1);
+      svg+='<rect class="bar-'+s.key+'" x="'+bx+'" y="'+top+'" width="'+bw+'" height="'+h+'" rx="2"><title>'+esc(s.label)+' '+periods[i]+': '+barFmt(v)+'</title></rect>'; }); });
+    if(lineOn) subset.forEach(function(s){ var lk=s.lineKey||s.key; var pts=s.line.map(function(v,i){return v==null?null:[x(i),yL(v)];}); s._pts=pts;
+      polylineSegments(pts).forEach(function(seg){ var pstr=seg.map(function(p){return p[0]+','+p[1];}).join(' ');
+        svg+='<polyline class="line-'+lk+'" stroke-dasharray="5 3" stroke-opacity="0.5" points="'+pstr+'"/>'; });
+      pts.forEach(function(p,i){ if(!p) return; svg+='<circle class="dot-'+lk+'" cx="'+p[0]+'" cy="'+p[1]+'" r="4" fill-opacity="0.5"><title>'+esc(s.label)+' '+periods[i]+': '+lineFmt(s.line[i])+'</title></circle>'; }); });
+    if(barsOn) subset.forEach(function(s,j){ allIndices(s.bars).forEach(function(i){ var v=s.bars[i]; var bx=x(i)-groupW/2+j*bw+bw/2; var yTop=Math.min(yB(0),yB(v));
+      svg+='<text class="value-label vl-'+s.key+'" text-anchor="middle" x="'+bx+'" y="'+yTop+'" data-col="'+(i*100+j)+'" data-py="'+yTop+'" data-shape="bar" data-sign="'+(v>=0?'pos':'neg')+'">'+barFmt(v)+'</text>'; }); });
+    var belowSet = opts.lineLabelBelow || [];
+    if(lineOn) subset.forEach(function(s,j){ var lk=s.lineKey||s.key; allIndices(s.line).forEach(function(i){ var p=s._pts[i]; if(!p) return; var anchor=i===0?'start':(i===periods.length-1?'end':'middle'); var lx=p[0]+(i===0?6:(i===periods.length-1?-6:0));
+      var fp=belowSet.indexOf(i)>=0?' data-force-pref="below"':'';
+      svg+='<text class="value-label vl-'+lk+' vl-light" text-anchor="'+anchor+'" x="'+lx+'" y="'+p[1]+'" data-col="'+(i*100+j+50)+'" data-py="'+p[1]+'" data-shape="dot"'+fp+'>'+lineFmt(s.line[i])+'</text>'; }); });
+    svg+='</svg>';
+    var legend=subset.map(function(s){return {key:s.key,label:s.label};});
+    var hint=[]; if(barsOn) hint.push('Bars = '+esc(opts.barName||'value')+(lineOn?' (left)':'')); if(lineOn) hint.push('Line (dashed, lighter) = '+esc(opts.lineName||'ratio')+(barsOn?' (right)':''));
+    mount.innerHTML=svg+legendHTML(legend)+'<div class="chart-legend" style="margin-top:2px;color:var(--muted);">'+hint.map(function(h){return '<span class="legend-item">'+h+'</span>';}).join('')+'</div>';
+    placeLabels(mount.querySelector('svg'), {plotTop:MT, plotBottom:MT+plotH});
+  }
+  draw();
+}
+
+// Interactive company-toggle dual-metric: two lines per company on one axis — m1 solid, m2 lighter+dashed.
+// Metric chips let the user show/hide each metric.
+function renderInteractiveDualMetric(id, opts){
+  var el=document.getElementById(id); if(!el) return;
+  var defOn=opts.defaultOn?{}:null; if(defOn) opts.defaultOn.forEach(function(k){defOn[k]=1;});
+  var active={}; opts.series.forEach(function(s){active[s.key]=defOn?!!defOn[s.key]:true;});
+  var mAct={ m1:true, m2:true };
+  el.innerHTML='<div class="series-toggle" data-role="company"></div><div class="series-toggle metric-toggle"><span class="toggle-label">Show:</span></div><div class="chart-mount" id="'+id+'-m"></div>';
+  var compRow=el.querySelector('[data-role="company"]'), metRow=el.querySelector('.metric-toggle');
+  var compBtns=[], metBtns=[];
+  function nComp(){ return opts.series.filter(function(s){return active[s.key];}).length; }
+  function nMet(){ return (mAct.m1?1:0)+(mAct.m2?1:0); }
+  function refreshChips(){ compBtns.forEach(function(o){o.btn.classList.toggle('on',active[o.key]);}); metBtns.forEach(function(o){o.btn.classList.toggle('on',mAct[o.key]);}); }
+  opts.series.forEach(function(s){ var b=document.createElement('button'); b.className='toggle-chip'+(active[s.key]?' on':''); b.type='button';
+    b.innerHTML='<span class="legend-swatch" style="background:var(--'+s.key+')"></span>'+esc(s.label);
+    b.addEventListener('click',function(){
+      if(active[s.key] && nComp()===1) return;
+      active[s.key]=!active[s.key];
+      if(nComp()>=2 && nMet()>=2){ mAct.m1=true; mAct.m2=false; }
+      refreshChips(); draw();
+    });
+    compBtns.push({key:s.key,btn:b}); compRow.appendChild(b); });
+  [['m1',opts.m1Label],['m2',opts.m2Label]].forEach(function(m){
+    var mk=m[0]; var b=document.createElement('button'); b.className='toggle-chip metric'+(mAct[mk]?' on':''); b.type='button'; b.textContent=m[1];
+    b.addEventListener('click',function(){
+      if(mAct[mk] && nMet()===1) return;
+      mAct[mk]=!mAct[mk];
+      if(nMet()>=2 && nComp()>=2){ var kept=false; opts.series.forEach(function(ss){ if(active[ss.key]){ if(kept){active[ss.key]=false;} else {kept=true;} } }); }
+      refreshChips(); draw();
+    });
+    metBtns.push({key:mk,btn:b}); metRow.appendChild(b);
+  });
+  function draw(){
+    var subset=opts.series.filter(function(s){return active[s.key];}); if(!subset.length) subset=[opts.series[0]];
+    var mount=document.getElementById(id+'-m'); var periods=opts.periods; var fmt=opts.fmt||fmtPct, axisFmt=opts.axisFmt||axisPct;
+    var W=900,H=opts.height||320,ML=46,MR=16,MT=14,MB=30; var plotW=W-ML-MR,plotH=H-MT-MB;
+    var mets=[]; if(mAct.m1) mets.push('m1'); if(mAct.m2) mets.push('m2');
+    var allv=[]; subset.forEach(function(s){ mets.forEach(function(mm){ allv=allv.concat(s[mm]); }); }); var scale=computeScale(allv,5);
+    function x(i){return periods.length===1?ML:ML+i*(plotW/(periods.length-1));}
+    function y(v){return MT+plotH-(v-scale.min)/(scale.max-scale.min)*plotH;}
+    var svg='<svg class="chart-svg" viewBox="0 0 '+W+' '+H+'" role="img" aria-label="'+esc(opts.ariaLabel||"")+'">';
+    scale.ticks.forEach(function(t){var yy=y(t); svg+='<line class="grid" x1="'+ML+'" y1="'+yy+'" x2="'+(W-MR)+'" y2="'+yy+'"/>'; svg+='<text class="axis-label" x="'+(ML-6)+'" y="'+(yy+4)+'" text-anchor="end">'+axisFmt(t)+'</text>';});
+    if(scale.min<0&&scale.max>0) svg+='<line class="baseline" x1="'+ML+'" y1="'+y(0)+'" x2="'+(W-MR)+'" y2="'+y(0)+'"/>';
+    periods.forEach(function(p,i){svg+='<text class="axis-label" x="'+x(i)+'" y="'+(H-8)+'" text-anchor="middle">'+p+'</text>';});
+    subset.forEach(function(s){ [['m1',false],['m2',true]].forEach(function(tp){ if(!mAct[tp[0]]) return; var arr=s[tp[0]], lighter=tp[1];
+      var pts=arr.map(function(v,i){return v==null?null:[x(i),y(v)];}); s['_'+tp[0]]=pts;
+      var lstyle=lighter?' stroke-dasharray="5 3" stroke-opacity="0.5"':'';
+      polylineSegments(pts).forEach(function(seg){ svg+='<polyline class="line-'+s.key+'"'+lstyle+' points="'+seg.map(function(p){return p[0]+','+p[1];}).join(' ')+'"/>'; });
+      pts.forEach(function(p,i){ if(!p) return; svg+='<circle class="dot-'+s.key+'" cx="'+p[0]+'" cy="'+p[1]+'" r="4"'+(lighter?' fill-opacity="0.5"':'')+'><title>'+esc(s.label)+' '+esc(lighter?opts.m2Label:opts.m1Label)+' '+periods[i]+': '+fmt(arr[i])+'</title></circle>'; });
+    }); });
+    subset.forEach(function(s){ [['_m1','m1',0,false],['_m2','m2',50,true]].forEach(function(tp){ if(!mAct[tp[1]]) return; var pts=s[tp[0]], arr=s[tp[1]];
+      allIndices(arr).forEach(function(i){ var p=pts[i]; if(!p) return; var anchor=i===0?'start':(i===periods.length-1?'end':'middle'); var lx=p[0]+(i===0?8:(i===periods.length-1?-8:0));
+        svg+='<text class="value-label vl-'+s.key+(tp[3]?' vl-light':'')+'" text-anchor="'+anchor+'" x="'+lx+'" y="'+p[1]+'" data-col="'+(i*100+tp[2])+'" data-py="'+p[1]+'" data-shape="dot">'+fmt(arr[i])+'</text>'; });
+    }); });
+    svg+='</svg>';
+    var legend=subset.map(function(s){return {key:s.key,label:s.label};});
+    var mh=[]; if(mAct.m1) mh.push('<span class="legend-item"><span class="legend-dash" style="border-top-style:solid;border-top-color:var(--fg)"></span>solid = '+esc(opts.m1Label)+'</span>'); if(mAct.m2) mh.push('<span class="legend-item"><span class="legend-dash" style="border-top-color:var(--fg);opacity:0.5"></span>dashed (lighter) = '+esc(opts.m2Label)+'</span>');
+    mount.innerHTML=svg+legendHTML(legend)+'<div class="chart-legend" style="margin-top:2px;color:var(--muted);">'+mh.join('')+'</div>';
+    placeLabels(mount.querySelector('svg'), {plotTop:MT, plotBottom:MT+plotH});
+  }
+  draw();
+}
+
+// Interactive company-toggle stacked bars: dividends (lighter) + buybacks (solid) stacked per company.
+function renderInteractiveStackedChart(id, opts){
+  var el=document.getElementById(id); if(!el) return;
+  var defOn=opts.defaultOn?{}:null; if(defOn) opts.defaultOn.forEach(function(k){defOn[k]=1;});
+  var active={}; opts.series.forEach(function(s){active[s.key]=defOn?!!defOn[s.key]:true;});
+  el.innerHTML='<div class="series-toggle" data-role="company"></div><div class="chart-mount" id="'+id+'-m"></div>';
+  var compRow=el.querySelector('[data-role="company"]');
+  opts.series.forEach(function(s){ var b=document.createElement('button'); b.className='toggle-chip'+(active[s.key]?' on':''); b.type='button';
+    b.innerHTML='<span class="legend-swatch" style="background:var(--'+s.key+')"></span>'+esc(s.label);
+    b.addEventListener('click',function(){active[s.key]=!active[s.key]; b.classList.toggle('on',active[s.key]); draw();}); compRow.appendChild(b); });
+  function draw(){
+    var subset=opts.series.filter(function(s){return active[s.key];}); if(!subset.length) subset=[opts.series[0]];
+    var mount=document.getElementById(id+'-m'); var periods=opts.periods; var fmt=opts.fmt||fmtM, axisFmt=opts.axisFmt||axisM;
+    var W=900,H=opts.height||340,ML=58,MR=16,MT=14,MB=30; var plotW=W-ML-MR,plotH=H-MT-MB;
+    var totals=[]; subset.forEach(function(s){ periods.forEach(function(p,i){ totals.push((s.div[i]||0)+(s.buyback[i]||0)); }); });
+    var scale=computeScale(totals.concat([0]),5);
+    function x(i){ return periods.length===1?ML+plotW/2:ML+i*(plotW/(periods.length-1)); }
+    function y(v){ return MT+plotH-(v-scale.min)/(scale.max-scale.min)*plotH; }
+    var n=subset.length; var groupW=Math.min(plotW/periods.length*0.7, 46); var bw=Math.min(groupW/n, 26);
+    var svg='<svg class="chart-svg" viewBox="0 0 '+W+' '+H+'" role="img" aria-label="'+esc(opts.ariaLabel||"")+'">';
+    scale.ticks.forEach(function(t){var yy=y(t); svg+='<line class="grid" x1="'+ML+'" y1="'+yy+'" x2="'+(W-MR)+'" y2="'+yy+'"/>'; svg+='<text class="axis-label" x="'+(ML-6)+'" y="'+(yy+4)+'" text-anchor="end">'+axisFmt(t)+'</text>';});
+    svg+='<line class="baseline" x1="'+ML+'" y1="'+y(0)+'" x2="'+(W-MR)+'" y2="'+y(0)+'"/>';
+    periods.forEach(function(p,i){svg+='<text class="axis-label" x="'+x(i)+'" y="'+(H-8)+'" text-anchor="middle">'+p+'</text>';});
+    var segLabels=[];
+    subset.forEach(function(s,j){ periods.forEach(function(p,i){
+      var dv=s.div[i]||0, bb=s.buyback[i]||0; var bx=x(i)-groupW/2+j*bw; if(dv===0&&bb===0) return;
+      var run=0;
+      [['div',dv,0.45],['buyback',bb,1]].forEach(function(seg){ var v=seg[1]; if(v<=0) return; var yBot=y(run), yTop=y(run+v); run+=v;
+        svg+='<rect class="bar-'+s.key+'" x="'+bx+'" y="'+yTop+'" width="'+bw+'" height="'+Math.max(yBot-yTop,1)+'" fill-opacity="'+seg[2]+'"><title>'+esc(s.label)+' '+seg[0]+' '+periods[i]+': '+fmt(v)+'</title></rect>';
+        segLabels.push({key:s.key,x:bx+bw/2,mid:(yTop+yBot)/2,col:i*10+j,v:v,light:seg[2]<1});
+      });
+    }); });
+    segLabels.forEach(function(sl){ svg+='<text class="value-label vl-'+sl.key+(sl.light?' vl-light':'')+'" text-anchor="middle" x="'+sl.x+'" y="'+sl.mid+'" data-col="'+sl.col+'" data-py="'+sl.mid+'" data-shape="stack">'+fmt(sl.v)+'</text>'; });
+    svg+='</svg>';
+    var legend=subset.map(function(s){return {key:s.key,label:s.label};});
+    mount.innerHTML=svg+legendHTML(legend)+'<div class="chart-legend" style="margin-top:2px;color:var(--muted);"><span class="legend-item"><span class="legend-swatch" style="background:var(--fg);opacity:0.45"></span>lower / lighter = dividends</span><span class="legend-item"><span class="legend-swatch" style="background:var(--fg)"></span>upper / solid = buybacks</span></div>';
+    placeLabels(mount.querySelector('svg'), {plotTop:MT, plotBottom:MT+plotH});
+  }
+  draw();
+}
+
+// Interactive company-toggle grouped bar chart (single value per company per period).
+function renderInteractiveBarChart(id, opts){
+  var el=document.getElementById(id); if(!el) return;
+  var defOn=opts.defaultOn?{}:null; if(defOn) opts.defaultOn.forEach(function(k){defOn[k]=1;});
+  var active={}; opts.series.forEach(function(s){active[s.key]=defOn?!!defOn[s.key]:true;});
+  el.innerHTML='<div class="series-toggle" data-role="company"></div><div class="chart-mount" id="'+id+'-m"></div>';
+  var compRow=el.querySelector('[data-role="company"]');
+  opts.series.forEach(function(s){ var b=document.createElement('button'); b.className='toggle-chip'+(active[s.key]?' on':''); b.type='button';
+    b.innerHTML='<span class="legend-swatch" style="background:var(--'+s.key+')"></span>'+esc(s.label);
+    b.addEventListener('click',function(){active[s.key]=!active[s.key]; b.classList.toggle('on',active[s.key]); draw();}); compRow.appendChild(b); });
+  function draw(){
+    var subset=opts.series.filter(function(s){return active[s.key];}); if(!subset.length) subset=[opts.series[0]];
+    var mount=document.getElementById(id+'-m'); var periods=opts.periods; var fmt=opts.fmt||fmtM, axisFmt=opts.axisFmt||axisM;
+    var W=900,H=opts.height||320,ML=58,MR=16,MT=14,MB=30; var plotW=W-ML-MR,plotH=H-MT-MB;
+    var allv=[]; subset.forEach(function(s){ allv=allv.concat(s.data); }); var scale=computeScale(allv,5);
+    function x(i){ return ML + (i+0.5)*(plotW/periods.length); }
+    function y(v){ return MT+plotH-(v-scale.min)/(scale.max-scale.min)*plotH; }
+    var n=subset.length; var groupW=Math.min(plotW/periods.length*0.6, 50); var bw=Math.min(groupW/n, 34);
+    var svg='<svg class="chart-svg" viewBox="0 0 '+W+' '+H+'" role="img" aria-label="'+esc(opts.ariaLabel||"")+'">';
+    scale.ticks.forEach(function(t){var yy=y(t); svg+='<line class="grid" x1="'+ML+'" y1="'+yy+'" x2="'+(W-MR)+'" y2="'+yy+'"/>'; svg+='<text class="axis-label" x="'+(ML-6)+'" y="'+(yy+4)+'" text-anchor="end">'+axisFmt(t)+'</text>';});
+    svg+='<line class="baseline" x1="'+ML+'" y1="'+y(0)+'" x2="'+(W-MR)+'" y2="'+y(0)+'"/>';
+    periods.forEach(function(p,i){svg+='<text class="axis-label" x="'+x(i)+'" y="'+(H-8)+'" text-anchor="middle">'+p+'</text>';});
+    subset.forEach(function(s,j){ s.data.forEach(function(v,i){ if(v==null) return; var bx=x(i)-groupW/2+j*bw; var y0=y(0),y1=y(v); var top=Math.min(y0,y1),h=Math.max(Math.abs(y1-y0),1);
+      svg+='<rect class="bar-'+s.key+'" x="'+bx+'" y="'+top+'" width="'+bw+'" height="'+h+'" rx="2"><title>'+esc(s.label)+' '+periods[i]+': '+fmt(v)+'</title></rect>'; }); });
+    subset.forEach(function(s,j){ allIndices(s.data).forEach(function(i){ var v=s.data[i]; var bx=x(i)-groupW/2+j*bw+bw/2; var yTop=Math.min(y(0),y(v));
+      svg+='<text class="value-label vl-'+s.key+'" text-anchor="middle" x="'+bx+'" y="'+yTop+'" data-col="'+(i*100+j)+'" data-py="'+yTop+'" data-shape="bar" data-sign="'+(v>=0?'pos':'neg')+'">'+fmt(v)+'</text>'; }); });
+    svg+='</svg>';
+    mount.innerHTML=svg+legendHTML(subset.map(function(s){return {key:s.key,label:s.label};}));
+    placeLabels(mount.querySelector('svg'), {plotTop:MT, plotBottom:MT+plotH});
+  }
+  draw();
+}
+
+function renderLineChart(id, opts){
+  var el = document.getElementById(id);
+  if(!el) return;
+  var periods = opts.periods, series = opts.series, fmt = opts.fmt || fmtPct, axisFmt = opts.axisFmt || axisPct;
+  var W = 900, H = opts.height || 280, ML = 46, MR = 16, MT = 14, MB = 30;
+  var plotW = W - ML - MR, plotH = H - MT - MB;
+  var allVals = [];
+  series.forEach(function(s){ allVals = allVals.concat(s.data); });
+  var scale = computeScale(allVals, 5);
+  var labelSet = opts.labelIndices ? {} : null;
+  if(labelSet) opts.labelIndices.forEach(function(i){ labelSet[i]=1; });
+  function x(i){ return periods.length === 1 ? ML : ML + i * (plotW / (periods.length - 1)); }
+  function y(v){ return MT + plotH - (v - scale.min) / (scale.max - scale.min) * plotH; }
+
+  var svg = '<svg class="chart-svg"' + (labelSet ? ' data-partial-labels="1"' : '') + ' viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="' + esc(opts.ariaLabel||"") + '">';
+  scale.ticks.forEach(function(t){
+    var yy = y(t);
+    svg += '<line class="grid" x1="' + ML + '" y1="' + yy + '" x2="' + (W-MR) + '" y2="' + yy + '"/>';
+    svg += '<text class="axis-label" x="' + (ML-6) + '" y="' + (yy+4) + '" text-anchor="end">' + axisFmt(t) + '</text>';
+  });
+  if(scale.min < 0 && scale.max > 0){
+    svg += '<line class="baseline" x1="' + ML + '" y1="' + y(0) + '" x2="' + (W-MR) + '" y2="' + y(0) + '"/>';
+  }
+  periods.forEach(function(p,i){
+    if(opts.xLabelEvery && ((periods.length-1-i) % opts.xLabelEvery !== 0)) return;
+    svg += '<text class="axis-label" x="' + x(i) + '" y="' + (H-8) + '" text-anchor="middle">' + p + '</text>';
+  });
+
+  var ptsBySeries = {};
+  series.forEach(function(s){
+    var pts = s.data.map(function(v,i){ return (v===null||v===undefined) ? null : [x(i), y(v)]; });
+    ptsBySeries[s.key] = pts;
+    polylineSegments(pts).forEach(function(seg){
+      svg += '<polyline class="line-' + s.key + '"' + (s.dash?' stroke-dasharray="7 4"':'') + ' points="' + seg.map(function(p){ return p[0]+','+p[1]; }).join(' ') + '"/>';
+    });
+    pts.forEach(function(p,i){
+      if(!p) return;
+      svg += '<circle class="dot-' + s.key + '" cx="' + p[0] + '" cy="' + p[1] + '" r="5"><title>' + esc(s.label) + ' ' + periods[i] + ': ' + fmt(s.data[i]) + '</title></circle>';
+    });
+  });
+
+  series.forEach(function(s){
+    allIndices(s.data).forEach(function(i){
+      if(labelSet && !labelSet[i]) return;
+      var p = ptsBySeries[s.key][i]; if(!p) return;
+      var anchor = i===0 ? 'start' : (i===periods.length-1 ? 'end' : 'middle');
+      var lx = p[0] + (i===0 ? 8 : (i===periods.length-1 ? -8 : 0));
+      svg += '<text class="value-label vl-' + s.key + '" text-anchor="' + anchor + '" x="' + lx + '" y="' + p[1] + '" data-col="' + i + '" data-py="' + p[1] + '" data-shape="dot">' + fmt(s.data[i]) + '</text>';
+    });
+  });
+  svg += '</svg>';
+  el.innerHTML = svg + (opts.noLegend ? '' : legendHTML(series.map(function(s){ return {key:s.key, label:s.label}; })));
+  placeLabels(el.querySelector('svg'), { plotTop: MT, plotBottom: MT + plotH });
+}
+
+// Two line series on independent axes (left / right) — for pairs that are conceptually related
+// but run on different magnitudes or units (P/E vs FCF yield, EV/EBITDA vs EV/Sales).
+function renderDualLineChart(id, opts){
+  var el = document.getElementById(id);
+  if(!el) return;
+  var periods = opts.periods, left = opts.left, right = opts.right;
+  var leftFmt = left.fmt || fmtX, leftAxisFmt = left.axisFmt || axisX;
+  var rightFmt = right.fmt || fmtPct, rightAxisFmt = right.axisFmt || axisPct;
+  var W = 900, H = opts.height || 300, ML = 58, MR = 58, MT = 14, MB = 30;
+  var plotW = W - ML - MR, plotH = H - MT - MB;
+  var leftScale = computeScale(left.data, 5);
+  var rightScale = computeScale(right.data, 5);
+  var labelSet = opts.labelIndices ? {} : null;
+  if(labelSet) opts.labelIndices.forEach(function(i){ labelSet[i]=1; });
+  function x(i){ return periods.length === 1 ? ML + plotW/2 : ML + i * (plotW / (periods.length - 1)); }
+  function yL(v){ return MT + plotH - (v - leftScale.min) / (leftScale.max - leftScale.min) * plotH; }
+  function yR(v){ return MT + plotH - (v - rightScale.min) / (rightScale.max - rightScale.min) * plotH; }
+
+  var svg = '<svg class="chart-svg"' + (labelSet ? ' data-partial-labels="1"' : '') + ' viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="' + esc(opts.ariaLabel||"") + '">';
+  leftScale.ticks.forEach(function(t){
+    var yy = yL(t);
+    svg += '<line class="grid" x1="' + ML + '" y1="' + yy + '" x2="' + (W-MR) + '" y2="' + yy + '"/>';
+    svg += '<text class="axis-label" x="' + (ML-6) + '" y="' + (yy+4) + '" text-anchor="end">' + leftAxisFmt(t) + '</text>';
+  });
+  rightScale.ticks.forEach(function(t){
+    var yy = yR(t);
+    svg += '<text class="axis-label" x="' + (W-MR+8) + '" y="' + (yy+4) + '" text-anchor="start">' + rightAxisFmt(t) + '</text>';
+  });
+  periods.forEach(function(p,i){
+    if(opts.xLabelEvery && ((periods.length-1-i) % opts.xLabelEvery !== 0)) return;
+    svg += '<text class="axis-label" x="' + x(i) + '" y="' + (H-8) + '" text-anchor="middle">' + p + '</text>';
+  });
+
+  [[left, yL, leftFmt],[right, yR, rightFmt]].forEach(function(tuple){
+    var s = tuple[0], yf = tuple[1], f = tuple[2];
+    var pts = s.data.map(function(v,i){ return (v===null||v===undefined) ? null : [x(i), yf(v)]; });
+    s._pts = pts;
+    polylineSegments(pts).forEach(function(seg){
+      svg += '<polyline class="line-' + s.key + '" points="' + seg.map(function(p){ return p[0]+','+p[1]; }).join(' ') + '"/>';
+    });
+    pts.forEach(function(p,i){
+      if(!p) return;
+      svg += '<circle class="dot-' + s.key + '" cx="' + p[0] + '" cy="' + p[1] + '" r="5"><title>' + esc(s.label) + ' ' + periods[i] + ': ' + f(s.data[i]) + '</title></circle>';
+    });
+  });
+  [[left, leftFmt],[right, rightFmt]].forEach(function(tuple){
+    var s = tuple[0], f = tuple[1];
+    allIndices(s.data).forEach(function(i){
+      if(labelSet && !labelSet[i]) return;
+      var p = s._pts[i]; if(!p) return;
+      var anchor = i===0 ? 'start' : (i===periods.length-1 ? 'end' : 'middle');
+      var lx = p[0] + (i===0 ? 8 : (i===periods.length-1 ? -8 : 0));
+      svg += '<text class="value-label vl-' + s.key + '" text-anchor="' + anchor + '" x="' + lx + '" y="' + p[1] + '" data-col="' + i + '" data-py="' + p[1] + '" data-shape="dot">' + f(s.data[i]) + '</text>';
+    });
+  });
+  svg += '</svg>';
+  el.innerHTML = svg + legendHTML([{key:left.key,label:left.label+' (left)'},{key:right.key,label:right.label+' (right)'}]);
+  placeLabels(el.querySelector('svg'), { plotTop: MT, plotBottom: MT + plotH });
+}
+
+// One bar series (left axis) + two line series, each on its own right axis (inner + outer). For
+// unifying three different-unit metrics — e.g. EPS ($), P/E (x) and FCF yield (%) — in one chart.
+function renderTripleChart(id, opts){
+  var el = document.getElementById(id); if(!el) return;
+  var periods = opts.periods, bar = opts.bar, line1 = opts.line1, line2 = opts.line2;
+  var W = 900, H = opts.height || 300, ML = 52, MR = 104, MT = 14, MB = 30;
+  var plotW = W - ML - MR, plotH = H - MT - MB;
+  var barScale = computeScale(bar.data, 5), s1 = computeScale(line1.data, 5), s2 = computeScale(line2.data, 5);
+  var labelSet = opts.labelIndices ? {} : null;
+  if(labelSet) opts.labelIndices.forEach(function(i){ labelSet[i]=1; });
+  function x(i){ return ML+(i+0.5)*(plotW/periods.length); }
+  function yB(v){ return MT+plotH - (v-barScale.min)/(barScale.max-barScale.min)*plotH; }
+  function y1(v){ return MT+plotH - (v-s1.min)/(s1.max-s1.min)*plotH; }
+  function y2(v){ return MT+plotH - (v-s2.min)/(s2.max-s2.min)*plotH; }
+  var barW = Math.min(16, plotW/periods.length*0.5);
+
+  var svg = '<svg class="chart-svg"' + (labelSet ? ' data-partial-labels="1"' : '') + ' viewBox="0 0 '+W+' '+H+'" role="img" aria-label="'+esc(opts.ariaLabel||"")+'">';
+  barScale.ticks.forEach(function(t){ var yy=yB(t);
+    svg += '<line class="grid" x1="'+ML+'" y1="'+yy+'" x2="'+(W-MR)+'" y2="'+yy+'"/>';
+    svg += '<text class="axis-label" x="'+(ML-6)+'" y="'+(yy+4)+'" text-anchor="end">'+(bar.axisFmt||axisM)(t)+'</text>';
+  });
+  s1.ticks.forEach(function(t){ var yy=y1(t);
+    svg += '<text class="axis-label" x="'+(W-MR+8)+'" y="'+(yy+4)+'" text-anchor="start" style="fill:var(--'+line1.key+')">'+(line1.axisFmt||axisX)(t)+'</text>';
+  });
+  s2.ticks.forEach(function(t){ var yy=y2(t);
+    svg += '<text class="axis-label" x="'+(W-MR+52)+'" y="'+(yy+4)+'" text-anchor="start" style="fill:var(--'+line2.key+')">'+(line2.axisFmt||axisPct)(t)+'</text>';
+  });
+  svg += '<line class="baseline" x1="'+ML+'" y1="'+yB(0)+'" x2="'+(W-MR)+'" y2="'+yB(0)+'"/>';
+  periods.forEach(function(p,i){ if(opts.xLabelEvery && ((periods.length-1-i)%opts.xLabelEvery!==0)) return;
+    svg += '<text class="axis-label" x="'+x(i)+'" y="'+(H-8)+'" text-anchor="middle">'+p+'</text>';
+  });
+  bar.data.forEach(function(v,i){ if(v==null) return; var y0=yB(0), y1v=yB(v); var top=Math.min(y0,y1v), h=Math.max(Math.abs(y1v-y0),1);
+    svg += '<rect class="bar-'+bar.key+'" x="'+(x(i)-barW/2)+'" y="'+top+'" width="'+barW+'" height="'+h+'" rx="2"><title>'+esc(bar.label)+' '+periods[i]+': '+(bar.fmt||fmtM)(v)+'</title></rect>';
+  });
+  [[line1,y1],[line2,y2]].forEach(function(tp){ var s=tp[0], yf=tp[1];
+    var pts=s.data.map(function(v,i){ return v==null?null:[x(i),yf(v)]; }); s._pts=pts;
+    polylineSegments(pts).forEach(function(seg){ svg+='<polyline class="line-'+s.key+'" points="'+seg.map(function(p){return p[0]+','+p[1];}).join(' ')+'"/>'; });
+    pts.forEach(function(p,i){ if(!p) return; svg+='<circle class="dot-'+s.key+'" cx="'+p[0]+'" cy="'+p[1]+'" r="4"><title>'+esc(s.label)+' '+periods[i]+': '+(s.fmt||fmtX)(s.data[i])+'</title></circle>'; });
+  });
+  allIndices(bar.data).forEach(function(i){ if(labelSet && !labelSet[i]) return; var v=bar.data[i]; var yTop=Math.min(yB(0),yB(v));
+    var anchor=i===0?'start':(i===periods.length-1?'end':'middle'); var lx=x(i)+(i===0?6:(i===periods.length-1?-6:0));
+    svg += '<text class="value-label vl-'+bar.key+'" text-anchor="'+anchor+'" x="'+lx+'" y="'+yTop+'" data-col="'+i+'" data-py="'+yTop+'" data-shape="bar" data-sign="'+(v>=0?'pos':'neg')+'">'+(bar.fmt||fmtM)(v)+'</text>';
+  });
+  [line1,line2].forEach(function(s){ allIndices(s.data).forEach(function(i){ if(labelSet && !labelSet[i]) return; var p=s._pts[i]; if(!p) return;
+    var anchor=i===0?'start':(i===periods.length-1?'end':'middle'); var lx=p[0]+(i===0?6:(i===periods.length-1?-6:0));
+    svg += '<text class="value-label vl-'+s.key+'" text-anchor="'+anchor+'" x="'+lx+'" y="'+p[1]+'" data-col="'+i+'" data-py="'+p[1]+'" data-shape="dot">'+(s.fmt||fmtX)(s.data[i])+'</text>';
+  }); });
+  svg += '</svg>';
+  el.innerHTML = svg + legendHTML([{key:bar.key,label:bar.label},{key:line1.key,label:line1.label},{key:line2.key,label:line2.label}]);
+  placeLabels(el.querySelector('svg'), { plotTop: MT, plotBottom: MT+plotH });
+}
+
+function renderBarChart(id, opts){
+  var el = document.getElementById(id);
+  if(!el) return;
+  var periods = opts.periods, s = opts.series, fmt = opts.fmt || fmtM, axisFmt = opts.axisFmt || axisM;
+  var W = 900, H = opts.height || 260, ML = 54, MR = 16, MT = 14, MB = 30;
+  var plotW = W - ML - MR, plotH = H - MT - MB;
+  var scale = computeScale(s.data, 5);
+  function x(i){ return periods.length === 1 ? ML + plotW/2 : ML + i * (plotW / (periods.length - 1)); }
+  function y(v){ return MT + plotH - (v - scale.min) / (scale.max - scale.min) * plotH; }
+  var barW = Math.min(22, plotW / periods.length * 0.55);
+
+  var svg = '<svg class="chart-svg" viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="' + esc(opts.ariaLabel||"") + '">';
+  scale.ticks.forEach(function(t){
+    var yy = y(t);
+    svg += '<line class="grid" x1="' + ML + '" y1="' + yy + '" x2="' + (W-MR) + '" y2="' + yy + '"/>';
+    svg += '<text class="axis-label" x="' + (ML-6) + '" y="' + (yy+4) + '" text-anchor="end">' + axisFmt(t) + '</text>';
+  });
+  svg += '<line class="baseline" x1="' + ML + '" y1="' + y(0) + '" x2="' + (W-MR) + '" y2="' + y(0) + '"/>';
+  periods.forEach(function(p,i){
+    svg += '<text class="axis-label" x="' + x(i) + '" y="' + (H-8) + '" text-anchor="middle">' + p + '</text>';
+  });
+  s.data.forEach(function(v,i){
+    if(v===null||v===undefined) return;
+    var y0 = y(0), y1 = y(v);
+    var top = Math.min(y0,y1), h = Math.max(Math.abs(y1-y0), 1);
+    svg += '<rect class="bar-' + s.key + '" x="' + (x(i)-barW/2) + '" y="' + top + '" width="' + barW + '" height="' + h + '" rx="3"><title>' + esc(s.label) + ' ' + periods[i] + ': ' + fmt(v) + '</title></rect>';
+  });
+  allIndices(s.data).forEach(function(i){
+    var v = s.data[i];
+    var yTop = Math.min(y(0),y(v));
+    var anchor = i===0 ? 'start' : (i===periods.length-1 ? 'end' : 'middle');
+    var lx = x(i) + (i===0 ? 8 : (i===periods.length-1 ? -8 : 0));
+    svg += '<text class="value-label vl-' + s.key + '" text-anchor="' + anchor + '" x="' + lx + '" y="' + yTop + '" data-col="' + i + '" data-py="' + yTop + '" data-shape="bar" data-sign="' + (v>=0?'pos':'neg') + '">' + fmt(v) + '</text>';
+  });
+  svg += '</svg>';
+  el.innerHTML = svg + legendHTML([{key:s.key, label:s.label}]);
+  placeLabels(el.querySelector('svg'), { plotTop: MT, plotBottom: MT + plotH });
+}
+
+// Stacked bars with an optional reference marker drawn across each bar (used to show gross debt
+// issued against the shareholder returns it did or did not cover).
+function renderStackedBarChart(id, opts){
+  var el = document.getElementById(id);
+  if(!el) return;
+  var periods = opts.periods, segments = opts.segments, marker = opts.marker;
+  var fmt = opts.fmt || fmtM, axisFmt = opts.axisFmt || axisM;
+  var W = 900, H = opts.height || 380, ML = 58, MR = 16, MT = 14, MB = 30;
+  var plotW = W - ML - MR, plotH = H - MT - MB;
+
+  var totals = periods.map(function(p,i){
+    return segments.reduce(function(acc,s){ return acc + (s.data[i] || 0); }, 0);
+  });
+  var scaleVals = totals.concat(marker ? marker.data : []);
+  var scale = computeScale(scaleVals, 5);
+  function x(i){ return ML + (i+0.5)*(plotW/periods.length); }
+  function y(v){ return MT + plotH - (v - scale.min) / (scale.max - scale.min) * plotH; }
+  var barW = Math.min(52, plotW / periods.length * 0.62);
+
+  var svg = '<svg class="chart-svg" viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="' + esc(opts.ariaLabel||"") + '">';
+  scale.ticks.forEach(function(t){
+    var yy = y(t);
+    svg += '<line class="grid" x1="' + ML + '" y1="' + yy + '" x2="' + (W-MR) + '" y2="' + yy + '"/>';
+    svg += '<text class="axis-label" x="' + (ML-6) + '" y="' + (yy+4) + '" text-anchor="end">' + axisFmt(t) + '</text>';
+  });
+  svg += '<line class="baseline" x1="' + ML + '" y1="' + y(0) + '" x2="' + (W-MR) + '" y2="' + y(0) + '"/>';
+  periods.forEach(function(p,i){
+    svg += '<text class="axis-label" x="' + x(i) + '" y="' + (H-8) + '" text-anchor="middle">' + p + '</text>';
+  });
+
+  var segMid = [];
+  periods.forEach(function(p,i){
+    var running = 0;
+    segments.forEach(function(s){
+      var v = s.data[i];
+      if(v === null || v === undefined || v === 0) return;
+      var yBottom = y(running), yTop = y(running + v);
+      running += v;
+      svg += '<rect class="bar-' + s.key + '" x="' + (x(i)-barW/2) + '" y="' + yTop + '" width="' + barW +
+             '" height="' + Math.max(yBottom - yTop, 1) + '"><title>' + esc(s.label) + ' ' + p + ': ' + fmt(v) + '</title></rect>';
+      segMid.push({ col:i, key:s.key, val:v, mid:(yTop + yBottom) / 2 });
+    });
+  });
+
+  if(marker){
+    periods.forEach(function(p,i){
+      var v = marker.data[i];
+      if(v === null || v === undefined) return;
+      var yy = y(v);
+      svg += '<rect class="bar-' + marker.key + '" x="' + (x(i)-barW/2-5) + '" y="' + (yy-1.5) + '" width="' + (barW+10) +
+             '" height="3" rx="1"><title>' + esc(marker.label) + ' ' + p + ': ' + fmt(v) + '</title></rect>';
+    });
+  }
+
+  segMid.forEach(function(sm){
+    svg += '<text class="value-label vl-' + sm.key + '" text-anchor="middle" x="' + x(sm.col) + '" y="' + sm.mid +
+           '" data-col="' + sm.col + '" data-py="' + sm.mid + '" data-shape="stack">' + fmt(sm.val) + (opts.showPct && totals[sm.col] ? ' (' + Math.round(sm.val/totals[sm.col]*100) + '%)' : '') + '</text>';
+  });
+  if(marker){
+    allIndices(marker.data).forEach(function(i){
+      var yy = y(marker.data[i]);
+      var anchor = i===0 ? 'start' : (i===periods.length-1 ? 'end' : 'middle');
+      var lx = x(i) + (i===0 ? barW/2+8 : (i===periods.length-1 ? -(barW/2+8) : 0));
+      svg += '<text class="value-label vl-' + marker.key + '" text-anchor="' + anchor + '" x="' + lx + '" y="' + yy +
+             '" data-col="' + i + '" data-py="' + yy + '" data-shape="bar" data-sign="pos">' + fmt(marker.data[i]) + '</text>';
+    });
+  }
+
+  svg += '</svg>';
+  var legend = segments.map(function(s){ return {key:s.key, label:s.label}; });
+  if(marker) legend.push({key:marker.key, label:marker.label});
+  el.innerHTML = svg + legendHTML(legend);
+  placeLabels(el.querySelector('svg'), { plotTop: MT, plotBottom: MT + plotH });
+}
+
+function renderComboChart(id, opts){
+  var el = document.getElementById(id);
+  if(!el) return;
+  var periods = opts.periods, bar = opts.bar, line = opts.line;
+  var barFmt = bar.fmt || fmtM, barAxisFmt = bar.axisFmt || axisM;
+  var lineFmt = line.fmt || fmtPctSigned, lineAxisFmt = line.axisFmt || axisPct;
+  var W = 900, H = opts.height || 300, ML = 58, MR = 58, MT = 14, MB = 30;
+  var plotW = W - ML - MR, plotH = H - MT - MB;
+  var barScale = computeScale(bar.data, 5);
+  var lineScale = computeScale(line.data, 5);
+  function x(i){ return periods.length === 1 ? ML + plotW/2 : ML + i * (plotW / (periods.length - 1)); }
+  function yBar(v){ return MT + plotH - (v - barScale.min) / (barScale.max - barScale.min) * plotH; }
+  function yLine(v){ return MT + plotH - (v - lineScale.min) / (lineScale.max - lineScale.min) * plotH; }
+  var barW = Math.min(20, plotW / periods.length * 0.5);
+  var labelSet = opts.labelIndices ? {} : null;
+  if(labelSet) opts.labelIndices.forEach(function(i){ labelSet[i]=1; });
+
+  var svg = '<svg class="chart-svg"' + (labelSet ? ' data-partial-labels="1"' : '') + ' viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="' + esc(opts.ariaLabel||"") + '">';
+  barScale.ticks.forEach(function(t){
+    var yy = yBar(t);
+    svg += '<line class="grid" x1="' + ML + '" y1="' + yy + '" x2="' + (W-MR) + '" y2="' + yy + '"/>';
+    svg += '<text class="axis-label" x="' + (ML-6) + '" y="' + (yy+4) + '" text-anchor="end">' + barAxisFmt(t) + '</text>';
+  });
+  lineScale.ticks.forEach(function(t){
+    var yy = yLine(t);
+    svg += '<text class="axis-label" x="' + (W-MR+8) + '" y="' + (yy+4) + '" text-anchor="start">' + lineAxisFmt(t) + '</text>';
+  });
+  svg += '<line class="baseline" x1="' + ML + '" y1="' + yBar(0) + '" x2="' + (W-MR) + '" y2="' + yBar(0) + '"/>';
+  periods.forEach(function(p,i){
+    if(opts.xLabelEvery && ((periods.length-1-i) % opts.xLabelEvery !== 0)) return;
+    svg += '<text class="axis-label" x="' + x(i) + '" y="' + (H-8) + '" text-anchor="middle">' + p + '</text>';
+  });
+  bar.data.forEach(function(v,i){
+    if(v===null||v===undefined) return;
+    var y0 = yBar(0), y1 = yBar(v);
+    var top = Math.min(y0,y1), h = Math.max(Math.abs(y1-y0), 1);
+    svg += '<rect class="bar-' + bar.key + '" x="' + (x(i)-barW/2) + '" y="' + top + '" width="' + barW + '" height="' + h + '" rx="3"><title>' + esc(bar.label) + ' ' + periods[i] + ': ' + barFmt(v) + '</title></rect>';
+  });
+  var linePts = line.data.map(function(v,i){ return (v===null||v===undefined) ? null : [x(i), yLine(v)]; });
+  polylineSegments(linePts).forEach(function(seg){
+    svg += '<polyline class="line-' + line.key + '" points="' + seg.map(function(p){ return p[0]+','+p[1]; }).join(' ') + '"/>';
+  });
+  linePts.forEach(function(p,i){
+    if(!p) return;
+    svg += '<circle class="dot-' + line.key + '" cx="' + p[0] + '" cy="' + p[1] + '" r="5"><title>' + esc(line.label) + ' ' + periods[i] + ': ' + lineFmt(line.data[i]) + '</title></circle>';
+  });
+  allIndices(bar.data).forEach(function(i){
+    if(labelSet && !labelSet[i]) return;
+    var v = bar.data[i];
+    var yTop = Math.min(yBar(0),yBar(v));
+    var anchor = i===0 ? 'start' : (i===periods.length-1 ? 'end' : 'middle');
+    var lx = x(i) + (i===0 ? 8 : (i===periods.length-1 ? -8 : 0));
+    svg += '<text class="value-label vl-' + bar.key + '" text-anchor="' + anchor + '" x="' + lx + '" y="' + yTop + '" data-col="' + i + '" data-py="' + yTop + '" data-shape="bar" data-sign="' + (v>=0?'pos':'neg') + '">' + barFmt(v) + '</text>';
+  });
+  allIndices(line.data).forEach(function(i){
+    if(labelSet && !labelSet[i]) return;
+    var p = linePts[i]; if(!p) return;
+    var anchor = i===0 ? 'start' : (i===periods.length-1 ? 'end' : 'middle');
+    var lx = p[0] + (i===0 ? 8 : (i===periods.length-1 ? -8 : 0));
+    svg += '<text class="value-label vl-' + line.key + '" text-anchor="' + anchor + '" x="' + lx + '" y="' + p[1] + '" data-col="' + i + '" data-py="' + p[1] + '" data-shape="dot">' + lineFmt(line.data[i]) + '</text>';
+  });
+  svg += '</svg>';
+  el.innerHTML = svg + legendHTML([{key:bar.key, label:bar.label}, {key:line.key, label:line.label}]);
+  placeLabels(el.querySelector('svg'), { plotTop: MT, plotBottom: MT + plotH });
+}
+
+// Bars (left axis) + multiple ratio lines on a shared right axis, plus an optional reference line
+// (e.g. a covenant floor). Bar value labels are centred inside each bar.
+function renderComboMultiChart(id, opts){
+  var el = document.getElementById(id);
+  if(!el) return;
+  var periods = opts.periods, bar = opts.bar, lines = opts.lines, refLine = opts.refLine;
+  var barFmt = bar.fmt || fmtM, barAxisFmt = bar.axisFmt || axisM;
+  var lineAxisFmt = opts.lineAxisFmt || axisX;
+  var W = 900, H = opts.height || 340, ML = 58, MR = 64, MT = 14, MB = 30;
+  var plotW = W - ML - MR, plotH = H - MT - MB;
+  var barScale = computeScale(bar.data, 5);
+  var allLineVals = [];
+  lines.forEach(function(s){ allLineVals = allLineVals.concat(s.data); });
+  if(refLine) allLineVals.push(refLine.value);
+  var lineScale = computeScale(allLineVals, 6);
+  function x(i){ return periods.length===1 ? ML+plotW/2 : ML + i*(plotW/(periods.length-1)); }
+  function yBar(v){ return MT+plotH - (v-barScale.min)/(barScale.max-barScale.min)*plotH; }
+  function yLine(v){ return MT+plotH - (v-lineScale.min)/(lineScale.max-lineScale.min)*plotH; }
+  var barW = Math.min(20, plotW/periods.length*0.5);
+
+  var svg = '<svg class="chart-svg" viewBox="0 0 '+W+' '+H+'" role="img" aria-label="'+esc(opts.ariaLabel||"")+'">';
+  barScale.ticks.forEach(function(t){
+    var yy=yBar(t);
+    svg+='<line class="grid" x1="'+ML+'" y1="'+yy+'" x2="'+(W-MR)+'" y2="'+yy+'"/>';
+    svg+='<text class="axis-label" x="'+(ML-6)+'" y="'+(yy+4)+'" text-anchor="end">'+barAxisFmt(t)+'</text>';
+  });
+  lineScale.ticks.forEach(function(t){
+    var yy=yLine(t);
+    svg+='<text class="axis-label" x="'+(W-MR+8)+'" y="'+(yy+4)+'" text-anchor="start">'+lineAxisFmt(t)+'</text>';
+  });
+  svg+='<line class="baseline" x1="'+ML+'" y1="'+yBar(0)+'" x2="'+(W-MR)+'" y2="'+yBar(0)+'"/>';
+  periods.forEach(function(p,i){ svg+='<text class="axis-label" x="'+x(i)+'" y="'+(H-8)+'" text-anchor="middle">'+p+'</text>'; });
+
+  if(refLine){
+    var ry=yLine(refLine.value);
+    svg+='<line x1="'+ML+'" y1="'+ry+'" x2="'+(W-MR)+'" y2="'+ry+'" stroke="var(--fg)" stroke-width="2" stroke-dasharray="8 4"/>';
+  }
+
+  bar.data.forEach(function(v,i){
+    if(v==null) return;
+    var y0=yBar(0), y1=yBar(v); var top=Math.min(y0,y1), h=Math.max(Math.abs(y1-y0),1);
+    svg+='<rect class="bar-'+bar.key+'" x="'+(x(i)-barW/2)+'" y="'+top+'" width="'+barW+'" height="'+h+'" rx="3"><title>'+esc(bar.label)+' '+periods[i]+': '+barFmt(v)+'</title></rect>';
+  });
+  lines.forEach(function(s){
+    var f=s.fmt||fmtX;
+    var pts=s.data.map(function(v,i){ return v==null?null:[x(i),yLine(v)]; });
+    s._pts=pts;
+    polylineSegments(pts).forEach(function(seg){ svg+='<polyline class="line-'+s.key+'" points="'+seg.map(function(p){return p[0]+','+p[1];}).join(' ')+'"/>'; });
+    pts.forEach(function(p,i){ if(!p) return; svg+='<circle class="dot-'+s.key+'" cx="'+p[0]+'" cy="'+p[1]+'" r="5"><title>'+esc(s.label)+' '+periods[i]+': '+f(s.data[i])+'</title></circle>'; });
+  });
+  allIndices(bar.data).forEach(function(i){
+    var v=bar.data[i]; var yTop=Math.min(yBar(0),yBar(v));
+    var anchor=i===0?'start':(i===periods.length-1?'end':'middle'); var lx=x(i)+(i===0?6:(i===periods.length-1?-6:0));
+    svg+='<text class="value-label vl-'+bar.key+'" text-anchor="'+anchor+'" x="'+lx+'" y="'+yTop+'" data-col="'+i+'" data-py="'+yTop+'" data-shape="bar" data-sign="pos">'+barFmt(v)+'</text>';
+  });
+  lines.forEach(function(s){
+    var f=s.fmt||fmtX;
+    allIndices(s.data).forEach(function(i){
+      var p=s._pts[i]; if(!p) return;
+      var anchor=i===0?'start':(i===periods.length-1?'end':'middle');
+      var lx=p[0]+(i===0?8:(i===periods.length-1?-8:0));
+      svg+='<text class="value-label vl-'+s.key+'" text-anchor="'+anchor+'" x="'+lx+'" y="'+p[1]+'" data-col="'+i+'" data-py="'+p[1]+'" data-shape="dot">'+f(s.data[i])+'</text>';
+    });
+  });
+  svg+='</svg>';
+  var legend=[{key:bar.key,label:bar.label}].concat(lines.map(function(s){return {key:s.key,label:s.label};}));
+  if(refLine) legend.push({dash:true, color:'var(--fg)', label:refLine.label});
+  el.innerHTML = svg + legendHTML(legend);
+  placeLabels(el.querySelector('svg'), { plotTop: MT, plotBottom: MT+plotH });
+}
+
+function renderTable(id, periods, rows){
+  var el = document.getElementById(id);
+  if(!el) return;
+  var head = '<thead><tr><th></th>' + periods.map(function(p){ return '<th>'+p+'</th>'; }).join('') + '</tr></thead>';
+  var body = '<tbody>' + rows.map(function(r){
+    return '<tr><td>'+esc(r.label)+'</td>' + r.data.map(function(v){
+      return '<td>' + ((v===null||v===undefined) ? '—' : r.fmt(v)) + '</td>';
+    }).join('') + '</tr>';
+  }).join('') + '</tbody>';
+  el.innerHTML = head + body;
+}
+
+
+// ================= DATA — CTT Correios de Portugal (CTT), EUR (FiscalAI 2023-LTM + CTT reports 2020-22) =================
+var AX = ["2020","2021","2022","2023","2024","2025","LTM"];
+function fmtE(v){ return "€"+Math.round(v).toLocaleString()+"M"; }
+function axisE(v){ return "€"+Math.round(v).toLocaleString(); }
+function fmtEps(v){ return "€"+v.toFixed(2); }
+function fmtE1(v){ return "€"+v.toFixed(1)+"M"; }
+function fmtShM(v){ return v.toFixed(1)+"M"; }
+function axisShM(v){ return v.toFixed(0)+"M"; }
+
+// consolidated (CTT reports 2020-22 recurring EBIT / reported EBITDA; FiscalAI adjusted 2023-LTM)
+var revenue = [745.2,847.9,906.6,985.2,1107.3,1288.1,1365.1];
+var revYoY  = [null,13.8,6.9,8.7,12.4,16.3,15.7];
+var ebit    = [41.5,60.1,64.5,87.6,85.1,115.2,109.3];   // recurring / adjusted EBIT
+var ebitda  = [103.6,118.1,129.3,151.9,160.3,198.4,195.7];
+var ebitM   = [5.6,7.1,7.1,8.9,7.7,8.9,8.0];
+var ebitdaM = [13.9,13.9,14.3,15.4,14.5,15.4,14.3];
+var ni      = [16.7,38.4,36.4,60.5,45.5,50.7,41.5];  // consolidated (FiscalAI)
+var eps     = [0.11,0.26,0.25,0.43,0.33,0.38,0.30];
+
+// buyback (net shares repurchased per year = annual reduction in shares outstanding; CTT reports)
+var BUYX = ["2021","2022","2023","2024","2025","1H26"];
+var netBought = [0.0,7.6,2.9,4.9,2.0,2.3];
+var netYoY    = [null,null,-61.8,69.0,-59.2,15.0];
+var sharesOut = [150.0,142.4,139.5,134.6,132.6,130.3];
+
+// segmented (CTT reports; 2019-24 proxy mapping of old->new structure)
+// LTM (to 2Q26) = FY25 − 1H25 + 1H26; reconciles to consolidated LTM
+var SEGX = ["2019","2020","2021","2022","2023","2024","2025","LTM"];
+var revEcom = [152.4,193.0,255.7,259.0,340.6,468.5,626.3,704.8];
+var revMail = [525.0,470.1,493.3,521.6,496.9,508.9,516.4,509.4];
+var revBank = [62.9,82.1,98.9,126.0,147.7,129.9,145.4,150.9];
+var yoyEcom = [null,26.6,32.5,1.3,31.5,37.5,33.7,12.5];
+var yoyMail = [null,-10.5,4.9,5.7,-4.7,2.4,1.5,-1.4];
+var yoyBank = [null,30.5,20.5,27.4,17.2,-12.1,11.9,3.8];
+
+var SEGE = ["2021","2022","2023","2024","2025","LTM"];
+var ebEcom = [12.4,8.5,19.7,36.2,56.3,51.9];
+var ebMail = [39.5,41.5,46.8,22.4,32.8,31.7];
+var ebBank = [8.2,14.4,21.1,26.6,26.2,25.8];
+var mgEcom = [4.8,3.3,5.8,7.7,9.0,7.4];
+var mgMail = [8.0,8.0,9.4,4.4,6.4,6.2];
+var mgBank = [8.3,11.4,14.3,20.5,18.0,17.1];
+
+var BANX = ["2021","2022","2023","2024","2025","LTM"];
+var banRev = [98.9,126.0,147.7,129.9,145.4,150.9];
+var banEb  = [8.2,14.4,21.1,26.6,26.2,25.8];
+
+var CEPY = ["2020","2021","2022","2023","2024","2025","LTM"];
+var cepVol = [53.3,73.8,72.3,100.6,141.0,157.0,170.4];
+var cepVolYoY = [null,38.5,-2.0,39.1,40.2,11.3,8.5];
+
+var CACQ = ["2Q25","3Q25","2Q26"];
+var cacRev = [18.5,27.8,28.0];
+var cacEbit = [2.8,4.5,0.6];
+var cacMargin = [15.1,16.2,2.1];
+
+// ================= SOTP =================
+// Banco CTT deep dive (Bank Metrics, chronological Q1-24 -> Q2-26)
+var BANKQ = ["Q1-24","Q2-24","Q3-24","Q4-24","Q1-25","Q2-25","Q3-25","Q4-25","Q1-26","Q2-26"];
+var deposits = [3470.4,3780.9,3967.9,4043.7,4002.5,4116.6,4116.6,4334.5,4405,4605];
+var loans    = [1671.4,1699,1722.6,1788.1,1856,1930.9,1930.9,2057.8,2142,2247];
+var nii      = [24.07,23.83,25.2,24.9,25.2,24.9,24.9,26.1,27.4,28.3];
+var bankrev  = [36.2,25.9,34.2,33.6,33.6,35.0,33.6,32.2,32.1,32.22];
+var bookval  = [291.1,291.1,291.1,291.1,295,300,310,320,325,325];
+var depQoQ   = [null,8.9,4.9,1.9,-1.0,2.9,0.0,5.3,1.6,4.5];
+var loanQoQ  = [null,1.7,1.4,3.8,3.8,4.0,0.0,6.6,4.1,4.9];
+var bookQoQ  = [null,0.0,0.0,0.0,1.3,1.7,3.3,3.2,1.6,0.0];
+// GreenWood fair-value evolution (base-case fair value per GW report = the implied SOP; GW does not label it "SOP" explicitly). Source: CTT timeline / GreenWood Investors reports.
+var GWX = ["Sep-17","Nov-17","Dec-17","Jan-18","Feb-18","Mar-18","Apr-18","May-18","Aug-18","Nov-18","Feb-19","May-19","Nov-19","Aug-20","Mar-21","Jan-22","Nov-22","Oct-23","Apr-24","Dec-24","May-25","Nov-25","Apr-26","Aug-26"];
+var gwSOP   = [20.27,18.58,20.48,13.6,13.6,14.03,15.92,15.48,22.03,28.59,21.02,28.28,17.63,15.44,14.79,21.0,17.0,15.0,17.0,17.0,17.3,13.3,18.0,14.7];
+var gwPrice = [5.06,3.13,3.49,3.49,3.4,3.2,3.0,3.11,3.18,3.38,2.78,2.52,3.15,2.69,3.18,4.2,3.1,3.36,4.5,5.4,7.18,7.0,6.60,6.15];
+var gwTY    = ["2020","2020","2020","2020","2020","2020","2020","2020","2021","2022","2022","2022","2022","2022","2022","2024","2024","2025","2026","2026","2026","2026","2026","2026"];
+
+var SOTP = {
+  price:5.86,
+  order:[['bear','red','Bear'],['base','blue','Base'],['bull','green','Bull']],
+  scen:{
+    bear:{ label:'Bear · 6.5× EV/EBITDA',
+      note:'E-commerce disappoints: revenue reaches only €1,450M by 2028 (~+4%/yr) and the EBITDA margin compresses to 11% as the Cacesa/regulatory drag persists. No re-rating — the multiple stays ~6.5×, roughly where CTT trades today (FY25 6.6×, LTM ~6.0×). Fair value €4.71 — 20% below €5.86.',
+      rev:1450, revcagr:'~+4%/yr (rev CAGR 3Y)', mgn:11.0, ebitda:159.5, mult:6.5, ev:1037, netdebt:293, hc:117, eq:627, sh:133, ps:4.71, up:-0.196, cagr:'2028E', hz:'2028E' },
+    base:{ label:'Base · 8.0× EV/EBITDA (Omaha, platform)',
+      note:'The Omaha valuation stored in the platform: revenue €1,660M by 2028, below the CMD-2025 ambition given regulation and slower Chinese shipments; EBITDA margin 11.9% (e-commerce 9%, mail & services 15%, Banco CTT 20%; no bank sale assumed); 8.0× EV/EBITDA, close to 2025 levels and below the 12.5× EBIT the DHL deal implied for parcels. Shares fall to 124.1M at the current buyback pace. IVO €9.53 — 63% above €5.86.',
+      rev:1660, revcagr:'below CMD-2025 (€1,600–1,700M revenue ambition)', mgn:11.9, ebitda:199, mult:8.0, ev:1592, netdebt:292.8, hc:117, eq:1182.2, sh:124.1, ps:9.53, up:0.626, cagr:'2028E', hz:'2028E' },
+    bull:{ label:'Bull · GreenWood sum of the parts',
+      note:'GreenWood\'s 2-pager (Nov-25), kept in the platform as the second valuation: parcels at 12.5× EBIT (the DHL deal multiple), the bank at 1.4× book, mail & financial services at 7.5× EBIT and the real estate fund, less HoldCo debt and the healthcare liability. €13.43 — 129% above €5.86. GreenWood\'s later flash notes put 2026E fair value at €18.0 (Apr-26) and €14.7 (Aug-26).',
+      parts:[['Parcels EBIT €85M × 12.5×',1062.5],['Bank book €348M × 1.4×',487.2],['Mail & FS EBIT €37M × 7.5×',277.5],['Real estate',165]],
+      claims:[['HoldCo debt',143],['Healthcare liability',117]],
+      sum:1992.2, eq:1732.2, sh:129, ps:13.43, up:1.292, cagr:'GreenWood Nov-25', hz:'2026E' }
+  }
+};
+function renderSOTP(){
+  var toggle=document.getElementById('sotp-toggle'), note=document.getElementById('sotp-note'), grid=document.getElementById('sotp-grid');
+  if(!toggle) return;
+  var keys=['bear','base','bull'], active='base';
+  function eur(v){ return '€'+Math.round(v).toLocaleString()+'M'; }
+  function draw(){
+    var sc=SOTP.scen[active]; note.textContent=sc.note; grid.innerHTML='';
+    SOTP.order.forEach(function(co){
+      var t=co[0], s=SOTP.scen[t]; var isActive=(t===active);
+      var rows='';
+      if(s.parts){
+        s.parts.forEach(function(pt,k){ rows+='<tr><td>'+(k?'+ ':'')+pt[0]+'</td><td>'+eur(pt[1])+'</td></tr>'; });
+        rows+='<tr class="vc-sep"><td>= Value of parts</td><td>'+eur(s.sum)+'</td></tr>';
+        s.claims.forEach(function(c){ rows+='<tr><td>− '+c[0]+'</td><td>('+c[1]+')</td></tr>'; });
+        rows+='<tr class="vc-sep"><td>= Equity value</td><td>'+eur(s.eq)+'</td></tr>';
+        rows+='<tr><td>÷ Shares</td><td>'+s.sh+'M</td></tr>';
+      } else {
+      rows+='<tr><td>Revenue '+s.hz+'</td><td>'+eur(s.rev)+'</td></tr>';
+      rows+='<tr><td colspan="2" style="padding:0 0 4px;font-size:0.9em;color:var(--muted);font-weight:400;white-space:normal;">'+s.revcagr+'</td></tr>';
+      rows+='<tr><td>× EBITDA margin</td><td>'+s.mgn.toFixed(1)+'%</td></tr>';
+      rows+='<tr class="vc-sep"><td>= EBITDA</td><td>'+eur(s.ebitda)+'</td></tr>';
+      rows+='<tr><td>× EV/EBITDA</td><td>'+s.mult.toFixed(1)+'×</td></tr>';
+      rows+='<tr class="vc-sep"><td>= Enterprise value</td><td>'+eur(s.ev)+'</td></tr>';
+      rows+='<tr><td>− Net debt</td><td>('+(+s.netdebt).toFixed(s.netdebt%1?1:0)+')</td></tr>';
+      rows+='<tr><td>− Healthcare liability</td><td>('+s.hc+')</td></tr>';
+      rows+='<tr class="vc-sep"><td>= Equity value</td><td>'+eur(s.eq)+'</td></tr>';
+      rows+='<tr><td>÷ Shares</td><td>'+s.sh+'M</td></tr>';
+      }
+      var card=document.createElement('div'); card.className='val-card'; card.style.borderTop='3px solid var(--'+co[1]+')'; if(isActive) card.style.boxShadow='0 0 0 2px var(--'+co[1]+')';
+      card.innerHTML='<div class="vc-name" style="color:var(--'+co[1]+')">'+co[2]+' — fair value</div>'+
+        '<div class="vc-val">€'+s.ps.toFixed(2)+'</div>'+
+        '<div class="vc-up '+(s.up>=0?'good':'bad')+'">'+(s.up>=0?'+':'')+(s.up*100).toFixed(0)+'% vs €'+SOTP.price.toFixed(2)+' · <span style="opacity:0.85">'+s.cagr+'</span></div>'+
+        '<table><tbody>'+rows+'</tbody></table>';
+      grid.appendChild(card);
+    });
+  }
+  toggle.innerHTML='';
+  keys.forEach(function(sk){
+    var btn=document.createElement('button'); btn.textContent=SOTP.scen[sk].label; btn.type='button'; if(sk===active) btn.className='on';
+    btn.addEventListener('click',function(){ active=sk; Array.prototype.forEach.call(toggle.children,function(c){c.classList.remove('on');}); btn.classList.add('on'); draw(); });
+    toggle.appendChild(btn);
+  });
+  draw();
+}
+
+function init(){
+  renderSOTP();
+
+  renderInteractiveComboChart('chart-revenue', { periods: AX, ariaLabel:'Revenue and YoY', height:340, defaultOn:['teal'],
+    barFmt: fmtE, barAxisFmt: axisE, lineFmt: fmtPctSigned, lineAxisFmt: axisPct, barName:'Revenue €M', lineName:'YoY %',
+    series:[ {key:'teal',label:'CTT',bars:revenue,line:revYoY} ] });
+  renderTable('tbl-revenue', AX, [ {label:'Revenue (€M)',data:revenue,fmt:fmtE}, {label:'YoY',data:revYoY,fmt:fmtPctSigned} ]);
+
+  renderInteractiveComboChart('chart-profit', { periods: AX, ariaLabel:'EBITDA or Recurring EBIT with margin', height:340, defaultOn:['teal'], singleSeries:true,
+    barFmt: fmtE, barAxisFmt: axisE, lineFmt: fmtPct, lineAxisFmt: axisPct, barName:'€M', lineName:'margin %',
+    series:[ {key:'teal',label:'EBITDA',bars:ebitda,line:ebitdaM,lineKey:'gold'}, {key:'blue',label:'Recurring EBIT',bars:ebit,line:ebitM,lineKey:'gold'} ] });
+  renderTable('tbl-profit', AX, [ {label:'EBITDA (€M)',data:ebitda,fmt:fmtE}, {label:'EBITDA margin',data:ebitdaM,fmt:fmtPct}, {label:'Recurring EBIT (€M)',data:ebit,fmt:fmtE}, {label:'Rec. EBIT margin',data:ebitM,fmt:fmtPct} ]);
+
+  renderInteractiveComboChart('chart-nieps', { periods: AX, ariaLabel:'Net income and EPS', height:340, defaultOn:['blue'],
+    barFmt: fmtE, barAxisFmt: axisE, lineFmt: fmtEps, lineAxisFmt: fmtEps, barName:'Net income €M', lineName:'EPS €',
+    series:[ {key:'blue',label:'Net income',bars:ni,line:eps,lineKey:'gold'} ] });
+  renderTable('tbl-nieps', AX, [ {label:'Net income (€M)',data:ni,fmt:fmtE}, {label:'EPS',data:eps,fmt:fmtEps} ]);
+
+  renderInteractiveComboChart('chart-buyback', { periods: BUYX, ariaLabel:'Net shares repurchased and YoY', height:320, defaultOn:['teal'],
+    barFmt: fmtShM, barAxisFmt: axisShM, lineFmt: fmtPctSigned, lineAxisFmt: axisPct, barName:'Net repurchased (M)', lineName:'YoY %',
+    series:[ {key:'teal',label:'Net repurchased',bars:netBought,line:netYoY,lineKey:'gold'} ] });
+  renderTable('tbl-buyback', BUYX, [ {label:'Net shares repurchased (M)',data:netBought,fmt:fmtShM}, {label:'Shares outstanding (M)',data:sharesOut,fmt:fmtShM} ]);
+
+  renderStackedBarChart('chart-segrev', { periods: SEGX, ariaLabel:'Revenue by segment', height:360, showPct:true, fmt:fmtE, axisFmt:axisE,
+    segments:[ {key:'teal',label:'e-commerce Solutions',data:revEcom}, {key:'blue',label:'Mail & Services',data:revMail}, {key:'gold',label:'Banco CTT',data:revBank} ] });
+  renderTable('tbl-segrev', SEGX, [ {label:'e-commerce (€M)',data:revEcom,fmt:fmtE}, {label:'e-commerce YoY',data:yoyEcom,fmt:fmtPctSigned}, {label:'Mail & Services (€M)',data:revMail,fmt:fmtE}, {label:'Mail & Services YoY',data:yoyMail,fmt:fmtPctSigned}, {label:'Banco CTT (€M)',data:revBank,fmt:fmtE}, {label:'Banco CTT YoY',data:yoyBank,fmt:fmtPctSigned} ]);
+
+  renderInteractiveComboChart('chart-segebit2', { periods: SEGE, ariaLabel:'Recurring EBIT and margin by segment', height:340, defaultOn:['teal'], singleSeries:true,
+    barFmt: fmtE, barAxisFmt: axisE, lineFmt: fmtPct, lineAxisFmt: axisPct, barName:'Recurring EBIT (€M)', lineName:'Margin %',
+    series:[ {key:'teal',label:'e-commerce',bars:ebEcom,line:mgEcom,lineKey:'red'},
+             {key:'blue',label:'Mail & Services',bars:ebMail,line:mgMail,lineKey:'red'},
+             {key:'gold',label:'Banco CTT',bars:ebBank,line:mgBank,lineKey:'red'} ] });
+  renderTable('tbl-segebit2', SEGE, [ {label:'e-commerce EBIT (€M)',data:ebEcom,fmt:fmtE}, {label:'e-commerce margin',data:mgEcom,fmt:fmtPct}, {label:'Mail & Services EBIT (€M)',data:ebMail,fmt:fmtE}, {label:'Mail & Services margin',data:mgMail,fmt:fmtPct}, {label:'Banco CTT EBIT (€M)',data:ebBank,fmt:fmtE}, {label:'Banco CTT margin',data:mgBank,fmt:fmtPct} ]);
+
+  renderInteractiveBarChart('chart-banco', { periods: BANX, ariaLabel:'Banco CTT revenue and EBIT', height:320, defaultOn:['teal','gold'],
+    fmt:fmtE, axisFmt:axisE, series:[ {key:'teal',label:'Revenue',data:banRev}, {key:'gold',label:'Recurring EBIT',data:banEb} ] });
+  renderTable('tbl-banco', BANX, [ {label:'Revenue (€M)',data:banRev,fmt:fmtE}, {label:'Recurring EBIT (€M)',data:banEb,fmt:fmtE} ]);
+
+  renderInteractiveComboChart('chart-cep', { periods: CEPY, ariaLabel:'CEP parcel volumes and YoY', height:340, defaultOn:['green'],
+    barFmt: fmtNum, barAxisFmt: axisNum, lineFmt: fmtPctSigned, lineAxisFmt: axisPct, barName:'Volumes (M items)', lineName:'YoY %',
+    series:[ {key:'green',label:'CEP volumes',bars:cepVol,line:cepVolYoY,lineKey:'gold'} ] });
+  renderTable('tbl-cep', CEPY, [ {label:'CEP volumes (M items)',data:cepVol,fmt:fmtNum}, {label:'YoY',data:cepVolYoY,fmt:fmtPctSigned} ]);
+
+  renderInteractiveBarChart('chart-cacesa', { periods: CACQ, ariaLabel:'Cacesa revenue and EBIT', height:300, defaultOn:['slate','red'],
+    fmt:fmtE1, axisFmt:axisE, series:[ {key:'slate',label:'Non-CEP revenue (€M)',data:cacRev}, {key:'red',label:'Recurring EBIT (€M)',data:cacEbit} ] });
+  renderTable('tbl-cacesa', CACQ, [ {label:'Non-CEP revenue (€M)',data:cacRev,fmt:fmtE1}, {label:'Recurring EBIT (€M)',data:cacEbit,fmt:fmtE1}, {label:'Recurring EBIT margin',data:cacMargin,fmt:fmtPct} ]);
+
+  renderInteractiveComboChart('chart-bankdep', { periods: BANKQ, ariaLabel:'Bank deposits, loans and book value with QoQ', height:320, defaultOn:['teal'], singleSeries:true,
+    barFmt: fmtE, barAxisFmt: axisE, lineFmt: fmtPctSigned, lineAxisFmt: axisPct, barName:'€M level', lineName:'QoQ %',
+    series:[ {key:'teal',label:'Customer deposits',bars:deposits,line:depQoQ,lineKey:'gold'},
+             {key:'blue',label:'Book value',bars:bookval,line:bookQoQ,lineKey:'gold'},
+             {key:'green',label:'Customer loans',bars:loans,line:loanQoQ,lineKey:'gold'} ] });
+  renderTable('tbl-bankdep', BANKQ, [ {label:'Customer deposits (€M)',data:deposits,fmt:fmtE}, {label:'Customer loans (€M)',data:loans,fmt:fmtE}, {label:'Net interest income (€M)',data:nii,fmt:fmtE}, {label:'Bank revenue (€M)',data:bankrev,fmt:fmtE}, {label:'Book value (€M)',data:bookval,fmt:fmtE} ]);
+
+  renderInteractiveLineChart('chart-gwsop', { periods: GWX, ariaLabel:'GreenWood fair value vs price', fmt:fmtEps, axisFmt:fmtEps, height:380, xLabelEvery:2, defaultOn:['gold','slate'],
+    series:[ {key:'gold',label:'GreenWood fair value (base case)',data:gwSOP}, {key:'slate',label:'Stock price',data:gwPrice} ] });
+  renderTable('tbl-gwsop', GWX, [ {label:'GW fair value (€)',data:gwSOP,fmt:fmtEps}, {label:'Stock price (€)',data:gwPrice,fmt:fmtEps}, {label:'Target year',data:gwTY,fmt:function(v){return v;}} ]);
+}
+
+if(document.readyState === 'loading'){ document.addEventListener('DOMContentLoaded', init); } else { init(); }
+})();
+</script>
+
+</body></html>

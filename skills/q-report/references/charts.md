@@ -1,16 +1,4 @@
----
-name: q-report-charts
-description: >
-  Builds the Q-Report Charts of a public company as a chart-first HTML artifact (Omaha Inversiones
-  style): "the print" in tiles, bear/base/bull valuation cards, annual fundamentals, quarterly momentum,
-  segments and a sector section, one chart per card (chart → data table → AI Analysis). It is the data
-  annex the narrative Q-Report (skill q-report) is written on. Data: Omaha Value platform → FiscalAI →
-  filings → web (macro only). Content in English. Use when the user says "Q-Report Charts",
-  "/q-report-charts TICKER", "chart-first", "reporte Q chart-first", "anexo de datos del trimestre".
-  Approved bases: LEN, CTT, DGE, Auna.
----
-
-# q-report-charts — chart-first data annex
+# Step 1 — Q-Report Charts (chart-first data annex)
 
 Answers one question: what in this quarter's print matters for the long-term thesis. Not a dump of
 the quarter.
@@ -20,7 +8,7 @@ the quarter.
 2. Sector KPIs and comparable (propose a table: KPI → source; the analyst approves).
 3. Valuation: take bear/base/bull from the platform (`valuations`, primary marked, plus any second
    valuation such as a sum of parts). Confirm whether an own model (Excel / art-val) should rule.
-4. Files: as in the q-report skill (Google Drive folder → Dropbox → `fiscalai/inputs/` → one PDF).
+4. Files: see Step 0 in SKILL.md.
 Then ask whether the analyst wants more questions or the result.
 
 ## Phase 1 — Data (hierarchy and hard rules)
@@ -38,7 +26,7 @@ House rules: historical net debt as levels and a 3-year average, never a CAGR; c
 restricted cash.
 
 ## Phase 2 — Build
-Copy an approved base (LEN is the most complete engine) and replace title, body, data and `init()`.
+Copy `assets/charts-base-ctt.html` (the approved engine) and replace title, body, data and `init()`.
 Do not rewrite the `<style>` or the `render*` functions. Structure:
 1. Header `<Company> Q-Report Charts — <quarter>` and a line with the date, the price used and a link
    to the narrative Q-Report when it exists.
@@ -55,13 +43,13 @@ Format: 1 decimal in % and multiples; margin YoY in bps; one label per point; co
 (teal revenue, gold EPS, green FCF, blue returns/debt, red multiples/alerts, slate reference).
 
 ## Phase 3 — Validation (blocking)
-`node audit.js report.html shots/` (Playwright headless) must give: `JS errors: none`,
+`node scripts/audit-charts.cjs report.html shots/` (Playwright headless) must give: `JS errors: none`,
 `undefined/NaN/Infinity in text: 0`, `empty tables: 0` and every chart `OK` (marks == labels,
 collisions = 0). Look at 3–4 screenshots of the busiest charts. Check that the price, IVO, deals and
 catalysts match the Q-Report and the platform. Nothing is published if it fails.
 
 ## Phase 4 — Publish and register
-Artifact (same URL on every update). Register in `skill_outputs`: skill_name `reporte_q` (shown as
+Artifact (same URL on every update). Register in `skill_outputs` (SQL in `references/platform.md`): skill_name `reporte_q` (shown as
 "Q-Report Charts" in the header), document_name `<TICKER> Q-Report Charts <quarter>`, quarter_tag,
 artifact_link, result_text with the read of the quarter. Deliver to the analyst (in Spanish): link,
 period covered, number of charts, audit result, data that could not be obtained and questions ordered
